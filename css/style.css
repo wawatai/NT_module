@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+i {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+html body header {
+  width: 100%;
+  height: auto;
+  background: #cccccc;
+}
+html body header .top,
+html body header .bottom {
+  width: 100%;
+  height: auto;
+  background: #585858;
+}
+html body header .top .center,
+html body header .bottom .center {
+  width: 1400px;
+  height: auto;
+  height: 40px;
+  margin: 0 auto;
+  background: #bbbbbb;
+}
+html body header .top .center .UnLoginBox,
+html body header .bottom .center .UnLoginBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body header .top .center .UnLoginBox li,
+html body header .bottom .center .UnLoginBox li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: solid 1px #000000;
+}
+html body header .top .center .UnLoginBox li form,
+html body header .bottom .center .UnLoginBox li form {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+html body header .top .center .UnLoginBox li form label,
+html body header .bottom .center .UnLoginBox li form label {
+  width: 150px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+  background: #ffffff;
+  border: none;
+  color: #000000;
+  margin-right: 10px;
+}
+html body header .top .center .UnLoginBox li form label:focus,
+html body header .bottom .center .UnLoginBox li form label:focus {
+  border: none;
+}
+html body header .top .center .UnLoginBox li form label input,
+html body header .bottom .center .UnLoginBox li form label input {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html body header .top .center .UnLoginBox li form label i,
+html body header .bottom .center .UnLoginBox li form label i {
+  margin: 0 5px -2px 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 14px;
+  color: #000000;
+}
+html body header .top .center .UnLoginBox li form a,
+html body header .bottom .center .UnLoginBox li form a {
+  width: 70px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+html body header .top .center .UnLoginBox li form a.loginBtn,
+html body header .bottom .center .UnLoginBox li form a.loginBtn {
+  background: #ffe1a8;
+  border: solid 1px #000000;
+  color: #000000;
+}
+html body header .top .center .UnLoginBox li form a.loginBtn:hover, html body header .top .center .UnLoginBox li form a.loginBtn:active, html body header .top .center .UnLoginBox li form a.loginBtn.active,
+html body header .bottom .center .UnLoginBox li form a.loginBtn:hover,
+html body header .bottom .center .UnLoginBox li form a.loginBtn:active,
+html body header .bottom .center .UnLoginBox li form a.loginBtn.active {
+  border-color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn,
+html body header .bottom .center .UnLoginBox li form a.registerBtn {
+  background: #54a874;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn:hover, html body header .top .center .UnLoginBox li form a.registerBtn:active, html body header .top .center .UnLoginBox li form a.registerBtn.active,
+html body header .bottom .center .UnLoginBox li form a.registerBtn:hover,
+html body header .bottom .center .UnLoginBox li form a.registerBtn:active,
+html body header .bottom .center .UnLoginBox li form a.registerBtn.active {
+  border-color: #000000;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn i,
+html body header .bottom .center .UnLoginBox li form a.registerBtn i {
+  color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a i,
+html body header .bottom .center .UnLoginBox li form a i {
+  margin: 0 5px -2px 0;
+  font-size: 14px;
+}
+html body header .top .center .UnLoginBox li form a:last-child,
+html body header .bottom .center .UnLoginBox li form a:last-child {
+  margin: 0;
+}
+html body header .top .center .UnLoginBox li .forgetBtn,
+html body header .bottom .center .UnLoginBox li .forgetBtn {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+  background: none;
+}
+html body header .top .center .UnLoginBox li .forgetBtn i,
+html body header .bottom .center .UnLoginBox li .forgetBtn i {
+  margin: 0 5px -2px 0;
+  font-size: 16px;
+  color: #000000;
+}
+html body header .top .center .UnLoginBox li .forgetBtn p,
+html body header .bottom .center .UnLoginBox li .forgetBtn p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+html body header .top .center .UnLoginBox li .lang,
+html body header .bottom .center .UnLoginBox li .lang {
+  width: auto;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: none;
+  color: #000000;
+}
+html body header .top .center .UnLoginBox li .lang select,
+html body header .bottom .center .UnLoginBox li .lang select {
+  width: auto;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 35px 0 20px;
+  background: none;
+  color: #000000;
+}
+html body header .top .center .UnLoginBox li .lang i,
+html body header .bottom .center .UnLoginBox li .lang i {
+  position: absolute;
+  right: 20px;
+  font-size: 14px;
+  color: #000000;
+}
+html body header .top.bottom,
+html body header .bottom.bottom {
+  background: #dadada;
+}
+html body header .top.bottom .center,
+html body header .bottom.bottom .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  background: #818181;
+}
+html body header .top.bottom .center .logo,
+html body header .bottom.bottom .center .logo {
+  width: 200px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #000000;
+}
+html body header .top.bottom .center .logo img,
+html body header .bottom.bottom .center .logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body header .top.bottom .center nav,
+html body header .bottom.bottom .center nav {
+  width: auto;
+  height: 100%;
+}
+html body header .top.bottom .center nav ul,
+html body header .bottom.bottom .center nav ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body header .top.bottom .center nav ul li,
+html body header .bottom.bottom .center nav ul li {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+html body header .top.bottom .center nav ul li::before,
+html body header .bottom.bottom .center nav ul li::before {
+  display: none;
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+}
+html body header .top.bottom .center nav ul li:hover::before, html body header .top.bottom .center nav ul li:active::before, html body header .top.bottom .center nav ul li.active::before,
+html body header .bottom.bottom .center nav ul li:hover::before,
+html body header .bottom.bottom .center nav ul li:active::before,
+html body header .bottom.bottom .center nav ul li.active::before {
+  display: block;
+}
+html body header .top.bottom .center nav ul li a,
+html body header .bottom.bottom .center nav ul li a {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+html body header .top.bottom .center nav ul li a p,
+html body header .bottom.bottom .center nav ul li a p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+html body header .downList {
+  width: 100%;
+  height: auto;
+  background: #aaaaaa;
+}
+html body header .downList ul {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+html body header .downList ul ol {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: none;
+  margin: 0 20px;
+}
+html body header .downList ul ol.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body header .downList ul ol li {
+  width: auto;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 20px;
+}
+html body header .downList ul ol li:last-child {
+  margin: 0;
+}
+html body header .downList ul ol li img {
+  width: 220px;
+  height: 184px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: #585858;
+}
+html body header .downList ul ol li p {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+  color: #000000;
+}
+html body header .downList ul .fa-solid.fa-chevron-left,
+html body header .downList ul .fa-solid.fa-chevron-right {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 26px;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.2;
+  color: #000000;
+}
+html body header .downList ul .fa-solid.fa-chevron-left.active,
+html body header .downList ul .fa-solid.fa-chevron-right.active {
+  pointer-events: visible;
+  opacity: 1;
+}
