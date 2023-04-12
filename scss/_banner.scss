@@ -1,0 +1,59 @@
+.swiper {
+    width: 100%;
+    margin-bottom: 10px;
+
+    .swiper-wrapper {
+       @include variable_W_full_H_full;
+       max-height: 500px;
+
+        .swiper-slide {
+            @include variable_W_full_H_full;
+
+            .banner {
+                width: 100%;
+                height: 500px;
+                object-fit: contain;
+                background: #000000;
+            }
+        }
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 285px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        margin: 0;
+
+        &:hover,&:active,&.active {
+
+            i {
+                opacity: 1;
+            }
+        }
+
+        &::before,
+        &::after {
+            content: "";
+        }
+
+        i {
+            font-size: 44px;
+            opacity: 0.5;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            color: #ffffff;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+}

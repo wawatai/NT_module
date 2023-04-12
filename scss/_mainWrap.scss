@@ -1,0 +1,48 @@
+//mainWrap
+.mainWrap {
+    @include variable_W_full_H_auto;
+    
+    .center {
+        @include variable_W_1400_H_auto;
+        @include margin_0_auto;
+
+        //跑馬燈
+        .marqueeWrap {
+            @include variable_W_full_H_auto;
+            @include marquee;
+        }
+
+        //遊戲清單
+        .typeList {
+            @include variable_W_full_H_auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px 20px;
+            padding: 60px 0;
+
+            .gameBlock {
+                @include variable_W_full_H_full;
+                position: relative;
+
+                img {
+                    @include variable_W_full_H_auto;
+                    height: 270px;
+                    object-fit: contain;
+                    background: #acacac;
+                }
+
+                p {
+                    margin-top: 15px;
+                    font-size: 26px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #9d9d9d;
+                }
+
+                .maintainBox {
+                    @include maintainBox;
+                }
+            }
+        }
+    }
+}

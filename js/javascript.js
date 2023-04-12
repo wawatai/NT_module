@@ -9,6 +9,9 @@ $(function(){
 
         if(n != -1 || n != 6 || n != 7)
         {
+            $("header .downList")
+            .addClass("active");
+
             $("header .downList ol:eq("+ n +")")
             .addClass("display")
             .siblings().removeClass("display");
@@ -33,6 +36,16 @@ $(function(){
                 $("header .downList ol.display")
                 .siblings("i").removeClass("active");
             }
+        }
+    })
+
+    $("header .downList").mouseleave(function(){
+        var n = $(this).index() - 1;
+
+        if(n != -1 || n != 6 || n != 7)
+        {
+            $("header .downList")
+            .removeClass("active");
         }
     })
     

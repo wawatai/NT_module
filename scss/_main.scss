@@ -1,11 +1,26 @@
 html {
 
     body {
+        position: relative;
 
         @import "./_header.scss";
+        @import "./_mainWrap.scss";
+        @import "./_banner.scss";
+        @import "./_footer.scss";
+        @import "./_aside.scss";
 
         main {
+            @include variable_W_full_H_auto;
+            padding-top: 120px;
+        }
 
+        //大背景
+        .bg {
+            @include variable_W_full_H_full;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -999;
         }
     }
 }

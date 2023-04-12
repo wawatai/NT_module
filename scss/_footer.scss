@@ -1,0 +1,81 @@
+footer {
+    @include variable_W_full_H_auto;
+
+    .top {
+        @include variable_W_auto_H_full;
+        height: 55px;
+        @include flex_H1;
+        justify-content: space-between;
+        background: linear-gradient(to right, #adadad 8%, #e0e0e0 25%, #bbbbbb 43%, #8f8f8f 66%, #e0e0e0 79%, #8f8f8f 99%);
+        
+        .center {
+            @include variable_W_1400_H_auto;
+            height: 100%;
+            @include margin_0_auto;
+            @include flex_H1;
+            justify-content: space-between;
+
+            ul {
+                @include variable_W_auto_H_full;
+                @include flex_H1;
+                justify-content: flex-start;
+
+                li {
+                    @include variable_W_full_H_full;
+                    width: 95px;
+                    margin-right: 20px;
+
+                    &:hover,&:active,&.active {
+
+                        a {
+                            background: radial-gradient(circle,  #b3b3b3 -5px , #383838 40px);
+
+                            p {
+                                color: #ffffff
+                            }
+                        }
+                    }
+
+                    a {
+                        @include variable_W_full_H_full;
+                        @include flex_H1;
+                        padding: 0 15px;
+                        background: transparent;
+                        transition: all 0.3s;
+
+                        p {
+                            font-size: 14px;
+                            text-align: center;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            color: #565656;
+                        }
+                    }
+                }
+            }
+
+            .copyright {
+                font-size: 14px;
+                font-weight: bold;
+                color: #565656
+            }
+        }
+    }
+
+    .bottom {
+        @include variable_W_full_H_auto;
+        height: 160px;
+        @include flex_H1;
+        background: #8f8f8f;
+
+        p {
+            @include variable_W_1400_H_auto;
+            @include margin_0_auto;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 30px;
+            color: #ffffff;
+        }
+    }
+}
