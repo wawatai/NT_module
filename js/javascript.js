@@ -113,3 +113,25 @@ $(function(){
         },
     });
 })
+
+//彈窗
+$(function(){
+
+    //忘記密碼
+    $("forgetBtn").click(function(){
+        $(".filter, .jumpWindow.plsLoginfgPW")
+        .addClass("display");
+    })
+    
+    //請先登入
+    $("header .bottom, .home, footer").click(function(){
+        $(".filter, .jumpWindow.plsLogin")
+        .addClass("display");
+    })
+    
+    //關閉視窗
+    $(".jumpWindow i.closeWindow, .jumpWindow button.closeWindow").click(function(){
+        $(".filter")
+       .removeClass("display");
+    })
+})

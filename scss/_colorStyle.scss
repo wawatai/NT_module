@@ -145,6 +145,11 @@ $mainfont_2: #ffffff;
 $header_top_BG: #585858; 
 $header_bottom_BG: #dadada; 
 
+//jumpWindow
+$filter_BG: #0000009e;
+$jumpWindow_BG: #ffffff;
+$jumpWindow_Title_BG: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);
+
 //marquee 
 @mixin marquee {
     height: 50px;
@@ -223,6 +228,19 @@ $header_bottom_BG: #dadada;
                 margin-bottom: 30px;
             }
         }
+    }
+}
+
+//按鈕樣式
+@mixin mainBtn_1 {
+    background: linear-gradient(to top, #dddddd 0%, #a3a3a3 50%, #dddddd 100%);
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
     }
 }
 

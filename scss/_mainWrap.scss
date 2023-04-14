@@ -23,6 +23,7 @@
             .gameBlock {
                 @include variable_W_full_H_full;
                 position: relative;
+                cursor: pointer;
 
                 img {
                     @include variable_W_full_H_auto;

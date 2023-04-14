@@ -1,0 +1,91 @@
+.filter {
+    @include variable_W_full_H_full;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: $filter_BG;
+
+    &.display {
+        @include flex_H1;
+    }
+
+    
+    .jumpWindow {
+        display: none;
+        min-width: 480px;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        background: $jumpWindow_BG;
+
+        //忘記密碼
+        &.fgPW {
+
+            &.display {
+                display: block;
+            }
+
+        }
+
+        //請先登入
+        &.plsLogin {
+
+            &.display {
+                display: block;
+            }
+
+            .content {
+                padding: 35px 30px;
+
+                p {
+                    font-weight: bold;
+                }
+            }
+        }
+        
+        .title {
+            @include variable_W_full_H_auto;
+            height: 50px;
+            @include flex_H1;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: relative;
+            color: $mainfont_2;
+            background: $jumpWindow_Title_BG;
+
+            i {
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+
+        .content {
+            @include variable_W_full_H_auto;
+            @include flex_V1;
+
+            p {
+                font-size: 16px
+            }
+        }
+
+        .btnBox {
+            @include variable_W_full_H_auto;
+            @include flex_H1;
+            padding-bottom: 30px;
+
+            button {
+                margin: 0 auto;
+                width: 60%;
+                height: 40px;
+                @include mainBtn_1;
+            }
+        }
+    }
+}

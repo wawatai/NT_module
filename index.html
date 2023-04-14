@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ZH-TW">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="unlogin">
     <!--header-->
     <header>
         <!--top-->
@@ -479,58 +479,89 @@
 
             </div>
         </div>
-        <!-- 懸浮按鈕 -->
-        <aside class="app">
-            <i class="download_ic"></i>
-            <p>手機下載</p>
-        </aside>
-        <aside class="cs">
-            <i class="csBtn_ic"></i>
-        </aside>
-        <!-- footer -->
-        <footer>
-            <div class="top">
-                <div class="center">
-                    <ul>
-                        <li>
-                            <a href="javascript:;">
-                                <p>最新公告</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>優惠</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>VIP會員</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>幫助中心</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>關於我們</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright">
-                        2021 XXX.net 版權所有 │ 18+
-                    </p>
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="info">
-                    <p>致力於成爲世界頂級的在線娛樂公司。因此，在處理任何事情的時候，都會優先考慮客戶的利益。客戶的最大滿意就是我們的成功。</p>
-                    <p>提供全天候24小時的在線客服，提供專業化和人性化相結合的最佳服務。</p>
-                </div>
-            </div>
-        </footer>
     </main>
+    <!-- 懸浮按鈕 -->
+    <aside class="app">
+        <i class="download_ic"></i>
+        <p>手機下載</p>
+    </aside>
+    <aside class="cs">
+        <i class="csBtn_ic"></i>
+    </aside>
+    <!-- footer -->
+    <footer>
+        <div class="top">
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <p>最新公告</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <p>優惠</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <p>VIP會員</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <p>幫助中心</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <p>關於我們</p>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    2021 XXX.net 版權所有 │ 18+
+                </p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="info">
+                <p>致力於成爲世界頂級的在線娛樂公司。因此，在處理任何事情的時候，都會優先考慮客戶的利益。客戶的最大滿意就是我們的成功。</p>
+                <p>提供全天候24小時的在線客服，提供專業化和人性化相結合的最佳服務。</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 彈窗 -->
+    <div class="filter">
+        <!-- 忘記密碼 -->
+        <div class="jumpWindow fgPW">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p>請先登入</p>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow">確認</button>
+            </div>
+        </div>
+        <!-- 請先登入 -->
+        <div class="jumpWindow plsLogin">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p>請先登入</p>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow">確認</button>
+            </div>
+        </div>
+    </div>
     <div class="bg"></div>
 </body>
 </html>
