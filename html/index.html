@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="shortcut icon" href="./images/NTLOGO_64x64.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/NTLOGO_64x64.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./js/javascript.js"></script>
+    <script src="../js/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body class="unlogin">
+<body>
     <!--header-->
     <header>
         <!--top-->
@@ -35,7 +35,7 @@
                                 <i class="fa-solid fa-lock"></i>
                                 <input type="password" placeholder="密碼">
                             </label>
-                            <a href="./html/index.html" class="loginBtn">
+                            <a href="javascript:;" class="loginBtn">
                                 <!-- <i class="loginBtn_ic"></i> -->
                                 <p>登入</p>
                             </a>
@@ -533,8 +533,8 @@
     </footer>
     <!-- 彈窗 -->
     <div class="filter">
-        <!-- 忘記密碼 -->
-        <div class="jumpWindow fgPW">
+        <!-- 最新公告 -->
+        <div class="jumpWindow news">
             <div class="title">
                 <p>忘記密碼</p>
                 <!-- <i class="close_ic"></i> -->
@@ -546,20 +546,6 @@
             <div class="btnBox">
                 <button class="closeWindow">重置密碼</button>
                 <p class="remind">我們將發送新的密碼到您的手機，請查收簡訊</p>
-            </div>
-        </div>
-        <!-- 請先登入 -->
-        <div class="jumpWindow plsLogin">
-            <div class="title">
-                <p>提示</p>
-                <!-- <i class="close_ic"></i> -->
-                <i class="fa-solid fa-xmark closeWindow"></i>
-            </div>
-            <div class="content">
-                <p>請先登入</p>
-            </div>
-            <div class="btnBox">
-                <button class="closeWindow">確認</button>
             </div>
         </div>
     </div>

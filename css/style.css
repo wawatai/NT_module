@@ -974,6 +974,13 @@ html body .filter .jumpWindow {
 html body .filter .jumpWindow.fgPW.display {
   display: block;
 }
+html body .filter .jumpWindow.fgPW .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.fgPW .content input {
+  width: 288px;
+  text-align: center;
+}
 html body .filter .jumpWindow.plsLogin.display {
   display: block;
 }
@@ -1033,12 +1040,23 @@ html body .filter .jumpWindow .content {
 html body .filter .jumpWindow .content p {
   font-size: 16px;
 }
+html body .filter .jumpWindow .content input {
+  width: 100%;
+  height: auto;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #a3a3a3;
+}
 html body .filter .jumpWindow .btnBox {
   width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1061,6 +1079,11 @@ html body .filter .jumpWindow .btnBox button {
 html body .filter .jumpWindow .btnBox button:hover, html body .filter .jumpWindow .btnBox button:active, html body .filter .jumpWindow .btnBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#919191), color-stop(50%, #636262), to(#919191));
   background: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
+}
+html body .filter .jumpWindow .btnBox .remind {
+  font-size: 14px;
+  color: #ff0000;
+  margin-top: 20px;
 }
 html body main {
   width: 100%;

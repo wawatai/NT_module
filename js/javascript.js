@@ -118,15 +118,18 @@ $(function(){
 $(function(){
 
     //忘記密碼
-    $("forgetBtn").click(function(){
-        $(".filter, .jumpWindow.plsLoginfgPW")
+    $(".forgetBtn").click(function(){
+        $(".filter, .jumpWindow.fgPW")
         .addClass("display");
     })
     
     //請先登入
     $("header .bottom, .home, footer").click(function(){
-        $(".filter, .jumpWindow.plsLogin")
-        .addClass("display");
+        if($(this).closest("body").hasClass("unlogin"))
+        {
+            $(".filter, .jumpWindow.plsLogin")
+            .addClass("display");
+        }
     })
     
     //關閉視窗

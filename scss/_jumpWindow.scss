@@ -27,6 +27,15 @@
                 display: block;
             }
 
+            .content {
+                height: 80px;
+
+                input {
+                    width: 288px;
+                    text-align: center;
+                }
+            }
+
         }
 
         //請先登入
@@ -73,11 +82,17 @@
             p {
                 font-size: 16px
             }
+
+            input {
+                @include variable_W_full_H_auto;
+                height: 42px;
+                @include input_1;
+            }
         }
 
         .btnBox {
             @include variable_W_full_H_auto;
-            @include flex_H1;
+            @include flex_V1;
             padding-bottom: 30px;
 
             button {
@@ -85,6 +100,12 @@
                 width: 60%;
                 height: 40px;
                 @include mainBtn_1;
+            }
+
+            .remind {
+                font-size: 14px;
+                color: $remind;
+                margin-top: 20px;
             }
         }
     }
