@@ -1,4 +1,114 @@
 @charset "UTF-8";
+header .top {
+  background: #585858;
+}
+
+header .top .center {
+  background: #bbbbbb;
+}
+
+header .UnLoginBox li {
+  border-right: solid 1px #000000;
+}
+
+header .UnLoginBox label {
+  background: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+header .UnLoginBox label input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .UnLoginBox label i {
+  color: #000000;
+  font-size: 14px;
+}
+
+header .UnLoginBox .loginBtn {
+  background: #ffe1a8;
+  border: solid 1px #000000;
+  border-radius: 3px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+header .UnLoginBox .loginBtn:hover, header .UnLoginBox .loginBtn:active, header .UnLoginBox .loginBtn.active {
+  border-color: #ffffff;
+}
+
+header .UnLoginBox .registerBtn {
+  background: #54a874;
+  border: solid 1px #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+header .UnLoginBox .registerBtn:hover, header .UnLoginBox .registerBtn:active, header .UnLoginBox .registerBtn.active {
+  border-color: #000000;
+}
+
+header .UnLoginBox .registerBtn i {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+header .UnLoginBox .forgetBtn i {
+  color: #000000;
+  font-size: 16px;
+}
+
+header .UnLoginBox .forgetBtn p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .UnLoginBox .lang select {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .UnLoginBox .lang i {
+  color: #000000;
+  font-size: 14px;
+}
+
+header .bottom {
+  background: #dadada;
+}
+
+header .bottom .center {
+  background: #818181;
+}
+
+header nav li::before {
+  background: #ffffff;
+}
+
+header nav li a p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header .downList {
+  background: #c4c4c4;
+}
+
+header .logo img {
+  width: 200px;
+  height: 100%;
+  background: #000;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 aside.app .download_ic {
   background: url("../img/icon/download.png") no-repeat center;
   background-size: 100%;
@@ -110,6 +220,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
+img {
+  display: block;
+}
+
 html body {
   position: relative;
 }
@@ -120,21 +234,17 @@ html body header {
   top: 0;
   left: 0;
   z-index: 40;
-  background: #cccccc;
 }
 html body header .top,
 html body header .bottom {
   width: 100%;
   height: auto;
-  background: #585858;
 }
 html body header .top .center,
 html body header .bottom .center {
   width: 1400px;
-  height: auto;
   height: 40px;
   margin: 0 auto;
-  background: #bbbbbb;
 }
 html body header .top .center .UnLoginBox,
 html body header .bottom .center .UnLoginBox {
@@ -143,12 +253,6 @@ html body header .bottom .center .UnLoginBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -157,16 +261,6 @@ html body header .top .center .UnLoginBox li,
 html body header .bottom .center .UnLoginBox li {
   width: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-right: solid 1px #000000;
 }
 html body header .top .center .UnLoginBox li form,
 html body header .bottom .center .UnLoginBox li form {
@@ -193,18 +287,8 @@ html body header .bottom .center .UnLoginBox li form label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
   padding-left: 10px;
-  background: #ffffff;
-  border: none;
-  color: #000000;
   margin-right: 10px;
-}
-html body header .top .center .UnLoginBox li form label:focus,
-html body header .bottom .center .UnLoginBox li form label:focus {
-  border: none;
 }
 html body header .top .center .UnLoginBox li form label input,
 html body header .bottom .center .UnLoginBox li form label input {
@@ -217,8 +301,6 @@ html body header .bottom .center .UnLoginBox li form label i {
   margin: 0 5px -2px 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-size: 14px;
-  color: #000000;
 }
 html body header .top .center .UnLoginBox li form a,
 html body header .bottom .center .UnLoginBox li form a {
@@ -233,43 +315,11 @@ html body header .bottom .center .UnLoginBox li form a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
   margin-right: 10px;
-}
-html body header .top .center .UnLoginBox li form a.loginBtn,
-html body header .bottom .center .UnLoginBox li form a.loginBtn {
-  background: #ffe1a8;
-  border: solid 1px #000000;
-  color: #000000;
-}
-html body header .top .center .UnLoginBox li form a.loginBtn:hover, html body header .top .center .UnLoginBox li form a.loginBtn:active, html body header .top .center .UnLoginBox li form a.loginBtn.active,
-html body header .bottom .center .UnLoginBox li form a.loginBtn:hover,
-html body header .bottom .center .UnLoginBox li form a.loginBtn:active,
-html body header .bottom .center .UnLoginBox li form a.loginBtn.active {
-  border-color: #ffffff;
-}
-html body header .top .center .UnLoginBox li form a.registerBtn,
-html body header .bottom .center .UnLoginBox li form a.registerBtn {
-  background: #54a874;
-  border: solid 1px #ffffff;
-  color: #ffffff;
-}
-html body header .top .center .UnLoginBox li form a.registerBtn:hover, html body header .top .center .UnLoginBox li form a.registerBtn:active, html body header .top .center .UnLoginBox li form a.registerBtn.active,
-html body header .bottom .center .UnLoginBox li form a.registerBtn:hover,
-html body header .bottom .center .UnLoginBox li form a.registerBtn:active,
-html body header .bottom .center .UnLoginBox li form a.registerBtn.active {
-  border-color: #000000;
 }
 html body header .top .center .UnLoginBox li form a.registerBtn i,
 html body header .bottom .center .UnLoginBox li form a.registerBtn i {
-  color: #ffffff;
-}
-html body header .top .center .UnLoginBox li form a i,
-html body header .bottom .center .UnLoginBox li form a i {
   margin: 0 5px -2px 0;
-  font-size: 14px;
 }
 html body header .top .center .UnLoginBox li form a:last-child,
 html body header .bottom .center .UnLoginBox li form a:last-child {
@@ -279,6 +329,7 @@ html body header .top .center .UnLoginBox li .forgetBtn,
 html body header .bottom .center .UnLoginBox li .forgetBtn {
   width: auto;
   height: 100%;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,26 +340,16 @@ html body header .bottom .center .UnLoginBox li .forgetBtn {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 20px;
-  background: none;
 }
 html body header .top .center .UnLoginBox li .forgetBtn i,
 html body header .bottom .center .UnLoginBox li .forgetBtn i {
   margin: 0 5px -2px 0;
-  font-size: 16px;
-  color: #000000;
-}
-html body header .top .center .UnLoginBox li .forgetBtn p,
-html body header .bottom .center .UnLoginBox li .forgetBtn p {
-  font-size: 14px;
-  font-weight: bold;
-  color: #000000;
 }
 html body header .top .center .UnLoginBox li .lang,
 html body header .bottom .center .UnLoginBox li .lang {
   width: auto;
   height: 100%;
-  font-size: 14px;
-  font-weight: bold;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,65 +357,34 @@ html body header .bottom .center .UnLoginBox li .lang {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background: none;
-  color: #000000;
 }
 html body header .top .center .UnLoginBox li .lang select,
 html body header .bottom .center .UnLoginBox li .lang select {
   width: auto;
   height: 100%;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0 35px 0 20px;
   background: none;
-  color: #000000;
+  padding: 0 35px 0 20px;
+  cursor: pointer;
 }
 html body header .top .center .UnLoginBox li .lang i,
 html body header .bottom .center .UnLoginBox li .lang i {
   position: absolute;
   right: 20px;
-  font-size: 14px;
-  color: #000000;
-}
-html body header .top.bottom,
-html body header .bottom.bottom {
-  background: #dadada;
 }
 html body header .top.bottom .center,
 html body header .bottom.bottom .center {
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
-  background: #818181;
 }
 html body header .top.bottom .center .logo,
 html body header .bottom.bottom .center .logo {
-  width: 200px;
+  width: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #646464;
-}
-html body header .top.bottom .center .logo img,
-html body header .bottom.bottom .center .logo img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 html body header .top.bottom .center nav,
 html body header .bottom.bottom .center nav {
@@ -388,12 +398,6 @@ html body header .bottom.bottom .center nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 html body header .top.bottom .center nav ul li,
 html body header .bottom.bottom .center nav ul li {
@@ -410,7 +414,6 @@ html body header .bottom.bottom .center nav ul li::before {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #ffffff;
 }
 html body header .top.bottom .center nav ul li:hover::before, html body header .top.bottom .center nav ul li:active::before, html body header .top.bottom .center nav ul li.active::before,
 html body header .bottom.bottom .center nav ul li:hover::before,
@@ -430,22 +433,15 @@ html body header .bottom.bottom .center nav ul li a {
           align-items: center;
   padding: 0 20px;
 }
-html body header .top.bottom .center nav ul li a p,
-html body header .bottom.bottom .center nav ul li a p {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-}
 html body header .downList {
+  display: none;
   width: 100%;
   height: auto;
-  background: #c4c4c4;
-  display: none;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
   position: absolute;
   left: 0;
-  bottom: -248px;
+  top: 120px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
   z-index: 20;
 }
 html body header .downList.active {

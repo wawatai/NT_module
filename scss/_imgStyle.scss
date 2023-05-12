@@ -1,3 +1,11 @@
+//header
+header .logo img {
+    width: 200px;
+    height: 100%;
+    background: #000;
+    object-fit: contain;
+}
+
 //aside
 aside.app .download_ic {
     background: url("../img/icon/download.png") no-repeat center;

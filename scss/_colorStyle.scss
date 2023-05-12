@@ -1,140 +1,92 @@
 //header
-@mixin header_Input {
-    width: 150px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    border-radius: 3px;
-    font-size: 14px;
-    font-weight: bold;
-    padding-left: 10px;
+header .top {
+    background: #585858;
+}
+header .top .center {
+    background: #bbbbbb;
+}
+header .UnLoginBox li {
+    border-right: solid 1px #000000;
+}
+header .UnLoginBox label {
     background: #ffffff;
     border: none;
-    color: #000000;
-
-    &:focus {
-        border: none;
-    }
-
-    input {
-        width: 100%;
-        height: 100%;
-        background: none;
-    }
-
-    //icon
-    i {
-        margin: 0 5px -2px 0;
-        flex-shrink: 0;
-        font-size: 14px;
-        color: #000000;
-    }
-}
-@mixin header_btn {
-    width: 70px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 3px;
-    font-size: 14px;
-    font-weight: bold;
-    
-    &.loginBtn {
-        background: #ffe1a8;
-        border: solid 1px #000000;
-        color: #000000;
-
-        &:hover,&:active,&.active {
-            border-color: #ffffff;
-        }
-    }
-
-    &.registerBtn {
-        background: #54a874;
-        border: solid 1px #ffffff;
-        color: #ffffff;
-
-        &:hover,&:active,&.active {
-            border-color: #000000;
-        }
-
-        i {
-            color: #ffffff;
-        }
-    }
-
-    i {
-        margin: 0 5px -2px 0;
-        font-size: 14px;
-    }
 }
-@mixin header_lang {
-    width: auto;
-    height: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    position: relative;
-    background: none;
+header .UnLoginBox label input {
     color: #000000;
-
-    select {
-        width: auto;
-        height: 100%;
-        font-size: 14px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 0 35px 0 20px;
-        background: none;
-        color: #000000;
-    }
-
-    i {
-        position: absolute;
-        right: 20px;
-        font-size: 14px;
-        color: #000000;
-    }
+    font-size: 14px;
+    font-weight: bold;
 }
-@mixin header_nav {
-    width: auto;
-    height: 100%;
-    position: relative;
-
-    &::before {
-        display: none;
-        content: "";
-        width: 100%;
-        height: 5px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background: #ffffff;
-    }
+header .UnLoginBox label i {
+    color: #000000;
+    font-size: 14px;
+}
+header .UnLoginBox .loginBtn {
+    background: #ffe1a8;
+    border: solid 1px #000000;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
 
     &:hover,&:active,&.active {
-        
-        &::before {
-            display: block;
-        }
-    }
-
-    a {
-        width: auto;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-
-        p {
-            font-size: 18px;
-            font-weight: bold;
-            color: #ffffff;
-        }
+        border-color: #ffffff;
     }
 }
+header .UnLoginBox .registerBtn {
+    background: #54a874;
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        border-color: #000000;
+    }
+}
+header .UnLoginBox .registerBtn i {
+    color: #ffffff;
+    font-size: 14px;
+}
+header .UnLoginBox .forgetBtn i {
+    color: #000000;
+    font-size: 16px;
+}
+header .UnLoginBox .forgetBtn p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .UnLoginBox .lang select {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .UnLoginBox .lang i {
+    color: #000000;
+    font-size: 14px;
+}
+header .bottom {
+    background: #dadada;
+}
+header .bottom .center {
+    background: #818181;
+}
+header nav li::before {
+    background: #ffffff;
+}
+header nav li a p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+header .downList {
+    background: #c4c4c4;
+}
+
+
 //主色
 
 //字色
@@ -143,8 +95,8 @@ $mainfont_2: #ffffff;
 $remind: #ff0000;
 
 //header
-$header_top_BG: #585858; 
-$header_bottom_BG: #dadada; 
+$header_top_BG: #585858;
+$header_bottom_BG: #dadada;
 
 //jumpWindow
 $filter_BG: #0000009e;

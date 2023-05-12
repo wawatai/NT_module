@@ -7,7 +7,9 @@ $(function(){
     $("header nav li").mouseenter(function(){
         var n = $(this).index() - 1;
 
-        if(n != -1 || n != 6 || n != 7)
+        console.log(n);
+
+        if(n != -1 && n != 6 && n != 7)
         {
             $("header .downList")
             .addClass("active");
@@ -37,17 +39,22 @@ $(function(){
                 .siblings("i").removeClass("active");
             }
         }
-    })
-
-    $("header .downList").mouseleave(function(){
-        var n = $(this).index() - 1;
-
-        if(n != -1 || n != 6 || n != 7)
+        else if(n == -1 || n == 6 || n == 7)
         {
             $("header .downList")
             .removeClass("active");
         }
     })
+
+    // $("header .downList").mouseleave(function(){
+    //     var n = $(this).index() - 1;
+
+    //     if(n != -1 && n != 6 && n != 7)
+    //     {
+    //         $("header .downList")
+    //         .removeClass("active");
+    //     }
+    // })
     
     $("header .downList .fa-chevron-right").click(function(){
         click ++;
@@ -124,13 +131,13 @@ $(function(){
     })
     
     //請先登入
-    $("header .bottom, .home, footer").click(function(){
-        if($(this).closest("body").hasClass("unlogin"))
-        {
-            $(".filter, .jumpWindow.plsLogin")
-            .addClass("display");
-        }
-    })
+    // $("header .bottom, .home, footer").click(function(){
+    //     if($(this).closest("body").hasClass("unlogin"))
+    //     {
+    //         $(".filter, .jumpWindow.plsLogin")
+    //         .addClass("display");
+    //     }
+    // })
     
     //關閉視窗
     $(".jumpWindow i.closeWindow, .jumpWindow button.closeWindow").click(function(){
