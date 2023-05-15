@@ -85,144 +85,173 @@ header nav li a p {
 header .downList {
     background: #c4c4c4;
 }
+header .downList p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .downList .maintainBox {
+    background: #000000a4;
+}
+header .downList .maintainBox p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .downList .maintainBox .title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+header .downList .fa-solid.fa-chevron-left,
+header .downList .fa-solid.fa-chevron-right {
+    color: #000000;
+    font-size: 26px;
+}
 
+//swiper
+.swiper .swiper-button-prev i,
+.swiper .swiper-button-next i {
+    color: #ffffff;
+    font-size: 44px;
+}
 
-//主色
-
-//字色
-$mainfont_1: #9d9d9d;
-$mainfont_2: #ffffff;
-$remind: #ff0000;
-
-//header
-$header_top_BG: #585858;
-$header_bottom_BG: #dadada;
-
-//jumpWindow
-$filter_BG: #0000009e;
-$jumpWindow_BG: #ffffff;
-$jumpWindow_Title_BG: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);
-
-//marquee 
-@mixin marquee {
-    height: 50px;
-    display: flex;
+//home
+.home .marqueeWrap {
+    background: #ffffff;
     border-radius: 50px;
-    padding: 5px 0 5px 5px;
     box-shadow: 0 0 13px 3px #e1e1e1;
-
-    .title {
-        width: 160px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        border-radius: 50px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #ffffff;
-        background: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
-    }   
-
-    .marquee {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-
-        p {
-            font-size: 14px;
-            font-weight: bold;
-            color: #000000;
-            display: inline-block;
-            animation: marquee 10s linear infinite;
-            padding-left: 100%;
-            white-space: nowrap;
-        }
-
-        @keyframes marquee {
-            0% {
-                transform: translate(0%);
-            }
-
-            100% {
-                transform: translate(-100%);
-            }
-        }
-    }
+}
+.home .marqueeWrap .title {
+    background: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.home .marqueeWrap .marquee p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.home .typeList .gameBlock p {
+    color: #9d9d9d;
+    font-size: 26px;
+    font-weight: bold;
+}
+.home .typeList .maintainBox {
+    background: #000000a4;
+}
+.home .typeList .maintainBox p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.home .typeList .maintainBox .title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-//維護中
-@mixin maintainBox {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+//footer
+footer .top {
+    background: linear-gradient(to right, #adadad 8%, #e0e0e0 25%, #bbbbbb 43%, #8f8f8f 66%, #e0e0e0 79%, #8f8f8f 99%);
+}
+footer .top .center li p {
+    color: #565656;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer .top .center li:hover a,
+footer .top .center li:active a,
+footer .top .center li.active a {
+    background: radial-gradient(circle,  #b3b3b3 -5px , #383838 40px);
+}
+footer .top .center li:hover p,
+footer .top .center li:active p,
+footer .top .center li.active p {
+    color: #ffffff;
+}
+footer .top .center .copyright {
+    color: #565656;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer .bottom {
+    background: #8f8f8f;
+}
+footer .bottom p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+//aside
+aside.app {
+    background: #ffffffd8;
+    border: solid 2px #565656;
+    border-radius: 50px;
+    box-shadow: 0 0 7px 0 #00000066;
+}
+aside.app p {
+    color: #565656;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+aside.cs {
+    background: #9d9d9d;
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 7px 0 #00000066;
+}
+
+//filter
+.filter {
+    background: #0000009e;
+}
+.filter .jumpWindow {
+    background: #ffffff;
+    border-radius: 10px;
+}
+.filter .jumpWindow .title {
+    background: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.filter .jumpWindow .title i {
+    color: #ffffff;
+    font-size: 25px;
+}
+.filter .jumpWindow .content input {
+    background: #ffffff;
     border-radius: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    cursor: not-allowed;
-    background: #000000a2;
-
-    .text {
-
-        p {
-            color: #ffffff;
-            font-size: 0.9em;
-            text-align: center;
-
-            &.title {
-                font-size: 1.1em;
-                margin-bottom: 30px;
-            }
-        }
-    }
+    border: solid 1px #a3a3a3;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
 }
-
-//按鈕樣式
-@mixin mainBtn_1 {
+.filter .jumpWindow .btnBox .closeWindow {
     background: linear-gradient(to top, #dddddd 0%, #a3a3a3 50%, #dddddd 100%);
     border: 1px solid #a3a3a3;
     border-radius: 5px;
     color: #ffffff;
     font-size: 16px;
+    font-weight: bold;
 
     &:hover,&:active,&.active {
         background: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
     }
 }
-
-//input
-@mixin input_1 {
-    border-radius: 5px;
-    border: 1px solid #a3a3a3;
+.filter .jumpWindow .btnBox .remind {
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: bold;
 }
-
-//共用
-@mixin scrollStyle_1 {
-    overflow-x: auto;
-
-    &::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
+.filter .jumpWindow.plsLogin .content p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
 }
-
-//display flex
-@mixin flex_H1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@mixin flex_V1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
