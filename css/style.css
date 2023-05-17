@@ -1,10 +1,6 @@
 @charset "UTF-8";
 header .top {
-  background: #585858;
-}
-
-header .top .center {
-  background: #bbbbbb;
+  background: #c4a167;
 }
 
 header .UnLoginBox li {
@@ -58,47 +54,63 @@ header .UnLoginBox .registerBtn i {
 }
 
 header .UnLoginBox .forgetBtn i {
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
 }
 
 header .UnLoginBox .forgetBtn p {
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 
 header .UnLoginBox .lang select {
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 
 header .UnLoginBox .lang i {
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
 }
 
+header .loginBox li {
+  border-right: solid 1px #000000;
+}
+
+header .loginBox .userName {
+  color: #777777;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .loginBox .userName span {
+  color: #008599;
+}
+
 header .bottom {
-  background: #dadada;
-}
-
-header .bottom .center {
-  background: #818181;
-}
-
-header nav li::before {
   background: #ffffff;
 }
 
+header nav li::before {
+  background: #c7a16e;
+}
+
 header nav li a p {
-  color: #ffffff;
+  color: #996c33;
   font-size: 18px;
   font-weight: bold;
 }
 
+header nav li:hover a p,
+header nav li:active a p,
+header nav li.active a p {
+  color: #dcb160;
+}
+
 header .downList {
-  background: #c4c4c4;
+  background: #ffffff;
+  border-top: solid 1px #cccccc;
 }
 
 header .downList p {
@@ -158,7 +170,7 @@ header .downList .fa-solid.fa-chevron-right {
 }
 
 .home .typeList .gameBlock p {
-  color: #9d9d9d;
+  color: #996c33;
   font-size: 26px;
   font-weight: bold;
 }
@@ -180,12 +192,11 @@ header .downList .fa-solid.fa-chevron-right {
 }
 
 footer .top {
-  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #adadad), color-stop(25%, #e0e0e0), color-stop(43%, #bbbbbb), color-stop(66%, #8f8f8f), color-stop(79%, #e0e0e0), color-stop(99%, #8f8f8f));
-  background: linear-gradient(to right, #adadad 8%, #e0e0e0 25%, #bbbbbb 43%, #8f8f8f 66%, #e0e0e0 79%, #8f8f8f 99%);
+  background: #c4a167;
 }
 
 footer .top .center li p {
-  color: #565656;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
@@ -196,24 +207,18 @@ footer .top .center li.active a {
   background: radial-gradient(circle, #b3b3b3 -5px, #383838 40px);
 }
 
-footer .top .center li:hover p,
-footer .top .center li:active p,
-footer .top .center li.active p {
-  color: #ffffff;
-}
-
 footer .top .center .copyright {
-  color: #565656;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 
 footer .bottom {
-  background: #8f8f8f;
+  background: #ffffff;
 }
 
 footer .bottom p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
 }
@@ -222,8 +227,11 @@ aside.app {
   background: rgba(255, 255, 255, 0.8470588235);
   border: solid 2px #565656;
   border-radius: 50px;
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 7px 0 #e1e1e1;
+          box-shadow: 0 0 7px 0 #e1e1e1;
+}
+aside.app:hover, aside.app:active, aside.app.active {
+  background: #ffffff;
 }
 
 aside.app p {
@@ -233,16 +241,22 @@ aside.app p {
   letter-spacing: 5px;
 }
 
+aside.app:hover p,
+aside.app:active p,
+aside.app.active p {
+  color: #000000;
+}
+
 aside.cs {
   background: #9d9d9d;
   border: solid 2px #ffffff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 7px 0 #e1e1e1;
+          box-shadow: 0 0 7px 0 #e1e1e1;
 }
 
 .filter {
-  background: rgba(0, 0, 0, 0.6196078431);
+  background: rgba(0, 0, 0, 0.6431372549);
 }
 
 .filter .jumpWindow {
@@ -264,29 +278,6 @@ aside.cs {
   font-size: 25px;
 }
 
-.filter .jumpWindow .content input {
-  background: #ffffff;
-  border-radius: 5px;
-  border: solid 1px #a3a3a3;
-  color: #000000;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.filter .jumpWindow .btnBox .closeWindow {
-  background: -webkit-gradient(linear, left bottom, left top, from(#dddddd), color-stop(50%, #a3a3a3), to(#dddddd));
-  background: linear-gradient(to top, #dddddd 0%, #a3a3a3 50%, #dddddd 100%);
-  border: 1px solid #a3a3a3;
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-}
-.filter .jumpWindow .btnBox .closeWindow:hover, .filter .jumpWindow .btnBox .closeWindow:active, .filter .jumpWindow .btnBox .closeWindow.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#919191), color-stop(50%, #636262), to(#919191));
-  background: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
-}
-
 .filter .jumpWindow .btnBox .remind {
   color: #ff0000;
   font-size: 14px;
@@ -299,10 +290,84 @@ aside.cs {
   font-weight: bold;
 }
 
+.filter .jumpWindow.news .content li {
+  border-bottom: solid 1px #cccccc;
+}
+
+.filter .jumpWindow.news li button {
+  background: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.filter .jumpWindow.news li button:hover, .filter .jumpWindow.news li button:active, .filter .jumpWindow.news li button.active {
+  color: #dcb160;
+}
+
+.filter .jumpWindow.news li button::before {
+  background: #cccccc;
+}
+
+.filter .jumpWindow.news li button::after {
+  background: #c7a16e;
+}
+
+.filter .jumpWindow.news li .text {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.news li .date {
+  color: #999999;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btnStyle_1 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), color-stop(50%, #979797), to(#f3f3f3));
+  background: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btnStyle_1:hover, .btnStyle_1:active, .btnStyle_1.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#919191), color-stop(50%, #636262), to(#919191));
+  background: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
+}
+
+.inputStyle_1 {
+  background: none;
+  border-radius: 5px;
+  border: solid 1px #cccccc;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #848484;
+  border-radius: 50px;
+}
+*::-webkit-scrollbar-track {
+  background: #cccccc;
+}
+
+bg {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
 header .logo img {
   width: 200px;
   height: 100%;
-  background: #000;
+  background: #000000;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -318,7 +383,7 @@ header .downList img {
 .swiper .banner {
   width: 100%;
   height: 500px;
-  background: #000;
+  background: #000000;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -450,6 +515,9 @@ img {
   display: block;
 }
 
+html {
+  overflow-y: overlay;
+}
 html body {
   position: relative;
 }
@@ -596,6 +664,33 @@ html body header .top .center .UnLoginBox li .lang i,
 html body header .bottom .center .UnLoginBox li .lang i {
   position: absolute;
   right: 20px;
+}
+html body header .top .center .loginBox,
+html body header .bottom .center .loginBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body header .top .center .loginBox li,
+html body header .bottom .center .loginBox li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+html body header .top .center .loginBox li .userName span,
+html body header .bottom .center .loginBox li .userName span {
+  margin-right: 20px;
 }
 html body header .top.bottom .center,
 html body header .bottom.bottom .center {
@@ -1094,6 +1189,72 @@ html body .filter .jumpWindow.fgPW .content input {
 html body .filter .jumpWindow.plsLogin .content {
   height: 80px;
 }
+html body .filter .jumpWindow.news .content ul {
+  width: 840px;
+  height: 300px;
+  overflow-y: overlay;
+  padding: 15px;
+}
+html body .filter .jumpWindow.news .content ul ol {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.news .content ul ol.display {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .filter .jumpWindow.news .content ul li.typeList {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button {
+  width: auto;
+  height: 100%;
+  position: relative;
+  padding: 0 40px;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button:hover::after, html body .filter .jumpWindow.news .content ul li.typeList button:active::after, html body .filter .jumpWindow.news .content ul li.typeList button.active::after {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+html body .filter .jumpWindow.news .content ul li .text {
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 html body .filter .jumpWindow .title {
   width: 100%;
   height: 50px;
@@ -1167,8 +1328,6 @@ html body main {
   padding-top: 120px;
 }
 html body .bg {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;

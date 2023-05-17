@@ -42,6 +42,83 @@
                 height: 80px;
             }
         }
+
+        //最新消息
+        &.news {
+
+            .content {
+                
+                ul {
+                    width: 840px;
+                    height: 300px;
+                    overflow-y: overlay;
+                    padding: 15px;
+
+                    ol {
+                        display: none;
+                        width: 100%;
+                        height: auto;
+
+                        &.display {
+                            display: block;
+                        }
+                    }
+
+                    li {
+                        width: 100%;
+                        height: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &.typeList {
+                            justify-content: flex-start;
+
+                            button {
+                                width: auto;
+                                height: 100%;
+                                position: relative;
+                                padding: 0 40px;
+    
+                                &:hover,&:active,&.active {
+    
+                                    &::after {
+                                        display: block;
+                                    }
+                                }
+    
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 16px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: 0;
+                                }
+    
+                                &::after {
+                                    display: none;
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 3px;
+                                    left: 0;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+
+                        .text {
+                            max-width: 80%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
         
         .title {
             width: 100%;

@@ -1,8 +1,15 @@
+//bg
+bg {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
 //header
 header .logo img {
     width: 200px;
     height: 100%;
-    background: #000;
+    background: #000000;
     object-fit: contain;
 }
 header .downList img {
@@ -16,7 +23,7 @@ header .downList img {
 .swiper .banner {
     width: 100%;
     height: 500px;
-    background: #000;
+    background: #000000;
     object-fit: contain;
 }
 

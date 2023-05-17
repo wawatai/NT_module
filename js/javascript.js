@@ -141,3 +141,18 @@ $(function(){
        .removeClass("display");
     })
 })
+
+//news
+$(function(){
+    $(".jumpWindow.news .typeList button").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+
+        var n = $(this).index();
+
+        $(".jumpWindow.news ol:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})

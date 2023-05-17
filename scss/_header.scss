@@ -118,6 +118,29 @@ header {
                     }
                 }
             }
+
+            //loginBox
+            .loginBox {
+                width: auto;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                li {
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+
+                    .userName {
+
+                        span {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
         }
         
         //bottom

@@ -1,28 +1,46 @@
+$BG_color_1: #c4a167;
+$BG_color_2: #ffffff;
+
+$Font_color_1: #ffffff;
+$Font_color_2: #000000;
+$Font_color_3: #999999;
+$Font_Title_1: #996c33;
+$Font_Title_1_Active: #dcb160;
+$Font_remind: #ff0000;
+
+$Border_color_1: #cccccc;
+$Border_color_2: #c7a16e;
+
+$boxShadow_1: #e1e1e1;
+
+$filter_1: #000000a4;
+
+$linear_1: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
+$linear_1_Active: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
+$linear_2: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);
+
 //header
 header .top {
-    background: #585858;
+    background: $BG_color_1;
 }
-header .top .center {
-    background: #bbbbbb;
-}
-header .UnLoginBox li {
+header .UnLoginBox li { //個別調整
     border-right: solid 1px #000000;
 }
-header .UnLoginBox label {
+header .UnLoginBox label { //個別調整
     background: #ffffff;
     border: none;
     border-radius: 3px;
 }
 header .UnLoginBox label input {
-    color: #000000;
+    color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
 }
 header .UnLoginBox label i {
-    color: #000000;
+    color: $Font_color_2;
     font-size: 14px;
 }
-header .UnLoginBox .loginBtn {
+header .UnLoginBox .loginBtn { //個別調整
     background: #ffe1a8;
     border: solid 1px #000000;
     border-radius: 3px;
@@ -34,7 +52,7 @@ header .UnLoginBox .loginBtn {
         border-color: #ffffff;
     }
 }
-header .UnLoginBox .registerBtn {
+header .UnLoginBox .registerBtn { //個別調整
     background: #54a874;
     border: solid 1px #ffffff;
     border-radius: 3px;
@@ -46,108 +64,123 @@ header .UnLoginBox .registerBtn {
         border-color: #000000;
     }
 }
-header .UnLoginBox .registerBtn i {
+header .UnLoginBox .registerBtn i { //個別調整
     color: #ffffff;
     font-size: 14px;
 }
 header .UnLoginBox .forgetBtn i {
-    color: #000000;
+    color: $Font_color_1;
     font-size: 16px;
 }
 header .UnLoginBox .forgetBtn p {
-    color: #000000;
+    color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 }
 header .UnLoginBox .lang select {
-    color: #000000;
+    color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 }
 header .UnLoginBox .lang i {
-    color: #000000;
+    color: $Font_color_1;
     font-size: 14px;
 }
-header .bottom {
-    background: #dadada;
+header .loginBox li {
+    border-right: solid 1px #000000;
 }
-header .bottom .center {
-    background: #818181;
+header .loginBox .userName { //個別調整
+    color: #777777;
+    font-size: 16px;
+    font-weight: bold;
+
+    span {
+        color: #008599;
+    }
+}
+header .bottom {
+    background: $BG_color_2;
 }
 header nav li::before {
-    background: #ffffff;
+    background: $Border_color_2;
 }
 header nav li a p {
-    color: #ffffff;
+    color: $Font_Title_1;
     font-size: 18px;
     font-weight: bold;
 }
+header nav li:hover a p,
+header nav li:active a p,
+header nav li.active a p {
+    color: $Font_Title_1_Active;
+}
 header .downList {
-    background: #c4c4c4;
+    background: $BG_color_2;
+    border-top: solid 1px $Border_color_1;
 }
 header .downList p {
-    color: #000000;
+    color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
 }
 header .downList .maintainBox {
-    background: #000000a4;
+    background: $filter_1;
 }
-header .downList .maintainBox p {
+header .downList .maintainBox p { //個別調整 //常駐
     color: #ffffff;
     font-size: 14px;
     font-weight: bold;
 }
-header .downList .maintainBox .title {
+header .downList .maintainBox .title { //個別調整 //常駐
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
 header .downList .fa-solid.fa-chevron-left,
-header .downList .fa-solid.fa-chevron-right {
+header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
     color: #000000;
     font-size: 26px;
 }
 
 //swiper
 .swiper .swiper-button-prev i,
-.swiper .swiper-button-next i {
+.swiper .swiper-button-next i { //個別調整 //常駐
     color: #ffffff;
     font-size: 44px;
 }
 
 //home
 .home .marqueeWrap {
-    background: #ffffff;
+    background: $BG_color_2;
     border-radius: 50px;
-    box-shadow: 0 0 13px 3px #e1e1e1;
+    box-shadow: 0 0 13px 3px $boxShadow_1;
 }
 .home .marqueeWrap .title {
-    background: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
+    background: $linear_1;
     border-radius: 50px;
-    color: #ffffff;
+    color: $Font_color_1;
     font-size: 16px;
     font-weight: bold;
 }
 .home .marqueeWrap .marquee p {
-    color: #000000;
+    color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
 }
 .home .typeList .gameBlock p {
-    color: #9d9d9d;
+    color: $Font_Title_1;
     font-size: 26px;
     font-weight: bold;
 }
 .home .typeList .maintainBox {
-    background: #000000a4;
+    background: $filter_1;
 }
-.home .typeList .maintainBox p {
+.home .typeList .maintainBox p { //個別調整 //常駐
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
-.home .typeList .maintainBox .title {
+.home .typeList .maintainBox .title { //個別調整 //常駐
     color: #ffffff;
     font-size: 24px;
     font-weight: bold;
@@ -155,103 +188,154 @@ header .downList .fa-solid.fa-chevron-right {
 
 //footer
 footer .top {
-    background: linear-gradient(to right, #adadad 8%, #e0e0e0 25%, #bbbbbb 43%, #8f8f8f 66%, #e0e0e0 79%, #8f8f8f 99%);
+    background: $BG_color_1;
 }
 footer .top .center li p {
-    color: #565656;
+    color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 }
 footer .top .center li:hover a,
 footer .top .center li:active a,
-footer .top .center li.active a {
+footer .top .center li.active a { //個別調整
     background: radial-gradient(circle,  #b3b3b3 -5px , #383838 40px);
 }
-footer .top .center li:hover p,
-footer .top .center li:active p,
-footer .top .center li.active p {
-    color: #ffffff;
-}
 footer .top .center .copyright {
-    color: #565656;
+    color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 }
 footer .bottom {
-    background: #8f8f8f;
+    background: $BG_color_2;
 }
 footer .bottom p {
-    color: #ffffff;
+    color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
 }
 
 //aside
-aside.app {
+aside.app { //個別調整
     background: #ffffffd8;
     border: solid 2px #565656;
     border-radius: 50px;
-    box-shadow: 0 0 7px 0 #00000066;
+    box-shadow: 0 0 7px 0 $boxShadow_1;
+
+    &:hover,&:active,&.active {
+        background: #ffffff;
+    }
 }
-aside.app p {
+aside.app p { //個別調整
     color: #565656;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 5px;
 }
-aside.cs {
+aside.app:hover p,
+aside.app:active p,
+aside.app.active p { //個別調整
+    color: #000000;
+}
+aside.cs { //個別調整
     background: #9d9d9d;
     border: solid 2px #ffffff;
     border-radius: 50%;
-    box-shadow: 0 0 7px 0 #00000066;
+    box-shadow: 0 0 7px 0 $boxShadow_1;
 }
 
 //filter
 .filter {
-    background: #0000009e;
+    background: $filter_1;
 }
 .filter .jumpWindow {
-    background: #ffffff;
+    background: $BG_color_2;
     border-radius: 10px;
 }
 .filter .jumpWindow .title {
-    background: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);;
-    color: #ffffff;
+    background: $linear_2;
+    color: $Font_color_1;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 .filter .jumpWindow .title i {
-    color: #ffffff;
+    color: $Font_color_1;
     font-size: 25px;
 }
-.filter .jumpWindow .content input {
-    background: #ffffff;
-    border-radius: 5px;
-    border: solid 1px #a3a3a3;
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-}
-.filter .jumpWindow .btnBox .closeWindow {
-    background: linear-gradient(to top, #dddddd 0%, #a3a3a3 50%, #dddddd 100%);
-    border: 1px solid #a3a3a3;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-
-    &:hover,&:active,&.active {
-        background: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
-    }
-}
 .filter .jumpWindow .btnBox .remind {
-    color: #ff0000;
+    color: $Font_remind;
     font-size: 14px;
     font-weight: bold;
 }
 .filter .jumpWindow.plsLogin .content p {
-    color: #000000;
+    color: $Font_color_2;
     font-size: 16px;
     font-weight: bold;
+}
+.filter .jumpWindow.news .content li {
+    border-bottom: solid 1px $Border_color_1;
+}
+.filter .jumpWindow.news li button {
+    background: none;
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1_Active;
+    }
+}
+.filter .jumpWindow.news li button::before {
+    background: $Border_color_1;
+}
+.filter .jumpWindow.news li button::after {
+    background: $Border_color_2;
+}
+.filter .jumpWindow.news li .text {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow.news li .date {
+    color: $Font_color_3;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btnStyle_1 { //按鈕樣式_1
+    background: $linear_1;
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+    color: $Font_color_1;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: $linear_1_Active;
+    }
+}
+
+.inputStyle_1 { //input樣式_1
+    background: none;
+    border-radius: 5px;
+    border: solid 1px $Border_color_1;
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+* {
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #848484;
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #cccccc;
+    }
 }
