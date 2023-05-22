@@ -3,8 +3,10 @@ header .top {
   background: #c4a167;
 }
 
-header .UnLoginBox li {
-  border-right: solid 1px #000000;
+header .top li {
+  border-right: solid 1px #7a746a;
+  -webkit-box-shadow: 1px 1px 0.5px #ffffff;
+          box-shadow: 1px 1px 0.5px #ffffff;
 }
 
 header .UnLoginBox label {
@@ -64,19 +66,38 @@ header .UnLoginBox .forgetBtn p {
   font-weight: bold;
 }
 
-header .UnLoginBox .lang select {
+header ul li label.lang select {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 
-header .UnLoginBox .lang i {
-  color: #ffffff;
-  font-size: 14px;
+header ul li label.lang select option {
+  color: #000000;
 }
 
-header .loginBox li {
-  border-right: solid 1px #000000;
+header ul li label.lang i {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+header .loginBox > li:nth-of-type(3):hover, header .loginBox > li:nth-of-type(3):active, header .loginBox > li:nth-of-type(3).active,
+header .loginBox > li:nth-of-type(4):hover,
+header .loginBox > li:nth-of-type(4):active,
+header .loginBox > li:nth-of-type(4).active,
+header .loginBox > li:nth-of-type(5):hover,
+header .loginBox > li:nth-of-type(5):active,
+header .loginBox > li:nth-of-type(5).active,
+header .loginBox > li:nth-of-type(6):hover,
+header .loginBox > li:nth-of-type(6):active,
+header .loginBox > li:nth-of-type(6).active,
+header .loginBox > li:nth-of-type(7):hover,
+header .loginBox > li:nth-of-type(7):active,
+header .loginBox > li:nth-of-type(7).active,
+header .loginBox > li:nth-of-type(8):hover,
+header .loginBox > li:nth-of-type(8):active,
+header .loginBox > li:nth-of-type(8).active {
+  background: #5d4614;
 }
 
 header .loginBox .userName {
@@ -86,6 +107,45 @@ header .loginBox .userName {
 }
 header .loginBox .userName span {
   color: #008599;
+}
+
+header .loginBox li a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .loginBox li:not(:first-child) p {
+  color: #ffffff;
+}
+
+header .loginBox > li.total p {
+  color: rgba(215, 247, 34, 0.8);
+}
+
+header .loginBox > li.total i {
+  color: rgba(215, 247, 34, 0.8);
+  font-size: 12px;
+}
+
+header .loginBox .transferInfo {
+  background: #ecdabc;
+  border: 1px solid #bb9645;
+}
+
+header .loginBox .transferInfo li:not(:last-of-type) {
+  border-bottom: 1px solid #bb9645;
+}
+
+header .loginBox .transferInfo li p {
+  color: #000000;
+  font-size: 14px;
+}
+
+header .loginBox .transferInfo li p.money {
+  color: #bd0b0b;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 header .bottom {
@@ -147,28 +207,6 @@ header .downList .fa-solid.fa-chevron-right {
   font-size: 44px;
 }
 
-.home .marqueeWrap {
-  background: #ffffff;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
-          box-shadow: 0 0 13px 3px #e1e1e1;
-}
-
-.home .marqueeWrap .title {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), color-stop(50%, #979797), to(#f3f3f3));
-  background: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
-  border-radius: 50px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.home .marqueeWrap .marquee p {
-  color: #000000;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 .home .typeList .gameBlock p {
   color: #996c33;
   font-size: 26px;
@@ -191,6 +229,171 @@ header .downList .fa-solid.fa-chevron-right {
   font-weight: bold;
 }
 
+main.innerPage {
+  background: #f4f4f4;
+}
+
+main.innerPage .center > div {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main.innerPage .center .leftSide p.userAccount {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .leftSide p.userAccount .level {
+  background: #cfb53d;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide p.joinDay {
+  font-size: 14px;
+  color: #999999;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
+  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  border-radius: 50px;
+  border: 1px solid #c7a16e;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
+  background: #c4a167;
+  border-radius: 50px;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn p {
+  color: #996c33;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
+  color: #ffffff;
+}
+
+main.innerPage .center .leftSide .quickSelect li .btnName {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide .innerNav {
+  border-top: 1px solid #cccccc;
+}
+
+main.innerPage .center .leftSide .innerNav li:nth-of-type(4),
+main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
+  border-top: 1px solid #cccccc;
+}
+
+main.innerPage .center .leftSide .innerNav li a p {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .leftSide .innerNav li a i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-credit-card {
+  font-size: 13px;
+}
+
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-file-lines,
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-button {
+  font-size: 15px;
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a,
+main.innerPage .center .leftSide .innerNav li:active a,
+main.innerPage .center .leftSide .innerNav li.active a {
+  background: #fae8c1;
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a i,
+main.innerPage .center .leftSide .innerNav li:active a i,
+main.innerPage .center .leftSide .innerNav li.active a i {
+  color: #996c33;
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a p,
+main.innerPage .center .leftSide .innerNav li:active a p,
+main.innerPage .center .leftSide .innerNav li.active a p {
+  color: #996c33;
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a::before,
+main.innerPage .center .leftSide .innerNav li:active a::before,
+main.innerPage .center .leftSide .innerNav li.active a::before {
+  background: #996c33;
+}
+
+main.innerPage .center .rightSide .recordList .listTitle {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .rightSide .recordList .listTitle p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .recordList .listTitle span {
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .recordList .listTitle span i {
+  color: #c4a167;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .recordList li {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .rightSide .recordList li .state {
+  color: #996c33;
+  font-size: 14px;
+}
+
+main.innerPage .center .rightSide .recordList li .state span {
+  color: #000000;
+  font-size: 15px;
+}
+
+main.innerPage .center .rightSide .recordList li .detail {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .rightSide .recordList li .detail i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
 footer .top {
   background: #c4a167;
 }
@@ -204,7 +407,7 @@ footer .top .center li p {
 footer .top .center li:hover a,
 footer .top .center li:active a,
 footer .top .center li.active a {
-  background: radial-gradient(circle, #b3b3b3 -5px, #383838 40px);
+  background: radial-gradient(circle, rgba(253, 238, 173, 0.6901960784) -5px, #6d502b 40px);
 }
 
 footer .top .center .copyright {
@@ -225,7 +428,7 @@ footer .bottom p {
 
 aside.app {
   background: rgba(255, 255, 255, 0.8470588235);
-  border: solid 2px #565656;
+  border: solid 2px #c7a16e;
   border-radius: 50px;
   -webkit-box-shadow: 0 0 7px 0 #e1e1e1;
           box-shadow: 0 0 7px 0 #e1e1e1;
@@ -235,7 +438,7 @@ aside.app:hover, aside.app:active, aside.app.active {
 }
 
 aside.app p {
-  color: #565656;
+  color: #c4a167;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -325,8 +528,8 @@ aside.cs {
 }
 
 .btnStyle_1 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), color-stop(50%, #979797), to(#f3f3f3));
-  background: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
+  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
   border: 1px solid #cccccc;
   border-radius: 5px;
   color: #ffffff;
@@ -435,6 +638,10 @@ time, mark, audio, video {
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -639,32 +846,6 @@ html body header .top .center .UnLoginBox li .forgetBtn i,
 html body header .bottom .center .UnLoginBox li .forgetBtn i {
   margin: 0 5px -2px 0;
 }
-html body header .top .center .UnLoginBox li .lang,
-html body header .bottom .center .UnLoginBox li .lang {
-  width: auto;
-  height: 100%;
-  background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-html body header .top .center .UnLoginBox li .lang select,
-html body header .bottom .center .UnLoginBox li .lang select {
-  width: auto;
-  height: 100%;
-  background: none;
-  padding: 0 35px 0 20px;
-  cursor: pointer;
-}
-html body header .top .center .UnLoginBox li .lang i,
-html body header .bottom .center .UnLoginBox li .lang i {
-  position: absolute;
-  right: 20px;
-}
 html body header .top .center .loginBox,
 html body header .bottom .center .loginBox {
   width: auto;
@@ -687,10 +868,97 @@ html body header .bottom .center .loginBox li {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
+  position: relative;
+}
+html body header .top .center .loginBox li:not(:first-child),
+html body header .bottom .center .loginBox li:not(:first-child) {
+  cursor: pointer;
+}
+html body header .top .center .loginBox li:last-child,
+html body header .bottom .center .loginBox li:last-child {
+  padding: 0;
+}
+html body header .top .center .loginBox li .userName,
+html body header .bottom .center .loginBox li .userName {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 html body header .top .center .loginBox li .userName span,
 html body header .bottom .center .loginBox li .userName span {
   margin-right: 20px;
+}
+html body header .top .center .loginBox li .moneyTotal,
+html body header .bottom .center .loginBox li .moneyTotal {
+  margin-right: 10px;
+}
+html body header .top .center .loginBox li .fa-solid.fa-sort-down,
+html body header .bottom .center .loginBox li .fa-solid.fa-sort-down {
+  margin-bottom: 5px;
+}
+html body header .top .center .loginBox li .fa-solid.fa-chevron-down,
+html body header .bottom .center .loginBox li .fa-solid.fa-chevron-down {
+  margin: 2px 0 0 2px;
+}
+html body header .top .center .loginBox li .transferInfo,
+html body header .bottom .center .loginBox li .transferInfo {
+  display: none;
+  width: 290px;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 25;
+}
+html body header .top .center .loginBox li .transferInfo.display,
+html body header .bottom .center .loginBox li .transferInfo.display {
+  display: block;
+}
+html body header .top .center .loginBox li .transferInfo li,
+html body header .bottom .center .loginBox li .transferInfo li {
+  width: 100%;
+  height: auto;
+  border-right: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+html body header .top .center .lang,
+html body header .bottom .center .lang {
+  width: auto;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body header .top .center .lang select,
+html body header .bottom .center .lang select {
+  width: auto;
+  height: 100%;
+  background: none;
+  padding: 0 35px 0 20px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+html body header .top .center .lang i,
+html body header .bottom .center .lang i {
+  position: absolute;
+  right: 15px;
 }
 html body header .top.bottom .center,
 html body header .bottom.bottom .center {
@@ -869,10 +1137,15 @@ html body .mainWrap .center {
 html body .mainWrap .center .marqueeWrap {
   width: 100%;
   height: 50px;
+  background: #ffffff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
+          box-shadow: 0 0 13px 3px #e1e1e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
+  margin: 20px auto;
 }
 html body .mainWrap .center .marqueeWrap .title {
   width: 160px;
@@ -888,6 +1161,12 @@ html body .mainWrap .center .marqueeWrap .title {
           justify-content: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
+  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
 }
 html body .mainWrap .center .marqueeWrap .marquee {
   width: 100%;
@@ -905,6 +1184,9 @@ html body .mainWrap .center .marqueeWrap .marquee p {
   -webkit-animation: marquee 10s linear infinite;
           animation: marquee 10s linear infinite;
   white-space: nowrap;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
   padding-left: 100%;
 }
 @-webkit-keyframes marquee {
@@ -970,6 +1252,274 @@ html body .mainWrap .center .typeList .gameBlock .maintainBox p {
 }
 html body .mainWrap .center .typeList .gameBlock .maintainBox p.title {
   margin-bottom: 30px;
+}
+html body .innerPage .marqueeWrap {
+  width: 1400px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
+          box-shadow: 0 0 13px 3px #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin: 20px auto;
+}
+html body .innerPage .marqueeWrap .title {
+  width: 160px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
+  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+html body .innerPage .marqueeWrap .marquee {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+html body .innerPage .marqueeWrap .marquee p {
+  display: inline-block;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+  white-space: nowrap;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 100%;
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+html body .innerPage .center {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 40px;
+  margin: 0 auto;
+}
+html body .innerPage .center > div {
+  height: auto;
+}
+html body .innerPage .center > div.leftSide {
+  width: 30%;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.leftSide p {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body .innerPage .center > div.leftSide p.userAccount {
+  margin: 20px auto 0;
+}
+html body .innerPage .center > div.leftSide p.userAccount .level {
+  padding: 2px 8px;
+  margin-left: 5px;
+}
+html body .innerPage .center > div.leftSide p.joinDay {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.leftSide .quickSelect {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 25px;
+}
+html body .innerPage .center > div.leftSide .quickSelect li {
+  width: 32%;
+  height: auto;
+}
+html body .innerPage .center > div.leftSide .quickSelect li .quickBtn {
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+html body .innerPage .center > div.leftSide .quickSelect li .btnName {
+  text-align: center;
+  margin-top: 5px;
+}
+html body .innerPage .center > div.leftSide .innerNav {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.leftSide .innerNav li {
+  width: 100%;
+  height: 50px;
+  display: block;
+}
+html body .innerPage .center > div.leftSide .innerNav li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  padding: 0 40px;
+  position: relative;
+}
+html body .innerPage .center > div.leftSide .innerNav li a::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html body .innerPage .center > div.leftSide .innerNav li a i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide {
+  width: 100%;
+  margin: 0;
+}
+html body .innerPage .center > div.rightSide {
+  width: 30%;
+  height: auto;
+  margin-left: 15px;
+}
+html body .innerPage .center > div.rightSide .recordList {
+  width: 100%;
+  min-height: 365px;
+  height: auto;
+}
+html body .innerPage .center > div.rightSide .recordList .listTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+}
+html body .innerPage .center > div.rightSide .recordList .listTitle .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+html body .innerPage .center > div.rightSide .recordList .listTitle .more i {
+  margin-left: 5px;
+}
+html body .innerPage .center > div.rightSide .recordList li {
+  width: 85%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+  margin: 0 20px;
+}
+html body .innerPage .center > div.rightSide .recordList li .state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  line-height: 25px;
+}
+html body .innerPage .center > div.rightSide .recordList li .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 5px;
+}
+html body .innerPage .center > div.rightSide .recordList li .detail i {
+  margin: 0 10px;
 }
 html body .swiper {
   width: 100%;

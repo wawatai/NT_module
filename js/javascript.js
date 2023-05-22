@@ -4,6 +4,11 @@ $(function(){
     var max;
     var click;
 
+    $("header .top .total").click(function(){
+        $(this)
+        .toggleClass("display");
+    })
+
     $("header nav li").mouseenter(function(){
         var n = $(this).index() - 1;
 

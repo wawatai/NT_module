@@ -4,6 +4,7 @@ $BG_color_2: #ffffff;
 $Font_color_1: #ffffff;
 $Font_color_2: #000000;
 $Font_color_3: #999999;
+$Font_color_4: $BG_color_1;
 $Font_Title_1: #996c33;
 $Font_Title_1_Active: #dcb160;
 $Font_remind: #ff0000;
@@ -12,10 +13,11 @@ $Border_color_1: #cccccc;
 $Border_color_2: #c7a16e;
 
 $boxShadow_1: #e1e1e1;
+$boxShadow_2: #00000066;
 
 $filter_1: #000000a4;
 
-$linear_1: linear-gradient(to top, #e1e1e1 0%, #979797 50%, #f3f3f3 100%);
+$linear_1: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
 $linear_1_Active: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
 $linear_2: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);
 
@@ -23,8 +25,9 @@ $linear_2: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);
 header .top {
     background: $BG_color_1;
 }
-header .UnLoginBox li { //個別調整
-    border-right: solid 1px #000000;
+header .top li { //個別調整
+    border-right: solid 1px #7a746a;
+    box-shadow: 1px 1px 0.5px #ffffff;
 }
 header .UnLoginBox label { //個別調整
     background: #ffffff;
@@ -77,17 +80,28 @@ header .UnLoginBox .forgetBtn p {
     font-size: 14px;
     font-weight: bold;
 }
-header .UnLoginBox .lang select {
+header ul li label.lang select {
     color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 }
-header .UnLoginBox .lang i {
-    color: $Font_color_1;
-    font-size: 14px;
+header ul li label.lang select option { //個別調整
+    color: #000000;
 }
-header .loginBox li {
-    border-right: solid 1px #000000;
+header ul li label.lang i {
+    color: $Font_color_1;
+    font-size: 12px;
+}
+header .loginBox>li:nth-of-type(3), 
+header .loginBox>li:nth-of-type(4), 
+header .loginBox>li:nth-of-type(5), 
+header .loginBox>li:nth-of-type(6), 
+header .loginBox>li:nth-of-type(7), 
+header .loginBox>li:nth-of-type(8) { //個別調整
+    
+    &:hover,&:active,&.active {
+        background: #5d4614;
+    }
 }
 header .loginBox .userName { //個別調整
     color: #777777;
@@ -97,6 +111,37 @@ header .loginBox .userName { //個別調整
     span {
         color: #008599;
     }
+}
+header .loginBox li a {
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .loginBox li:not(:first-child) p {
+    color: $Font_color_1;
+}
+header .loginBox>li.total p { //個別調整
+    color: #d7f722cc;
+}
+header .loginBox>li.total i { //個別調整
+    color: #d7f722cc;
+    font-size: 12px;
+}
+header .loginBox .transferInfo  { //個別調整
+    background: #ecdabc;
+    border: 1px solid #bb9645;
+}
+header .loginBox .transferInfo li:not(:last-of-type) { //個別調整
+    border-bottom: 1px solid #bb9645;
+}
+header .loginBox .transferInfo li p { //個別調整
+    color: #000000;
+    font-size: 14px;
+}
+header .loginBox .transferInfo li p.money { //個別調整
+    color: #bd0b0b;
+    font-size: 14px;
+    font-weight: bold;
 }
 header .bottom {
     background: $BG_color_2;
@@ -150,23 +195,6 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 }
 
 //home
-.home .marqueeWrap {
-    background: $BG_color_2;
-    border-radius: 50px;
-    box-shadow: 0 0 13px 3px $boxShadow_1;
-}
-.home .marqueeWrap .title {
-    background: $linear_1;
-    border-radius: 50px;
-    color: $Font_color_1;
-    font-size: 16px;
-    font-weight: bold;
-}
-.home .marqueeWrap .marquee p {
-    color: $Font_color_2;
-    font-size: 14px;
-    font-weight: bold;
-}
 .home .typeList .gameBlock p {
     color: $Font_Title_1;
     font-size: 26px;
@@ -186,6 +214,141 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
     font-weight: bold;
 }
 
+//innerPage
+main.innerPage { //個別調整
+    background: #f4f4f4;
+}
+main.innerPage .center>div { 
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main.innerPage .center .leftSide p.userAccount {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .leftSide p.userAccount .level { //個別調整
+    background: #cfb53d;
+    border-radius: 5px;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide p.joinDay {
+    font-size: 14px;
+    color: $Font_color_3;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
+    background: $linear_1;
+    border-radius: 50px;
+    border: 1px solid $Border_color_2;
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn,
+main.innerPage .center .leftSide .quickSelect li .quickBtn,
+main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
+
+    &:hover,&:active,&.active {
+        background: $BG_color_1;
+        border-radius: 50px;
+    }
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn p {
+    color: $Font_Title_1;
+    font-size: 18px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
+    color: $Font_color_1;
+}
+main.innerPage .center .leftSide .quickSelect li .btnName {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide .innerNav {
+    border-top: 1px solid $Border_color_1;
+}
+main.innerPage .center .leftSide .innerNav li:nth-of-type(4), 
+main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
+    border-top: 1px solid $Border_color_1;
+}
+main.innerPage .center .leftSide .innerNav li a p {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .leftSide .innerNav li a i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-credit-card {
+    font-size: 13px;
+}
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-file-lines,
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-button {
+    font-size: 15px;
+}
+main.innerPage .center .leftSide .innerNav li:hover a,
+main.innerPage .center .leftSide .innerNav li:active a,
+main.innerPage .center .leftSide .innerNav li.active a { //個別調整
+    background: #fae8c1;
+}
+main.innerPage .center .leftSide .innerNav li:hover a i,
+main.innerPage .center .leftSide .innerNav li:active a i,
+main.innerPage .center .leftSide .innerNav li.active a i {
+    color: $Font_Title_1;
+}
+main.innerPage .center .leftSide .innerNav li:hover a p,
+main.innerPage .center .leftSide .innerNav li:active a p,
+main.innerPage .center .leftSide .innerNav li.active a p {
+    color: $Font_Title_1;
+}
+main.innerPage .center .leftSide .innerNav li:hover a::before,
+main.innerPage .center .leftSide .innerNav li:active a::before,
+main.innerPage .center .leftSide .innerNav li.active a::before {
+    background: $Font_Title_1;
+}
+main.innerPage .center .rightSide .recordList .listTitle {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .rightSide .recordList .listTitle p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .recordList .listTitle span {
+    color: $Font_color_2;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .recordList .listTitle span i {
+    color: $Font_color_4;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .recordList li {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .rightSide .recordList li .state {
+    color: $Font_Title_1;
+    font-size: 14px;
+}
+main.innerPage .center .rightSide .recordList li .state span {
+    color: $Font_color_2;
+    font-size: 15px;
+}
+main.innerPage .center .rightSide .recordList li .detail {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .rightSide .recordList li .detail i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+
 //footer
 footer .top {
     background: $BG_color_1;
@@ -198,7 +361,7 @@ footer .top .center li p {
 footer .top .center li:hover a,
 footer .top .center li:active a,
 footer .top .center li.active a { //個別調整
-    background: radial-gradient(circle,  #b3b3b3 -5px , #383838 40px);
+    background: radial-gradient(circle,  #fdeeadb0 -5px , #6d502b 40px);
 }
 footer .top .center .copyright {
     color: $Font_color_1;
@@ -217,7 +380,7 @@ footer .bottom p {
 //aside
 aside.app { //個別調整
     background: #ffffffd8;
-    border: solid 2px #565656;
+    border: solid 2px $Border_color_2;
     border-radius: 50px;
     box-shadow: 0 0 7px 0 $boxShadow_1;
 
@@ -226,7 +389,7 @@ aside.app { //個別調整
     }
 }
 aside.app p { //個別調整
-    color: #565656;
+    color: $Font_color_4;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 5px;
@@ -300,6 +463,58 @@ aside.cs { //個別調整
     color: $Font_color_3;
     font-size: 12px;
     font-weight: bold;
+}
+
+//marquee 跑馬燈
+@mixin marqueeStyle {
+    background: $BG_color_2;
+    border-radius: 50px;
+    box-shadow: 0 0 13px 3px $boxShadow_1;
+    display: flex;
+    padding: 5px;
+    margin: 20px auto;
+
+    .title {
+        width: 160px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: $linear_1;
+        border-radius: 50px;
+        color: $Font_color_1;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .marquee {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        p {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+            white-space: nowrap;
+            color: $Font_color_2;
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 100%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate(0%);
+            }
+
+            100% {
+                transform: translate(-100%);
+            }
+        }
+    }
 }
 
 .btnStyle_1 { //按鈕樣式_1
