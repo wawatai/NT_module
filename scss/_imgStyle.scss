@@ -35,6 +35,24 @@ header .downList img {
     object-fit: contain;
 }
 
+//innerPage deposit
+.innerPage .midSide.deposit .midTop .objectList li:nth-of-type(1) i.pay_Icon {
+    background: url("../img/icon/svg/payWay01.svg") no-repeat center;
+    background-size: 100%;
+}
+.innerPage .midSide.deposit .midTop .objectList li:nth-of-type(2) i.pay_Icon{
+    background: url("../img/icon/svg/payWay02.svg") no-repeat center;
+    background-size: 100%;
+    width: 22px;
+    height: 22px;
+}
+.innerPage .midSide.deposit .midTop .objectList li:nth-of-type(3) i.pay_Icon {
+    background: url("../img/icon/svg/payWay03.svg") no-repeat center;
+    background-size: 100%;
+    width: 22px;
+    height: 22px;
+}
+
 //aside
 aside.app .download_ic {
     width: 25px;

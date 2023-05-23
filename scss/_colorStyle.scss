@@ -8,9 +8,11 @@ $Font_color_4: $BG_color_1;
 $Font_Title_1: #996c33;
 $Font_Title_1_Active: #dcb160;
 $Font_remind: #ff0000;
+$Font_accent: #008599;
 
 $Border_color_1: #cccccc;
 $Border_color_2: #c7a16e;
+$Border_color_3: #996c33;
 
 $boxShadow_1: #e1e1e1;
 $boxShadow_2: #00000066;
@@ -19,7 +21,7 @@ $filter_1: #000000a4;
 
 $linear_1: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
 $linear_1_Active: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
-$linear_2: linear-gradient(to right, #5f5f5f 0%, #b9b9b9 100%);
+$linear_2: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
 
 //header
 header .top {
@@ -218,7 +220,8 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 main.innerPage { //個別調整
     background: #f4f4f4;
 }
-main.innerPage .center>div { 
+main.innerPage .center>div>div,
+main.innerPage .center>div>nav { 
     background: $BG_color_2;
     border-radius: 5px;
     box-shadow: 0 5px 10px -5px $boxShadow_2;
@@ -290,9 +293,9 @@ main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-file-lines,
 main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-button {
     font-size: 15px;
 }
-main.innerPage .center .leftSide .innerNav li:hover a,
-main.innerPage .center .leftSide .innerNav li:active a,
-main.innerPage .center .leftSide .innerNav li.active a { //個別調整
+main.innerPage .center .leftSide .content .innerNav li:hover a,
+main.innerPage .center .leftSide .content .innerNav li:active a,
+main.innerPage .center .leftSide .content .innerNav li.active a { //個別調整
     background: #fae8c1;
 }
 main.innerPage .center .leftSide .innerNav li:hover a i,
@@ -310,6 +313,8 @@ main.innerPage .center .leftSide .innerNav li:active a::before,
 main.innerPage .center .leftSide .innerNav li.active a::before {
     background: $Font_Title_1;
 }
+
+//innerPage 右欄
 main.innerPage .center .rightSide .recordList .listTitle {
     border-bottom: 1px solid $Border_color_1;
 }
@@ -319,12 +324,12 @@ main.innerPage .center .rightSide .recordList .listTitle p {
     font-weight: bold;
     letter-spacing: 1px;
 }
-main.innerPage .center .rightSide .recordList .listTitle span {
+main.innerPage .center .rightSide .recordList .listTitle a.more {
     color: $Font_color_2;
     font-size: 14px;
     letter-spacing: 1px;
 }
-main.innerPage .center .rightSide .recordList .listTitle span i {
+main.innerPage .center .rightSide .recordList .listTitle a.more i {
     color: $Font_color_4;
     font-size: 16px;
     letter-spacing: 1px;
@@ -347,6 +352,50 @@ main.innerPage .center .rightSide .recordList li .detail {
 main.innerPage .center .rightSide .recordList li .detail i {
     color: $Font_color_4;
     font-size: 14px;
+}
+
+//innerPage 中欄
+main.innerPage .center .midSide .midTop,
+main.innerPage .center .midSide .midBottom { 
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main.innerPage .center .midSide .midTop .innerPageTitle {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide .midTop .innerPageTitle>p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midTop .objectList ul>i {
+    color: $Font_color_4;
+    font-size: 16px;
+}
+main.innerPage .center .midSide .midTop .objectList ul li.payWay {
+    background: transparent;
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midTop .objectList ul li.payWay {
+    
+    &:hover,&:active,&.active {
+        background: $linear_2;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide .midBottom p.titleM {
+    color: $Font_color_2;
+    font-size: 14.5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide .midBottom .remindBox {
+    border: 1px solid $Border_color_2;
 }
 
 //footer
@@ -527,6 +576,17 @@ aside.cs { //個別調整
 
     &:hover,&:active,&.active {
         background: $linear_1_Active;
+    }
+}
+.btnStyle_2 { //按鈕樣式_2 主色邊線按鈕
+    background: transparent;
+    border: 1px solid $Border_color_3;
+    border-radius: 5px;
+    color: $Font_Title_1;
+
+    &:hover,&:active,&.active {
+        background: $Border_color_3;
+        color: $Font_color_1;
     }
 }
 
