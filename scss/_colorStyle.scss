@@ -229,6 +229,7 @@ main.innerPage .center>div>nav {
 main.innerPage .center .leftSide p.userAccount {
     color: $Font_color_2;
     font-size: 14px;
+    font-weight: bold;
 }
 main.innerPage .center .leftSide p.userAccount .level { //個別調整
     background: #cfb53d;
@@ -281,6 +282,7 @@ main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
 main.innerPage .center .leftSide .innerNav li a p {
     color: $Font_color_2;
     font-size: 14px;
+    font-weight: bold;
 }
 main.innerPage .center .leftSide .innerNav li a i {
     color: $Font_color_4;
@@ -297,6 +299,10 @@ main.innerPage .center .leftSide .content .innerNav li:hover a,
 main.innerPage .center .leftSide .content .innerNav li:active a,
 main.innerPage .center .leftSide .content .innerNav li.active a { //個別調整
     background: #fae8c1;
+
+    &::before {
+        background: #a28653;
+    }
 }
 main.innerPage .center .leftSide .innerNav li:hover a i,
 main.innerPage .center .leftSide .innerNav li:active a i,
@@ -366,8 +372,9 @@ main.innerPage .center .midSide .midTop .innerPageTitle {
 }
 main.innerPage .center .midSide .midTop .innerPageTitle>p {
     color: $Font_color_2;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 main.innerPage .center .midSide .midTop .objectList ul>i {
     color: $Font_color_4;
@@ -390,12 +397,23 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay {
 }
 main.innerPage .center .midSide .midBottom p.titleM {
     color: $Font_color_2;
-    font-size: 14.5px;
+    font-size: 17px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 main.innerPage .center .midSide .midBottom .remindBox {
     border: 1px solid $Border_color_2;
+}
+main.innerPage .center .midSide .midBottom form label p.itemName {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide .midBottom form label p.itemName span {
+    color: $Font_remind;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 //footer
