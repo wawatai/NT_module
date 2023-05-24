@@ -119,6 +119,18 @@
                 }
             }
         }
+
+        //請先綁定資料
+        &.reminder {
+
+            .content {
+                padding: 24px 80px 35px;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
         
         .title {
             width: 100%;

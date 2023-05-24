@@ -122,43 +122,42 @@
                 flex-shrink: 0;
                 margin-left: 15px;
 
+                .listTitle {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px 20px;
+
+                    .more {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+
+                        i {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
                 .recordList {
                     width: 100%;
                     height: 365px;
+                    overflow: auto;
                     position: relative;
 
-                    .listTitle {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 15px 20px;
-
-                        .more {
-                            display: flex;
-                            align-items: center;
-                            cursor: pointer;
-
-                            i {
-                                margin-left: 5px;
-                            }
-                        }
+                    .noData {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
 
                     .contain {
                         width: 100%;
                         height: auto;
-                        
-
-                        .noData {
-                            color: $Font_color_3;
-                            font-size: 16px;
-                            font-weight: bold;
-                            text-align: center;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
+                        overflow-y: overlay;
                         
                         li {
                             width: 85%;
@@ -168,12 +167,17 @@
                             padding: 15px 0;
                             margin: 0 20px;
 
+                            &.betHistory {
+                                width: 100%;
+                                padding: 10px 20px;
+                                margin: 0;
+                            }
+
                             .state {
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
                                 flex-shrink: 0;
-                                line-height: 25px;
                             }
 
                             .detail {
@@ -186,9 +190,26 @@
                                     margin: 0 10px;
                                 }
                             }
+
+                            .winLose {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                margin-top: 10px;
+
+                                .half {
+                                    width: 50%;
+                                    height: auto;
+
+                                    span {
+                                        display: block;
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                            }
                         }
                     }
-
                 }
             }
             
@@ -234,7 +255,22 @@
                     .objectList {
                         width: 100%;
                         height: auto;
+                        display: flex;
+                        align-items: center;
                         padding: 10px 15px;
+
+                        i {
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &.fa-chevron-left,
+                            &.fa-chevron-right {
+                                cursor: pointer;
+                            }
+                        }
 
                         ul {
                             width: 100%;
@@ -243,31 +279,7 @@
                             align-items: center;
                             padding: 0 25px;
                             position: relative;
-
-                            i {
-                                width: 20px;
-                                height: 20px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-
-                                &.fa-chevron-left,
-                                &.fa-chevron-right {
-                                    cursor: pointer;
-                                    position: absolute;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                }
-
-                                &.fa-chevron-left {
-                                    left: 0%;
-                                }
-
-                                &.fa-chevron-right {
-                                    right: 0%;
-                                }
-                            }
-
+                           
                             li {
                                 width: auto;
                                 height: auto;
@@ -275,22 +287,6 @@
                                 align-items: center;
                                 justify-content: center;
                                 padding: 0 15px;
-
-                                &.payWay {
-                                    height: 35px;
-                                    margin-right: 10px;
-                                    cursor: pointer;
-
-                                    &:last-child {
-                                        margin: 0;
-                                    }
-                                }
-
-                                .pay_Icon {
-                                    width: 30px;
-                                    height: 30px;
-                                    margin-right: 5px;
-                                }
                             }
                         }
                     }
@@ -302,85 +298,192 @@
                     padding: 20px;
                     position: relative;
 
-                    .titleM {
-                        margin: 0 0 20px 0;
-                    }
-
-                    form {
+                    .content {
+                        display: none;
                         width: 100%;
-                        height: auto;
+                        height: 100%;
 
-                        label {
+                        &.display {
+                            display: block;
+                        }
+
+                        .titleM {
+                            margin: 0 0 20px 0;
+                        }
+    
+                        form {
                             width: 100%;
                             height: auto;
-                            display: flex;
-                            align-items: center;
-                            position: relative;
-
-                            .itemName {
-                                margin-right: 20px;
-                                flex-shrink: 0;
-                            }
-
-                            select {
+    
+                            label {
                                 width: 100%;
-                                height: 40px;
-                                padding: 0 15px;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 30px;
+                                position: relative;
+    
+                                .itemName {
+                                    margin-right: 25px;
+                                    flex-shrink: 0;
+                                }
+    
+                                select,
+                                input {
+                                    width: 100%;
+                                    height: 40px;
+                                    padding: 0 15px;
+                                }
+    
+                                .remind {
+                                    position: absolute;
+                                    bottom: -16px;
+                                    left: 105px;
+                                }
+    
+                                i {
+                                    width: 13px;
+                                    height: 13px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    position: absolute;
+                                    top: 45%;
+                                    right: 18px;
+                                    transform: translateY(-50%);
+                                }
                             }
-
-                            i {
-                                width: 13px;
-                                height: 13px;
-                                position: absolute;
-                                top: calc(100% - 18px) 50%;
-                                right: 20px;
-                                transform: translateY(-50%);
+    
+                            button {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                &.submit {
+                                    margin: 55px 0 0 105px;
+                                }
                             }
                         }
-                    }
-
-                    .remindBox {
-                        width: 95%;
-                        height: auto;
-                        padding: 15px 20px;
-                        position: absolute;
-                        bottom: 20px;
-                        left: 50%;
-                        transform: translateX(-50%);
-
-                        p {
-                            color: $Font_color_2;
-                            font-size: 13px;
-                            line-height: 25px;
-
-                            &.remindTitle {
-                                color: $Font_Title_1;
+    
+                        .remindBox {
+                            width: 95%;
+                            height: auto;
+                            padding: 15px 20px;
+                            position: absolute;
+                            bottom: 20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+    
+                            p {
+                                color: $Font_color_2;
                                 font-size: 13px;
-                                line-height: unset;
-                                margin-bottom: 10px;
+                                line-height: 25px;
+    
+                                &.remindTitle {
+                                    line-height: unset;
+                                    margin-bottom: 10px;
+                                }
+    
+                                span {
+                                    color: $Font_remind;
+                                }
                             }
-
-                            span {
-                                color: $Font_remind;
-                            }
+                            
                         }
-                        
                     }
                 }
                 
                 //存款
                 &.deposit {
 
+                    .midTop {
+
+                        .objectList {
+
+                            .payType {
+
+                                li {
+
+                                    &.payWay {
+                                        height: 35px;
+                                        margin-right: 10px;
+                                        cursor: pointer;
+    
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+                                    }
+    
+                                    .pay_Icon {
+                                        width: 30px;
+                                        height: 30px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     .midBottom {
 
                         form {
-                            width: 40%;
+                            width: 45%;
+                        }
+                    }
+                }
 
+                //綁定銀行卡
+                &.bankCard {
+
+                    .midTop {
+
+                        .objectList {
+                            padding: 20px 20px;
+                            position: relative;
+
+                                .cardWrap {
+                                    width: 96%;
+                                    height: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    position: absolute;
+                                    top: 15px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+
+                                    .cardNum {
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+
+                            .cardSet {
+                                padding: 30px 20px;
+
+                                li {
+                                    width: 250px;
+                                    height: 150px;
+                                    padding: 15px;
+                                    margin-right: 15px;
+                                    @include cardStyle;
+
+                                    &:nth-last-child(1) {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .midBottom {
+
+                        form {
+                            width: 45%;
                         }
                     }
                 }
             }
-
         }
     }
 }

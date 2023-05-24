@@ -3,11 +3,13 @@ $BG_color_2: #ffffff;
 
 $Font_color_1: #ffffff;
 $Font_color_2: #000000;
-$Font_color_3: #999999;
+$Font_color_3: #686868;
 $Font_color_4: $BG_color_1;
 $Font_Title_1: #996c33;
 $Font_Title_1_Active: #dcb160;
 $Font_remind: #ff0000;
+$Font_negative: $Font_remind;
+$Font_positive: #32b411;
 $Font_accent: #008599;
 
 $Border_color_1: #cccccc;
@@ -20,7 +22,7 @@ $boxShadow_2: #00000066;
 $filter_1: #000000a4;
 
 $linear_1: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
-$linear_1_Active: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
+$linear_1_Active: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 $linear_2: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
 
 //header
@@ -220,7 +222,7 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 main.innerPage { //個別調整
     background: #f4f4f4;
 }
-main.innerPage .center>div>div,
+main.innerPage .center>div>div:not(.listTitle),
 main.innerPage .center>div>nav { 
     background: $BG_color_2;
     border-radius: 5px;
@@ -321,24 +323,25 @@ main.innerPage .center .leftSide .innerNav li.active a::before {
 }
 
 //innerPage 右欄
-main.innerPage .center .rightSide .recordList .listTitle {
+main.innerPage .center .rightSide .listTitle {
+    background: $BG_color_2;
+    border-radius: 5px 5px 0 0;
     border-bottom: 1px solid $Border_color_1;
 }
-main.innerPage .center .rightSide .recordList .listTitle p {
-    color: $Font_color_2;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-main.innerPage .center .rightSide .recordList .listTitle a.more {
+main.innerPage .center .rightSide .listTitle a.more {
     color: $Font_color_2;
     font-size: 14px;
     letter-spacing: 1px;
 }
-main.innerPage .center .rightSide .recordList .listTitle a.more i {
+main.innerPage .center .rightSide .listTitle a.more i {
     color: $Font_color_4;
     font-size: 16px;
     letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .recordList .noData {
+    color: $Font_color_3;
+    font-size: 16px;
+    font-weight: bold;
 }
 main.innerPage .center .rightSide .recordList li {
     border-bottom: 1px solid $Border_color_1;
@@ -351,6 +354,10 @@ main.innerPage .center .rightSide .recordList li .state span {
     color: $Font_color_2;
     font-size: 15px;
 }
+main.innerPage .center .rightSide .recordList li .state.gameName {
+    font-size: 15px;
+    font-weight: bold;
+}
 main.innerPage .center .rightSide .recordList li .detail {
     color: $Font_color_2;
     font-size: 14px;
@@ -358,6 +365,21 @@ main.innerPage .center .rightSide .recordList li .detail {
 main.innerPage .center .rightSide .recordList li .detail i {
     color: $Font_color_4;
     font-size: 14px;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half {
+    color: $Font_color_2;
+    font-size: 15px;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half.win {
+    color: $Font_positive;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half.lose {
+    color: $Font_negative;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half span {
+    color: $Font_color_3;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 //innerPage 中欄
@@ -376,9 +398,10 @@ main.innerPage .center .midSide .midTop .innerPageTitle>p {
     font-weight: bold;
     letter-spacing: 1px;
 }
-main.innerPage .center .midSide .midTop .objectList ul>i {
+main.innerPage .center .midSide .midTop .objectList>i {
     color: $Font_color_4;
     font-size: 16px;
+    cursor: pointer;
 }
 main.innerPage .center .midSide .midTop .objectList ul li.payWay {
     background: transparent;
@@ -404,9 +427,15 @@ main.innerPage .center .midSide .midBottom p.titleM {
 main.innerPage .center .midSide .midBottom .remindBox {
     border: 1px solid $Border_color_2;
 }
+main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
+    color: $Font_Title_1;
+    font-size: 13px;
+    font-weight: bold;
+}
 main.innerPage .center .midSide .midBottom form label p.itemName {
+    width: 81px;
     color: $Font_color_2;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -414,6 +443,44 @@ main.innerPage .center .midSide .midBottom form label p.itemName span {
     color: $Font_remind;
     font-size: 16px;
     font-weight: bold;
+}
+main.innerPage .center .midSide .midBottom form label p.remind {
+    color: $Font_remind;
+    font-size: 12px;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide .midBottom form label i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .midSide .midBottom form button.submit{
+    width: 72%;
+    height: 40px;
+    font-size: 15px;
+}
+
+//bankCard
+main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
+    color: $Font_color_2;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
+    color: $Font_color_3;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide .midTop .objectList li p {
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midTop .objectList li p.hint {
+    width: 100%;
+    text-align: center;
 }
 
 //footer
@@ -531,6 +598,11 @@ aside.cs { //個別調整
     font-size: 12px;
     font-weight: bold;
 }
+.filter .jumpWindow.reminder .content p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 //marquee 跑馬燈
 @mixin marqueeStyle {
@@ -584,6 +656,22 @@ aside.cs { //個別調整
     }
 }
 
+//銀行卡樣式
+@mixin cardStyle { //個別調整
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: unset;
+    background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+    border-radius: 5px;
+
+    &.addCard {
+        justify-content: center;
+        filter: grayscale(1);
+        cursor: pointer;
+    }
+}
+
+//按鈕
 .btnStyle_1 { //按鈕樣式_1
     background: $linear_1;
     border: 1px solid $Border_color_1;
@@ -608,13 +696,19 @@ aside.cs { //個別調整
     }
 }
 
-.inputStyle_1 { //input樣式_1
+//input select
+.inputStyle_1 { //input樣式_1 
     background: none;
     border-radius: 5px;
     border: solid 1px $Border_color_1;
     color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
+
+    &:disabled { //個別調整
+        background: #efefef;
+        color: #686868;
+    }
 }
 
 * {

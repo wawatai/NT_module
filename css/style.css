@@ -233,7 +233,7 @@ main.innerPage {
   background: #f4f4f4;
 }
 
-main.innerPage .center > div > div,
+main.innerPage .center > div > div:not(.listTitle),
 main.innerPage .center > div > nav {
   background: #ffffff;
   border-radius: 5px;
@@ -257,7 +257,7 @@ main.innerPage .center .leftSide p.userAccount .level {
 
 main.innerPage .center .leftSide p.joinDay {
   font-size: 14px;
-  color: #999999;
+  color: #686868;
   font-weight: bold;
 }
 
@@ -355,27 +355,28 @@ main.innerPage .center .leftSide .innerNav li.active a::before {
   background: #996c33;
 }
 
-main.innerPage .center .rightSide .recordList .listTitle {
+main.innerPage .center .rightSide .listTitle {
+  background: #ffffff;
+  border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #cccccc;
 }
 
-main.innerPage .center .rightSide .recordList .listTitle p {
-  color: #000000;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-main.innerPage .center .rightSide .recordList .listTitle a.more {
+main.innerPage .center .rightSide .listTitle a.more {
   color: #000000;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-main.innerPage .center .rightSide .recordList .listTitle a.more i {
+main.innerPage .center .rightSide .listTitle a.more i {
   color: #c4a167;
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .recordList .noData {
+  color: #686868;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 main.innerPage .center .rightSide .recordList li {
@@ -392,6 +393,11 @@ main.innerPage .center .rightSide .recordList li .state span {
   font-size: 15px;
 }
 
+main.innerPage .center .rightSide .recordList li .state.gameName {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 main.innerPage .center .rightSide .recordList li .detail {
   color: #000000;
   font-size: 14px;
@@ -400,6 +406,25 @@ main.innerPage .center .rightSide .recordList li .detail {
 main.innerPage .center .rightSide .recordList li .detail i {
   color: #c4a167;
   font-size: 14px;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half {
+  color: #000000;
+  font-size: 15px;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half.win {
+  color: #32b411;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half.lose {
+  color: #ff0000;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half span {
+  color: #686868;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
 main.innerPage .center .midSide .midTop,
@@ -421,9 +446,10 @@ main.innerPage .center .midSide .midTop .innerPageTitle > p {
   letter-spacing: 1px;
 }
 
-main.innerPage .center .midSide .midTop .objectList ul > i {
+main.innerPage .center .midSide .midTop .objectList > i {
   color: #c4a167;
   font-size: 16px;
+  cursor: pointer;
 }
 
 main.innerPage .center .midSide .midTop .objectList ul li.payWay {
@@ -452,9 +478,16 @@ main.innerPage .center .midSide .midBottom .remindBox {
   border: 1px solid #c7a16e;
 }
 
+main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
+  color: #996c33;
+  font-size: 13px;
+  font-weight: bold;
+}
+
 main.innerPage .center .midSide .midBottom form label p.itemName {
+  width: 81px;
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -463,6 +496,49 @@ main.innerPage .center .midSide .midBottom form label p.itemName span {
   color: #ff0000;
   font-size: 16px;
   font-weight: bold;
+}
+
+main.innerPage .center .midSide .midBottom form label p.remind {
+  color: #ff0000;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide .midBottom form label i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide .midBottom form button.submit {
+  width: 72%;
+  height: 40px;
+  font-size: 15px;
+}
+
+main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
+  color: #686868;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide .midTop .objectList li p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midTop .objectList li p.hint {
+  width: 100%;
+  text-align: center;
 }
 
 footer .top {
@@ -593,8 +669,14 @@ aside.cs {
 }
 
 .filter .jumpWindow.news li .date {
-  color: #999999;
+  color: #686868;
   font-size: 12px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.reminder .content p {
+  color: #000000;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -608,8 +690,8 @@ aside.cs {
   font-weight: bold;
 }
 .btnStyle_1:hover, .btnStyle_1:active, .btnStyle_1.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#919191), color-stop(50%, #636262), to(#919191));
-  background: linear-gradient(to top, #919191 0%, #636262 50%, #919191 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 }
 
 .btnStyle_2 {
@@ -630,6 +712,10 @@ aside.cs {
   color: #000000;
   font-size: 14px;
   font-weight: bold;
+}
+.inputStyle_1:disabled {
+  background: #efefef;
+  color: #686868;
 }
 
 *::-webkit-scrollbar {
@@ -681,19 +767,19 @@ header .downList img {
      object-fit: contain;
 }
 
-.innerPage .midSide.deposit .midTop .objectList li:nth-of-type(1) i.pay_Icon {
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
   background: url("../img/icon/svg/payWay01.svg") no-repeat center;
   background-size: 100%;
 }
 
-.innerPage .midSide.deposit .midTop .objectList li:nth-of-type(2) i.pay_Icon {
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(2) .pay_Icon {
   background: url("../img/icon/svg/payWay02.svg") no-repeat center;
   background-size: 100%;
   width: 22px;
   height: 22px;
 }
 
-.innerPage .midSide.deposit .midTop .objectList li:nth-of-type(3) i.pay_Icon {
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(3) .pay_Icon {
   background: url("../img/icon/svg/payWay03.svg") no-repeat center;
   background-size: 100%;
   width: 22px;
@@ -1548,12 +1634,9 @@ html body .innerPage .center > div.rightSide {
       flex-shrink: 0;
   margin-left: 15px;
 }
-html body .innerPage .center > div.rightSide .recordList {
+html body .innerPage .center > div.rightSide .listTitle {
   width: 100%;
-  height: 365px;
-  position: relative;
-}
-html body .innerPage .center > div.rightSide .recordList .listTitle {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1565,7 +1648,7 @@ html body .innerPage .center > div.rightSide .recordList .listTitle {
           justify-content: space-between;
   padding: 15px 20px;
 }
-html body .innerPage .center > div.rightSide .recordList .listTitle .more {
+html body .innerPage .center > div.rightSide .listTitle .more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1574,23 +1657,26 @@ html body .innerPage .center > div.rightSide .recordList .listTitle .more {
           align-items: center;
   cursor: pointer;
 }
-html body .innerPage .center > div.rightSide .recordList .listTitle .more i {
+html body .innerPage .center > div.rightSide .listTitle .more i {
   margin-left: 5px;
 }
-html body .innerPage .center > div.rightSide .recordList .contain {
+html body .innerPage .center > div.rightSide .recordList {
   width: 100%;
-  height: auto;
+  height: 365px;
+  overflow: auto;
+  position: relative;
 }
-html body .innerPage .center > div.rightSide .recordList .contain .noData {
-  color: #999999;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
+html body .innerPage .center > div.rightSide .recordList .noData {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+html body .innerPage .center > div.rightSide .recordList .contain {
+  width: 100%;
+  height: auto;
+  overflow-y: overlay;
 }
 html body .innerPage .center > div.rightSide .recordList .contain li {
   width: 85%;
@@ -1605,6 +1691,11 @@ html body .innerPage .center > div.rightSide .recordList .contain li {
   padding: 15px 0;
   margin: 0 20px;
 }
+html body .innerPage .center > div.rightSide .recordList .contain li.betHistory {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0;
+}
 html body .innerPage .center > div.rightSide .recordList .contain li .state {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1617,7 +1708,6 @@ html body .innerPage .center > div.rightSide .recordList .contain li .state {
           justify-content: space-between;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  line-height: 25px;
 }
 html body .innerPage .center > div.rightSide .recordList .contain li .detail {
   display: -webkit-box;
@@ -1633,6 +1723,25 @@ html body .innerPage .center > div.rightSide .recordList .contain li .detail {
 }
 html body .innerPage .center > div.rightSide .recordList .contain li .detail i {
   margin: 0 10px;
+}
+html body .innerPage .center > div.rightSide .recordList .contain li .winLose {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .recordList .contain li .winLose .half {
+  width: 50%;
+  height: auto;
+}
+html body .innerPage .center > div.rightSide .recordList .contain li .winLose .half span {
+  display: block;
+  margin-bottom: 5px;
 }
 html body .innerPage .center > div.midSide {
   width: 100%;
@@ -1688,21 +1797,15 @@ html body .innerPage .center > div.midSide .midTop .innerPageTitle .btn i {
 html body .innerPage .center > div.midSide .midTop .objectList {
   width: 100%;
   height: auto;
-  padding: 10px 15px;
-}
-html body .innerPage .center > div.midSide .midTop .objectList ul {
-  width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 25px;
-  position: relative;
+  padding: 10px 15px;
 }
-html body .innerPage .center > div.midSide .midTop .objectList ul i {
+html body .innerPage .center > div.midSide .midTop .objectList i {
   width: 20px;
   height: 20px;
   display: -webkit-box;
@@ -1715,18 +1818,20 @@ html body .innerPage .center > div.midSide .midTop .objectList ul i {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .innerPage .center > div.midSide .midTop .objectList ul i.fa-chevron-left, html body .innerPage .center > div.midSide .midTop .objectList ul i.fa-chevron-right {
+html body .innerPage .center > div.midSide .midTop .objectList i.fa-chevron-left, html body .innerPage .center > div.midSide .midTop .objectList i.fa-chevron-right {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
-html body .innerPage .center > div.midSide .midTop .objectList ul i.fa-chevron-left {
-  left: 0%;
-}
-html body .innerPage .center > div.midSide .midTop .objectList ul i.fa-chevron-right {
-  right: 0%;
+html body .innerPage .center > div.midSide .midTop .objectList ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  position: relative;
 }
 html body .innerPage .center > div.midSide .midTop .objectList ul li {
   width: auto;
@@ -1742,33 +1847,28 @@ html body .innerPage .center > div.midSide .midTop .objectList ul li {
           justify-content: center;
   padding: 0 15px;
 }
-html body .innerPage .center > div.midSide .midTop .objectList ul li.payWay {
-  height: 35px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-html body .innerPage .center > div.midSide .midTop .objectList ul li.payWay:last-child {
-  margin: 0;
-}
-html body .innerPage .center > div.midSide .midTop .objectList ul li .pay_Icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-}
 html body .innerPage .center > div.midSide .midBottom {
   width: 100%;
   height: 100%;
   padding: 20px;
   position: relative;
 }
-html body .innerPage .center > div.midSide .midBottom .titleM {
+html body .innerPage .center > div.midSide .midBottom .content {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+html body .innerPage .center > div.midSide .midBottom .content.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide .midBottom .content .titleM {
   margin: 0 0 20px 0;
 }
-html body .innerPage .center > div.midSide .midBottom form {
+html body .innerPage .center > div.midSide .midBottom .content form {
   width: 100%;
   height: auto;
 }
-html body .innerPage .center > div.midSide .midBottom form label {
+html body .innerPage .center > div.midSide .midBottom .content form label {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1777,28 +1877,58 @@ html body .innerPage .center > div.midSide .midBottom form label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
   position: relative;
 }
-html body .innerPage .center > div.midSide .midBottom form label .itemName {
-  margin-right: 20px;
+html body .innerPage .center > div.midSide .midBottom .content form label .itemName {
+  margin-right: 25px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-html body .innerPage .center > div.midSide .midBottom form label select {
+html body .innerPage .center > div.midSide .midBottom .content form label select,
+html body .innerPage .center > div.midSide .midBottom .content form label input {
   width: 100%;
   height: 40px;
   padding: 0 15px;
 }
-html body .innerPage .center > div.midSide .midBottom form label i {
+html body .innerPage .center > div.midSide .midBottom .content form label .remind {
+  position: absolute;
+  bottom: -16px;
+  left: 105px;
+}
+html body .innerPage .center > div.midSide .midBottom .content form label i {
   width: 13px;
   height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-  top: calc(100% - 18px) 50%;
-  right: 20px;
+  top: 45%;
+  right: 18px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-html body .innerPage .center > div.midSide .midBottom .remindBox {
+html body .innerPage .center > div.midSide .midBottom .content form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide .midBottom .content form button.submit {
+  margin: 55px 0 0 105px;
+}
+html body .innerPage .center > div.midSide .midBottom .content .remindBox {
   width: 95%;
   height: auto;
   padding: 15px 20px;
@@ -1808,22 +1938,98 @@ html body .innerPage .center > div.midSide .midBottom .remindBox {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-html body .innerPage .center > div.midSide .midBottom .remindBox p {
+html body .innerPage .center > div.midSide .midBottom .content .remindBox p {
   color: #000000;
   font-size: 13px;
   line-height: 25px;
 }
-html body .innerPage .center > div.midSide .midBottom .remindBox p.remindTitle {
-  color: #996c33;
-  font-size: 13px;
+html body .innerPage .center > div.midSide .midBottom .content .remindBox p.remindTitle {
   line-height: unset;
   margin-bottom: 10px;
 }
-html body .innerPage .center > div.midSide .midBottom .remindBox p span {
+html body .innerPage .center > div.midSide .midBottom .content .remindBox p span {
   color: #ff0000;
 }
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
+  height: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay:last-child {
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li .pay_Icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
 html body .innerPage .center > div.midSide.deposit .midBottom form {
-  width: 40%;
+  width: 45%;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList {
+  padding: 20px 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap {
+  width: 96%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet {
+  padding: 30px 20px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li {
+  width: 250px;
+  height: 150px;
+  padding: 15px;
+  margin-right: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  border-radius: 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li:nth-last-child(1) {
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.bankCard .midBottom form {
+  width: 45%;
 }
 html body .swiper {
   width: 100%;
@@ -2108,6 +2314,12 @@ html body .filter .jumpWindow.news .content ul li .text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+html body .filter .jumpWindow.reminder .content {
+  padding: 24px 80px 35px;
+}
+html body .filter .jumpWindow.reminder .content p {
+  text-align: center;
 }
 html body .filter .jumpWindow .title {
   width: 100%;

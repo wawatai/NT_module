@@ -119,6 +119,23 @@ $(function(){
     });
 })
 
+//innerPage 
+
+//存款
+$(function(){
+    $(".innerPage .midSide.deposit .midTop .objectList .payType li").click(function(){
+        var n = $(this).index();
+
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+
+        $(".midSide.deposit .midBottom .content:nth-of-type("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
 //彈窗
 $(function(){
 
