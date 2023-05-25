@@ -35,7 +35,9 @@ header .downList img {
     object-fit: contain;
 }
 
-//innerPage deposit
+//innerPage///////////
+
+//deposit
 .innerPage  .center>div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
     background: url("../img/icon/svg/payWay01.svg") no-repeat center;
     background-size: 100%;
@@ -52,6 +54,14 @@ header .downList img {
     width: 22px;
     height: 22px;
 }
+
+//bankCard
+.innerPage .center>div.midSide.bankCard .midTop .objectList .cardSet li.addCard .addBtn {
+    width: 50px;
+    height: 50px;
+    background: url("../img/icon/svg/addCard.svg") no-repeat center;
+    background-size: 100%
+} 
 
 //aside
 aside.app .download_ic {

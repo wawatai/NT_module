@@ -530,12 +530,6 @@ main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
   white-space: nowrap;
 }
 
-main.innerPage .center .midSide .midTop .objectList li p {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 main.innerPage .center .midSide .midTop .objectList li p.hint {
   width: 100%;
   text-align: center;
@@ -784,6 +778,13 @@ header .downList img {
   background-size: 100%;
   width: 22px;
   height: 22px;
+}
+
+.innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard .addBtn {
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon/svg/addCard.svg") no-repeat center;
+  background-size: 100%;
 }
 
 aside.app .download_ic {
@@ -1996,6 +1997,12 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWra
       -ms-flex-align: center;
           align-items: center;
 }
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum .text {
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum span {
+  margin: 0 5px;
+}
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet {
   padding: 30px 20px;
 }
@@ -2016,6 +2023,10 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet
           justify-content: unset;
   background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
   border-radius: 5px;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 2px #e1e1e1;
+          box-shadow: 0 2px 5px 2px #e1e1e1;
+  position: relative;
 }
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard {
   -webkit-box-pack: center;
@@ -2025,7 +2036,40 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet
           filter: grayscale(1);
   cursor: pointer;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li:nth-last-child(1) {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard .addBtn {
+  margin: 0 auto 20px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p.bankName {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p.bankName span {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p.acNum {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 30px 0 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li .state {
+  width: 98%;
+  height: 20px;
+  background: #ffffff;
+  background-clip: content-box;
+  border-radius: 0 0 5px 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li .state p {
+  color: transparent;
+  font-weight: bold;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li:last-child {
   margin: 0;
 }
 html body .innerPage .center > div.midSide.bankCard .midBottom form {

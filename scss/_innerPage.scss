@@ -455,6 +455,14 @@
                                     .cardNum {
                                         display: flex;
                                         align-items: center;
+
+                                        .text {
+                                            margin-right: 5px;
+                                        }
+
+                                        span {
+                                            margin: 0 5px;
+                                        }
                                     }
                                 }
 
@@ -468,7 +476,7 @@
                                     margin-right: 15px;
                                     @include cardStyle;
 
-                                    &:nth-last-child(1) {
+                                    &:last-child {
                                         margin: 0;
                                     }
                                 }
