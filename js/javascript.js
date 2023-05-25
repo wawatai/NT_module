@@ -130,9 +130,45 @@ $(function(){
         .addClass("active")
         .siblings().removeClass("active");
 
-        $(".midSide.deposit .midBottom .content:nth-of-type("+ n +")")
+        $(".midSide.deposit .midBottom .content:eq("+ n +")")
         .addClass("display")
         .siblings().removeClass("display");
+
+        console.log(n);
+    })
+})
+
+//提款
+$(function(){
+    $(document).on("click",".midSide .midTop .platformWallet .stateWrap", function(){
+        $(this)
+        .addClass("active")
+        .closest(".platformWallet")
+        .find(".platformOuter")
+        .addClass("active");
+
+        $(this)
+        .find("p")
+        .text("收起");
+
+        $(this)
+        .find("i")
+        .attr("class","fa-solid fa-angles-up");
+    })
+    $(document).on("click",".midSide .midTop .platformWallet .stateWrap.active", function(){
+        $(this)
+        .removeClass("active")
+        .closest(".platformWallet")
+        .find(".platformOuter")
+        .removeClass("active");
+
+        $(this)
+        .find("p")
+        .text("展開");
+
+        $(this)
+        .find("i")
+        .attr("class","fa-solid fa-angles-down");
     })
 })
 

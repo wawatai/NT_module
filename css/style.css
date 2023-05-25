@@ -361,6 +361,13 @@ main.innerPage .center .rightSide .listTitle {
   border-bottom: 1px solid #cccccc;
 }
 
+main.innerPage .center .rightSide .listTitle > p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 main.innerPage .center .rightSide .listTitle a.more {
   color: #000000;
   font-size: 14px;
@@ -427,6 +434,12 @@ main.innerPage .center .rightSide .recordList li .winLose .half span {
   letter-spacing: 1px;
 }
 
+main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 main.innerPage .center .midSide .midTop,
 main.innerPage .center .midSide .midBottom {
   background: #ffffff;
@@ -444,6 +457,7 @@ main.innerPage .center .midSide .midTop .innerPageTitle > p {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 main.innerPage .center .midSide .midTop .objectList > i {
@@ -533,6 +547,100 @@ main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
 main.innerPage .center .midSide .midTop .objectList li p.hint {
   width: 100%;
   text-align: center;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .titleS {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox .typeName p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(1) .typeName p {
+  color: #996c33;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
+  color: #686868;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName p {
+  color: #ff0000;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+  font-size: 12px;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox .numTotal {
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox p.platName {
+  color: #686868;
+  font-size: 16px;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox .num {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .stateWrap p {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .stateWrap i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li p {
+  color: #686868;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li p.rule {
+  color: #996c33;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li span {
+  width: 100%;
+  display: block;
+  color: #686868;
+  font-size: 14px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 footer .top {
@@ -686,6 +794,9 @@ aside.cs {
 .btnStyle_1:hover, .btnStyle_1:active, .btnStyle_1.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+}
+.btnStyle_1:disabled {
+  background: #c0c0c0;
 }
 
 .btnStyle_2 {
@@ -1522,13 +1633,14 @@ html body .innerPage .center > div {
   height: auto;
 }
 html body .innerPage .center > div.leftSide {
-  width: 245px;
+  width: 15%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 15px;
 }
 html body .innerPage .center > div.leftSide .content {
   width: 100%;
+  height: 100%;
   padding: 20px 0 0 0;
 }
 html body .innerPage .center > div.leftSide .content p {
@@ -1630,12 +1742,20 @@ html body .innerPage .center > div.leftSide .content .innerNav li a i {
   margin-right: 10px;
 }
 html body .innerPage .center > div.rightSide {
-  width: 245px;
+  width: 15%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: 15px;
 }
-html body .innerPage .center > div.rightSide .listTitle {
+html body .innerPage .center > div.rightSide .containerBox {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.rightSide .containerBox:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.rightSide .containerBox .listTitle {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1649,7 +1769,7 @@ html body .innerPage .center > div.rightSide .listTitle {
           justify-content: space-between;
   padding: 15px 20px;
 }
-html body .innerPage .center > div.rightSide .listTitle .more {
+html body .innerPage .center > div.rightSide .containerBox .listTitle .more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1658,29 +1778,29 @@ html body .innerPage .center > div.rightSide .listTitle .more {
           align-items: center;
   cursor: pointer;
 }
-html body .innerPage .center > div.rightSide .listTitle .more i {
+html body .innerPage .center > div.rightSide .containerBox .listTitle .more i {
   margin-left: 5px;
 }
-html body .innerPage .center > div.rightSide .recordList {
+html body .innerPage .center > div.rightSide .containerBox .recordList {
   width: 100%;
-  height: 365px;
+  height: 305px;
   overflow: auto;
   position: relative;
 }
-html body .innerPage .center > div.rightSide .recordList .noData {
+html body .innerPage .center > div.rightSide .containerBox .recordList .noData {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-html body .innerPage .center > div.rightSide .recordList .contain {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain {
   width: 100%;
   height: auto;
   overflow-y: overlay;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li {
-  width: 85%;
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li {
+  width: 80%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1692,12 +1812,23 @@ html body .innerPage .center > div.rightSide .recordList .contain li {
   padding: 15px 0;
   margin: 0 20px;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li.betHistory {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.betHistory {
   width: 100%;
   padding: 10px 20px;
   margin: 0;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li .state {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock {
+  border-bottom: none;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock img {
+  width: 100%;
+  height: 80px;
+  background: #000000;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock .eventInfo {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .state {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1710,7 +1841,7 @@ html body .innerPage .center > div.rightSide .recordList .contain li .state {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li .detail {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1720,12 +1851,12 @@ html body .innerPage .center > div.rightSide .recordList .contain li .detail {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 5px;
+  margin-top: 10px;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li .detail i {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .detail i {
   margin: 0 10px;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li .winLose {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1736,16 +1867,16 @@ html body .innerPage .center > div.rightSide .recordList .contain li .winLose {
           align-items: center;
   margin-top: 10px;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li .winLose .half {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose .half {
   width: 50%;
   height: auto;
 }
-html body .innerPage .center > div.rightSide .recordList .contain li .winLose .half span {
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose .half span {
   display: block;
   margin-bottom: 5px;
 }
 html body .innerPage .center > div.midSide {
-  width: 100%;
+  width: 68%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1761,7 +1892,7 @@ html body .innerPage .center > div.midSide .midTop {
 }
 html body .innerPage .center > div.midSide .midTop .innerPageTitle {
   width: 100%;
-  height: 50px;
+  height: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2003,10 +2134,22 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWra
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum span {
   margin: 0 5px;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet {
-  padding: 30px 20px;
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px 7px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li {
   width: 250px;
   height: 150px;
   padding: 15px;
@@ -2028,7 +2171,7 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet
           box-shadow: 0 2px 5px 2px #e1e1e1;
   position: relative;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li.addCard {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2036,44 +2179,187 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet
           filter: grayscale(1);
   cursor: pointer;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard .addBtn {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li.addCard .addBtn {
   margin: 0 auto 20px;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p.bankName {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p.bankName {
   font-size: 22px;
   letter-spacing: 1px;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p.bankName span {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p.bankName span {
   display: block;
   font-size: 14px;
   margin-top: 10px;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li p.acNum {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p.acNum {
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin: 30px 0 5px;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li .state {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li .state {
   width: 98%;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #ffffff;
-  background-clip: content-box;
   border-radius: 0 0 5px 5px;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li .state p {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li .state p {
+  background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
+  font-size: 17px;
   font-weight: bold;
 }
-html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li:last-child {
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li:last-child {
   margin: 0;
 }
 html body .innerPage .center > div.midSide.bankCard .midBottom form {
   width: 45%;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox {
+  width: 20%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+  width: auto;
+  height: auto;
+  padding: 3px 8px 4px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox .typeName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox .typeName i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .titleS {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter {
+  width: 100%;
+  height: 110px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  overflow: hidden;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter.active {
+  height: auto;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter .platformBox {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter .platformBox .num {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .stateWrap {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .stateWrap i {
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited li {
+  width: 24%;
+  height: auto;
+  min-height: 115px;
+  padding: 15px 10px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited li p {
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content form {
+  width: 41%;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content form .remind {
+  line-height: 16px;
+  bottom: -35px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .remindBox {
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  bottom: unset;
+  left: unset;
+  -webkit-transform: unset;
+          transform: unset;
 }
 html body .swiper {
   width: 100%;

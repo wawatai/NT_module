@@ -25,6 +25,7 @@ $filter_1: #000000a4;
 $linear_1: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
 $linear_1_Active: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 $linear_2: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
+$BankCard_BG: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 
 //header
 header .top {
@@ -329,6 +330,12 @@ main.innerPage .center .rightSide .listTitle {
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid $Border_color_1;
 }
+main.innerPage .center .rightSide .listTitle> p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 main.innerPage .center .rightSide .listTitle a.more {
     color: $Font_color_2;
     font-size: 14px;
@@ -382,6 +389,11 @@ main.innerPage .center .rightSide .recordList li .winLose .half span {
     font-size: 13px;
     letter-spacing: 1px;
 }
+main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
+    color: $Font_color_2;
+    font-size: 14px;
+    line-height: 18px;
+}
 
 //innerPage 中欄
 main.innerPage .center .midSide .midTop,
@@ -398,6 +410,7 @@ main.innerPage .center .midSide .midTop .innerPageTitle>p {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
+    white-space: nowrap;
 }
 main.innerPage .center .midSide .midTop .objectList>i {
     color: $Font_color_4;
@@ -477,6 +490,85 @@ main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
 main.innerPage .center .midSide .midTop .objectList li p.hint {
     width: 100%;
     text-align: center;
+}
+
+//withdraw
+main.innerPage .center .midSide.withdraw .midTop .accountWrap {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.withdraw .midTop .titleS {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox .typeName p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(1) .typeName p {
+    color: $Font_Title_1;
+}
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
+    color: $Font_color_3;
+}
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName p {
+    color: $Font_remind;
+}
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+    font-size: 12px;
+}
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox .numTotal {
+    color: $Font_color_2;
+    font-size: 30px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox p.platName {
+    color: $Font_color_3;
+    font-size: 16px;
+}
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox .num {
+    color: $Font_color_2;
+    font-size: 25px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .stateWrap p {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.withdraw .midTop .platformWallet .stateWrap i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li p {
+    color: $Font_color_3;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li p.rule {
+    color: $Font_Title_1;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li span {
+    width: 100%;
+    display: block;
+    color: $Font_color_3;
+    font-size: 14px;
+    font-weight: unset;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 //footer
@@ -657,7 +749,7 @@ aside.cs { //個別調整
     flex-direction: column;
     align-items: flex-start;
     justify-content: unset;
-    background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+    background: $BankCard_BG;
     border-radius: 5px;
     border: 1px solid $Border_color_0;
     box-shadow: 0 2px 5px 2px $boxShadow_1;
@@ -691,7 +783,7 @@ aside.cs { //個別調整
 
         &.acNum {
             font-size: 18px;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             margin: 30px 0 5px;
         }
     }
@@ -699,12 +791,17 @@ aside.cs { //個別調整
     .state {
         width: 98%;
         height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: $BG_color_2;
-        background-clip: content-box;
         border-radius:  0 0 5px 5px;
 
         p {
+            background: $BankCard_BG;
+            background-clip: text;
             color: transparent;
+            font-size: 17px;
             font-weight: bold;
         }
     }
@@ -721,6 +818,10 @@ aside.cs { //個別調整
 
     &:hover,&:active,&.active {
         background: $linear_1_Active;
+    }
+
+    &:disabled { //個別調整
+        background: #c0c0c0;
     }
 }
 .btnStyle_2 { //按鈕樣式_2 主色邊線按鈕
