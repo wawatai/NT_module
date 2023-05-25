@@ -315,6 +315,95 @@
                             }
                         }
                     }
+
+                    .accountWrap {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px;
+
+                        .typeBox {
+                            width: 20%;
+                            height: auto;
+
+                            &:nth-of-type(2) {
+
+                                .typeName {
+                                    justify-content: space-between;
+
+                                    span {
+                                        width: auto;
+                                        height: auto;
+                                        padding: 3px 8px 4px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            .typeName {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 20px;
+
+                                i {
+                                    margin-left: 10px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    .platformWallet {
+                        width: 100%;
+                        height: auto;
+                        padding: 20px;
+                        
+                        .titleS {
+                            width: 100%;
+                            height: auto;
+                            margin-bottom: 20px;
+                        }
+
+                        .platformOuter {
+                            width: 100%;
+                            height: 110px;
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            gap: 15px;
+                            overflow: hidden;
+
+                            &.active {
+                                height: auto;
+                            }
+
+                            .platformBox {
+                                width: 100%;
+                                height: 100px;
+                                padding: 15px;
+
+                                .num {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        .stateWrap {
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+
+                            i {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
                 }
 
                 .midBottom {
@@ -525,101 +614,30 @@
                         }
                     }
                 }
-
-                //提款
-                &.withdraw {
+                
+                //轉帳
+                &.transfer {
 
                     .midTop {
+                        margin-bottom: 0;
 
-                        .accountWrap {
-                            width: 100%;
-                            height: auto;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
+                        .platTransfer {
                             padding: 20px;
 
-                            .typeBox {
-                                width: 20%;
-                                height: auto;
-
-                                &:nth-of-type(2) {
-
-                                    .typeName {
-                                        justify-content: space-between;
-
-                                        span {
-                                            width: auto;
-                                            height: auto;
-                                            padding: 3px 8px 4px;
-                                            cursor: pointer;
-                                        }
-                                    }
-                                }
-
-                                .typeName {
-                                    width: 100%;
-                                    height: auto;
-                                    display: flex;
-                                    align-items: center;
-                                    margin-bottom: 20px;
-
-                                    i {
-                                        margin-left: 10px;
-                                        cursor: pointer;
-                                    }
-                                }
-                            }
-                        }
-
-                        .platformWallet {
-                            width: 100%;
-                            height: auto;
-                            padding: 20px;
-                            
                             .titleS {
-                                width: 100%;
-                                height: auto;
-                                margin-bottom: 20px;
-                            }
-
-                            .platformOuter {
-                                width: 100%;
-                                height: 110px;
-                                display: grid;
-                                grid-template-columns: repeat(4, 1fr);
-                                gap: 15px;
-                                overflow: hidden;
-
-                                &.active {
-                                    height: auto;
-                                }
-
-                                .platformBox {
-                                    width: 100%;
-                                    height: 100px;
-                                    padding: 15px;
-    
-                                    .num {
-                                        margin-top: 15px;
-                                    }
-                                }
-                            }
-
-                            .stateWrap {
-                                width: 100%;
-                                height: 50px;
                                 display: flex;
                                 align-items: center;
-                                justify-content: center;
-                                cursor: pointer;
 
-                                i {
+                                span {
                                     margin-left: 10px;
                                 }
                             }
                         }
                     }
+                }
+
+                //提款
+                &.withdraw {
 
                     .midBottom {
 

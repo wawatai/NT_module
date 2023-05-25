@@ -129,12 +129,12 @@
                             <p>存款</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./transfer.html">
                             <p>轉存</p>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./withdraw.html">
                             <p>提款</p>
                         </a>
@@ -488,7 +488,7 @@
                             <p class="btnName">存款</p>
                         </li>
                         <li>
-                            <div class="quickBtn">
+                            <div class="quickBtn active">
                                 <a href="./transfer.html">
                                     <p>轉</p>
                                 </a>
@@ -496,7 +496,7 @@
                             <p class="btnName">轉帳</p>
                         </li>
                         <li>
-                            <div class="quickBtn active">
+                            <div class="quickBtn">
                                 <a href="./withdraw.html">
                                     <p>提</p>
                                 </a>
@@ -569,35 +569,23 @@
                 </div>
             </div>
             <!-- 中欄 -->
-            <div class="midSide withdraw">
+            <div class="midSide transfer">
                 <div class="midTop">
                     <div class="innerPageTitle">
-                        <p>提款專區</p>
+                        <p>轉帳</p>
                     </div>
                     <div class="accountWrap">
                         <div class="typeBox">
                             <div class="typeName">
                                 <p class="titleS">中心錢包</p>
                                 <i class="fa-solid fa-arrows-rotate"></i>
-                            </div>
-                            <p class="numTotal">$9999</p>
-                        </div>
-                        <div class="typeBox">
-                            <div class="typeName">
-                                <p class="titleS">流水限制</p>
                                 <span class="btnStyle_1">流水紀錄</span>
-                            </div>
-                            <p class="numTotal">$0</p>
-                        </div>
-                        <div class="typeBox">
-                            <div class="typeName">
-                                <p class="titleS">可提資金</p>
                             </div>
                             <p class="numTotal">$9999</p>
                         </div>
                     </div>
                     <div class="platformWallet">
-                        <p class="titleS">平台錢包</p>
+                        <p class="titleS">平台帳戶明細</p>
                         <div class="platformOuter">
                             <div class="platformBox">
                                 <p class="platName">BNG娛樂</p>
@@ -669,63 +657,10 @@
                             <i class="fa-solid fa-angles-down"></i>
                         </div>
                     </div>
-                </div>
-                <div class="midBottom">
-                    <div class="content display">
-                        <p class="titleM">提款申請</p>
-                        <ul class="limited">
-                            <li>
-                                <p class="limitTitle">取款次數</p>
-                                <p class="rule">不限制</p>
-                                <span>(今日可用次數)</span>
-                            </li>
-                            <li>
-                                <p class="limitTitle">取款額度</p>
-                                <p class="rule">200000.00</p>
-                                <span>(今日可用額度)</span>
-                            </li>
-                            <li>
-                                <p class="limitTitle">單筆額度</p>
-                                <p class="rule">200000</p>
-                                <span>(單筆最高取款額度)</span>
-                            </li>
-                            <li>
-                                <p class="limitTitle">每周免費提款次數</p>
-                                <p class="rule">2</p>
-                                <span></span>
-                            </li>
-                        </ul>
-                        <form>
-                            <label>
-                                <p class="itemName">
-                                    <span>※</span>
-                                    選擇銀行
-                                </p>
-                                <select class="inputStyle_1">
-                                    <option>請選擇</option>
-                                </select>
-                                <i class="fa-solid fa-caret-down"></i>
-                            </label>
-                            <label>
-                                <p class="itemName">
-                                    <span>※</span>
-                                    選擇銀行
-                                </p>
-                                <input class="inputStyle_1" disabled>
-                                <p class="remind">為了方便您快速取款，請先將所有館錢包回收至中心錢包<br>
-                                    單筆提款金額需介於$100 - $1,000,000</p>
-                            </label>
-                            <button type="submit" class="submit btnStyle_1" disabled>確認送出</button>
-                        </form>
-                        <div class="remindBox">
-                            <p class="remindTitle">重要提醒</p>
-                            <p>1.您每<span>日</span>可免費提領<span>1</span>次<span>(每日00:00重置)</span>，每日提領次數上限<span>1</span>次，每日提款點數上限<span>2000000</span>點。</p>
-                            <p>2.須達到近期存款金額的<span>50%</span>有效投注才可提出申請。如未達提款標準，將酌收存款金額<span>5%</span>的行政處理費。</p>
-                            <p>3.如欲取消提款申請，請至會員中心>交易紀錄>取消申請操作。</p>
-                            <p>
-                                <span>PS.如利用本平台進行任何洗錢詐騙行為，本公司將保留權利終止會員服務及凍結其帳戶。</span>
-                            </p>
-                        </div>
+                    <div class="platTransfer">
+                        <p class="titleS">戶內轉帳
+                            <span>轉入/轉出您所屬的金額</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -733,7 +668,7 @@
             <div class="rightSide">
                 <div class="containerBox">
                     <div class="listTitle">
-                        <p>提款紀錄</p>
+                        <p>轉帳紀錄</p>
                         <a href="javascript:;" class="more">
                             更多
                             <i class="fa-solid fa-chevron-right"></i>
@@ -821,21 +756,7 @@
         </div>
     </footer>
     <!-- 彈窗 -->
-    <div class="filter display">
-        <!-- 請先綁定資料 -->
-        <div class="jumpWindow reminder display">
-            <div class="title">
-                <p>提示</p>
-                <!-- <i class="close_ic"></i> -->
-                <i class="fa-solid fa-xmark closeWindow"></i>
-            </div>
-            <div class="content">
-                <p>請至個人資料頁面綁定資料</p>
-            </div>
-            <div class="btnBox">
-                <button class="closeWindow btnStyle_1">同意</button>
-            </div>
-        </div>
+    <div class="filter">
     </div>
     <div class="bg"></div>
 </body>

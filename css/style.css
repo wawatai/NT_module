@@ -549,30 +549,71 @@ main.innerPage .center .midSide .midTop .objectList li p.hint {
   text-align: center;
 }
 
-main.innerPage .center .midSide.withdraw .midTop .accountWrap {
+main.innerPage .center .midSide .midTop .accountWrap {
   border-bottom: 1px solid #cccccc;
 }
 
-main.innerPage .center .midSide.withdraw .midTop .titleS {
+main.innerPage .center .midSide .midTop .titleS {
   color: #000000;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox .typeName p {
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName p {
   color: #000000;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(1) .typeName p {
+main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName p {
   color: #996c33;
 }
 
-main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
+main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
   color: #686868;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .numTotal {
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .platformBox {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .platformBox p.platName {
+  color: #686868;
+  font-size: 16px;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .platformBox .num {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .stateWrap p {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .stateWrap i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.transfer .midTop .platformWallet {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.transfer .midTop .platTransfer .titleS span {
+  color: #ff0000;
+  font-size: 12px;
 }
 
 main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName p {
@@ -581,38 +622,6 @@ main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-ty
 
 main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
   font-size: 12px;
-}
-
-main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox .numTotal {
-  color: #000000;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox {
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-}
-
-main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox p.platName {
-  color: #686868;
-  font-size: 16px;
-}
-
-main.innerPage .center .midSide.withdraw .midTop .platformWallet .platformBox .num {
-  color: #000000;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-main.innerPage .center .midSide.withdraw .midTop .platformWallet .stateWrap p {
-  color: #000000;
-  font-size: 14px;
-}
-
-main.innerPage .center .midSide.withdraw .midTop .platformWallet .stateWrap i {
-  color: #c4a167;
-  font-size: 14px;
 }
 
 main.innerPage .center .midSide.withdraw .midBottom .limited li {
@@ -1979,6 +1988,98 @@ html body .innerPage .center > div.midSide .midTop .objectList ul li {
           justify-content: center;
   padding: 0 15px;
 }
+html body .innerPage .center > div.midSide .midTop .accountWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox {
+  width: 20%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox:nth-of-type(2) .typeName {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+  width: auto;
+  height: auto;
+  padding: 3px 8px 4px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox .typeName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox .typeName i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .titleS {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter {
+  width: 100%;
+  height: 110px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  overflow: hidden;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter.active {
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter .platformBox {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter .platformBox .num {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap i {
+  margin-left: 10px;
+}
 html body .innerPage .center > div.midSide .midBottom {
   width: 100%;
   height: 100%;
@@ -2230,96 +2331,21 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .card
 html body .innerPage .center > div.midSide.bankCard .midBottom form {
   width: 45%;
 }
-html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+html body .innerPage .center > div.midSide.transfer .midTop {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer {
   padding: 20px;
 }
-html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox {
-  width: 20%;
-  height: auto;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
-  width: auto;
-  height: auto;
-  padding: 3px 8px 4px;
-  cursor: pointer;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox .typeName {
-  width: 100%;
-  height: auto;
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer .titleS {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
 }
-html body .innerPage .center > div.midSide.withdraw .midTop .accountWrap .typeBox .typeName i {
-  margin-left: 10px;
-  cursor: pointer;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .titleS {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter {
-  width: 100%;
-  height: 110px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  overflow: hidden;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter.active {
-  height: auto;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter .platformBox {
-  width: 100%;
-  height: 100px;
-  padding: 15px;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .platformOuter .platformBox .num {
-  margin-top: 15px;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .stateWrap {
-  width: 100%;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-}
-html body .innerPage .center > div.midSide.withdraw .midTop .platformWallet .stateWrap i {
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer .titleS span {
   margin-left: 10px;
 }
 html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited {
