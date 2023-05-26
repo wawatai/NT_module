@@ -446,6 +446,7 @@ main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
     font-size: 13px;
     font-weight: bold;
 }
+main.innerPage .center .midSide .midTop form .half label p.itemName,
 main.innerPage .center .midSide .midBottom form label p.itemName {
     width: 81px;
     color: $Font_color_2;
@@ -453,25 +454,30 @@ main.innerPage .center .midSide .midBottom form label p.itemName {
     font-weight: bold;
     white-space: nowrap;
 }
+main.innerPage .center .midSide .midTop form .half label p.itemName span,
 main.innerPage .center .midSide .midBottom form label p.itemName span {
     color: $Font_remind;
     font-size: 16px;
     font-weight: bold;
 }
+main.innerPage .center .midSide .midTop form .half label p.remind,
 main.innerPage .center .midSide .midBottom form label p.remind {
     color: $Font_remind;
     font-size: 12px;
     white-space: nowrap;
 }
+main.innerPage .center .midSide .midTop form .half label i,
 main.innerPage .center .midSide .midBottom form label i {
     color: $Font_color_4;
     font-size: 14px;
 }
-main.innerPage .center .midSide .midBottom form button.submit{
-    width: 72%;
+main.innerPage .center .midSide .midTop form .half button.submitBtn,
+main.innerPage .center .midSide .midBottom form button.submitBtn {
+    width: 305px;
     height: 40px;
     font-size: 15px;
 }
+
 
 //bankCard
 main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
@@ -492,6 +498,7 @@ main.innerPage .center .midSide .midTop .objectList li p.hint {
     text-align: center;
 }
 
+
 //transfer + withdraw 公用
 main.innerPage .center .midSide .midTop .accountWrap {
     border-bottom: 1px solid $Border_color_1;
@@ -501,6 +508,10 @@ main.innerPage .center .midSide .midTop .titleS {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 2px;
+}
+main.innerPage .center .midSide .midTop .titleS span.hint {
+    color: $Font_remind;
+    font-size: 12px;
 }
 main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName p {
     color: $Font_color_2;
@@ -513,6 +524,9 @@ main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .ty
 }
 main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
     color: $Font_color_3;
+}
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName span.btnStyle_1 {
+    font-size: 12px;
 }
 main.innerPage .center .midSide .midTop .accountWrap .typeBox .numTotal {
     color: $Font_color_2;
@@ -545,9 +559,13 @@ main.innerPage .center .midSide .midTop .platformWallet .stateWrap i {
 main.innerPage .center .midSide.transfer .midTop .platformWallet {
     border-bottom: 1px solid $Border_color_1;
 }
-main.innerPage .center .midSide.transfer .midTop .platTransfer .titleS span {
-    color: $Font_remind;
-    font-size: 12px;
+main.innerPage .center .midSide.transfer .midTop .platTransfer form i.fa-right-long {
+    color: $Font_color_4;
+    font-size: 30px;
+}
+main.innerPage .center .midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 //withdraw
@@ -580,6 +598,9 @@ main.innerPage .center .midSide.withdraw .midBottom .limited li span {
     font-weight: unset;
     text-align: center;
     letter-spacing: 2px;
+}
+main.innerPage .center .midSide.withdraw  .midBottom form button.submitBtn {
+    width: 72%;
 }
 
 //footer
@@ -844,6 +865,17 @@ aside.cs { //個別調整
     &:hover,&:active,&.active {
         background: $Border_color_3;
         color: $Font_color_1;
+    }
+}
+.btnStyle_3 { //按鈕樣式_3 灰色邊線變色按鈕
+    background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+    border: 1px solid $Border_color_1;
+    border-radius: 3px;
+    color: $Font_color_2;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1;
+        border-color: $Font_Title_1;
     }
 }
 

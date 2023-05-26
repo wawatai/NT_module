@@ -244,12 +244,13 @@
                 display: flex;
                 flex-direction: column;
 
+                //上部 && 沒有下部
                 .midTop {
                     width: 100%;
                     height: auto;
                     margin-bottom: 15px;
 
-                    .innerPageTitle {
+                    .innerPageTitle { //內頁標題
                         width: 100%;
                         height: 47px;
                         display: flex;
@@ -316,7 +317,7 @@
                         }
                     }
 
-                    .accountWrap {
+                    .accountWrap {  //中心錢包公用
                         width: 100%;
                         height: auto;
                         display: flex;
@@ -357,7 +358,7 @@
                         }
                     }
 
-                    .platformWallet {
+                    .platformWallet { //遊戲平台公用
                         width: 100%;
                         height: auto;
                         padding: 20px;
@@ -404,8 +405,29 @@
                             }
                         }
                     }
+
+                    form {  //中間只有一欄的form公用
+
+                        label {
+                            margin-bottom: 20px;
+                            position: relative;
+                        }
+                        
+                        //input select arrow
+                        i {
+
+                            &.fa-caret-down {
+                                position: absolute;
+                                top: 50%;
+                                right: 15px;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    
                 }
 
+                //下部
                 .midBottom {
                     width: 100%;
                     height: 100%;
@@ -473,7 +495,7 @@
                                 align-items: center;
                                 justify-content: center;
                                 
-                                &.submit {
+                                &.submitBtn {
                                     margin: 55px 0 0 105px;
                                 }
                             }
@@ -542,6 +564,17 @@
 
                         form {
                             width: 45%;
+
+                            label {
+
+                                .itemName {
+                                    min-width: 81px;
+                                }
+                            }
+
+                            .submitBtn {
+                                width: 305px;
+                            }
                         }
                     }
                 }
@@ -555,55 +588,55 @@
                             padding: 20px 20px;
                             position: relative;
 
-                                .cardWrap {
-                                    width: 96%;
-                                    height: auto;
+                            .cardWrap {
+                                width: 96%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                position: absolute;
+                                top: 15px;
+                                left: 50%;
+                                transform: translateX(-50%);
+
+                                .cardNum {
                                     display: flex;
                                     align-items: center;
-                                    justify-content: space-between;
-                                    position: absolute;
-                                    top: 15px;
-                                    left: 50%;
-                                    transform: translateX(-50%);
 
-                                    .cardNum {
-                                        display: flex;
-                                        align-items: center;
+                                    .text {
+                                        margin-right: 5px;
+                                    }
 
-                                        .text {
-                                            margin-right: 5px;
-                                        }
+                                    span {
+                                        margin: 0 5px;
+                                    }
+                                }
+                            }
 
-                                        span {
-                                            margin: 0 5px;
+                            ul {
+                                width: 100%;
+                                padding: 0;
+                                overflow: hidden;
+
+                                .cardSet {
+                                    width: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 30px 20px 7px;
+    
+                                    li {
+                                        width: 250px;
+                                        height: 150px;
+                                        padding: 15px;
+                                        margin-right: 15px;
+                                        @include cardStyle;
+    
+                                        &:last-child {
+                                            margin: 0;
                                         }
                                     }
                                 }
-
-                                ul {
-                                    width: 100%;
-                                    padding: 0;
-                                    overflow: hidden;
-
-                                    .cardSet {
-                                        width: auto;
-                                        display: flex;
-                                        align-items: center;
-                                        padding: 30px 20px 7px;
-        
-                                        li {
-                                            width: 250px;
-                                            height: 150px;
-                                            padding: 15px;
-                                            margin-right: 15px;
-                                            @include cardStyle;
-        
-                                            &:last-child {
-                                                margin: 0;
-                                            }
-                                        }
-                                    }
-                                }
+                            }
                         }
                     }
 
@@ -621,15 +654,94 @@
                     .midTop {
                         margin-bottom: 0;
 
+                        .accountWrap {
+
+                            .typeBox {
+                                width: auto;
+
+                                .typeName {
+
+                                    span {
+                                        padding: 3px 8px 4px;
+                                        margin-left: 215px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+
                         .platTransfer {
                             padding: 20px;
 
                             .titleS {
                                 display: flex;
                                 align-items: center;
+                                margin-bottom: 30px;
 
                                 span {
                                     margin-left: 10px;
+                                }
+                            }
+
+                            form {
+                                width: 80%;
+                                height: auto;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .half {
+                                    width: auto;
+                                    height: auto;
+
+                                    label {
+                                        width: 100%;
+                                        height: auto;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        .itemName {
+                                            margin-right: 20px;
+                                        }
+
+                                        select,
+                                        input {
+                                            width: 256px;
+                                            height: 40px;
+                                            padding: 0 15px;
+                                        }
+                                    }
+
+                                    .transferBtn_Box {
+                                        width: 255px;
+                                        height: auto;
+                                        display: grid;
+                                        grid-template-columns: repeat(3, 1fr);
+                                        gap: 5px;
+                                        margin: 0 0 30px 101px;
+
+                                        button {
+                                            width: 100%;
+                                            height: 30px;
+                                        }
+                                    }
+
+                                    .submitBtn {
+                                        width: 255px;
+                                        height: 40px;
+                                        margin: 0 0 0 101px;
+                                    }
+                                }
+
+                                i {
+
+                                    &.fa-right-long {
+                                        width: 27px;
+                                        height: 37px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
                                 }
                             }
                         }

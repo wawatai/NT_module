@@ -498,6 +498,7 @@ main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
   font-weight: bold;
 }
 
+main.innerPage .center .midSide .midTop form .half label p.itemName,
 main.innerPage .center .midSide .midBottom form label p.itemName {
   width: 81px;
   color: #000000;
@@ -506,25 +507,29 @@ main.innerPage .center .midSide .midBottom form label p.itemName {
   white-space: nowrap;
 }
 
+main.innerPage .center .midSide .midTop form .half label p.itemName span,
 main.innerPage .center .midSide .midBottom form label p.itemName span {
   color: #ff0000;
   font-size: 16px;
   font-weight: bold;
 }
 
+main.innerPage .center .midSide .midTop form .half label p.remind,
 main.innerPage .center .midSide .midBottom form label p.remind {
   color: #ff0000;
   font-size: 12px;
   white-space: nowrap;
 }
 
+main.innerPage .center .midSide .midTop form .half label i,
 main.innerPage .center .midSide .midBottom form label i {
   color: #c4a167;
   font-size: 14px;
 }
 
-main.innerPage .center .midSide .midBottom form button.submit {
-  width: 72%;
+main.innerPage .center .midSide .midTop form .half button.submitBtn,
+main.innerPage .center .midSide .midBottom form button.submitBtn {
+  width: 305px;
   height: 40px;
   font-size: 15px;
 }
@@ -560,6 +565,11 @@ main.innerPage .center .midSide .midTop .titleS {
   letter-spacing: 2px;
 }
 
+main.innerPage .center .midSide .midTop .titleS span.hint {
+  color: #ff0000;
+  font-size: 12px;
+}
+
 main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName p {
   color: #000000;
   font-size: 16px;
@@ -573,6 +583,10 @@ main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .ty
 
 main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
   color: #686868;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName span.btnStyle_1 {
+  font-size: 12px;
 }
 
 main.innerPage .center .midSide .midTop .accountWrap .typeBox .numTotal {
@@ -611,9 +625,14 @@ main.innerPage .center .midSide.transfer .midTop .platformWallet {
   border-bottom: 1px solid #cccccc;
 }
 
-main.innerPage .center .midSide.transfer .midTop .platTransfer .titleS span {
-  color: #ff0000;
-  font-size: 12px;
+main.innerPage .center .midSide.transfer .midTop .platTransfer form i.fa-right-long {
+  color: #c4a167;
+  font-size: 30px;
+}
+
+main.innerPage .center .midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName p {
@@ -650,6 +669,10 @@ main.innerPage .center .midSide.withdraw .midBottom .limited li span {
   font-weight: unset;
   text-align: center;
   letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom form button.submitBtn {
+  width: 72%;
 }
 
 footer .top {
@@ -817,6 +840,18 @@ aside.cs {
 .btnStyle_2:hover, .btnStyle_2:active, .btnStyle_2.active {
   background: #996c33;
   color: #ffffff;
+}
+
+.btnStyle_3 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
+  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  color: #000000;
+}
+.btnStyle_3:hover, .btnStyle_3:active, .btnStyle_3.active {
+  color: #996c33;
+  border-color: #996c33;
 }
 
 .inputStyle_1 {
@@ -2080,6 +2115,17 @@ html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap {
 html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap i {
   margin-left: 10px;
 }
+html body .innerPage .center > div.midSide .midTop form label {
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midTop form i.fa-caret-down {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 html body .innerPage .center > div.midSide .midBottom {
   width: 100%;
   height: 100%;
@@ -2158,7 +2204,7 @@ html body .innerPage .center > div.midSide .midBottom .content form button {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .innerPage .center > div.midSide .midBottom .content form button.submit {
+html body .innerPage .center > div.midSide .midBottom .content form button.submitBtn {
   margin: 55px 0 0 105px;
 }
 html body .innerPage .center > div.midSide .midBottom .content .remindBox {
@@ -2198,6 +2244,12 @@ html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType 
 }
 html body .innerPage .center > div.midSide.deposit .midBottom form {
   width: 45%;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form label .itemName {
+  min-width: 81px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form .submitBtn {
+  width: 305px;
 }
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList {
   padding: 20px 20px;
@@ -2334,6 +2386,14 @@ html body .innerPage .center > div.midSide.bankCard .midBottom form {
 html body .innerPage .center > div.midSide.transfer .midTop {
   margin-bottom: 0;
 }
+html body .innerPage .center > div.midSide.transfer .midTop .accountWrap .typeBox {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .accountWrap .typeBox .typeName span {
+  padding: 3px 8px 4px;
+  margin-left: 215px;
+  cursor: pointer;
+}
 html body .innerPage .center > div.midSide.transfer .midTop .platTransfer {
   padding: 20px;
 }
@@ -2344,9 +2404,78 @@ html body .innerPage .center > div.midSide.transfer .midTop .platTransfer .title
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 html body .innerPage .center > div.midSide.transfer .midTop .platTransfer .titleS span {
   margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half {
+  width: auto;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label .itemName {
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label select,
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label input {
+  width: 256px;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .transferBtn_Box {
+  width: 255px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 0 0 30px 101px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .submitBtn {
+  width: 255px;
+  height: 40px;
+  margin: 0 0 0 101px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form i.fa-right-long {
+  width: 27px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited {
   width: 100%;
