@@ -10,7 +10,8 @@ $Font_Title_1_Active: #dcb160;
 $Font_remind: #ff0000;
 $Font_negative: $Font_remind;
 $Font_positive: #32b411;
-$Font_accent: #008599;
+$Font_accent01: #008599;
+$Font_accent02: #fae8c1;
 
 $Border_color_0: #ffffff;
 $Border_color_1: #cccccc;
@@ -302,7 +303,7 @@ main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-bu
 main.innerPage .center .leftSide .content .innerNav li:hover a,
 main.innerPage .center .leftSide .content .innerNav li:active a,
 main.innerPage .center .leftSide .content .innerNav li.active a { //個別調整
-    background: #fae8c1;
+    background: $Font_accent02;
 
     &::before {
         background: #a28653;
@@ -447,7 +448,8 @@ main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
     font-weight: bold;
 }
 main.innerPage .center .midSide .midTop form .half label p.itemName,
-main.innerPage .center .midSide .midBottom form label p.itemName {
+main.innerPage .center .midSide .midBottom form label p.itemName,
+main.innerPage .center .midSide .midBottom p.itemName {
     width: 81px;
     color: $Font_color_2;
     font-size: 14px;
@@ -455,7 +457,8 @@ main.innerPage .center .midSide .midBottom form label p.itemName {
     white-space: nowrap;
 }
 main.innerPage .center .midSide .midTop form .half label p.itemName span,
-main.innerPage .center .midSide .midBottom form label p.itemName span {
+main.innerPage .center .midSide .midBottom form label p.itemName span,
+main.innerPage .center .midSide .midBottom p.itemName span {
     color: $Font_remind;
     font-size: 16px;
     font-weight: bold;
@@ -478,6 +481,107 @@ main.innerPage .center .midSide .midBottom form button.submitBtn {
     font-size: 15px;
 }
 
+main.innerPage .center .midSide .midPageList li {
+    background: $Font_color_3;
+    border-radius: 5px 5px 0 0;
+    color: $Font_color_1;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &:hover,&:active,&.active { 
+        background: linear-gradient(135deg, $Font_accent02 0%, $Font_accent01 100%); 
+    }
+}
+
+main.innerPage .center .midSide .midBottom table tr th {
+    border-bottom: 2px solid $Border_color_2;
+}
+main.innerPage .center .midSide .midBottom table tr th p {
+    color: $Font_Title_1;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+main.innerPage .center .midSide .midBottom table tr td {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide .midBottom table tr td:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide .midBottom table tr td p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+main.innerPage .center .midSide .midBottom table tr td:nth-of-type(3) p {
+    color: $Font_accent01;
+}
+main.innerPage .center .midSide .midBottom table tr td:nth-of-type(5) p {
+    color: $Font_positive;
+}
+
+//memberCenter
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info:nth-of-type(1) {
+    color: $Font_color_2;
+    font-weight: bold;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info {
+    color: $Font_color_3;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info span {
+    color: $Font_remind;
+    margin: 0 0 0 5px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li i {
+    background: $Border_color_1;
+    border-radius: 50px;
+    color: $Font_color_1;
+    font-size: 16px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li:nth-of-type(4) i {
+    font-size: 20px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li.active i {
+    background: $Font_positive;
+} 
+main.innerPage .center .midSide.memberCenter .midBottom form .half label .itemName {
+    text-align: end;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form .half label button {
+    white-space: nowrap;
+}
+main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form .half>.remind  {
+    color: $Font_remind;
+    font-size: 12px;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form .half>.remind span {
+    color: $Font_color_4;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form::before {
+    background: $Border_color_1;
+}
+main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+
 
 //bankCard
 main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
@@ -497,7 +601,6 @@ main.innerPage .center .midSide .midTop .objectList li p.hint {
     width: 100%;
     text-align: center;
 }
-
 
 //transfer + withdraw 公用
 main.innerPage .center .midSide .midTop .accountWrap {
@@ -723,6 +826,12 @@ aside.cs { //個別調整
     font-size: 16px;
     font-weight: bold;
 }
+.filter .jumpWindow.changePhone .content p.text {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
 //marquee 跑馬燈
 @mixin marqueeStyle {
@@ -859,7 +968,7 @@ aside.cs { //個別調整
 .btnStyle_2 { //按鈕樣式_2 主色邊線按鈕
     background: transparent;
     border: 1px solid $Border_color_3;
-    border-radius: 5px;
+    border-radius: 3px;
     color: $Font_Title_1;
 
     &:hover,&:active,&.active {
@@ -891,6 +1000,18 @@ aside.cs { //個別調整
     &:disabled { //個別調整
         background: #efefef;
         color: #686868;
+    }
+}
+.inputStyle_2 { //input樣式_2 
+    background: none;
+    border-radius: 5px;
+    border: none;
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:disabled { //個別調整
+        background: none;
     }
 }
 

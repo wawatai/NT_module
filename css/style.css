@@ -499,7 +499,8 @@ main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
 }
 
 main.innerPage .center .midSide .midTop form .half label p.itemName,
-main.innerPage .center .midSide .midBottom form label p.itemName {
+main.innerPage .center .midSide .midBottom form label p.itemName,
+main.innerPage .center .midSide .midBottom p.itemName {
   width: 81px;
   color: #000000;
   font-size: 14px;
@@ -508,7 +509,8 @@ main.innerPage .center .midSide .midBottom form label p.itemName {
 }
 
 main.innerPage .center .midSide .midTop form .half label p.itemName span,
-main.innerPage .center .midSide .midBottom form label p.itemName span {
+main.innerPage .center .midSide .midBottom form label p.itemName span,
+main.innerPage .center .midSide .midBottom p.itemName span {
   color: #ff0000;
   font-size: 16px;
   font-weight: bold;
@@ -532,6 +534,124 @@ main.innerPage .center .midSide .midBottom form button.submitBtn {
   width: 305px;
   height: 40px;
   font-size: 15px;
+}
+
+main.innerPage .center .midSide .midPageList li {
+  background: #686868;
+  border-radius: 5px 5px 0 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+main.innerPage .center .midSide .midPageList li:hover, main.innerPage .center .midSide .midPageList li:active, main.innerPage .center .midSide .midPageList li.active {
+  background: linear-gradient(135deg, #fae8c1 0%, #008599 100%);
+}
+
+main.innerPage .center .midSide .midBottom table tr th {
+  border-bottom: 2px solid #c7a16e;
+}
+
+main.innerPage .center .midSide .midBottom table tr th p {
+  color: #996c33;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main.innerPage .center .midSide .midBottom table tr td {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide .midBottom table tr td:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide .midBottom table tr td p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main.innerPage .center .midSide .midBottom table tr td:nth-of-type(3) p {
+  color: #008599;
+}
+
+main.innerPage .center .midSide .midBottom table tr td:nth-of-type(5) p {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info:nth-of-type(1) {
+  color: #000000;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info {
+  color: #686868;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info span {
+  color: #ff0000;
+  margin: 0 0 0 5px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li i {
+  background: #cccccc;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li:nth-of-type(4) i {
+  font-size: 20px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li.active i {
+  background: #32b411;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half label .itemName {
+  text-align: end;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half label button {
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half > .remind {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half > .remind span {
+  color: #c4a167;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-child) p {
+  border-right: 1px solid #cccccc;
 }
 
 main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
@@ -814,6 +934,13 @@ aside.cs {
   font-weight: bold;
 }
 
+.filter .jumpWindow.changePhone .content p.text {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .btnStyle_1 {
   background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
   background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
@@ -834,7 +961,7 @@ aside.cs {
 .btnStyle_2 {
   background: transparent;
   border: 1px solid #996c33;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #996c33;
 }
 .btnStyle_2:hover, .btnStyle_2:active, .btnStyle_2.active {
@@ -865,6 +992,18 @@ aside.cs {
 .inputStyle_1:disabled {
   background: #efefef;
   color: #686868;
+}
+
+.inputStyle_2 {
+  background: none;
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.inputStyle_2:disabled {
+  background: none;
 }
 
 *::-webkit-scrollbar {
@@ -1677,7 +1816,7 @@ html body .innerPage .center > div {
   height: auto;
 }
 html body .innerPage .center > div.leftSide {
-  width: 15%;
+  width: 17%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 15px;
@@ -1786,7 +1925,7 @@ html body .innerPage .center > div.leftSide .content .innerNav li a i {
   margin-right: 10px;
 }
 html body .innerPage .center > div.rightSide {
-  width: 15%;
+  width: 17%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: 15px;
@@ -1844,7 +1983,7 @@ html body .innerPage .center > div.rightSide .containerBox .recordList .contain 
   overflow-y: overlay;
 }
 html body .innerPage .center > div.rightSide .containerBox .recordList .contain li {
-  width: 80%;
+  width: 83%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1854,7 +1993,7 @@ html body .innerPage .center > div.rightSide .containerBox .recordList .contain 
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px 0;
-  margin: 0 20px;
+  margin: 0 auto;
 }
 html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.betHistory {
   width: 100%;
@@ -1920,7 +2059,7 @@ html body .innerPage .center > div.rightSide .containerBox .recordList .contain 
   margin-bottom: 5px;
 }
 html body .innerPage .center > div.midSide {
-  width: 68%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1965,7 +2104,7 @@ html body .innerPage .center > div.midSide .midTop .innerPageTitle .btn {
 }
 html body .innerPage .center > div.midSide .midTop .innerPageTitle .btn p {
   font-size: 14px;
-  margin: 0 0 2px 5px;
+  margin: 2px 0 2px 5px;
 }
 html body .innerPage .center > div.midSide .midTop .innerPageTitle .btn i {
   font-size: 15px;
@@ -2126,6 +2265,35 @@ html body .innerPage .center > div.midSide .midTop form i.fa-caret-down {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+html body .innerPage .center > div.midSide .midPageList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 0 20px;
+}
+html body .innerPage .center > div.midSide .midPageList li {
+  width: 110px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midPageList li:last-child {
+  margin-right: 0;
+}
 html body .innerPage .center > div.midSide .midBottom {
   width: 100%;
   height: 100%;
@@ -2142,6 +2310,29 @@ html body .innerPage .center > div.midSide .midBottom .content.display {
 }
 html body .innerPage .center > div.midSide .midBottom .content .titleM {
   margin: 0 0 20px 0;
+}
+html body .innerPage .center > div.midSide .midBottom .content label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom .content label .itemName {
+  margin-right: 25px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide .midBottom .content label select,
+html body .innerPage .center > div.midSide .midBottom .content label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
 }
 html body .innerPage .center > div.midSide .midBottom .content form {
   width: 100%;
@@ -2169,6 +2360,10 @@ html body .innerPage .center > div.midSide .midBottom .content form label input 
   width: 100%;
   height: 40px;
   padding: 0 15px;
+}
+html body .innerPage .center > div.midSide .midBottom .content form label select.inputStyle_2,
+html body .innerPage .center > div.midSide .midBottom .content form label input.inputStyle_2 {
+  padding: 0;
 }
 html body .innerPage .center > div.midSide .midBottom .content form label .remind {
   position: absolute;
@@ -2229,6 +2424,111 @@ html body .innerPage .center > div.midSide .midBottom .content .remindBox p.remi
 html body .innerPage .center > div.midSide .midBottom .content .remindBox p span {
   color: #ff0000;
 }
+html body .innerPage .center > div.midSide .midBottom .content table {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midBottom .content table tr th {
+  width: auto;
+  height: 25px;
+}
+html body .innerPage .center > div.midSide .midBottom .content table tr td {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state {
+  display: unset;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state .info {
+  padding: 0 0 0 20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul {
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li {
+  padding: 0;
+  margin-right: 30px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li i {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom .titleM:not(:first-child) {
+  margin: 20px 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form::before {
+  content: "";
+  width: 104.8%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half {
+  width: 46%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half .submitBtn {
+  width: 288px;
+  margin: 40px 0 0 105px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half > .remind {
+  margin: 20px 0;
+  position: unset;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half > .remind span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord input {
+  width: 207px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord button {
+  width: 60px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label button {
+  width: auto;
+  padding: 5px;
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom table tr th {
+  width: 16.6666666667%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom table tr td {
+  height: 40px;
+}
 html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
   height: 35px;
   margin-right: 10px;
@@ -2254,6 +2554,9 @@ html body .innerPage .center > div.midSide.deposit .midBottom form .submitBtn {
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList {
   padding: 20px 20px;
   position: relative;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i.fa-chevron-right {
+  margin-left: 20px;
 }
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap {
   width: 96%;
@@ -2289,6 +2592,7 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWra
 }
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul {
   width: 100%;
+  max-width: 794px;
   padding: 0;
   overflow: hidden;
 }
@@ -2805,6 +3109,48 @@ html body .filter .jumpWindow.reminder .content {
 }
 html body .filter .jumpWindow.reminder .content p {
   text-align: center;
+}
+html body .filter .jumpWindow.changePhone .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePhone .content .text {
+  width: 280px;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.changePhone .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePhone .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePhone .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.changePhone .content label button {
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.changePW .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePW .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePW .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePW .content label input {
+  padding: 0 15px;
 }
 html body .filter .jumpWindow .title {
   width: 100%;

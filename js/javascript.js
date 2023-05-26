@@ -121,7 +121,7 @@ $(function(){
 
 //innerPage 
 
-//存款
+//提款
 $(function(){
     $(".innerPage .midSide.deposit .midTop .objectList .payType li").click(function(){
         var n = $(this).index();
@@ -133,12 +133,25 @@ $(function(){
         $(".midSide.deposit .midBottom .content:eq("+ n +")")
         .addClass("display")
         .siblings().removeClass("display");
-
-        console.log(n);
     })
 })
 
-//提款
+//midPageList 換頁
+$(function(){
+    $(".innerPage .center .midSide ul.midPageList li").click(function(){
+        var n = $(this).index();
+
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+
+        $(".midSide .midBottom .content:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
+//遊戲平台展開收起
 $(function(){
     $(document).on("click",".midSide .midTop .platformWallet .stateWrap", function(){
         $(this)
@@ -197,6 +210,26 @@ $(function(){
     $(".jumpWindow i.closeWindow, .jumpWindow button.closeWindow").click(function(){
         $(".filter")
        .removeClass("display");
+    })
+
+    //更換聯電
+    $(".midSide.memberCenter .midBottom button.callChangeNum").click(function(event){
+
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.changePhone")
+        .addClass("display");
+    })
+
+    //更換聯電
+    $(".midSide.memberCenter .midBottom button.callChangePW").click(function(event){
+
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.changePW")
+        .addClass("display");
     })
 })
 

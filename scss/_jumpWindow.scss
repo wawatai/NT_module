@@ -131,6 +131,65 @@
                 }
             }
         }
+
+        //修改聯絡電話
+        &.changePhone {
+
+            .content {
+                padding: 20px 0;
+
+                .text {
+                    width: 280px;
+                    margin-bottom: 20px;
+                }
+
+                label {
+                    width: 280px;
+                    height: auto;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    input {
+                        padding: 0 15px;
+                    }
+
+                    button {
+                        padding: 5px;
+                        position: absolute;
+                        top: 50%;
+                        right: 5px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        //修改密碼
+        &.changePW {
+
+            .content {
+                padding: 20px 0;
+
+                label {
+                    width: 280px;
+                    height: auto;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    input {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
         
         .title {
             width: 100%;
