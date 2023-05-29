@@ -495,7 +495,6 @@ main.innerPage .center .midSide .midPageList li {
         background: linear-gradient(135deg, $Font_accent02 0%, $Font_accent01 100%); 
     }
 }
-
 main.innerPage .center .midSide .midBottom table tr th {
     border-bottom: 2px solid $Border_color_2;
 }
@@ -675,6 +674,59 @@ main.innerPage .center .midSide.vip .midBottom .vipNotice ul li p {
     color: $Font_color_2;
     font-size: 15px;
     line-height: 22px;
+}
+
+//wallet
+main.innerPage .center .midSide.wallet .midTop .typeBox:not(:last-child) {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox .typeName p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox .typeName span {
+    font-size: 12px;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox:nth-of-type(1) .typeName p {
+    color: $Font_Title_1;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox p.numTotal {
+    color: $Font_color_2;
+    font-size: 43px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox p.withdrawLimit {
+    color: $Font_color_3;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox p.withdrawLimit span {
+    color: $Font_color_2;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox p.platName {
+    color: $Font_color_3;
+    font-size: 16px;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox .num {
+    color: $Font_color_2;
+    font-size: 25px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap p {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap i {
+    color: $Font_color_4;
+    font-size: 14px;
 }
 
 
