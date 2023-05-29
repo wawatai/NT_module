@@ -244,39 +244,39 @@
                 display: flex;
                 flex-direction: column;
 
-                //上部 && 沒有下部
+                .innerPageTitle { //內頁標題
+                    width: 100%;
+                    height: 47px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 20px;
+
+                    .btn {
+                        width: auto;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 10px;
+                        cursor: pointer;
+
+                        p {
+                            font-size: 14px;
+                            margin: 2px 0 2px 5px;
+                        }
+
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                //上部
                 .midTop {
                     width: 100%;
                     height: auto;
                     margin-bottom: 15px;
-
-                    .innerPageTitle { //內頁標題
-                        width: 100%;
-                        height: 47px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 0 20px;
-
-                        .btn {
-                            width: auto;
-                            height: 30px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            padding: 0 10px;
-                            cursor: pointer;
-
-                            p {
-                                font-size: 14px;
-                                margin: 2px 0 2px 5px;
-                            }
-
-                            i {
-                                font-size: 15px;
-                            }
-                        }
-                    }
 
                     .objectList {
                         width: 100%;
@@ -449,7 +449,7 @@
                     }
                 }
 
-                //下部 && 沒有上部
+                //下部
                 .midBottom {
                     width: 100%;
                     height: 100%;
@@ -710,6 +710,73 @@
                                     height: 40px;
                                 }
                             }
+                        }
+                    }
+                }
+
+                //邀請會員
+                &.invite {
+
+                    .midBottom {
+                        padding: 0 20px 20px 20px;
+                    
+                        .innerPageTitle {
+                            height: 60px;
+                            border: none;
+                            padding: 0;
+                        }
+
+                        .inviteWrap {
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 0 170px;
+
+                            label {
+                                width: 100%;
+
+                                &.qrCode {
+                                    grid-row-start: span 2;
+
+                                    img {
+                                        width: 90px;
+                                        height: 90px;
+                                        background: $Font_color_2; //待移除
+                                        margin-left: 100px;
+                                    }
+                                }
+
+                                .itemName {
+                                    width: 55px;
+                                    margin-right: 20px;
+                                    flex-shrink: 0;
+                                }
+
+                                .inputStyle_2 {
+                                    padding: 0;
+                                }
+
+                                button {
+                                    width: auto;
+                                    white-space: nowrap;
+                                    padding: 8px 5px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        .inviteImg {
+                            width: 100%;
+                            height: 505px;
+                            background: $Font_color_2; //待移除
+                            object-fit: contain;
+                        }
+
+                        .infoBlock {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 20px;
                         }
                     }
                 }

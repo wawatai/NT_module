@@ -403,10 +403,10 @@ main.innerPage .center .midSide .midBottom {
     border-radius: 5px;
     box-shadow: 0 5px 10px -5px $boxShadow_2;
 }
-main.innerPage .center .midSide .midTop .innerPageTitle {
+main.innerPage .center .innerPageTitle {
     border-bottom: 1px solid $Border_color_1;
 }
-main.innerPage .center .midSide .midTop .innerPageTitle>p {
+main.innerPage .center .innerPageTitle>p {
     color: $Font_color_2;
     font-size: 20px;
     font-weight: bold;
@@ -582,6 +582,13 @@ main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-ch
     border-right: 1px solid $Border_color_1;
 }
 
+//invite
+main.innerPage .center .midSide.invite .midBottom .infoBlock p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
 
 //bankCard
 main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
