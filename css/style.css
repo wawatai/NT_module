@@ -120,11 +120,11 @@ header .loginBox li:not(:first-child) p {
 }
 
 header .loginBox > li.total p {
-  color: rgba(215, 247, 34, 0.8);
+  color: #eee3bf;
 }
 
 header .loginBox > li.total i {
-  color: rgba(215, 247, 34, 0.8);
+  color: #eee3bf;
   font-size: 12px;
 }
 
@@ -150,6 +150,8 @@ header .loginBox .transferInfo li p.money {
 
 header .bottom {
   background: #ffffff;
+  -webkit-box-shadow: 0px 2px 30px #e1e1e1;
+          box-shadow: 0px 2px 30px #e1e1e1;
 }
 
 header nav li::before {
@@ -481,13 +483,6 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay:hover, main.inn
   color: #ffffff;
 }
 
-main.innerPage .center .midSide .midBottom p.titleM {
-  color: #000000;
-  font-size: 17px;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-
 main.innerPage .center .midSide .midBottom .remindBox {
   border: 1px solid #c7a16e;
 }
@@ -496,6 +491,13 @@ main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
   color: #996c33;
   font-size: 13px;
   font-weight: bold;
+}
+
+main.innerPage .center .midSide .titleM {
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 main.innerPage .center .midSide .midTop form .half label p.itemName,
@@ -659,6 +661,109 @@ main.innerPage .center .midSide.invite .midBottom .infoBlock p {
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .innerPageTitle p span {
+  display: block;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+main.innerPage .center .midSide.vip .midBottom ul.level li p {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .bar {
+  background: #cccccc;
+  border-radius: 50px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .bar span {
+  background: -webkit-gradient(linear, left top, right top, from(#fae8c1), to(#008599));
+  background: linear-gradient(to right, #fae8c1 0%, #008599 100%);
+  border-radius: 50px;
+}
+
+main.innerPage .center .midSide.vip .midBottom ul.toNext li p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li:not(:last-child) {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p {
+  color: #686868;
+  font-size: 14px;
+  text-align: center;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p.validNum {
+  color: #996c33;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare button.more {
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .titleM i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipCardList i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p span {
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom table tr th:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.vip .midBottom table tr td p {
+  color: #000000;
+  font-size: 13px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.em {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.title {
+  color: #996c33;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipNotice ul li p {
+  color: #000000;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
@@ -1060,6 +1165,101 @@ header .downList img {
   background: #acacac;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .currentLevel {
+  background: url("../img/medal_01.png") no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) {
+  background: url("../img/vipLevel_01.png") no-repeat;
+  background-size: 100%;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) .medal {
+  background: url("../img/medal_01.png") no-repeat;
+  background-size: 100%;
+  background: #686868;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) {
+  background: url("../img/vipLevel_02.png") no-repeat;
+  background-size: 100%;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) .medal {
+  background: url("../img/medal_02.png") no-repeat;
+  background-size: 100%;
+  background: #686868;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) {
+  background: url("../img/vipLevel_01.png") no-repeat;
+  background-size: 100%;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) .medal {
+  background: url("../img/medal_03.png") no-repeat;
+  background-size: 100%;
+  background: #686868;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) {
+  background: url("../img/vipLevel_04.png") no-repeat;
+  background-size: 100%;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) .medal {
+  background: url("../img/medal_04.png") no-repeat;
+  background-size: 100%;
+  background: #686868;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) {
+  background: url("../img/vipLevel_05.png") no-repeat;
+  background-size: 100%;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) .medal {
+  background: url("../img/medal_05.png") no-repeat;
+  background-size: 100%;
+  background: #686868;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) {
+  background: url("../img/vipLevel_06.png") no-repeat;
+  background-size: 100%;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) .medal {
+  background: url("../img/medal_06.png") no-repeat;
+  background-size: 100%;
+  background: #686868;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) {
+  background: url("../img/vipLevel_07.png") no-repeat;
+  background-size: 100%;
+  background: #000000;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) .medal {
+  background: url("../img/medal_07.png") no-repeat;
+  background-size: 100%;
+  background: #686868;
 }
 
 .innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
@@ -2315,6 +2515,10 @@ html body .innerPage .center > div.midSide .midBottom .content {
 html body .innerPage .center > div.midSide .midBottom .content.display {
   display: block;
 }
+html body .innerPage .center > div.midSide .midBottom .content .innerPageTitle {
+  border-bottom: none;
+  padding: 0;
+}
 html body .innerPage .center > div.midSide .midBottom .content .titleM {
   margin: 0 0 20px 0;
 }
@@ -2541,7 +2745,6 @@ html body .innerPage .center > div.midSide.invite .midBottom {
 }
 html body .innerPage .center > div.midSide.invite .midBottom .innerPageTitle {
   height: 60px;
-  border: none;
   padding: 0;
 }
 html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap {
@@ -2591,6 +2794,266 @@ html body .innerPage .center > div.midSide.invite .midBottom .infoBlock {
   width: 100%;
   height: auto;
   margin-top: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .innerPageTitle {
+  height: auto;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  border: none;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .bar {
+  width: 100%;
+  height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .bar span {
+  width: 8%;
+  height: 100%;
+  display: inline-block;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext {
+  width: 50%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li.deposit_Num .bar span {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li.levelWater_Num .bar span {
+  width: 30%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li .bar {
+  width: 100%;
+  height: 8px;
+  margin: 0 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul li {
+  width: auto;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+  margin: 30px 0 0;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare::before {
+  content: "";
+  width: 103.7%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 50px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul li {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul li .validNum {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare button.more {
+  width: 30%;
+  height: 40px;
+  margin: 0 auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .titleM i {
+  margin-right: 5px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.fa-chevron-left, html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.fa-chevron-right {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.fa-chevron-right {
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul {
+  width: 100%;
+  max-width: 1075px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li {
+  width: 280px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li:last-child {
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .medal {
+  width: 60px;
+  height: 70px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .vipDetail {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .vipDetail p span {
+  display: block;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table {
+  margin-bottom: 50px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table.promotion tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.promotion tr td {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table.return tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.return tr td, html body .innerPage .center > div.midSide.vip .midBottom .content table.discount tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.discount tr td {
+  width: 16.6666666667%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table tr td {
+  height: 50px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice .title {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice .em {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice ul {
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 40px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice ul li {
+  width: 100%;
+  height: auto;
+  list-style: cjk-ideographic;
+  margin-bottom: 10px;
 }
 html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
   height: 35px;

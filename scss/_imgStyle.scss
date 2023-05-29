@@ -37,6 +37,87 @@ header .downList img {
 
 //innerPage///////////
 
+//vip
+.innerPage  .center>div.midSide.vip .midBottom .content .currentLevel {
+    background: url("../img/medal_01.png") no-repeat;
+    background-size: 100%;
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 30px;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) {
+    background: url("../img/vipLevel_01.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) .medal {
+    background: url("../img/medal_01.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_3; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) {
+    background: url("../img/vipLevel_02.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) .medal {
+    background: url("../img/medal_02.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_3; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) {
+    background: url("../img/vipLevel_01.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) .medal {
+    background: url("../img/medal_03.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_3; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) {
+    background: url("../img/vipLevel_04.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) .medal {
+    background: url("../img/medal_04.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_3; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) {
+    background: url("../img/vipLevel_05.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) .medal {
+    background: url("../img/medal_05.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_3; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) {
+    background: url("../img/vipLevel_06.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) .medal {
+    background: url("../img/medal_06.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_3; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) {
+    background: url("../img/vipLevel_07.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_2; //待移除
+}
+.innerPage  .center>div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) .medal {
+    background: url("../img/medal_07.png") no-repeat;
+    background-size: 100%;
+    background: $Font_color_3; //待移除
+}
+
 //deposit
 .innerPage  .center>div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
     background: url("../img/icon/svg/payWay01.svg") no-repeat center;

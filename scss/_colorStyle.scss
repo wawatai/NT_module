@@ -12,6 +12,7 @@ $Font_negative: $Font_remind;
 $Font_positive: #32b411;
 $Font_accent01: #008599;
 $Font_accent02: #fae8c1;
+$Font_accent03: mix($Font_accent01,$Font_accent02, 5%);
 
 $Border_color_0: #ffffff;
 $Border_color_1: #cccccc;
@@ -116,7 +117,7 @@ header .loginBox .userName { //個別調整
     font-weight: bold;
 
     span {
-        color: #008599;
+        color: $Font_accent01;
     }
 }
 header .loginBox li a {
@@ -128,10 +129,10 @@ header .loginBox li:not(:first-child) p {
     color: $Font_color_1;
 }
 header .loginBox>li.total p { //個別調整
-    color: #d7f722cc;
+    color: $Font_accent03;
 }
 header .loginBox>li.total i { //個別調整
-    color: #d7f722cc;
+    color: $Font_accent03;
     font-size: 12px;
 }
 header .loginBox .transferInfo  { //個別調整
@@ -152,6 +153,7 @@ header .loginBox .transferInfo li p.money { //個別調整
 }
 header .bottom {
     background: $BG_color_2;
+    box-shadow: 0px 2px 30px $boxShadow_1;
 }
 header nav li::before {
     background: $Border_color_2;
@@ -433,12 +435,6 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay {
         color: $Font_color_1;
     }
 }
-main.innerPage .center .midSide .midBottom p.titleM {
-    color: $Font_color_2;
-    font-size: 17px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
 main.innerPage .center .midSide .midBottom .remindBox {
     border: 1px solid $Border_color_2;
 }
@@ -446,6 +442,12 @@ main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
     color: $Font_Title_1;
     font-size: 13px;
     font-weight: bold;
+}
+main.innerPage .center .midSide .titleM {
+    color: $Font_color_2;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 main.innerPage .center .midSide .midTop form .half label p.itemName,
 main.innerPage .center .midSide .midBottom form label p.itemName,
@@ -589,6 +591,93 @@ main.innerPage .center .midSide.invite .midBottom .infoBlock p {
     font-weight: bold;
     line-height: 20px;
 }
+
+//vip
+main.innerPage .center .midSide.vip .midBottom .innerPageTitle p span {
+    display: block;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+main.innerPage .center .midSide.vip .midBottom ul.level li p {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .bar {
+    background: $Border_color_1;
+    border-radius: 50px;
+}
+main.innerPage .center .midSide.vip .midBottom .bar span {
+    background: linear-gradient(to right, $Font_accent02 0%, $Font_accent01 100%);
+    border-radius: 50px;
+}
+main.innerPage .center .midSide.vip .midBottom ul.toNext li p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare::before {
+    background: $Border_color_1;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li:not(:last-child) {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p {
+    color: $Font_color_3;
+    font-size: 14px;
+    text-align: center;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p.validNum {
+    color: $Font_Title_1;
+    font-size: 30px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare button.more {
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .titleM i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .vipCardList i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p {
+    color: $Font_color_1;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px $boxShadow_2;
+    text-align: center;
+}
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p span {
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom table tr th:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.vip .midBottom table tr td p {
+    color: $Font_color_2;
+    font-size: 13px;
+}
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.em {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.title {
+    color: $Font_Title_1;
+    font-size: 24px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.vip .midBottom .vipNotice ul li p {
+    color: $Font_color_2;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
 
 //bankCard
 main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {

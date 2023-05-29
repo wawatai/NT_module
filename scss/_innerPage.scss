@@ -406,7 +406,7 @@
                         }
                     }
 
-                    form {  //中間只有一欄用 MidTop ㄉ form公用
+                    form {  
 
                         label {
                             margin-bottom: 20px;
@@ -463,6 +463,11 @@
 
                         &.display {
                             display: block;
+                        }
+
+                        .innerPageTitle {
+                            border-bottom: none;
+                            padding: 0;
                         }
 
                         .titleM {  //頁面標題
@@ -722,7 +727,6 @@
                     
                         .innerPageTitle {
                             height: 60px;
-                            border: none;
                             padding: 0;
                         }
 
@@ -777,6 +781,291 @@
                             width: 100%;
                             height: auto;
                             margin-top: 20px;
+                        }
+                    }
+                }
+
+                //VIP會員
+                &.vip {
+
+                    .midBottom {
+
+                        .content {
+
+                            .innerPageTitle {
+                                height: auto;
+                                justify-content: unset;
+                                border: none;
+                            }
+    
+                            .bar {
+                                width: 100%;
+                                height: 13px;
+                                display: flex;
+                                align-items: center;
+                                overflow: hidden;
+                                margin: 0 0 30px;
+    
+                                span {
+                                    width: 8%;
+                                    height: 100%;
+                                    display: inline-block;
+                                }
+                            }
+    
+                            ul {
+                                width: 100%;
+                                height: auto;
+    
+                                &.level {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin: 30px 0 10px;
+                                }
+    
+                                &.toNext {
+                                    width: 50%;
+                                    
+                                    li {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        margin-bottom: 15px;
+    
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+    
+                                        &.deposit_Num {
+    
+                                            .bar {
+    
+                                                span {
+                                                    width: 20%;
+                                                }
+                                            }
+                                        }
+    
+                                        &.levelWater_Num {
+                                            
+                                            .bar {
+    
+                                                span {
+                                                    width: 30%;
+                                                }
+                                            }
+                                        }
+    
+                                        .bar {
+                                            width: 100%;
+                                            height: 8px;
+                                            margin: 0 10px;
+                                        }
+                                    }
+                                }
+    
+                                li {
+                                    width: auto;
+                                    height: auto;
+                                }
+                            }
+    
+                            .levelWelfare {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 15px 0;
+                                margin: 30px 0 0;
+                                position: relative;
+    
+                                &::before {
+                                    content: "";
+                                    width: 103.7%;
+                                    height: 1px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+    
+                                ul {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin: 30px 0 50px;
+    
+                                    li {
+                                        width: 100%;
+                                        height: auto;
+                                        padding: 10px 0;
+    
+                                        .validNum {
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+    
+                                button {
+    
+                                    &.more {
+                                        width: 30%;
+                                        height: 40px;
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+
+                            .titleM {
+                                
+                                i {
+                                    margin-right: 5px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .vipCardList {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                padding: 20px 0;
+        
+                                i {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+        
+                                    &.fa-chevron-left,
+                                    &.fa-chevron-right {
+                                        cursor: pointer;
+                                    }
+
+                                    &.fa-chevron-right {
+                                        margin-left: 20px;
+                                    }
+                                }
+                                
+                                ul {
+                                    width: 100%;
+                                    max-width: 1075px;
+                                    height: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0 20px;
+                                    overflow: hidden;
+                                    position: relative;
+
+                                    ol {
+                                        width: 100%;
+                                        height: auto;
+                                        display: flex;
+                                        align-items: center;
+
+                                        li {
+                                            width: 280px;
+                                            height: 150px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            flex-shrink: 0;
+                                            justify-content: space-between;
+                                            border-radius: 10px;
+                                            padding: 15px;
+                                            margin-right: 10px;
+                                            overflow: hidden;
+
+                                            &:last-child {
+                                                margin: 0;
+                                            }
+
+                                            .medal {
+                                                width: 60px;
+                                                height: 70px;
+                                            }
+
+                                            .vipDetail {
+                                                width: 100%;
+                                                height: auto;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                padding: 0 20px;
+                                                margin-top: 10px;
+
+                                                p {
+
+                                                    span {
+                                                        display: block;
+                                                        margin-top: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            table {
+                                margin-bottom: 50px;
+
+                                &.promotion {
+
+                                    tr {
+
+                                        th,
+                                        td {
+                                            width: 25%;
+                                        }
+                                    }
+                                }
+
+                                &.return,
+                                &.discount {
+
+                                    tr {
+
+                                        th,
+                                        td {
+                                            width: calc(100% / 6);
+                                        }
+                                    }
+                                }
+
+                                tr {
+
+                                    td {
+                                        height: 50px;
+                                    }
+                                }
+                                
+                            }
+
+                            .vipNotice {
+                                width: 100%;
+                                height: auto;
+
+                                .title {
+                                    margin-bottom: 20px;
+                                }
+
+                                .em {
+                                    margin-bottom: 20px;
+                                }
+
+                                ul {
+                                    width: 100%;
+                                    height: auto;
+                                    padding: 0 0 0 40px;
+
+                                    li {
+                                        width: 100%;
+                                        height: auto;
+                                        list-style: cjk-ideographic;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

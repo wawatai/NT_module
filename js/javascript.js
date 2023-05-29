@@ -151,6 +151,22 @@ $(function(){
     })
 })
 
+//vip 更多
+$(function(){
+    $(".innerPage .center .midSide.vip .midBottom .content button.more, .innerPage .center .midSide.vip .midBottom .content i.backBtn").click(function(){
+        
+        $(this)
+        .closest(".content")
+        .removeClass("display");
+
+        $(this)
+        .closest(".content")
+        .siblings()
+        .addClass("display");
+    })
+})
+
+
 //遊戲平台展開收起
 $(function(){
     $(document).on("click",".midSide .midTop .platformWallet .stateWrap", function(){
