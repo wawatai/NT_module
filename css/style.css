@@ -500,6 +500,13 @@ main.innerPage .center .midSide .titleM {
   letter-spacing: 3px;
 }
 
+main.innerPage .center .midSide .titleS {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 main.innerPage .center .midSide .midTop form .half label p.itemName,
 main.innerPage .center .midSide .midBottom form label p.itemName,
 main.innerPage .center .midSide .midBottom p.itemName {
@@ -563,6 +570,7 @@ main.innerPage .center .midSide .midBottom table tr th p {
 
 main.innerPage .center .midSide .midBottom table tr td {
   border-bottom: 1px solid #cccccc;
+  text-align: center;
 }
 
 main.innerPage .center .midSide .midBottom table tr td:not(:last-child) p {
@@ -576,12 +584,16 @@ main.innerPage .center .midSide .midBottom table tr td p {
   text-align: center;
 }
 
-main.innerPage .center .midSide .midBottom table tr td:nth-of-type(3) p {
-  color: #008599;
+main.innerPage .center .midSide .midBottom table tr td i {
+  color: #c4a167;
+  font-size: 14px;
+  text-align: center;
 }
 
-main.innerPage .center .midSide .midBottom table tr td:nth-of-type(5) p {
-  color: #32b411;
+main.innerPage .center .midSide .midBottom table tr td button {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
 }
 
 main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info:nth-of-type(1) {
@@ -654,6 +666,14 @@ main.innerPage .center .midSide.memberCenter .midBottom form::before {
 
 main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-child) p {
   border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(3) p {
+  color: #008599;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {
+  color: #32b411;
 }
 
 main.innerPage .center .midSide.invite .midBottom .infoBlock p {
@@ -741,11 +761,6 @@ main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail 
 
 main.innerPage .center .midSide.vip .midBottom table tr th:not(:last-child) p {
   border-right: 1px solid #cccccc;
-}
-
-main.innerPage .center .midSide.vip .midBottom table tr td p {
-  color: #000000;
-  font-size: 13px;
 }
 
 main.innerPage .center .midSide.vip .midBottom .vipNotice p.em {
@@ -847,6 +862,31 @@ main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
 main.innerPage .center .midSide .midTop .objectList li p.hint {
   width: 100%;
   text-align: center;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom form .selectBrn_Wrap button {
+  font-size: 14px;
+}
+main.innerPage .center .midSide.dealRecord .midBottom form .selectBrn_Wrap button:hover, main.innerPage .center .midSide.dealRecord .midBottom form .selectBrn_Wrap button:active, main.innerPage .center .midSide.dealRecord .midBottom form .selectBrn_Wrap button.active {
+  background: #c4a167;
+  border-color: #c7a16e;
+  color: #ffffff;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom form.searchBlock::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom table tr th:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(3) p {
+  color: #008599;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
+  color: #32b411;
 }
 
 main.innerPage .center .midSide .midTop .accountWrap {
@@ -1103,17 +1143,61 @@ aside.cs {
   font-weight: bold;
 }
 
-.filter .jumpWindow.reminder .content p {
+.filter .jumpWindow .content p {
   color: #000000;
   font-size: 16px;
   font-weight: bold;
 }
 
-.filter .jumpWindow.changePhone .content p.text {
+.filter .jumpWindow .content p.serialNum {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow .content p.text {
   color: #000000;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.filter .jumpWindow .content table {
+  border: 1px solid #cccccc;
+}
+
+.filter .jumpWindow .content table tr {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.filter .jumpWindow .content table tr th {
+  border-bottom: 2px solid #c7a16e;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.filter .jumpWindow .content table tr th p {
+  color: #c4a167;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow .content table tr td {
+  vertical-align: middle;
+}
+
+.filter .jumpWindow .content table tr:not(:last-child) td {
+  border-bottom: 1px solid #cccccc;
+}
+
+.filter .jumpWindow .content table tr td p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.filter .jumpWindow.dealDetail .content table tr td:nth-of-type(3) p {
+  color: #32b411;
 }
 
 .btnStyle_1 {
@@ -1131,6 +1215,7 @@ aside.cs {
 }
 .btnStyle_1:disabled {
   background: #c0c0c0;
+  cursor: default;
 }
 
 .btnStyle_2 {
@@ -2621,6 +2706,58 @@ html body .innerPage .center > div.midSide .midBottom .content form {
   width: 100%;
   height: auto;
 }
+html body .innerPage .center > div.midSide .midBottom .content form.searchBlock {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 345px 355px 405px;
+  grid-template-columns: 345px 355px 405px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom .content form.searchBlock::before {
+  content: "";
+  width: 103.7%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide .midBottom .content form.searchBlock label {
+  width: 345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom .content form.searchBlock label:nth-of-type(1) {
+  grid-column-start: span 4;
+}
+html body .innerPage .center > div.midSide .midBottom .content form.searchBlock .selectBrn_Wrap {
+  width: auto;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 30px;
+}
+html body .innerPage .center > div.midSide .midBottom .content form.searchBlock .selectBrn_Wrap button {
+  width: 70px;
+  height: 100%;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide .midBottom .content form.searchBlock .searchBtn {
+  width: 35%;
+  height: 40px;
+  justify-self: flex-end;
+}
 html body .innerPage .center > div.midSide .midBottom .content form label {
   width: 100%;
   height: auto;
@@ -2717,7 +2854,7 @@ html body .innerPage .center > div.midSide .midBottom .content table tr th {
 }
 html body .innerPage .center > div.midSide .midBottom .content table tr td {
   width: auto;
-  height: auto;
+  height: 50px;
   vertical-align: middle;
 }
 html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state {
@@ -3103,9 +3240,6 @@ html body .innerPage .center > div.midSide.vip .midBottom .content table.return 
 html body .innerPage .center > div.midSide.vip .midBottom .content table.discount tr td {
   width: 16.6666666667%;
 }
-html body .innerPage .center > div.midSide.vip .midBottom .content table tr td {
-  height: 50px;
-}
 html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice {
   width: 100%;
   height: auto;
@@ -3186,36 +3320,29 @@ html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .pl
 html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .platformOuter .platformBox .num {
   margin-top: 15px;
 }
-html body .innerPage .center > div.midSide.dealRecord .midBottom form {
-  width: 100%;
-  height: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content .searchBlock .searchBtn {
+  justify-self: flex-end;
 }
-html body .innerPage .center > div.midSide.dealRecord .midBottom form label {
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th {
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-html body .innerPage .center > div.midSide.dealRecord .midBottom form label:nth-of-type(1) {
-  width: 345px;
-  grid-column-start: span 3;
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th:nth-of-type(1), html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th:nth-of-type(6) {
+  width: 20%;
 }
-html body .innerPage .center > div.midSide.dealRecord .midBottom form label select,
-html body .innerPage .center > div.midSide.dealRecord .midBottom form label input {
-  width: 100%;
-  height: 40px;
-  padding: 0 15px;
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td {
+  width: auto;
 }
-html body .innerPage .center > div.midSide.dealRecord .midBottom form label select.inputStyle_2,
-html body .innerPage .center > div.midSide.dealRecord .midBottom form label input.inputStyle_2 {
-  padding: 0;
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td:nth-of-type(1), html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td:nth-of-type(6) {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td p {
+  border: none;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table tr th {
+  width: 25%;
 }
 html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
   height: 35px;
@@ -3831,6 +3958,22 @@ html body .filter .jumpWindow.changePW .content label:last-child {
 html body .filter .jumpWindow.changePW .content label input {
   padding: 0 15px;
 }
+html body .filter .jumpWindow.dealDetail {
+  width: 840px;
+}
+html body .filter .jumpWindow.dealDetail .content {
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.dealDetail .content .serialNum span {
+  margin-left: 10px;
+}
+html body .filter .jumpWindow.dealDetail .content table tr th,
+html body .filter .jumpWindow.dealDetail .content table tr td {
+  width: auto;
+}
 html body .filter .jumpWindow .title {
   width: 100%;
   height: 50px;
@@ -3870,6 +4013,9 @@ html body .filter .jumpWindow .content {
 html body .filter .jumpWindow .content input {
   width: 280px;
   height: 42px;
+}
+html body .filter .jumpWindow .content table {
+  margin-top: 20px;
 }
 html body .filter .jumpWindow .btnBox {
   width: 100%;

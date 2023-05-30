@@ -190,6 +190,34 @@
                 }
             }
         }
+
+        &.dealDetail {
+            width: 840px;
+            
+            .content {
+                padding: 20px;
+                align-items: unset;
+
+                .serialNum {
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+
+                table {
+
+                    tr {
+
+                        th,
+                        td {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            
+        }
         
         .title {
             width: 100%;
@@ -217,6 +245,10 @@
             input {
                 width: 280px;
                 height: 42px;
+            }
+
+            table {
+                margin-top: 20px;
             }
         }
 

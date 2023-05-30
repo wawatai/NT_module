@@ -229,7 +229,7 @@ $(function(){
     })
 
     //更換聯電
-    $(".midSide.memberCenter .midBottom button.callChangeNum").click(function(event){
+    $(".midSide.memberCenter .midBottom button.callChangeNum").click(function(){
 
         $(".jumpWindow")
         .removeClass("display");
@@ -239,12 +239,22 @@ $(function(){
     })
 
     //更換聯電
-    $(".midSide.memberCenter .midBottom button.callChangePW").click(function(event){
+    $(".midSide.memberCenter .midBottom button.callChangePW").click(function(){
 
         $(".jumpWindow")
         .removeClass("display");
 
         $(".filter, .jumpWindow.changePW")
+        .addClass("display");
+    })
+
+    //注單明細
+    $(".midSide.dealRecord .midBottom .content .callDealDetail").click(function(){
+
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.dealDetail")
         .addClass("display");
     })
 })

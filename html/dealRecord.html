@@ -584,8 +584,8 @@
                     </li>
                 </ul>
                 <div class="midBottom">
-                    <form class="searchBlock">
-                        <form>
+                    <div class="content display">
+                        <form class="searchBlock">
                             <label>
                                 <p class="itemName">
                                     <span></span>
@@ -600,20 +600,127 @@
                             <label>
                                 <p class="itemName">
                                     <span></span>
-                                    生日
+                                    日期
                                 </p>
                                 <input type="date" class="inputStyle_1">
                                 <i class="fa-regular fa-calendar"></i>
                             </label>
                             <div class="selectBrn_Wrap">
-                                <button type="button"></button>
-                                <button type="button"></button>
-                                <button type="button"></button>
-                                <button type="button"></button>
+                                <button type="button" class="btnStyle_3">昨天</button>
+                                <button type="button" class="btnStyle_3 active">今天</button>
+                                <button type="button" class="btnStyle_3">本週</button>
+                                <button type="button" class="btnStyle_3">本月</button>
                             </div>
-                            <button type="submit" class="btnStyle_1">查詢</button>
+                            <button type="submit" class="btnStyle_1 searchBtn">查詢</button>
                         </form>
-                    </form>
+                        <table class="deal">
+                            <tr>
+                                <th>
+                                    <p>時間</p>
+                                </th>
+                                <th>
+                                    <p>類型</p>
+                                </th>
+                                <th>
+                                    <p>交易內容</p>
+                                </th>
+                                <th>
+                                    <p>金額</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>2022-01-06 10:16:52</p>
+                                </td>
+                                <td>
+                                    <p>一般錢包-轉入</p>
+                                </td>
+                                <td>
+                                    <p>中心錢包->BNG娱乐</p>
+                                </td>
+                                <td>
+                                    <p>-9883.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>2022-01-06 10:16:52</p>
+                                </td>
+                                <td>
+                                    <p>一般錢包-轉入</p>
+                                </td>
+                                <td>
+                                    <p>中心錢包->BNG娱乐</p>
+                                </td>
+                                <td>
+                                    <p>-9883.00</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="content">
+                        <p class="titleM">流水紀錄</p>
+                        <table class="water">
+                            <tr>
+                                <th>
+                                    <p>編號</p>
+                                </th>
+                                <th>
+                                    <p>狀態</p>
+                                </th>
+                                <th>
+                                    <p>金額</p>
+                                </th>
+                                <th>
+                                    <p>流水限制</p>
+                                </th>
+                                <th>
+                                    <p>流水變化</p>
+                                </th>
+                                <th>
+                                    <p>上鎖日期</p>
+                                </th>
+                                <th>
+                                    <p>查看回補</p>
+                                </th>
+                                <th>
+                                    <p>查看注單</p>
+                                </th>
+                                <th>
+                                    <p>備註</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>163790876888924</p>
+                                </td>
+                                <td>
+                                    <p>會員存款</p>
+                                </td>
+                                <td>
+                                    <p>100.0000</p>
+                                </td>
+                                <td>
+                                    <p>100.0000</p>
+                                </td>
+                                <td>
+                                    <p>100.0000</p>
+                                </td>
+                                <td>
+                                    <p>2021-12-29 15:32:08</p>
+                                </td>
+                                <td>
+                                    <button class="btnStyle_1" disabled>回補</button>
+                                </td>
+                                <td>
+                                    <button class="btnStyle_2 callDealDetail">注單</button>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </dic>
@@ -671,6 +778,49 @@
     </footer>
     <!-- 彈窗 -->
     <div class="filter">
+         <!-- 注單明細 -->
+         <div class="jumpWindow dealDetail">
+            <div class="title">
+                <p>注單明細</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p class="serialNum">編號
+                    <span>347</span>
+                </p>
+                <table class="dealJump">
+                    <tr>
+                        <th>
+                            <p>編號</p>
+                        </th>
+                        <th>
+                            <p>平臺</p>
+                        </th>
+                        <th>
+                            <p>金額</p>
+                        </th>
+                        <th>
+                            <p>日期</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>0952fa1c0b3a469b8a53223dfe6ec10e1</p>
+                        </td>
+                        <td>
+                            <p>BNG電子娛樂</p>
+                        </td>
+                        <td>
+                            <p>40</p>
+                        </td>
+                        <td>
+                            <p>2021-12-30 10:44:04</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
     <div class="bg"></div>
 </body>
