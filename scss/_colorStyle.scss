@@ -518,6 +518,12 @@ main.innerPage .center .midSide .midPageList li {
 }
 
 //表格搜尋欄
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap span.hint {
+    color: $Font_remind;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
 main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button {
     font-size: 14px;
 
