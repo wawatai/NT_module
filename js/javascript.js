@@ -166,7 +166,6 @@ $(function(){
     })
 })
 
-
 //遊戲平台展開收起
 $(function(){
     $(document).on("click",".midSide .midTop .platformWallet .stateWrap", function(){
@@ -198,6 +197,17 @@ $(function(){
         $(this)
         .find("i")
         .attr("class","fa-solid fa-angles-down");
+    })
+})
+
+//搜尋列選擇按鈕
+$(function(){
+    $(".midSide form.searchBlock .selectBtn_Wrap button").click(function(){
+
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
     })
 })
 
@@ -256,6 +266,19 @@ $(function(){
 
         $(".filter, .jumpWindow.dealDetail")
         .addClass("display");
+    })
+
+    //紅利 X代會員
+    $(".midSide.pointRecord .midBottom .content .callPoint_Window").click(function(){
+        var n = $(this).text();
+
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.pointDetail")
+        .addClass("display")
+        .find(".title p span")
+        .text(n);
     })
 })
 

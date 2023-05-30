@@ -517,6 +517,20 @@ main.innerPage .center .midSide .midPageList li {
     }
 }
 
+//表格搜尋欄
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button {
+    font-size: 14px;
+
+    &:hover,&:active,&.active {
+        background: $Font_color_4;
+        border-color: $Border_color_2;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide .midBottom .content form.searchBlock::before {
+    background: $Border_color_1;
+}
+
 //表格通用
 main.innerPage .center .midSide .midBottom table tr th {
     border-bottom: 2px solid $Border_color_2;
@@ -779,18 +793,6 @@ main.innerPage .center .midSide .midTop .objectList li p.hint {
 }
 
 //dealRecord
-main.innerPage .center .midSide.dealRecord .midBottom form .selectBrn_Wrap button {
-    font-size: 14px;
-
-    &:hover,&:active,&.active {
-        background: $Font_color_4;
-        border-color: $Border_color_2;
-        color: $Font_color_1;
-    }
-}
-main.innerPage .center .midSide.dealRecord .midBottom form.searchBlock::before {
-    background: $Border_color_1;
-}
 main.innerPage .center .midSide.dealRecord .midBottom table tr th:not(:last-child) p {
     border-right: 1px solid $Border_color_1;
 }
@@ -799,6 +801,13 @@ main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-t
 }
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
     color: $Font_positive;
+}
+
+//pointRecord
+main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-type(1) p {
+    color: $Font_accent01;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 //transfer + withdraw 公用
@@ -1036,6 +1045,7 @@ aside.cs { //個別調整
     font-weight: bold;
     letter-spacing: 1px;
 }
+//表格通用
 .filter .jumpWindow .content table {
     border: 1px solid $Border_color_1;
 }
@@ -1065,6 +1075,31 @@ aside.cs { //個別調整
 }
 .filter .jumpWindow.dealDetail .content table tr td:nth-of-type(3) p {
     color: $Font_positive;
+}
+//查詢紅利 x代會員
+.filter .jumpWindow .content table.pointJump {
+    border: 1px solid $Border_color_2;
+}
+.filter .jumpWindow .content table.pointJump tr {
+    width: 99.8%;
+    height: 40px;
+    background: $BG_color_2;
+    display: inline-table;
+}
+.filter .jumpWindow .content table tr th {
+    border-bottom: 1px solid $Border_color_2;
+}
+.filter .jumpWindow .content table tr th p {
+    color: $Font_color_2;
+}
+.filter .jumpWindow .content table tr th:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+.filter .jumpWindow .content table tr:not(:last-child) td {
+    border-color: $Border_color_2;
+}
+.filter .jumpWindow .content table tr td:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
 }
 
 

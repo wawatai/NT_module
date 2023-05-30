@@ -191,6 +191,7 @@
             }
         }
 
+        //注單明細
         &.dealDetail {
             width: 840px;
             
@@ -212,6 +213,46 @@
                         th,
                         td {
                             width: auto;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        //注單明細
+        &.pointDetail {
+            width: 480px;
+            
+            .content {
+                max-height: 281px;
+                padding: 20px;
+                align-items: unset;
+
+                .scrollOuter {
+                    width: 100%;
+                    height: auto;
+                    overflow: auto;
+                    
+
+                    table {
+                        width: 100%;
+                        padding-top: 40px;
+                        margin: 0;
+                        position: relative;
+    
+                        tr {
+
+                            &:first-child {
+                                position: absolute;
+                                top: 0;
+                            }
+    
+                            th,
+                            td {
+                                width: 50%;
+                            }
+                            
                         }
                     }
                 }

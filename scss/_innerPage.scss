@@ -535,11 +535,11 @@
                                     }
                                 }
 
-                                .selectBrn_Wrap {
+                                .selectBtn_Wrap {
                                     width: auto;
                                     height: 40px;
                                     display: flex;
-                                    margin: 0 0 0 30px;
+                                    margin: 0 30px;
                                     
                                     button {
                                         width: 70px;
@@ -1237,6 +1237,46 @@
 
                                     th {
                                         width: calc(100% / 4);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //查詢紅利
+                &.pointRecord {
+
+                    .midBottom {
+                        padding: 0 20px 20px;
+
+                        .content {
+
+                            form {
+
+                                &.searchBlock {
+                                    grid-template-columns: 30% 30% 40%;
+                                    padding: 0;
+                                    margin-top: 10px;
+
+                                    label {
+                                        width: 100%;
+                                        grid-column-start: unset;
+
+                                        .itemName {
+                                            width: auto;
+                                        }
+                                    }
+                                }
+                            }
+
+                            table {
+
+                                tr {
+
+                                    th,
+                                    td {
+                                        width: 25%;
                                     }
                                 }
                             }

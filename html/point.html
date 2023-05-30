@@ -535,13 +535,13 @@
                                 <p>綁定銀行卡</p>
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="./dealRecord.html">
                                 <i class="fa-regular fa-file-lines"></i>
                                 <p>交易紀錄</p>
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="./point.html">
                                 <i class="fa-solid fa-envelope-open-text"></i>
                                 <p>查詢紅利</p>
@@ -569,34 +569,13 @@
                 </div>
             </div>
             <!-- 中欄 -->
-            <div class="midSide dealRecord">
-                <div class="midTop">
-                    <div class="innerPageTitle">
-                        <p>交易紀錄</p>
-                    </div>             
-                </div>
-                <ul class="midPageList">
-                    <li class="active">
-                        <p>交易紀錄</p>
-                    </li>
-                    <li>
-                        <p>流水紀錄</p>
-                    </li>
-                </ul>
+            <div class="midSide pointRecord">
                 <div class="midBottom">
                     <div class="content display">
+                        <div class="innerPageTitle">
+                            <p>查詢紅利</p>
+                        </div>
                         <form class="searchBlock">
-                            <label>
-                                <p class="itemName">
-                                    <span></span>
-                                    類型
-                                </p>
-                                <select class="inputStyle_1">
-                                    <option>存款</option>
-                                    <option>提款</option>
-                                </select>
-                                <i class="fa-solid fa-caret-down"></i>
-                            </label>
                             <label>
                                 <p class="itemName">
                                     <span></span>
@@ -616,107 +595,58 @@
                         <table class="deal">
                             <tr>
                                 <th>
-                                    <p>時間</p>
+                                    <p>層級</p>
                                 </th>
                                 <th>
-                                    <p>類型</p>
+                                    <p>人數</p>
                                 </th>
                                 <th>
-                                    <p>交易內容</p>
+                                    <p>有效投注</p>
                                 </th>
                                 <th>
-                                    <p>金額</p>
+                                    <p>預估紅利</p>
                                 </th>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>2022-01-06 10:16:52</p>
+                                    <p class="callPoint_Window">一代會員</p>
                                 </td>
                                 <td>
-                                    <p>一般錢包-轉入</p>
+                                    <p>0</p>
                                 </td>
                                 <td>
-                                    <p>中心錢包->BNG娱乐</p>
+                                    <p>0</p>
                                 </td>
                                 <td>
-                                    <p>-9883.00</p>
+                                    <p>0</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>2022-01-06 10:16:52</p>
+                                    <p class="callPoint_Window">二代會員</p>
                                 </td>
                                 <td>
-                                    <p>一般錢包-轉入</p>
+                                    <p>0</p>
                                 </td>
                                 <td>
-                                    <p>中心錢包->BNG娱乐</p>
+                                    <p>0</p>
                                 </td>
                                 <td>
-                                    <p>-9883.00</p>
+                                    <p>0</p>
                                 </td>
                             </tr>
-                        </table>
-                    </div>
-                    <div class="content">
-                        <p class="titleM">流水紀錄</p>
-                        <table class="water">
                             <tr>
-                                <th>
-                                    <p>編號</p>
-                                </th>
-                                <th>
-                                    <p>狀態</p>
-                                </th>
-                                <th>
-                                    <p>金額</p>
-                                </th>
-                                <th>
-                                    <p>流水限制</p>
-                                </th>
-                                <th>
-                                    <p>流水變化</p>
-                                </th>
-                                <th>
-                                    <p>上鎖日期</p>
-                                </th>
-                                <th>
-                                    <p>查看回補</p>
-                                </th>
-                                <th>
-                                    <p>查看注單</p>
-                                </th>
-                                <th>
-                                    <p>備註</p>
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>163790876888924</p>
+                                <td class="callPoint_Window">
+                                    <p>三代會員</p>
                                 </td>
                                 <td>
-                                    <p>會員存款</p>
+                                    <p>0</p>
                                 </td>
                                 <td>
-                                    <p>100.0000</p>
+                                    <p>0</p>
                                 </td>
                                 <td>
-                                    <p>100.0000</p>
-                                </td>
-                                <td>
-                                    <p>100.0000</p>
-                                </td>
-                                <td>
-                                    <p>2021-12-29 15:32:08</p>
-                                </td>
-                                <td>
-                                    <button class="btnStyle_1" disabled>回補</button>
-                                </td>
-                                <td>
-                                    <button class="btnStyle_2 callDealDetail">注單</button>
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-angle-down"></i>
+                                    <p>0</p>
                                 </td>
                             </tr>
                         </table>
@@ -777,48 +707,69 @@
         </div>
     </footer>
     <!-- 彈窗 -->
-    <div class="filter">
+    <div class="filter display">
          <!-- 注單明細 -->
-         <div class="jumpWindow dealDetail">
+         <div class="jumpWindow pointDetail display">
             <div class="title">
-                <p>注單明細</p>
+                <p>
+                    <span>一代會員</span>
+                     - 詳情</p>
                 <!-- <i class="close_ic"></i> -->
                 <i class="fa-solid fa-xmark closeWindow"></i>
             </div>
             <div class="content">
-                <p class="serialNum">編號
-                    <span>347</span>
-                </p>
-                <table class="dealJump">
-                    <tr>
-                        <th>
-                            <p>編號</p>
-                        </th>
-                        <th>
-                            <p>平臺</p>
-                        </th>
-                        <th>
-                            <p>金額</p>
-                        </th>
-                        <th>
-                            <p>日期</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>0952fa1c0b3a469b8a53223dfe6ec10e1</p>
-                        </td>
-                        <td>
-                            <p>BNG電子娛樂</p>
-                        </td>
-                        <td>
-                            <p>40</p>
-                        </td>
-                        <td>
-                            <p>2021-12-30 10:44:04</p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="scrollOuter">
+                    <table class="pointJump">
+                        <tr>
+                            <th>
+                                <p>會員帳號</p>
+                            </th>
+                            <th>
+                                <p>會員名稱</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p></p>
+                            </td>
+                            <td>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>xxoo08</p>
+                            </td>
+                            <td>
+                                <p>蚵仔煎</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>lo0026</p>
+                            </td>
+                            <td>
+                                <p>Shado</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>tete17</p>
+                            </td>
+                            <td>
+                                <p>停電</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>sn778888</p>
+                            </td>
+                            <td>
+                                <p></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
