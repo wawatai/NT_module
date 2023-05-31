@@ -211,6 +211,24 @@ $(function(){
     })
 })
 
+//betRecord 表單展開收起
+$(function(){
+    $(document).on("click",".midSide.betRecord .midBottom .content .recordList li .detailWrap i", function(){
+        $(this)
+        .closest("li")
+        .addClass("active");
+    })
+    $(document).on("click",".midSide.betRecord .midBottom .content .recordList li.active .detailWrap i", function(){
+        $(this)
+        .closest("li")
+        .removeClass("active");
+
+        $(this)
+        .attr("class","fa-solid fa-chevron-up");
+    })
+})
+
+
 //彈窗
 $(function(){
 

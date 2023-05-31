@@ -902,6 +902,97 @@ main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-t
   cursor: pointer;
 }
 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap {
+  border-bottom: 1px solid #c7a16e;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap p {
+  color: #996c33;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).lose {
+  color: #ff0000;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).win {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap i {
+  color: #c4a167;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table {
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:first-child {
+  background: -webkit-gradient(linear, left top, right top, from(#de9649), to(#e0cb89));
+  background: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th {
+  height: 40px;
+  vertical-align: middle;
+  border-bottom: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th:last-child {
+  border-radius: 0 5px 0 0;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:last-child td {
+  border-bottom: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th p {
+  color: #ffffff;
+  border-right: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:nth-last-child(1) p {
+  border-bottom: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td p {
+  border-right: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.lose {
+  color: #ff0000;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.win {
+  color: #32b411;
+}
+
 main.innerPage .center .midSide .midTop .accountWrap {
   border-bottom: 1px solid #cccccc;
 }
@@ -3410,14 +3501,20 @@ html body .innerPage .center > div.midSide.pointRecord .midBottom .content table
   width: 25%;
 }
 html body .innerPage .center > div.midSide.betRecord .midBottom {
-  padding: 0 20px 20px;
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .innerPageTitle {
+  padding: 10px 20px 0;
 }
 html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock {
   -ms-grid-columns: minmax(332px, 1fr) 20px minmax(332px, 1fr) 20px minmax(332px, 1fr);
   grid-template-columns: repeat(3, minmax(332px, 1fr));
   gap: 20px;
-  padding: 0 0 20px 0;
-  margin-top: 10px;
+  padding: 20px 20px 30px;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock::before {
+  width: 100%;
 }
 html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock label {
   width: 100%;
@@ -3443,6 +3540,72 @@ html body .innerPage .center > div.midSide.betRecord .midBottom .content form.se
 }
 html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock .selectBtn_Wrap .hint {
   margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p {
+  text-align: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(1), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(2), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(3),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(1),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(2),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(3) {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(4), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(5),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(4),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(5) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(6),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(6) {
+  width: 5%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap i,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap i {
+  margin: 0 auto;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li.active table {
+  display: table;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table {
+  width: 97%;
+  height: auto;
+  display: none;
+  margin: 8px auto 20px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(1),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(1) {
+  width: 15%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(2),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(2) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(3),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(3) {
+  width: 30%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(4), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(5),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(4),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(5) {
+  width: 10%;
 }
 html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
   height: 35px;
