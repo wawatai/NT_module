@@ -927,6 +927,39 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .info
     color: $Font_remind;
 }
 
+//mail 
+main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.read,
+main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.readAll {
+    color: $Font_positive;
+    border-color: $Font_positive;
+    margin-right: 10px;
+
+    &:hover,&:active,&.active {
+        background: $Font_positive;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.editBtn,
+main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.delete {
+    color: $Font_negative;
+    border-color: $Font_negative;
+
+    &:hover,&:active,&.active {
+        background: $Font_negative;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap .block .select .all {
+    border: 1px solid $Border_color_1;
+    border-radius: 50px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap .block .select .all::before {
+   background: $Border_color_1;
+}
+
 //transfer + withdraw 公用
 main.innerPage .center .midSide .midTop .accountWrap {
     border-bottom: 1px solid $Border_color_1;

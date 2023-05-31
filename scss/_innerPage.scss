@@ -1528,6 +1528,207 @@
                         }
                     }
                 }
+
+                //站內信
+                &.mailWrap {
+
+                    .mailType {
+
+                        button {
+                            width: 125px;
+                            height: 35px;
+                            margin-right: 10px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    .midPageList {
+
+                        &.midPageList  {
+
+                            ul {
+                                width: auto;
+                                height: auto;
+                                display: none;
+
+                                &.active {
+                                    display: flex;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .midBottom {
+                        padding: 0;
+
+                        .content {
+
+                            .outerMode {
+                                
+                                .functionWrap {
+                                    width: 100%;
+                                    height: 65px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 0 20px;
+        
+                                    &.editState {
+                                        justify-content: unset;
+        
+                                        div {
+        
+                                            &.block {
+                                                justify-content: unset;
+        
+                                                .select {
+                                                    display: flex;
+                                                    justify-content: unset;
+                                                }
+                                            }
+                                        }
+
+                                        .read,
+                                        .delete {
+                                            display: block;
+                                        }
+
+                                        .readAll,
+                                        .editBtn {
+                                            display: none;
+                                        }
+        
+                                        .finished {
+                                            display: block;
+                                        }
+                                        
+                                    }
+        
+                                    .block {
+                                        width: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-end;
+
+                                        .select {
+                                            width: auto;
+                                            height: auto;
+                                            display: none;
+                                            align-items: center;
+                                            margin-right: 20px;
+
+                                            .all {
+                                                width: 18px;
+                                                height: 18px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                margin-right: 10px;
+                                                position: relative;
+                                                cursor: pointer;
+
+                                                &.active {
+
+                                                    &::before {
+                                                        content: "";
+                                                        width: 89%;
+                                                        height: 88%;
+                                                        border-radius: 50px;
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-50%,-50%);
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .btnWrap {
+                                            width: auto;
+                                            height: auto;
+                                            display: flex;
+                                        }
+                                    }
+        
+                                    button {
+                                        font-weight: bold;
+                                        padding: 5px 15px;
+
+                                        &.read,
+                                        &.delete {
+                                            display: none;
+                                        }
+        
+                                        &.finished {
+                                            display: none;
+                                            flex-shrink: 0;
+                                        }
+                                    }
+                                }
+
+                                .allMail {
+                                    width: 100%;
+                                    height: auto;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding: 0 20px;
+
+                                        div {
+                                            width: auto;
+                                            height: auto;
+
+                                            &.select {
+                                                width: auto;
+                                                height: auto;
+                                                display: none;
+                                                align-items: center;
+                                                margin-right: 20px;
+    
+                                                .all {
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    margin-right: 10px;
+                                                    position: relative;
+                                                    cursor: pointer;
+    
+                                                    &.active {
+    
+                                                        &::before {
+                                                            content: "";
+                                                            width: 89%;
+                                                            height: 88%;
+                                                            border-radius: 50px;
+                                                            position: absolute;
+                                                            top: 50%;
+                                                            left: 50%;
+                                                            transform: translate(-50%,-50%);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .innerMode {
+
+                            }
+                        }
+                    }
+                }
                 
                 //存款
                 &.deposit {
