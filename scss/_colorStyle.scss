@@ -508,7 +508,7 @@ main.innerPage .center .midSide .midPageList li {
     background: $Font_color_3;
     border-radius: 5px 5px 0 0;
     color: $Font_color_1;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 2px;
 
@@ -885,6 +885,46 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li tab
 }
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.win {
     color: $Font_positive;
+}
+
+//eventApply
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock {
+    border: 1px solid $Border_color_2;
+    border-radius: 3px;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type {
+    color: $Font_Title_1;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.term {
+    color: $Font_color_3;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount .times {
+    color: $Font_positive;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
+    border-color: $Font_accent01;
+    color: $Font_accent01;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent01;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(7) p.value {
+    color: $Font_remind;
 }
 
 //transfer + withdraw 公用
@@ -1322,6 +1362,13 @@ aside.cs { //個別調整
     &:hover,&:active,&.active {
         background: $Border_color_3;
         color: $Font_color_1;
+    }
+
+    &:disabled { //個別調整
+        background: #c0c0c0 !important;
+        color: $Font_color_1 !important;
+        border-color: transparent !important;
+        cursor: default;
     }
 }
 .btnStyle_3 { //按鈕樣式_3 灰色邊線變色按鈕

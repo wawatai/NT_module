@@ -549,7 +549,7 @@ main.innerPage .center .midSide .midPageList li {
   background: #686868;
   border-radius: 5px 5px 0 0;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -993,6 +993,52 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li tab
   color: #32b411;
 }
 
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock {
+  border: 1px solid #c7a16e;
+  border-radius: 3px;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type {
+  color: #996c33;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.term {
+  color: #686868;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount .times {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
+  border-color: #008599;
+  color: #008599;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:hover, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:active, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply.active {
+  background: #008599;
+  color: #ffffff;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(7) p.value {
+  color: #ff0000;
+}
+
 main.innerPage .center .midSide .midTop .accountWrap {
   border-bottom: 1px solid #cccccc;
 }
@@ -1362,6 +1408,12 @@ aside.cs {
 .btnStyle_2:hover, .btnStyle_2:active, .btnStyle_2.active {
   background: #996c33;
   color: #ffffff;
+}
+.btnStyle_2:disabled {
+  background: #c0c0c0 !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  cursor: default;
 }
 
 .btnStyle_3 {
@@ -3607,6 +3659,114 @@ html body .innerPage .center > div.midSide.betRecord .midBottom .content .record
 html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(5) {
   width: 10%;
 }
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock.unlock .eventTitle {
+  -ms-grid-columns: auto 14% 47.5% auto 14%;
+  grid-template-columns: auto 14% 47.5% auto 14%;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock:not(:last-child) {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type, html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.name {
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount span {
+  margin: 0 5px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount span:first-child {
+  margin: 0 5px 0 15px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock button {
+  width: 75px;
+  height: 30px;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 0;
+  padding: 20px 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(7), html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(8) {
+  grid-column-start: span 2;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock .name {
+  margin-right: 30px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .searchBlock {
+  padding: 0;
+  margin-bottom: 20px;
+}
 html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
   height: 35px;
   margin-right: 10px;
@@ -4173,10 +4333,10 @@ html body .filter .jumpWindow.news .content ul li .text {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-html body .filter .jumpWindow.reminder .content {
+html body .filter .jumpWindow.reminder .content, html body .filter .jumpWindow.applied .content {
   padding: 24px 80px 35px;
 }
-html body .filter .jumpWindow.reminder .content p {
+html body .filter .jumpWindow.reminder .content p, html body .filter .jumpWindow.applied .content p {
   text-align: center;
 }
 html body .filter .jumpWindow.changePhone .content {
@@ -4265,6 +4425,48 @@ html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr:first-c
 html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr th,
 html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr td {
   width: 50%;
+}
+html body .filter .jumpWindow.eventWindow {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.eventWindow .content {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .filter .jumpWindow.eventWindow .content img {
+  width: 100%;
+  height: 240px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: #000000;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule {
+  width: 100%;
+  height: 260px;
+  margin: 20px 0 0;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
+  margin-bottom: 0;
 }
 html body .filter .jumpWindow .title {
   width: 100%;

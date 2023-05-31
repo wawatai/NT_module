@@ -298,6 +298,26 @@ $(function(){
         .find(".title p span")
         .text(n);
     })
+
+    //申請活動
+    $(".midSide.eventApply .midBottom .content .callEventApply").click(function(){
+
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.applied")
+        .addClass("display");
+    })
+
+    //查看活動
+    $(".midSide.eventApply .midBottom .content .callEventCheck").click(function(){
+
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.eventWindow")
+        .addClass("display");
+    })
 })
 
 //news

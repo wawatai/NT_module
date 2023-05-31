@@ -1414,6 +1414,120 @@
                         }
                     }
                 }
+
+                //優惠申請
+                &.eventApply {
+
+                    .midBottom {
+
+                        .content {
+
+                            .eventBlock {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                flex-direction: column;
+
+                                &.unlock {
+                                    .eventTitle {
+                                        grid-template-columns: auto 14% 47.5% auto 14%;
+                                    }
+                                }
+
+                                &:not(:last-child) {
+                                    margin-bottom: 20px;
+                                }
+
+                                .eventTitle {
+                                    width: 100%;
+                                    height: 50px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    padding: 0 10px;
+
+                                    .block {
+                                        width: auto;
+                                        height: auto;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        p {
+                                            &.type,
+                                            &.name {
+                                                margin-right: 15px;
+                                            }
+                                        }
+
+                                        .pointCount {
+                                            width: 100%;
+                                            height: auto;
+                                            white-space: nowrap;
+                                            margin-right: 10px;
+                                            
+                                            span {
+                                                margin: 0 5px;
+    
+                                                &:first-child {
+                                                    margin: 0 5px 0 15px;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .btnBlock {
+                                            width: 100%;
+                                            height: auto;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+    
+                                            button {
+                                                width: 75px;
+                                                height: 30px;
+                                                margin-right: 10px;
+    
+                                                &:last-child {
+                                                    margin-right: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .infoContent {
+                                    width: 100%;
+                                    height: auto;
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    gap: 30px 0;
+                                    padding: 20px 10px;
+
+                                    .itemBlock {
+                                        width: 100%;
+                                        height: auto;
+                                        display: flex;
+
+                                        &:nth-of-type(7),
+                                        &:nth-of-type(8) {
+                                            grid-column-start: span 2;
+                                        }
+
+                                        .name {
+                                            margin-right: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .searchBlock {
+                                padding: 0;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
                 
                 //存款
                 &.deposit {
