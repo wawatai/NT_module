@@ -1568,7 +1568,7 @@
                         .content {
 
                             .outerMode {
-                                
+
                                 .functionWrap {
                                     width: 100%;
                                     height: 65px;
@@ -1577,7 +1577,7 @@
                                     justify-content: space-between;
                                     padding: 0 20px;
         
-                                    &.editState {
+                                    &.active {
                                         justify-content: unset;
         
                                         div {
@@ -1674,6 +1674,26 @@
                                     width: 100%;
                                     height: auto;
 
+                                    &.active {
+
+                                        li {
+
+                                            .select {
+                                                display: flex;
+
+                                                .all {
+
+                                                    &.active {
+        
+                                                        &::before {
+                                                           display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
                                     li {
                                         width: 100%;
                                         height: 50px;
@@ -1681,13 +1701,14 @@
                                         align-items: center;
                                         justify-content: space-between;
                                         padding: 0 20px;
+                                        cursor: pointer;
 
                                         div {
                                             width: auto;
                                             height: auto;
 
                                             &.select {
-                                                width: auto;
+                                                width: 20%;
                                                 height: auto;
                                                 display: none;
                                                 align-items: center;
@@ -1702,21 +1723,31 @@
                                                     margin-right: 10px;
                                                     position: relative;
                                                     cursor: pointer;
-    
-                                                    &.active {
-    
-                                                        &::before {
-                                                            content: "";
-                                                            width: 89%;
-                                                            height: 88%;
-                                                            border-radius: 50px;
-                                                            position: absolute;
-                                                            top: 50%;
-                                                            left: 50%;
-                                                            transform: translate(-50%,-50%);
-                                                        }
+
+                                                    &::before {
+                                                        content: "";
+                                                        width: 89%;
+                                                        height: 88%;
+                                                        display: none;
+                                                        border-radius: 50px;
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-50%,-50%);
                                                     }
                                                 }
+                                            }
+
+                                            &.text {
+                                                width: 100%;
+                                            }
+
+                                            &.date {
+                                                width: 30%;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                flex-shrink: 0;
                                             }
                                         }
                                     }

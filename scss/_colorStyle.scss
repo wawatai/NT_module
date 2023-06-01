@@ -928,11 +928,11 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .info
 }
 
 //mail 
-main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap {
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap {
     border-bottom: 1px solid $Border_color_1;
 }
-main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.read,
-main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.readAll {
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll {
     color: $Font_positive;
     border-color: $Font_positive;
     margin-right: 10px;
@@ -942,8 +942,8 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap butto
         color: $Font_color_1;
     }
 }
-main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.editBtn,
-main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap button.delete {
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete {
     color: $Font_negative;
     border-color: $Font_negative;
 
@@ -952,12 +952,31 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap butto
         color: $Font_color_1;
     }
 }
-main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap .block .select .all {
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all {
     border: 1px solid $Border_color_1;
     border-radius: 50px;
 }
-main.innerPage .center .midSide.mailWrap .midBottom .content .functionWrap .block .select .all::before {
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all::before,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all::before {
    background: $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li {
+    border-bottom: 1px solid $Border_color_1;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent02;
+    }
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date {
+    color: $Font_color_3;
+    font-size: 14px;
+    border-left: 1px solid $Border_color_1;
 }
 
 //transfer + withdraw 公用
