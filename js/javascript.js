@@ -228,6 +228,132 @@ $(function(){
     })
 })
 
+//mail 站內信
+$(function(){
+    //通知&公告 切換類別
+    $(".innerPage .center .midSide.mailWrap .midTop .objectList.mailType button").click(function(){
+        var n = $(this).index();
+
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        $(".midPageList.mailList ul:eq(" + n + ")")
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if( n == 1 ) {
+            $(".innerPage .center .midSide.mailWrap .midBottom .content:eq(2)")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        }
+    })
+
+    //midList 切換類別
+    $(".innerPage .center .midSide.mailWrap .midPageList.mailList ul li").click(function(){
+        var n = $(this).index();
+        var m = $(this).closest("ul").index();
+
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if( m == 1 && n == 0) {
+            $(".innerPage .center .midSide.mailWrap .midBottom .content:eq(2)")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        } else if(m == 1 && n == 1) {
+            $(".innerPage .center .midSide.mailWrap .midBottom .content:eq(3)")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        } else if(m == 1 && n == 2) {
+            $(".innerPage .center .midSide.mailWrap .midBottom .content:eq(4)")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        } else {
+            $(".innerPage .center .midSide.mailWrap .midBottom .content:eq(" + n + ")")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        }
+
+    })
+
+    //全部已讀
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .functionWrap .block button.readAll").click(function(){
+        $(this)
+        .closest(".outerMode")
+        .find("ul.allMail li")
+        .addClass("seen");
+    })
+
+    //編輯
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .functionWrap .block button.editBtn").click(function(){
+        $(this)
+        .closest(".outerMode")
+        .addClass("editState");
+    })
+
+    //完成(結束編輯模式)
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .functionWrap button.finished").click(function(){
+        $(this)
+        .closest(".outerMode")
+        .removeClass("editState");
+    })
+
+    //選取
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .allMail li .select .all").click(function(){
+        $(this)
+        .toggleClass("active")
+        .closest("li")
+        .toggleClass("chosen");
+    })
+
+    //選取已讀
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .functionWrap .block button.read").click(function(){
+        $(this)
+        .closest(".outerMode.editState").find(".chosen")
+        .addClass("seen");
+    })
+
+    //選取刪除
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .functionWrap .block button.delete").click(function(){
+        $(this)
+        .closest(".outerMode.editState").find(".chosen")
+        .remove();
+    })
+
+    //查看該訊息詳情 (點擊進入innerMode)
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .allMail li .text, .date ").click(function(){
+        $(this).closest(".outerMode")
+        .removeClass("display")
+        .siblings()
+        .addClass("display");
+
+        $(this).closest(".midSide.mailWrap")
+        .find(".midTop, .midPageList.mailList")
+        .css("display", "none");
+    })
+
+    $(".innerPage .center .midSide.mailWrap .content .innerMode .titleM i").click(function(){
+        $(this)
+        .closest(".innerMode")
+        .removeClass("display")
+        .siblings()
+        .addClass("display");
+
+        $(this).closest(".midSide.mailWrap")
+        .find(".midTop, .midPageList.mailList")
+        .css("display", "block");
+    })
+})  
 
 //彈窗
 $(function(){

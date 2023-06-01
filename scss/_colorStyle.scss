@@ -968,6 +968,13 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
         background: $Font_accent02;
     }
 }
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen { //個別調整
+    background: #f3f3f3;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent02;
+    }
+}
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {
     color: $Font_color_2;
     font-size: 16px;
@@ -976,7 +983,29 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date {
     color: $Font_color_3;
     font-size: 14px;
-    border-left: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date::before {
+    background: $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .titleM i {
+    color: $Font_color_4;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
+    color: $Border_color_1;
+    font-size: 22px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap p {
+    color: $Font_color_3;
+    font-size: 15px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
 }
 
 //transfer + withdraw 公用

@@ -467,7 +467,7 @@
                 <p>跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</p>
             </div>
         </div>
-        <dic class="center">
+        <div class="center">
             <!-- 左欄 -->
             <div class="leftSide">
                 <div class="content">
@@ -576,7 +576,7 @@
                     </div>
                     <div class="objectList mailType">
                         <button class="btnStyle_2 active">通知</button>
-                        <button class="btnStyle_2">通知</button>
+                        <button class="btnStyle_2">公告</button>
                     </div>
                 </div>
                 <ol class="midPageList mailList">
@@ -602,7 +602,7 @@
                 </ol>
                 <div class="midBottom">
                     <div class="content display">
-                        <div class="outerMode editState">
+                        <div class="outerMode display">
                             <div class="functionWrap">
                                 <div class="block">
                                     <div class="select">
@@ -618,38 +618,38 @@
                                 </div>
                                 <button class="btnStyle_2 finished">完成</button>
                             </div>
-                            <ul class="allMail ">
-                                <li>
-                                    <div class="select">
+                            <ul class="allMail">
+                                <li onclick="event.stopPropagation()">
+                                    <div class="select" onclick="event.stopPropagation()">
                                         <span class="all"></span>
                                         <p>全部</p>
                                     </div>
                                     <div class="text">
-                                        <p>熱門公告測試</p>
+                                        <p>系統消息測試</p>
                                     </div>
                                     <div class="date">
                                         <p>2020-09-14 18:23:42</p>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="select">
+                                <li onclick="event.stopPropagation()">
+                                    <div class="select" onclick="event.stopPropagation()">
                                         <span class="all"></span>
                                         <p>全部</p>
                                     </div>
                                     <div class="text">
-                                        <p>熱門公告測試</p>
+                                        <p>系統消息測試</p>
                                     </div>
                                     <div class="date">
                                         <p>2020-09-14 18:23:42</p>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="select">
+                                <li onclick="event.stopPropagation()">
+                                    <div class="select" onclick="event.stopPropagation()">
                                         <span class="all"></span>
                                         <p>全部</p>
                                     </div>
                                     <div class="text">
-                                        <p>熱門公告測試</p>
+                                        <p>系統消息測試</p>
                                     </div>
                                     <div class="date">
                                         <p>2020-09-14 18:23:42</p>
@@ -657,89 +657,222 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="innerMode"></div>
+                        <div class="innerMode">
+                            <span class="titleM">
+                                <i class="fa-solid fa-chevron-left backBtn"></i>
+                                站內信
+                            </span>
+                            <div class="prevNext_Wrap">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="dateWrap">
+                                <p>2020-09-14 18:23:42</p>
+                            </div>
+                            <div class="innerMode_Content">
+                                <p>公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="outerMode display">
+                            <div class="functionWrap">
+                                <div class="block">
+                                    <div class="select">
+                                        <span class="all active"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="btnWrap">
+                                        <button class="btnStyle_2 readAll">全部已讀</button>
+                                        <button class="btnStyle_2 editBtn">編輯</button>
+                                        <button class="btnStyle_2 read">已讀</button>
+                                        <button class="btnStyle_2 delete">刪除</button>
+                                    </div>
+                                </div>
+                                <button class="btnStyle_2 finished">完成</button>
+                            </div>
+                            <ul class="allMail">
+                                <li onclick="event.stopPropagation()">
+                                    <div class="select onclick="event.stopPropagation()"">
+                                        <span class="all"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>個人消息測試</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>2020-09-14 18:23:42</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="innerMode">
+                            <span class="titleM">
+                                <i class="fa-solid fa-chevron-left backBtn"></i>
+                                站內信
+                            </span>
+                            <div class="prevNext_Wrap">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="dateWrap">
+                                <p>2020-09-14 18:23:42</p>
+                            </div>
+                            <div class="innerMode_Content">
+                                <p>公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="outerMode display">
+                            <div class="functionWrap">
+                                <div class="block">
+                                    <div class="select">
+                                        <span class="all active"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="btnWrap">
+                                        <button class="btnStyle_2 readAll">全部已讀</button>
+                                        <button class="btnStyle_2 editBtn">編輯</button>
+                                        <button class="btnStyle_2 read">已讀</button>
+                                        <button class="btnStyle_2 delete">刪除</button>
+                                    </div>
+                                </div>
+                                <button class="btnStyle_2 finished">完成</button>
+                            </div>
+                            <ul class="allMail">
+                                <li onclick="event.stopPropagation()">
+                                    <div class="select" onclick="event.stopPropagation()">
+                                        <span class="all"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>熱門消息測試</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>2020-09-14 18:23:42</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="innerMode">
+                            <span class="titleM">
+                                <i class="fa-solid fa-chevron-left backBtn"></i>
+                                站內信
+                            </span>
+                            <div class="prevNext_Wrap">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="dateWrap">
+                                <p>2020-09-14 18:23:42</p>
+                            </div>
+                            <div class="innerMode_Content">
+                                <p>公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="outerMode display">
+                            <div class="functionWrap">
+                                <div class="block">
+                                    <div class="select">
+                                        <span class="all active"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="btnWrap">
+                                        <button class="btnStyle_2 readAll">全部已讀</button>
+                                        <button class="btnStyle_2 editBtn">編輯</button>
+                                        <button class="btnStyle_2 read">已讀</button>
+                                        <button class="btnStyle_2 delete">刪除</button>
+                                    </div>
+                                </div>
+                                <button class="btnStyle_2 finished">完成</button>
+                            </div>
+                            <ul class="allMail">
+                                <li onclick="event.stopPropagation()">
+                                    <div class="select" onclick="event.stopPropagation()">
+                                        <span class="all"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>一般消息測試</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>2020-09-14 18:23:42</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="innerMode">
+                            <span class="titleM">
+                                <i class="fa-solid fa-chevron-left backBtn"></i>
+                                站內信
+                            </span>
+                            <div class="prevNext_Wrap">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="dateWrap">
+                                <p>2020-09-14 18:23:42</p>
+                            </div>
+                            <div class="innerMode_Content">
+                                <p>公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="outerMode display">
+                            <div class="functionWrap">
+                                <div class="block">
+                                    <div class="select">
+                                        <span class="all active"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="btnWrap">
+                                        <button class="btnStyle_2 readAll">全部已讀</button>
+                                        <button class="btnStyle_2 editBtn">編輯</button>
+                                        <button class="btnStyle_2 read">已讀</button>
+                                        <button class="btnStyle_2 delete">刪除</button>
+                                    </div>
+                                </div>
+                                <button class="btnStyle_2 finished">完成</button>
+                            </div>
+                            <ul class="allMail">
+                                <li onclick="event.stopPropagation()">
+                                    <div class="select" onclick="event.stopPropagation()">
+                                        <span class="all"></span>
+                                        <p>全部</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>存款消息測試</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>2020-09-14 18:23:42</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="innerMode">
+                            <span class="titleM">
+                                <i class="fa-solid fa-chevron-left backBtn"></i>
+                                站內信
+                            </span>
+                            <div class="prevNext_Wrap">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="dateWrap">
+                                <p>2020-09-14 18:23:42</p>
+                            </div>
+                            <div class="innerMode_Content">
+                                <p>公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- 右欄 -->
-            <div class="rightSide">
-                <div class="containerBox">
-                    <div class="listTitle">
-                        <p>投注紀錄</p>
-                        <a href="javascript:;" class="more">
-                            更多
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                    <nav class="recordList">
-                        <ul class="contain">
-                            <li class="betHistory">
-                                <p class="state gameName">
-                                    BNG娛樂
-                                </p>
-                                <div class="winLose">
-                                    <p class="half">
-                                        <span>投注</span>
-                                        $ 24
-                                    </p>
-                                    <p class="half lose">
-                                        <span>輸贏</span>
-                                        $ -17
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="betHistory">
-                                <p class="state gameName">
-                                    BNG娛樂
-                                </p>
-                                <div class="winLose">
-                                    <p class="half">
-                                        <span>投注</span>
-                                        $ 24
-                                    </p>
-                                    <p class="half win">
-                                        <span>輸贏</span>
-                                        $ 666
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="betHistory">
-                                <p class="state gameName">
-                                    BNG娛樂
-                                </p>
-                                <div class="winLose">
-                                    <p class="half">
-                                        <span>投注</span>
-                                        $ 24
-                                    </p>
-                                    <p class="half lose">
-                                        <span>輸贏</span>
-                                        $ -17
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="containerBox">
-                    <div class="listTitle">
-                        <p>優惠中心</p>
-                        <a href="./html/event.html" class="more">
-                            更多
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                    <nav class="recordList">
-                        <ul class="contain">
-                            <li class="eventBlock">
-                                <img class="eventImg" alt="eventImg" src="../images/eventImg.png">
-                                <p class="eventInfo">活動活動活動活動活動活動活動活動活動活動活動活動活動活動活動活動活動</p>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </dic>
+        </div>
     </main>
     <!-- 懸浮按鈕 -->
     <aside class="app">

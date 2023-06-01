@@ -1088,6 +1088,13 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
   background: #fae8c1;
 }
 
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen {
+  background: #f3f3f3;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen.active {
+  background: #fae8c1;
+}
+
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {
   color: #000000;
   font-size: 16px;
@@ -1097,7 +1104,35 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date {
   color: #686868;
   font-size: 14px;
-  border-left: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .titleM i {
+  color: #c4a167;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
+  color: #cccccc;
+  font-size: 22px;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap p {
+  color: #686868;
+  font-size: 15px;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
 }
 
 main.innerPage .center .midSide .midTop .accountWrap {
@@ -3849,6 +3884,46 @@ html body .innerPage .center > div.midSide.mailWrap .midPageList.midPageList ul.
 html body .innerPage .center > div.midSide.mailWrap .midBottom {
   padding: 0;
 }
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .read,
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .delete {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .readAll,
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .editBtn {
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap .finished {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .allMail li .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .allMail li .select .all.active::before {
+  display: block;
+}
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap {
   width: 100%;
   height: 65px;
@@ -3863,35 +3938,6 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
           justify-content: space-between;
   padding: 0 20px;
 }
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active {
-  -webkit-box-pack: unset;
-      -ms-flex-pack: unset;
-          justify-content: unset;
-}
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active div.block {
-  -webkit-box-pack: unset;
-      -ms-flex-pack: unset;
-          justify-content: unset;
-}
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active div.block .select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: unset;
-      -ms-flex-pack: unset;
-          justify-content: unset;
-}
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active .read,
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active .delete {
-  display: block;
-}
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active .readAll,
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active .editBtn {
-  display: none;
-}
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap.active .finished {
-  display: block;
-}
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block {
   width: 100%;
   display: -webkit-box;
@@ -3905,7 +3951,7 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
           justify-content: flex-end;
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select {
-  width: auto;
+  width: 8%;
   height: auto;
   display: none;
   -webkit-box-align: center;
@@ -3929,10 +3975,11 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
   position: relative;
   cursor: pointer;
 }
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all.active::before {
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all::before {
   content: "";
   width: 89%;
   height: 88%;
+  display: none;
   border-radius: 50px;
   position: absolute;
   top: 50%;
@@ -3941,20 +3988,24 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
           transform: translate(-50%, -50%);
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap {
-  width: auto;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap button {
-  font-weight: bold;
-  padding: 5px 15px;
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button {
+  width: auto;
+  height: 30px;
+  padding: 0 15px;
 }
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read, html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete {
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.read, html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.delete {
   display: none;
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap button.finished {
+  height: 30px;
+  padding: 0 15px;
   display: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -3962,14 +4013,6 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail {
   width: 100%;
   height: auto;
-}
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail.active li .select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail.active li .select .all.active::before {
-  display: block;
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li {
   width: 100%;
@@ -3988,7 +4031,13 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div {
   width: auto;
-  height: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.select {
   width: 20%;
@@ -4032,17 +4081,70 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.date {
   width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.date::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode {
+  width: 100%;
+  height: auto;
+  display: none;
+  padding: 30px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .titleM i {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap {
+  width: 100%;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i:first-child {
+  margin-right: 100px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .dateWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p {
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p:last-child {
+  margin-bottom: 0;
 }
 html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
   height: 35px;
