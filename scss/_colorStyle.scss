@@ -153,7 +153,6 @@ header .loginBox .transferInfo li p.money { //個別調整
 }
 header .bottom {
     background: $BG_color_2;
-    box-shadow: 0px 2px 30px $boxShadow_1;
 }
 header nav li::before {
     background: $Border_color_2;
@@ -1110,6 +1109,14 @@ main.innerPage .center .midSide.withdraw .midBottom .limited li span {
 }
 main.innerPage .center .midSide.withdraw  .midBottom form button.submitBtn {
     width: 72%;
+}
+
+//deposit
+main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_State {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: unset;
 }
 
 //footer

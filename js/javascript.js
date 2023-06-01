@@ -211,6 +211,18 @@ $(function(){
     })
 })
 
+//deposit
+$(function(){
+    $(".innerPage .midSide.deposit .midBottom .content:eq(0) form .submitBtn").click(function(){
+        $(this)
+        .closest(".content")
+        .removeClass("display");
+
+        $(".innerPage .midSide.deposit .midBottom .deposit_finished")
+        .addClass("display");
+    })
+})
+
 //betRecord 表單展開收起
 $(function(){
     $(document).on("click",".midSide.betRecord .midBottom .content .recordList li .detailWrap i", function(){
@@ -442,6 +454,16 @@ $(function(){
         .removeClass("display");
 
         $(".filter, .jumpWindow.eventWindow")
+        .addClass("display");
+    })
+
+    //最新消息
+    //忘記密碼
+    $(".callNews_window").click(function(){
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.news")
         .addClass("display");
     })
 })

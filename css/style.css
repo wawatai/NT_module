@@ -150,8 +150,6 @@ header .loginBox .transferInfo li p.money {
 
 header .bottom {
   background: #ffffff;
-  -webkit-box-shadow: 0px 2px 30px #e1e1e1;
-          box-shadow: 0px 2px 30px #e1e1e1;
 }
 
 header nav li::before {
@@ -1254,6 +1252,13 @@ main.innerPage .center .midSide.withdraw .midBottom .limited li span {
 
 main.innerPage .center .midSide.withdraw .midBottom form button.submitBtn {
   width: 72%;
+}
+
+main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_State {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: unset;
 }
 
 footer .top {
@@ -2946,14 +2951,14 @@ html body .innerPage .center > div.midSide .midBottom .content {
 html body .innerPage .center > div.midSide .midBottom .content.display {
   display: block;
 }
-html body .innerPage .center > div.midSide .midBottom .content .innerPageTitle {
+html body .innerPage .center > div.midSide .midBottom .innerPageTitle {
   border-bottom: none;
   padding: 0;
 }
-html body .innerPage .center > div.midSide .midBottom .content .titleM {
+html body .innerPage .center > div.midSide .midBottom .titleM {
   margin: 0 0 20px 0;
 }
-html body .innerPage .center > div.midSide .midBottom .content .titleS {
+html body .innerPage .center > div.midSide .midBottom .titleS {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2962,7 +2967,7 @@ html body .innerPage .center > div.midSide .midBottom .content .titleS {
           align-items: center;
   margin-bottom: 30px;
 }
-html body .innerPage .center > div.midSide .midBottom .content label {
+html body .innerPage .center > div.midSide .midBottom label {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -2974,22 +2979,22 @@ html body .innerPage .center > div.midSide .midBottom .content label {
   margin-bottom: 30px;
   position: relative;
 }
-html body .innerPage .center > div.midSide .midBottom .content label .itemName {
+html body .innerPage .center > div.midSide .midBottom label .itemName {
   margin-right: 25px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-html body .innerPage .center > div.midSide .midBottom .content label select,
-html body .innerPage .center > div.midSide .midBottom .content label input {
+html body .innerPage .center > div.midSide .midBottom label select,
+html body .innerPage .center > div.midSide .midBottom label input {
   width: 100%;
   height: 40px;
   padding: 0 15px;
 }
-html body .innerPage .center > div.midSide .midBottom .content form {
+html body .innerPage .center > div.midSide .midBottom form {
   width: 100%;
   height: auto;
 }
-html body .innerPage .center > div.midSide .midBottom .content form.searchBlock {
+html body .innerPage .center > div.midSide .midBottom form.searchBlock {
   width: 100%;
   height: auto;
   display: -ms-grid;
@@ -3000,7 +3005,7 @@ html body .innerPage .center > div.midSide .midBottom .content form.searchBlock 
   margin-bottom: 30px;
   position: relative;
 }
-html body .innerPage .center > div.midSide .midBottom .content form.searchBlock::before {
+html body .innerPage .center > div.midSide .midBottom form.searchBlock::before {
   content: "";
   width: 103.7%;
   height: 1px;
@@ -3010,7 +3015,7 @@ html body .innerPage .center > div.midSide .midBottom .content form.searchBlock:
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-html body .innerPage .center > div.midSide .midBottom .content form.searchBlock label {
+html body .innerPage .center > div.midSide .midBottom form.searchBlock label {
   width: 345px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3020,10 +3025,10 @@ html body .innerPage .center > div.midSide .midBottom .content form.searchBlock 
           align-items: center;
   position: relative;
 }
-html body .innerPage .center > div.midSide .midBottom .content form.searchBlock label:nth-of-type(1) {
+html body .innerPage .center > div.midSide .midBottom form.searchBlock label:nth-of-type(1) {
   grid-column-start: span 4;
 }
-html body .innerPage .center > div.midSide .midBottom .content form.searchBlock .selectBtn_Wrap {
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .selectBtn_Wrap {
   width: auto;
   height: 40px;
   display: -webkit-box;
@@ -3031,17 +3036,17 @@ html body .innerPage .center > div.midSide .midBottom .content form.searchBlock 
   display: flex;
   margin: 0 30px;
 }
-html body .innerPage .center > div.midSide .midBottom .content form.searchBlock .selectBtn_Wrap button {
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .selectBtn_Wrap button {
   width: 70px;
   height: 100%;
   margin-right: 5px;
 }
-html body .innerPage .center > div.midSide .midBottom .content form.searchBlock .searchBtn {
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .searchBtn {
   width: 35%;
   height: 40px;
   justify-self: flex-end;
 }
-html body .innerPage .center > div.midSide .midBottom .content form label {
+html body .innerPage .center > div.midSide .midBottom form label {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -3053,27 +3058,27 @@ html body .innerPage .center > div.midSide .midBottom .content form label {
   margin-bottom: 30px;
   position: relative;
 }
-html body .innerPage .center > div.midSide .midBottom .content form label .itemName {
+html body .innerPage .center > div.midSide .midBottom form label .itemName {
   margin-right: 25px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-html body .innerPage .center > div.midSide .midBottom .content form label select,
-html body .innerPage .center > div.midSide .midBottom .content form label input {
+html body .innerPage .center > div.midSide .midBottom form label select,
+html body .innerPage .center > div.midSide .midBottom form label input {
   width: 100%;
   height: 40px;
   padding: 0 15px;
 }
-html body .innerPage .center > div.midSide .midBottom .content form label select.inputStyle_2,
-html body .innerPage .center > div.midSide .midBottom .content form label input.inputStyle_2 {
+html body .innerPage .center > div.midSide .midBottom form label select.inputStyle_2,
+html body .innerPage .center > div.midSide .midBottom form label input.inputStyle_2 {
   padding: 0;
 }
-html body .innerPage .center > div.midSide .midBottom .content form label .remind {
+html body .innerPage .center > div.midSide .midBottom form label .remind {
   position: absolute;
   bottom: -16px;
   left: 105px;
 }
-html body .innerPage .center > div.midSide .midBottom .content form label i {
+html body .innerPage .center > div.midSide .midBottom form label i {
   width: 13px;
   height: 13px;
   display: -webkit-box;
@@ -3091,7 +3096,7 @@ html body .innerPage .center > div.midSide .midBottom .content form label i {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-html body .innerPage .center > div.midSide .midBottom .content form button {
+html body .innerPage .center > div.midSide .midBottom form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3102,10 +3107,10 @@ html body .innerPage .center > div.midSide .midBottom .content form button {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .innerPage .center > div.midSide .midBottom .content form button.submitBtn {
+html body .innerPage .center > div.midSide .midBottom form button.submitBtn {
   margin: 55px 0 0 105px;
 }
-html body .innerPage .center > div.midSide .midBottom .content .remindBox {
+html body .innerPage .center > div.midSide .midBottom .remindBox {
   width: 95%;
   height: auto;
   padding: 15px 20px;
@@ -3115,27 +3120,27 @@ html body .innerPage .center > div.midSide .midBottom .content .remindBox {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-html body .innerPage .center > div.midSide .midBottom .content .remindBox p {
+html body .innerPage .center > div.midSide .midBottom .remindBox p {
   color: #000000;
   font-size: 13px;
   line-height: 25px;
 }
-html body .innerPage .center > div.midSide .midBottom .content .remindBox p.remindTitle {
+html body .innerPage .center > div.midSide .midBottom .remindBox p.remindTitle {
   line-height: unset;
   margin-bottom: 10px;
 }
-html body .innerPage .center > div.midSide .midBottom .content .remindBox p span {
+html body .innerPage .center > div.midSide .midBottom .remindBox p span {
   color: #ff0000;
 }
-html body .innerPage .center > div.midSide .midBottom .content table {
+html body .innerPage .center > div.midSide .midBottom table {
   width: 100%;
   height: auto;
 }
-html body .innerPage .center > div.midSide .midBottom .content table tr th {
+html body .innerPage .center > div.midSide .midBottom table tr th {
   width: auto;
   height: 25px;
 }
-html body .innerPage .center > div.midSide .midBottom .content table tr td {
+html body .innerPage .center > div.midSide .midBottom table tr td {
   width: auto;
   height: 50px;
   vertical-align: middle;
@@ -4168,6 +4173,54 @@ html body .innerPage .center > div.midSide.deposit .midBottom form label .itemNa
 html body .innerPage .center > div.midSide.deposit .midBottom form .submitBtn {
   width: 305px;
 }
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished .deposit_State {
+  margin: 25px 0 20px 0;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form {
+  width: 60%;
+  margin-bottom: 170px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label .itemName {
+  width: 40px;
+  min-width: unset;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label input {
+  width: 185px;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label .remind {
+  left: 65px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label button {
+  width: 95px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form .submitBtn {
+  width: 285px;
+}
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList {
   padding: 20px 20px;
   position: relative;
@@ -4330,6 +4383,7 @@ html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 30px;
 }
 html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half {
   width: auto;

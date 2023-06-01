@@ -464,23 +464,99 @@
                         &.display {
                             display: block;
                         }
+                    }
 
-                        .innerPageTitle {
-                            border-bottom: none;
-                            padding: 0;
+                    .innerPageTitle {
+                        border-bottom: none;
+                        padding: 0;
+                    }
+
+                    .titleM {  //頁面標題
+                        margin: 0 0 20px 0;
+                    }
+
+                    .titleS {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                    }
+
+                    label { 
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        position: relative;
+
+                        .itemName {
+                            margin-right: 25px;
+                            flex-shrink: 0;
                         }
 
-                        .titleM {  //頁面標題
-                            margin: 0 0 20px 0;
+                        select,
+                        input {
+                            width: 100%;
+                            height: 40px;
+                            padding: 0 15px;
                         }
+                    }
 
-                        .titleS {
-                            display: flex;
-                            align-items: center;
+                    form {  //表單
+                        width: 100%;
+                        height: auto;
+
+                        &.searchBlock {  //表單搜尋列
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: 345px 355px 405px;
+                            padding-bottom: 20px;
                             margin-bottom: 30px;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 103.7%;
+                                height: 1px;
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+
+                            label {
+                                width: 345px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+
+                                &:nth-of-type(1) {
+                                    grid-column-start: span 4;
+                                }
+                            }
+
+                            .selectBtn_Wrap {
+                                width: auto;
+                                height: 40px;
+                                display: flex;
+                                margin: 0 30px;
+                                
+                                button {
+                                    width: 70px;
+                                    height: 100%;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            .searchBtn {
+                                width: 35%;
+                                height: 40px;
+                                justify-self: flex-end;
+                            }
                         }
 
-                        label { 
+                        label {
                             width: 100%;
                             height: auto;
                             display: flex;
@@ -498,159 +574,83 @@
                                 width: 100%;
                                 height: 40px;
                                 padding: 0 15px;
-                            }
-                        }
-    
-                        form {  //表單
-                            width: 100%;
-                            height: auto;
 
-                            &.searchBlock {  //表單搜尋列
-                                width: 100%;
-                                height: auto;
-                                display: grid;
-                                grid-template-columns: 345px 355px 405px;
-                                padding-bottom: 20px;
-                                margin-bottom: 30px;
-                                position: relative;
-    
-                                &::before {
-                                    content: "";
-                                    width: 103.7%;
-                                    height: 1px;
-                                    position: absolute;
-                                    bottom: 0;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                }
-
-                                label {
-                                    width: 345px;
-                                    display: flex;
-                                    align-items: center;
-                                    position: relative;
-    
-                                    &:nth-of-type(1) {
-                                        grid-column-start: span 4;
-                                    }
-                                }
-
-                                .selectBtn_Wrap {
-                                    width: auto;
-                                    height: 40px;
-                                    display: flex;
-                                    margin: 0 30px;
-                                    
-                                    button {
-                                        width: 70px;
-                                        height: 100%;
-                                        margin-right: 5px;
-                                    }
-                                }
-
-                                .searchBtn {
-                                    width: 35%;
-                                    height: 40px;
-                                    justify-self: flex-end;
+                                &.inputStyle_2 {
+                                    padding: 0;
                                 }
                             }
 
-                            label {
-                                width: 100%;
-                                height: auto;
-                                display: flex;
-                                align-items: center;
-                                margin-bottom: 30px;
-                                position: relative;
-    
-                                .itemName {
-                                    margin-right: 25px;
-                                    flex-shrink: 0;
-                                }
-    
-                                select,
-                                input {
-                                    width: 100%;
-                                    height: 40px;
-                                    padding: 0 15px;
-
-                                    &.inputStyle_2 {
-                                        padding: 0;
-                                    }
-                                }
-    
-                                .remind {
-                                    position: absolute;
-                                    bottom: -16px;
-                                    left: 105px;
-                                }
-    
-                                i {
-                                    width: 13px;
-                                    height: 13px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    top: 45%;
-                                    right: 18px;
-                                    transform: translateY(-50%);
-                                }
+                            .remind {
+                                position: absolute;
+                                bottom: -16px;
+                                left: 105px;
                             }
-    
-                            button {
+
+                            i {
+                                width: 13px;
+                                height: 13px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                
-                                &.submitBtn {
-                                    margin: 55px 0 0 105px;
-                                }
+                                position: absolute;
+                                top: 45%;
+                                right: 18px;
+                                transform: translateY(-50%);
                             }
                         }
-    
-                        .remindBox { //注意事項欄
-                            width: 95%;
-                            height: auto;
-                            padding: 15px 20px;
-                            position: absolute;
-                            bottom: 20px;
-                            left: 50%;
-                            transform: translateX(-50%);
-    
-                            p {
-                                color: $Font_color_2;
-                                font-size: 13px;
-                                line-height: 25px;
-    
-                                &.remindTitle {
-                                    line-height: unset;
-                                    margin-bottom: 10px;
-                                }
-    
-                                span {
-                                    color: $Font_remind;
-                                }
-                            }
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             
+                            &.submitBtn {
+                                margin: 55px 0 0 105px;
+                            }
                         }
+                    }
 
-                        table {
-                            width: 100%;
-                            height: auto;
+                    .remindBox { //注意事項欄
+                        width: 95%;
+                        height: auto;
+                        padding: 15px 20px;
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
 
-                            tr {
+                        p {
+                            color: $Font_color_2;
+                            font-size: 13px;
+                            line-height: 25px;
 
-                                th {
-                                    width: auto;
-                                    height: 25px;
-                                }
+                            &.remindTitle {
+                                line-height: unset;
+                                margin-bottom: 10px;
+                            }
 
-                                td {
-                                    width: auto;
-                                    height: 50px;
-                                    vertical-align: middle;
-                                }
+                            span {
+                                color: $Font_remind;
+                            }
+                        }
+                        
+                    }
+
+                    table {
+                        width: 100%;
+                        height: auto;
+
+                        tr {
+
+                            th {
+                                width: auto;
+                                height: 25px;
+                            }
+
+                            td {
+                                width: auto;
+                                height: 50px;
+                                vertical-align: middle;
                             }
                         }
                     }
@@ -1884,6 +1884,60 @@
                                 width: 305px;
                             }
                         }
+
+                        .deposit_finished {
+                            width: 100%;
+                            height: auto;
+                            display: none;
+                            
+                            &.display {
+                                display: block;
+                            }
+
+                            .deposit_State {
+                                margin: 25px 0 20px 0;
+                            }
+
+                            form {
+                                width: 60%;
+                                margin-bottom: 170px;
+
+                                label {
+
+                                    .itemName {
+                                        width: 40px;
+                                        min-width: unset;
+                                    }
+
+                                    input {
+                                        width: 185px;
+                                        margin-right: 5px;
+                                    }
+
+                                    .remind {
+                                        left: 65px;
+                                    }
+
+                                    button {
+                                        width: 95px;
+                                        height: 35px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-shrink: 0;
+                                        margin-right: 10px;
+
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+
+                                .submitBtn {
+                                    width: 285px;
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -2001,6 +2055,7 @@
                                 height: auto;
                                 display: flex;
                                 justify-content: space-between;
+                                margin-top: 30px;
 
                                 .half {
                                     width: auto;
