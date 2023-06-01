@@ -1,0 +1,85 @@
+//gamePage_Wrap
+.gamePage_Wrap {
+    width: 100%;
+    height: auto;
+    
+    .center {
+        width: 1400px;
+        height: auto;
+        margin: 0 auto;
+
+        .containerWrap {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 0 20px;
+
+            .mainImg {
+                width: 675px;
+                height: 732px;
+                object-fit: contain;
+                flex-shrink: 0;
+            }
+
+            .textBox {
+                max-width: 637px;
+                height: auto;
+                padding-top: 148px;
+
+                .title {
+                    display: flex;
+                    align-items: flex-end;
+                    background-clip: text;
+
+                    p {
+                        white-space: nowrap;
+
+                        &.small {
+                            margin-left: 16px;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+
+                .mainCnt {
+                    width: 630px;
+                    margin: 50px 0;
+                }
+
+                .btnBox {
+                    width: 630px;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 15px;
+
+                    li {
+                        width: auto;
+                        height: auto;
+
+                        img {
+                            width: 189px;
+                            height: 185px;
+                            object-fit: cover;
+                            object-position: top;
+                            background: #f5f5f5; //待移除
+                        }
+
+                        p {
+                            padding-top: 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        //跑馬燈
+        .marqueeWrap {
+            width: 100%;
+            height: 50px;
+            @include marqueeStyle;
+        }
+    }
+}

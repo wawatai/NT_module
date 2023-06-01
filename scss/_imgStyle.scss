@@ -5,6 +5,17 @@ bg {
     background: #ffffff;
 }
 
+.bg.gamePage_BG {
+    background: url("../images/gamePage_Bg.png") no-repeat top center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  //待移除
+    height: 100%; //待移除
+    background: #dfdfdf; //待移除
+}
+
 //header
 header .logo img {
     width: 200px;
@@ -35,10 +46,11 @@ header .downList img {
     object-fit: contain;
 }
 
+
 //innerPage///////////
 
 //vip
-.innerPage  .center>div.midSide.vip .midBottom .content .currentLevel {
+.innerPage .center>div.midSide.vip .midBottom .content .currentLevel {
     background: url("../img/medal_01.png") no-repeat;
     background-size: 100%;
     width: 80px;

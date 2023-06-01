@@ -229,6 +229,38 @@ header .downList .fa-solid.fa-chevron-right {
   font-weight: bold;
 }
 
+main .gamePage_Wrap .center .containerWrap .textBox .title {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4a167), to(#996c33));
+  background: linear-gradient(to bottom, #c4a167 0%, #996c33 100%);
+  font-weight: bold;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox .title p.big {
+  color: transparent;
+  font-size: 62px;
+  letter-spacing: 6px;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+  color: transparent;
+  font-size: 42px;
+  letter-spacing: 5px;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox p.mainCnt {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 main.innerPage {
   background: #f4f4f4;
 }
@@ -1569,6 +1601,17 @@ bg {
   width: 100%;
   height: 100%;
   background: #ffffff;
+}
+
+.bg.gamePage_BG {
+  background: url("../images/gamePage_Bg.png") no-repeat top center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #dfdfdf;
 }
 
 header .logo img {
@@ -4481,6 +4524,150 @@ html body .innerPage .center > div.midSide.withdraw .midBottom .remindBox {
   left: unset;
   -webkit-transform: unset;
           transform: unset;
+}
+html body .gamePage_Wrap {
+  width: 100%;
+  height: auto;
+}
+html body .gamePage_Wrap .center {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+}
+html body .gamePage_Wrap .center .containerWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0 20px;
+}
+html body .gamePage_Wrap .center .containerWrap .mainImg {
+  width: 675px;
+  height: 732px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox {
+  max-width: 637px;
+  height: auto;
+  padding-top: 148px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p {
+  white-space: nowrap;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+  margin-left: 16px;
+  padding-bottom: 5px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .mainCnt {
+  width: 630px;
+  margin: 50px 0;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox {
+  width: 630px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li {
+  width: auto;
+  height: auto;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img {
+  width: 189px;
+  height: 185px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  background: #f5f5f5;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+  padding-top: 10px;
+}
+html body .gamePage_Wrap .center .marqueeWrap {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
+          box-shadow: 0 0 13px 3px #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin: 20px auto;
+}
+html body .gamePage_Wrap .center .marqueeWrap .title {
+  width: 160px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
+  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+html body .gamePage_Wrap .center .marqueeWrap .marquee {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+html body .gamePage_Wrap .center .marqueeWrap .marquee p {
+  display: inline-block;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+  white-space: nowrap;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 100%;
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
 }
 html body .swiper {
   width: 100%;

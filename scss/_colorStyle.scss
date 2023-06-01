@@ -222,6 +222,34 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
     font-weight: bold;
 }
 
+//gamePage 遊戲頁
+main .gamePage_Wrap .center .containerWrap .textBox .title {
+    background: linear-gradient(to bottom, $Font_color_4 0%, $Font_Title_1 100%);
+    font-weight: bold;
+}
+main .gamePage_Wrap .center .containerWrap .textBox .title p.big {
+    color: transparent;
+    font-size: 62px;
+    letter-spacing: 6px;
+}
+main .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+    color: transparent;
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+main .gamePage_Wrap .center .containerWrap .textBox p.mainCnt {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 //innerPage
 main.innerPage { //個別調整
     background: #f4f4f4;
