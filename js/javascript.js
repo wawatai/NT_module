@@ -119,6 +119,24 @@ $(function(){
     });
 })
 
+//遊戲內頁
+$(function(){
+    $("main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+    })
+})
+
+//遊戲內頁+我的最愛
+$(document).on("click",".gameInnerPage_Wrap .gameBox ul li ul li .textBox i", function(){
+    $(this)
+    .toggleClass("fa-regular fa-solid")
+    .closest("li")
+    .toggleClass("favoriteGame");
+})
+
 //innerPage 
 
 //提款
@@ -395,6 +413,20 @@ $(function(){
     })
 
     //快速轉帳
+    $("header .downList ul ol.sport li a, header .downList ul ol.live li a, header .downList ul ol.lottery li a").click(function(){
+        var n = $(this).find("p").text();
+        
+        $(".jumpWindow")
+        .addClass("display");
+
+        $(".filter, .jumpWindow.quickTransfer")
+        .addClass("display")
+        .siblings()
+        .removeClass("display");
+
+        $(".jumpWindow.quickTransfer .content form label:nth-of-type(1)")
+        .find("p.platformName").text(n);
+    })
     $(".gamePage_Wrap .containerWrap.sportPage ul.btnBox li, .gamePage_Wrap .containerWrap.livePage ul.btnBox li, .gamePage_Wrap .containerWrap.lotteryPage ul.btnBox li").click(function(){
         var n = $(this).find("p").text();
         
@@ -409,6 +441,21 @@ $(function(){
         $(".jumpWindow.quickTransfer .content form label:nth-of-type(1)")
         .find("p.platformName").text(n);
     })
+    $(".gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter").click(function(){
+        var n = $(this).closest("li").find(".textBox p").text();
+        
+        $(".jumpWindow")
+        .addClass("display");
+
+        $(".filter, .jumpWindow.quickTransfer")
+        .addClass("display")
+        .siblings()
+        .removeClass("display");
+
+        $(".jumpWindow.quickTransfer .content form label:nth-of-type(1)")
+        .find("p.platformName").text(n);
+    })
+
 
     //更換聯電
     $(".midSide.memberCenter .midBottom button.callChangeNum").click(function(){

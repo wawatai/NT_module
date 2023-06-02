@@ -251,6 +251,85 @@ main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
     text-align: center;
 }
 
+//gameInnerPage 遊戲內頁 (slot/fish/board)
+main .gamePage_Wrap .center .gameInnerPage_Wrap {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px $boxShadow_2;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav {
+    border-bottom: 1px solid $Border_color_1;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li  {
+    color: $Font_color_2;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1_Active;
+
+        &::before {
+            background: $Font_color_4;
+        }
+
+        &::after{
+            border-color: transparent transparent $Font_color_4 transparent; 
+        }
+    }
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
+    color: $Font_color_3;
+    font-size: 18px;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search input {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
+    color: $Font_color_3;
+    font-size: 18px;
+    font-weight: bold;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
+    font-size: 20px;
+    color: $Border_color_1;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i.fa-solid.fa-heart {  //自行調整
+    color: #ff30b2;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
+    background: $filter_1;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter {  //自行調整
+    background: linear-gradient(to top, #801c1c 0%, #f13945 100%);
+    border-radius: 3px;
+    border: 1px solid #f56d5c;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #5a0c0c;
+    }
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try {  //自行調整
+    background: linear-gradient(to top, #324ab9 0%, #6a91f3 100%);
+    border-radius: 3px;
+    border: 1px solid #5c8df5;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #0e1c5e;
+    }
+}
+
 //innerPage
 main.innerPage { //個別調整
     background: #f4f4f4;
@@ -1181,10 +1260,14 @@ aside.app { //個別調整
     background: #ffffffd8;
     border: solid 2px $Border_color_2;
     border-radius: 50px;
-    box-shadow: 0 0 7px 0 $boxShadow_1;
+    box-shadow: 0 0 7px 0 $boxShadow_2;
 
     &:hover,&:active,&.active {
         background: #ffffff;
+
+        p {
+            color: $Font_color_2;
+        }
     }
 }
 aside.app p { //個別調整
@@ -1193,16 +1276,11 @@ aside.app p { //個別調整
     font-weight: bold;
     letter-spacing: 5px;
 }
-aside.app:hover p,
-aside.app:active p,
-aside.app.active p { //個別調整
-    color: $Font_color_2;
-}
 aside.cs { 
     background: $BG_color_1;
     border: solid 2px $Border_color_0;
     border-radius: 50%;
-    box-shadow: 0 0 7px 0 $boxShadow_1;
+    box-shadow: 0 0 7px 0 $boxShadow_2;
 }
 
 //filter
@@ -1345,7 +1423,7 @@ aside.cs {
     color: $Font_Title_1;
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 .filter .jumpWindow.quickTransfer .content p.itemName {
     color: $Font_color_2;
