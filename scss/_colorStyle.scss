@@ -1,5 +1,6 @@
 $BG_color_1: #c4a167;
 $BG_color_2: #ffffff;
+$BG_color_3: #f4f4f4;
 
 $Font_color_1: #ffffff;
 $Font_color_2: #000000;
@@ -328,6 +329,46 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button
     &:hover,&:active,&.active {
         background: #0e1c5e;
     }
+}
+
+//event 
+main .eventWrap {
+    background: $BG_color_3;
+}
+main .eventWrap .eventTitle p {
+    color: $Font_Title_1;
+    font-size: 60px;
+    font-weight: bold;
+}
+main .eventWrap .eventBody .sideNav ul { 
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main .eventWrap .eventBody .sideNav ul li {
+    border-bottom: 1px solid $Border_color_1;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent02;
+
+        &::before {
+            background: $Font_color_4;
+        }
+    }
+}
+main .eventWrap .eventBody .sideNav ul li i {
+    color: $Font_color_4;
+    font-size: 20px;
+}
+main .eventWrap .eventBody .sideNav ul li p {
+    color: $Font_color_2;
+    font-size: 22px;
+    font-weight: bold;
+}
+main .eventWrap .eventBody .eventList .eventBox {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
 }
 
 //innerPage

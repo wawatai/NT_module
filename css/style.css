@@ -349,6 +349,51 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button
   background: #0e1c5e;
 }
 
+main .eventWrap {
+  background: #f4f4f4;
+}
+
+main .eventWrap .eventTitle p {
+  color: #996c33;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+main .eventWrap .eventBody .sideNav ul {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main .eventWrap .eventBody .sideNav ul li {
+  border-bottom: 1px solid #cccccc;
+}
+main .eventWrap .eventBody .sideNav ul li:hover, main .eventWrap .eventBody .sideNav ul li:active, main .eventWrap .eventBody .sideNav ul li.active {
+  background: #fae8c1;
+}
+main .eventWrap .eventBody .sideNav ul li:hover::before, main .eventWrap .eventBody .sideNav ul li:active::before, main .eventWrap .eventBody .sideNav ul li.active::before {
+  background: #c4a167;
+}
+
+main .eventWrap .eventBody .sideNav ul li i {
+  color: #c4a167;
+  font-size: 20px;
+}
+
+main .eventWrap .eventBody .sideNav ul li p {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .eventWrap .eventBody .eventList .eventBox {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
 main.innerPage {
   background: #f4f4f4;
 }
@@ -1764,6 +1809,11 @@ header .downList img {
   background: #acacac;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+main .eventWrap .eventTitle {
+  background: url("../images/eventTitle_bg.png") no-repeat;
+  background-size: cover;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .currentLevel {
@@ -4990,6 +5040,108 @@ html body .gamePage_Wrap .center .marqueeWrap .marquee p {
     -webkit-transform: translate(-100%);
             transform: translate(-100%);
   }
+}
+html body .eventWrap {
+  width: 100%;
+  height: auto;
+}
+html body .eventWrap .eventTitle {
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #c2c2c2;
+}
+html body .eventWrap .eventBody {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto 0;
+  padding: 0 0 50px;
+}
+html body .eventWrap .eventBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+}
+html body .eventWrap .eventBody .sideNav ul {
+  width: 100%;
+  height: 100%;
+}
+html body .eventWrap .eventBody .sideNav ul li {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  position: relative;
+  cursor: pointer;
+}
+html body .eventWrap .eventBody .sideNav ul li:before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .eventWrap .eventBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .eventWrap .eventBody .eventList {
+  width: 100%;
+  height: auto;
+}
+html body .eventWrap .eventBody .eventList .eventBox {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+html body .eventWrap .eventBody .eventList .eventBox:last-child {
+  margin-bottom: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #000000;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
 }
 html body .swiper {
   width: 100%;
