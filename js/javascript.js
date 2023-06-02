@@ -395,7 +395,7 @@ $(function(){
     })
 
     //快速轉帳
-    $("main .gamePage_Wrap .containerWrap.sportPage ul.btnBox li, main .gamePage_Wrap .containerWrap.livePage ul.btnBox li, main .gamePage_Wrap .containerWrap.lotteryPage ul.btnBox li").click(function(){
+    $(".gamePage_Wrap .containerWrap.sportPage ul.btnBox li, .gamePage_Wrap .containerWrap.livePage ul.btnBox li, .gamePage_Wrap .containerWrap.lotteryPage ul.btnBox li").click(function(){
         var n = $(this).find("p").text();
         
         $(".jumpWindow")
