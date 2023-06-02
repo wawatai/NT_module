@@ -120,6 +120,67 @@
             }
         }
 
+        //快速轉帳
+        &.quickTransfer {
+            width: 480px;
+            height: auto;
+
+            .content {
+                padding: 40px 40px 15px 40px;
+
+                form {
+                    width: 100%;
+                    height: auto;
+
+                    label {
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: 25% 70%;
+                        gap: 10px 30px;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        input {
+                            padding: 0 15px;
+                        }
+
+
+                        i {
+                            width: 100%;
+                            text-align: center;
+                            grid-column-start: 2;
+                        }
+
+                        .transferBtn_Box {
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 8px;
+                            grid-column-start: 2;
+                            padding: 5px 0;
+
+                            button {
+                                width: 100%;
+                                height: 30px;
+                            }
+                        }
+
+                        .checkBtn {
+                            width: 100%;
+                            height: 40px;
+                            grid-column-start: 2;
+                        }
+                    }
+                }
+            }
+
+            .btnBox {
+                padding: 20px 0;
+            }
+        }
+
         //請先綁定資料 
         &.reminder,
         &.applied {

@@ -1335,6 +1335,37 @@ aside.cs {
 .filter .jumpWindow .content table tr td:not(:last-child) p {
     border-right: 1px solid $Border_color_1;
 }
+//快速轉帳
+.filter .jumpWindow.quickTransfer .content p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow.quickTransfer .content p.platformName {
+    color: $Font_Title_1;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.filter .jumpWindow.quickTransfer .content p.itemName {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow.quickTransfer .content form label i {
+    color: $Font_color_4;
+    font-size: 24px;
+}
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p {
+    font-size: 14px;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1;
+    }
+}
+.filter .jumpWindow.quickTransfer .btnBox {
+    border-top: 1px solid $Border_color_1;
+}
 
 
 //marquee 跑馬燈

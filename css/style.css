@@ -1515,6 +1515,41 @@ aside.cs {
   border-right: 1px solid #cccccc;
 }
 
+.filter .jumpWindow.quickTransfer .content p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.quickTransfer .content p.platformName {
+  color: #996c33;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.filter .jumpWindow.quickTransfer .content p.itemName {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.quickTransfer .content form label i {
+  color: #c4a167;
+  font-size: 24px;
+}
+
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p {
+  font-size: 14px;
+}
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:hover, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:active, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p.active {
+  color: #996c33;
+}
+
+.filter .jumpWindow.quickTransfer .btnBox {
+  border-top: 1px solid #cccccc;
+}
+
 .btnStyle_1 {
   background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
   background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
@@ -4593,6 +4628,7 @@ html body .gamePage_Wrap .center .containerWrap .textBox .btnBox {
 html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li {
   width: auto;
   height: auto;
+  cursor: pointer;
 }
 html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img {
   width: 189px;
@@ -4954,6 +4990,64 @@ html body .filter .jumpWindow.news .content ul li .text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+html body .filter .jumpWindow.quickTransfer {
+  width: 480px;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content {
+  padding: 40px 40px 15px 40px;
+}
+html body .filter .jumpWindow.quickTransfer .content form {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content form label {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 30px 70%;
+  grid-template-columns: 25% 70%;
+  gap: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label i {
+  width: 100%;
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding: 5px 0;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .checkBtn {
+  width: 100%;
+  height: 40px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .btnBox {
+  padding: 20px 0;
 }
 html body .filter .jumpWindow.reminder .content, html body .filter .jumpWindow.applied .content {
   padding: 24px 80px 35px;
