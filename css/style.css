@@ -259,6 +259,7 @@ main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
   color: #000000;
   font-size: 14px;
   font-weight: bold;
+  text-align: center;
 }
 
 main.innerPage {
@@ -1350,7 +1351,7 @@ aside.app.active p {
 }
 
 aside.cs {
-  background: #9d9d9d;
+  background: #c4a167;
   border: solid 2px #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 7px 0 #e1e1e1;
@@ -4552,6 +4553,7 @@ html body .gamePage_Wrap .center .containerWrap .mainImg {
      object-fit: contain;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  background: #000000;
 }
 html body .gamePage_Wrap .center .containerWrap .textBox {
   max-width: 637px;
@@ -4599,7 +4601,7 @@ html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  background: #f5f5f5;
+  background: #000000;
 }
 html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
   padding-top: 10px;
