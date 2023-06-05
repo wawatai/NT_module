@@ -370,6 +370,22 @@ main .eventWrap .eventBody .eventList .eventBox {
     border-radius: 5px;
     box-shadow: 0 5px 10px -5px $boxShadow_2;
 }
+main .eventWrap .eventBody .eventList .eventBox ul li.title {
+    color: $Font_color_2;
+    font-size: 24px;
+    font-weight: bold;
+}
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button {
+    width: 115px;
+    height: 35px;
+}
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //個別調整
+    background: linear-gradient(to bottom, #9ddbec 0%, #0282cc 50%, #82aeeb 100%); 
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #82aeeb 0%, #0282cc 50%, #9ddbec 100%)
+    }
+}
 
 //innerPage
 main.innerPage { //個別調整

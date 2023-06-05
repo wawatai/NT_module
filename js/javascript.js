@@ -385,6 +385,16 @@ $(function(){
     })
 })  
 
+//優惠 
+$(function(){
+    $("main .eventWrap .eventBody .sideNav ul li").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+    })
+})
+
 //彈窗
 $(function(){
 
@@ -456,7 +466,6 @@ $(function(){
         .find("p.platformName").text(n);
     })
 
-
     //更換聯電
     $(".midSide.memberCenter .midBottom button.callChangeNum").click(function(){
 
@@ -511,7 +520,7 @@ $(function(){
     })
 
     //查看活動
-    $(".midSide.eventApply .midBottom .content .callEventCheck").click(function(){
+    $(".midSide.eventApply .midBottom .content .callEventCheck, .eventWrap .eventBody .eventList ul li .callEventCheck").click(function(){
 
         $(".jumpWindow")
         .removeClass("display");

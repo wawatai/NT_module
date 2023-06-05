@@ -394,6 +394,26 @@ main .eventWrap .eventBody .eventList .eventBox {
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
 }
 
+main .eventWrap .eventBody .eventList .eventBox ul li.title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button {
+  width: 115px;
+  height: 35px;
+}
+
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9ddbec), color-stop(50%, #0282cc), to(#82aeeb));
+  background: linear-gradient(to bottom, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
+}
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:hover, main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:active, main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#82aeeb), color-stop(50%, #0282cc), to(#9ddbec));
+  background: linear-gradient(to bottom, #82aeeb 0%, #0282cc 50%, #9ddbec 100%);
+}
+
 main.innerPage {
   background: #f4f4f4;
 }
@@ -5110,8 +5130,10 @@ html body .eventWrap .eventBody .sideNav ul li i {
   margin-right: 30px;
 }
 html body .eventWrap .eventBody .eventList {
-  width: 100%;
+  width: 1040px;
   height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .eventWrap .eventBody .eventList .eventBox {
   width: 100%;
@@ -5142,6 +5164,36 @@ html body .eventWrap .eventBody .eventList .eventBox ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 25px;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.title {
+  max-width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox {
+  width: 28%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox button:last-child {
+  margin-left: 10px;
 }
 html body .swiper {
   width: 100%;
