@@ -154,6 +154,87 @@ $(function(){
     })
 })
 
+
+$(function(){
+    var clickTimes = 0;
+
+    //銀行卡
+    $(".innerPage .midSide.bankCard .objectList i").click(function(){
+        var widthAmount = $(this).siblings("ul").find("li").length;
+        var widthOuter = $(this).siblings("ul").find("ol").width() / widthAmount * -1;
+
+        if($(this).hasClass("nextBtn"))
+        {
+            clickTimes++;
+
+            $(".innerPage .midSide .objectList ul ol")
+            .css("transform", "translateX(" + clickTimes * widthOuter + "px)");
+
+            $(".innerPage .midSide .objectList i.prevBtn")
+            .addClass("active");
+
+            if(clickTimes == widthAmount -1) {
+                $(".innerPage .midSide .objectList i.nextBtn")
+                .removeClass("active");
+            }
+        }
+        else if($(this).hasClass("prevBtn"))
+        {
+            clickTimes--;
+
+            $(".innerPage .midSide .objectList ul ol")
+            .css("transform", "translateX(" + clickTimes * widthOuter + "px)");
+
+            $(".innerPage .midSide .objectList i.nextBtn")
+            .addClass("active");
+
+            if(clickTimes == 0) {
+                $(".innerPage .midSide .objectList i.prevBtn")
+                .removeClass("active");
+            }
+        }
+    })
+
+    //vip level
+    $(".innerPage .midSide .vipCardList i").click(function(){
+        var widthAmount = $(this).siblings("ul").find("li").length;
+        var widthOuter = $(this).siblings("ul").find("ol").width() / widthAmount * -1;
+
+        console.log(widthOuter);
+
+        if($(this).hasClass("nextBtn"))
+        {
+            clickTimes++;
+
+            $(".innerPage .midSide .vipCardList ul ol")
+            .css("transform", "translateX(" + clickTimes * widthOuter + "px)");
+
+            $(".innerPage .midSide .vipCardList i.prevBtn")
+            .addClass("active");
+
+            if(clickTimes == widthAmount -1) {
+                $(".innerPage .midSide .vipCardList i.nextBtn")
+                .removeClass("active");
+            }
+        }
+        else if($(this).hasClass("prevBtn"))
+        {
+            clickTimes--;
+
+            $(".innerPage .midSide .vipCardList ul ol")
+            .css("transform", "translateX(" + clickTimes * widthOuter + "px)");
+
+            $(".innerPage .midSide .vipCardList i.nextBtn")
+            .addClass("active");
+
+            if(clickTimes == 0) {
+                $(".innerPage .midSide .vipCardList i.prevBtn")
+                .removeClass("active");
+            }
+        }
+    })
+})
+
 //midPageList 換頁
 $(function(){
     $(".innerPage .center .midSide ul.midPageList li").click(function(){
@@ -339,9 +420,8 @@ $(function(){
     })
 
     //選取
-    $(".innerPage .center .midSide.mailWrap .content .outerMode .allMail li .select .all").click(function(){
+    $(".innerPage .center .midSide.mailWrap .content .outerMode .allMail li .select input.all").change(function(){
         $(this)
-        .toggleClass("active")
         .closest("li")
         .toggleClass("chosen");
     })
@@ -408,7 +488,7 @@ $(function(){
         .next("ul") 
         .addClass("display");
     })
-    
+
     $("main .helpWrap .helpBody .sideNav ul li.theme ul.page li").click(function(){
        var n = $(this).closest("li.theme").index();
        var m = $(this).index();
