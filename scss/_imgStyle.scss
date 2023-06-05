@@ -162,6 +162,34 @@ main .eventWrap .eventTitle {
     background-size: 100%
 } 
 
+//help
+main .helpWrap .helpBody .container div .img.withdraw01 {
+    background: url("../images/help/withdraw01.png") no-repeat;
+    background-size: 100%;
+    height: 749px;
+    background: #000000; //待移除
+}
+main .helpWrap .helpBody .container div .img.transfer01 {
+    background: url("../images/help/transfer01.png") no-repeat;
+    background-size: 100%;
+    height: 957px;
+    background: #000000; //待移除
+}
+main .helpWrap .helpBody .container div .img.remote01 {
+    background: url("../images/help/remote01.png") no-repeat;
+    background-size: 100%;
+    width: 187px;
+    height: 144px;
+    background: #000000; //待移除
+}
+main .helpWrap .helpBody .container div .img.remote02 {
+    background: url("../images/help/remote02.png") no-repeat;
+    background-size: 100%;
+    width: 275px;
+    height: 379px;
+    background: #000000; //待移除
+}
+
 //aside
 aside.app .download_ic {
     width: 25px;

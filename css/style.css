@@ -414,6 +414,79 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:hover,
   background: linear-gradient(to bottom, #82aeeb 0%, #0282cc 50%, #9ddbec 100%);
 }
 
+main .helpWrap {
+  background: #f4f4f4;
+}
+
+main .helpWrap .helpBody .sideNav > ul {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main .helpWrap .helpBody .sideNav ul li .topic i {
+  color: #996c33;
+  font-size: 18px;
+}
+
+main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
+  color: #c4a167;
+}
+
+main .helpWrap .helpBody .sideNav ul li .topic p {
+  color: #996c33;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .sideNav ul li ul li {
+  background: transparent;
+}
+main .helpWrap .helpBody .sideNav ul li ul li:hover, main .helpWrap .helpBody .sideNav ul li ul li:active, main .helpWrap .helpBody .sideNav ul li ul li.active {
+  background: #fae8c1;
+}
+
+main .helpWrap .helpBody .sideNav ul li ul li p {
+  color: #686868;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .container {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main .helpWrap .helpBody .container > div h2 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .container > div p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main .helpWrap .helpBody .container > div a {
+  color: #c4a167;
+}
+
+main .helpWrap .helpBody .container > div p.remind {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .container > div p.haveBtn {
+  color: #686868;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 main.innerPage {
   background: #f4f4f4;
 }
@@ -1955,6 +2028,36 @@ main .eventWrap .eventTitle {
   height: 50px;
   background: url("../img/icon/svg/addCard.svg") no-repeat center;
   background-size: 100%;
+}
+
+main .helpWrap .helpBody .container div .img.withdraw01 {
+  background: url("../images/help/withdraw01.png") no-repeat;
+  background-size: 100%;
+  height: 749px;
+  background: #000000;
+}
+
+main .helpWrap .helpBody .container div .img.transfer01 {
+  background: url("../images/help/transfer01.png") no-repeat;
+  background-size: 100%;
+  height: 957px;
+  background: #000000;
+}
+
+main .helpWrap .helpBody .container div .img.remote01 {
+  background: url("../images/help/remote01.png") no-repeat;
+  background-size: 100%;
+  width: 187px;
+  height: 144px;
+  background: #000000;
+}
+
+main .helpWrap .helpBody .container div .img.remote02 {
+  background: url("../images/help/remote02.png") no-repeat;
+  background-size: 100%;
+  width: 275px;
+  height: 379px;
+  background: #000000;
 }
 
 aside.app .download_ic {
@@ -5194,6 +5297,147 @@ html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox {
 }
 html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox button:last-child {
   margin-left: 10px;
+}
+html body .helpWrap {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+html body .helpWrap .helpBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody .sideNav ul li {
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .sideNav ul li.active .topic i:last-child {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+html body .helpWrap .helpBody .sideNav ul li.active ul.display {
+  display: block;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic i:first-child {
+  margin-right: 20px;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic i:last-child {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .helpWrap .helpBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul li ul {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .sideNav ul li ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 55px;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .container {
+  width: 1010px;
+  height: auto;
+  padding: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .helpWrap .helpBody .container > div {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .container > div.display {
+  display: block;
+}
+html body .helpWrap .helpBody .container > div h2 {
+  margin: 55px 0 35px;
+}
+html body .helpWrap .helpBody .container > div h2:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .helpWrap .helpBody .container > div p {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.remind.mar {
+  margin-top: 75px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn button {
+  margin-left: 20px;
+}
+html body .helpWrap .helpBody .container > div .img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .helpWrap .helpBody .container > div button {
+  width: 215px;
+  height: 40px;
 }
 html body .swiper {
   width: 100%;

@@ -395,6 +395,53 @@ $(function(){
     })
 })
 
+//幫助中心
+$(function(){
+    $("main .helpWrap .helpBody .sideNav ul li.theme .topic").click(function(){
+        $(this)
+        .closest("li")
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        $(this)
+        .next("ul") 
+        .addClass("display");
+    })
+    
+    $("main .helpWrap .helpBody .sideNav ul li.theme ul.page li").click(function(){
+       var n = $(this).closest("li.theme").index();
+       var m = $(this).index();
+       
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if( n == 0 ){
+            $("main .helpWrap .helpBody .container .newHelp:eq(" + m + ")")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        } else if( n == 1 ) {
+            $("main .helpWrap .helpBody .container .question:eq(" + m + ")")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        } else if( n == 2 ) {
+            $("main .helpWrap .helpBody .container .aboutUs:eq(" + m + ")")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        } else if( n == 3 ) {
+            $("main .helpWrap .helpBody .container .app:eq(" + m + ")")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+        }
+    })
+})
+
 //彈窗
 $(function(){
 

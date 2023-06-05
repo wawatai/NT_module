@@ -387,6 +387,67 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //�
     }
 }
 
+//help
+main .helpWrap {
+    background: $BG_color_3;
+}
+main .helpWrap .helpBody .sideNav>ul {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main .helpWrap .helpBody .sideNav ul li .topic i {
+    color: $Font_Title_1;
+    font-size: 18px;
+}
+main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
+    color: $Font_color_4;
+}
+main .helpWrap .helpBody .sideNav ul li .topic p {
+    color: $Font_Title_1;
+    font-size: 20px;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .sideNav ul li ul li {
+    background: transparent;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent02;
+    }
+}
+main .helpWrap .helpBody .sideNav ul li ul li p {
+    color: $Font_color_3;
+    font-size: 18px;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .container {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main .helpWrap .helpBody .container>div h2 {
+    color: $Font_color_2;
+    font-size: 22px;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .container>div p {
+    color: $Font_color_2;
+    font-size: 16px;
+    line-height: 24px;
+}
+main .helpWrap .helpBody .container>div a {
+    color: $Font_color_4;
+}
+main .helpWrap .helpBody .container>div p.remind {
+    color: $Font_remind;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .container>div p.haveBtn {
+    color: $Font_color_3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 //innerPage
 main.innerPage { //個別調整
     background: #f4f4f4;
