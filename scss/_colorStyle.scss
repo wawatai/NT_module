@@ -2,12 +2,13 @@ $BG_color_1: #c4a167;
 $BG_color_2: #ffffff;
 $BG_color_3: #f4f4f4;
 
-$Font_color_1: #ffffff;
-$Font_color_2: #000000;
-$Font_color_3: #686868;
 $Font_color_4: $BG_color_1;
 $Font_Title_1: #996c33;
 $Font_Title_1_Active: #dcb160;
+$Font_color_1: #ffffff;
+$Font_color_2: #000000;
+$Font_color_3: #686868;
+
 $Font_remind: #ff0000;
 $Font_negative: $Font_remind;
 $Font_positive: #32b411;
@@ -147,8 +148,8 @@ header .loginBox .transferInfo li p { //個別調整
     color: #000000;
     font-size: 14px;
 }
-header .loginBox .transferInfo li p.money { //個別調整
-    color: #bd0b0b;
+header .loginBox .transferInfo li p.money {
+    color: $Font_remind;
     font-size: 14px;
     font-weight: bold;
 }

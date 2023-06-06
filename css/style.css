@@ -143,7 +143,7 @@ header .loginBox .transferInfo li p {
 }
 
 header .loginBox .transferInfo li p.money {
-  color: #bd0b0b;
+  color: #ff0000;
   font-size: 14px;
   font-weight: bold;
 }
@@ -1875,7 +1875,6 @@ bg {
 header .logo img {
   width: 200px;
   height: 100%;
-  background: #000000;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1883,7 +1882,6 @@ header .logo img {
 header .downList img {
   width: 220px;
   height: 184px;
-  background: #848484;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1899,14 +1897,13 @@ header .downList img {
 .home .gameBlock img {
   width: 100%;
   height: 270px;
-  background: #acacac;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 main .eventWrap .eventTitle {
   background: url("../img/eventTitle_bg.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .currentLevel {
@@ -1917,91 +1914,76 @@ main .eventWrap .eventTitle {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 30px;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) {
   background: url("../img/vipLevel_01.png") no-repeat;
   background-size: 100%;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) .medal {
   background: url("../img/medal_01.png") no-repeat;
   background-size: 100%;
-  background: #686868;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) {
   background: url("../img/vipLevel_02.png") no-repeat;
   background-size: 100%;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) .medal {
   background: url("../img/medal_02.png") no-repeat;
   background-size: 100%;
-  background: #686868;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) {
   background: url("../img/vipLevel_01.png") no-repeat;
   background-size: 100%;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) .medal {
   background: url("../img/medal_03.png") no-repeat;
   background-size: 100%;
-  background: #686868;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) {
   background: url("../img/vipLevel_04.png") no-repeat;
   background-size: 100%;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) .medal {
   background: url("../img/medal_04.png") no-repeat;
   background-size: 100%;
-  background: #686868;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) {
   background: url("../img/vipLevel_05.png") no-repeat;
   background-size: 100%;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) .medal {
   background: url("../img/medal_05.png") no-repeat;
   background-size: 100%;
-  background: #686868;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) {
   background: url("../img/vipLevel_06.png") no-repeat;
   background-size: 100%;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) .medal {
   background: url("../img/medal_06.png") no-repeat;
   background-size: 100%;
-  background: #686868;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) {
   background: url("../img/vipLevel_07.png") no-repeat;
   background-size: 100%;
-  background: #000000;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) .medal {
   background: url("../img/medal_07.png") no-repeat;
   background-size: 100%;
-  background: #686868;
 }
 
 .innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
@@ -2328,16 +2310,31 @@ html body header .bottom .center .loginBox li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
   position: relative;
 }
 html body header .top .center .loginBox li:not(:first-child),
 html body header .bottom .center .loginBox li:not(:first-child) {
   cursor: pointer;
 }
-html body header .top .center .loginBox li:last-child,
-html body header .bottom .center .loginBox li:last-child {
-  padding: 0;
+html body header .top .center .loginBox li:first-child,
+html body header .bottom .center .loginBox li:first-child {
+  padding: 0 20px;
+}
+html body header .top .center .loginBox li.total,
+html body header .bottom .center .loginBox li.total {
+  padding: 0 20px;
+}
+html body header .top .center .loginBox li a,
+html body header .bottom .center .loginBox li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
 }
 html body header .top .center .loginBox li .userName,
 html body header .bottom .center .loginBox li .userName {
@@ -2840,6 +2837,14 @@ html body .innerPage .center > div.leftSide .content .quickSelect li {
 html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn {
   width: 42px;
   height: 42px;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn a {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2849,10 +2854,6 @@ html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  cursor: pointer;
 }
 html body .innerPage .center > div.leftSide .content .quickSelect li .btnName {
   text-align: center;
@@ -3618,8 +3619,7 @@ html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label b
 }
 html body .innerPage .center > div.midSide.invite .midBottom .inviteImg {
   width: 100%;
-  height: 505px;
-  background: #000000;
+  height: 652px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -4934,12 +4934,15 @@ html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li {
 html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img {
   width: 189px;
   height: 185px;
+  margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  margin: 0 auto;
-  background: #000000;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:hover, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:active, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img.active {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
   padding-top: 10px;
@@ -5224,7 +5227,6 @@ html body .eventWrap .eventTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #c2c2c2;
 }
 html body .eventWrap .eventBody {
   width: 1400px;
@@ -5296,7 +5298,6 @@ html body .eventWrap .eventBody .eventList .eventBox img {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  background: #000000;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul {
   width: 100%;
@@ -5485,7 +5486,6 @@ html body .helpWrap .helpBody .container > div button {
 }
 html body .swiper {
   width: 100%;
-  margin-bottom: 10px;
 }
 html body .swiper .swiper-wrapper {
   width: 100%;
@@ -5662,6 +5662,85 @@ html body aside.cs {
       -ms-flex-pack: center;
           justify-content: center;
   right: 10px;
+}
+html body aside.colorSelector {
+  width: auto;
+  height: auto;
+  background: rgb(240, 240, 240);
+  padding: 15px;
+  top: unset;
+  bottom: 100px;
+  right: 10px;
+}
+html body aside.colorSelector.active .hint i {
+  margin-right: 10px;
+}
+html body aside.colorSelector.active .hint p {
+  display: block;
+}
+html body aside.colorSelector.active form {
+  display: block;
+}
+html body aside.colorSelector .hint {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body aside.colorSelector .hint i {
+  font-size: 25px;
+  color: #c4a167;
+}
+html body aside.colorSelector .hint p {
+  display: none;
+  color: #686868;
+  font-size: 15px;
+  font-weight: bold;
+}
+html body aside.colorSelector form {
+  width: 100%;
+  height: auto;
+  display: none;
+  margin-top: 10px;
+}
+html body aside.colorSelector form label {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body aside.colorSelector form label p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+html body aside.colorSelector form label input {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+}
+html body aside.colorSelector form button {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  padding: 5px 10px;
+  margin: 15px auto 0;
 }
 html body .filter {
   display: none;
@@ -5937,9 +6016,8 @@ html body .filter .jumpWindow.eventWindow .content img {
   height: 240px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -o-object-fit: contain;
-     object-fit: contain;
-  background: #000000;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html body .filter .jumpWindow.eventWindow .content .eventRule {
   width: 100%;

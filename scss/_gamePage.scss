@@ -61,13 +61,17 @@
                         height: auto;
                         cursor: pointer;
 
+                        
                         img {
                             width: 189px;
                             height: 185px;
+                            margin: 0 auto;
                             object-fit: cover;
                             object-position: top;
-                            margin: 0 auto;
-                            background: #000000; //待移除
+
+                            &:hover,&:active,&.active {
+                                object-position: bottom;
+                            }
                         }
 
                         p {

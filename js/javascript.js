@@ -1,3 +1,12 @@
+//header 平台點數
+$(function(){
+    $("header .top ul.loginBox li.total").click(function(){
+        $(this)
+        .children("ul.transferInfo")
+        .toggleClass("display");
+    })
+})
+
 //header downList
 $(function(){
     var count;
@@ -126,6 +135,26 @@ $(function(){
         .addClass("active")
         .siblings()
         .removeClass("active");
+    })
+})
+
+//gameWrap小遊戲格hover切換左大圖
+$(function(){
+    $(".gamePage_Wrap ul.btnBox li").hover(function(){
+        var n = $(this).index();
+
+        $(".gamePage_Wrap .sportPage .mainImg")
+        .attr("src","../img/partner/sport/sportBG_"+ (n + 1) +".png");
+        $(".gamePage_Wrap .livePage .mainImg")
+        .attr("src","../img/partner/live/liveBG_"+ (n + 1) +".png");
+        $(".gamePage_Wrap .lotteryPage .mainImg")
+        .attr("src","../img/partner/lottery/lotteryBG_"+ (n + 1) +".png");
+        $(".gamePage_Wrap .slotPage .mainImg")
+        .attr("src","../img/partner/slot/slotBG_"+ (n + 1) +".png");
+        $(".gamePage_Wrap .fishPage .mainImg")
+        .attr("src","../img/partner/fish/fishBG_"+ (n + 1) +".png");
+        $(".gamePage_Wrap .boardPage .mainImg")
+        .attr("src","../img/partner/board/boardBG_"+ (n + 1) +".png");
     })
 })
 
@@ -539,7 +568,8 @@ $(function(){
         if($(this).closest("body").hasClass("unlogin"))
         {
             $(".filter, .jumpWindow.plsLogin")
-            .addClass("display");
+            .addClass("display")
+            .siblings().removeClass("display");
         }
     })
     

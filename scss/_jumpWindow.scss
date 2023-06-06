@@ -337,8 +337,7 @@
                     width: 100%;
                     height: 240px;
                     flex-shrink: 0;
-                    object-fit: contain;
-                    background: $Font_color_2; //待移除
+                    object-fit: cover;
                 }
 
                 .eventRule {
