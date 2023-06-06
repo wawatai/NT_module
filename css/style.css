@@ -1862,7 +1862,7 @@ bg {
 }
 
 .bg.gamePage_BG {
-  background: url("../images/gamePage_Bg.png") no-repeat top center;
+  background: url("../img/gamePage_Bg.png") no-repeat top center;
   background-size: cover;
   position: fixed;
   top: 0;
@@ -1905,7 +1905,7 @@ header .downList img {
 }
 
 main .eventWrap .eventTitle {
-  background: url("../images/eventTitle_bg.png") no-repeat;
+  background: url("../img/eventTitle_bg.png") no-repeat;
   background-size: cover;
 }
 
@@ -2031,21 +2031,21 @@ main .eventWrap .eventTitle {
 }
 
 main .helpWrap .helpBody .container div .img.withdraw01 {
-  background: url("../images/help/withdraw01.png") no-repeat;
+  background: url("../img/help/withdraw01.png") no-repeat;
   background-size: 100%;
   height: 749px;
   background: #000000;
 }
 
 main .helpWrap .helpBody .container div .img.transfer01 {
-  background: url("../images/help/transfer01.png") no-repeat;
+  background: url("../img/help/transfer01.png") no-repeat;
   background-size: 100%;
   height: 957px;
   background: #000000;
 }
 
 main .helpWrap .helpBody .container div .img.remote01 {
-  background: url("../images/help/remote01.png") no-repeat;
+  background: url("../img/help/remote01.png") no-repeat;
   background-size: 100%;
   width: 187px;
   height: 144px;
@@ -2053,7 +2053,7 @@ main .helpWrap .helpBody .container div .img.remote01 {
 }
 
 main .helpWrap .helpBody .container div .img.remote02 {
-  background: url("../images/help/remote02.png") no-repeat;
+  background: url("../img/help/remote02.png") no-repeat;
   background-size: 100%;
   width: 275px;
   height: 379px;
