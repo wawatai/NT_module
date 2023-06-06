@@ -711,3 +711,12 @@ $(function(){
         .siblings().removeClass("display");
     })
 })
+
+//顏色選擇器
+$(function(){
+    $("aside.colorSelector .hint").click(function(){
+        $(this)
+        .parent()
+        .toggleClass("active");
+    })
+})
