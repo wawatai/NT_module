@@ -1,16 +1,8 @@
-:root {
-    --mainColor: #c4a167;
-    --subColor_BG: #ffffff;
-    --accentColor_1: #008599;
-    --accentColor_2: #fae8c1;
-}
-
-
-$BG_color_1: var(--mainColor, "#c4a167");
-$BG_color_2: var(--subColor_BG, "#ffffff");
+$BG_color_1: #c4a167;
+$BG_color_2: #ffffff;
 $BG_color_3: #f4f4f4;
 
-$Font_color_4: var(--mainColor, "#c4a167");
+$Font_color_4: $BG_color_1;
 $Font_Title_1: #996c33;
 $Font_Title_1_Active: #dcb160;
 $Font_color_1: #ffffff;
@@ -20,10 +12,9 @@ $Font_color_3: #686868;
 $Font_remind: #ff0000;
 $Font_negative: $Font_remind;
 $Font_positive: #32b411;
-$Font_accent01: var(--accentColor_1, "#008599");
-$Font_accent02: var(--accentColor_2, "#fae8c1");
-$Font_accent03: $Font_remind;
-// mix($Font_accent01,$Font_accent02, 5%);
+$Font_accent01: #008599;
+$Font_accent02: #fae8c1;
+$Font_accent03: mix($Font_accent01,$Font_accent02, 5%);
 
 $Border_color_0: #ffffff;
 $Border_color_1: #cccccc;
