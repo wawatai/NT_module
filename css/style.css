@@ -1,6 +1,13 @@
 @charset "UTF-8";
+:root {
+  --mainColor: #c4a167;
+  --subColor_BG: #ffffff;
+  --accentColor_1: #008599;
+  --accentColor_2: #fae8c1;
+}
+
 header .top {
-  background: #c4a167;
+  background: var(--mainColor, "#c4a167");
 }
 
 header .top li {
@@ -109,7 +116,7 @@ header .loginBox .userName {
   font-weight: bold;
 }
 header .loginBox .userName span {
-  color: #008599;
+  color: var(--accentColor_1, "#008599");
 }
 
 header .loginBox li a {
@@ -123,11 +130,11 @@ header .loginBox li:not(:first-child) p {
 }
 
 header .loginBox > li.total p {
-  color: #eee3bf;
+  color: #ff0000;
 }
 
 header .loginBox > li.total i {
-  color: #eee3bf;
+  color: #ff0000;
   font-size: 12px;
 }
 
@@ -152,7 +159,7 @@ header .loginBox .transferInfo li p.money {
 }
 
 header .bottom {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
 }
 
 header nav li::before {
@@ -172,7 +179,7 @@ header nav li.active a p {
 }
 
 header .downList {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-top: solid 1px #cccccc;
 }
 
@@ -233,8 +240,8 @@ header .downList .fa-solid.fa-chevron-right {
 }
 
 main .gamePage_Wrap .center .containerWrap .textBox .title {
-  background: -webkit-gradient(linear, left top, left bottom, from(#c4a167), to(#996c33));
-  background: linear-gradient(to bottom, #c4a167 0%, #996c33 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor, "#c4a167")), to(#996c33));
+  background: linear-gradient(to bottom, var(--mainColor, "#c4a167") 0%, #996c33 100%);
   font-weight: bold;
 }
 
@@ -266,7 +273,7 @@ main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
@@ -285,10 +292,10 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover, main .gamePage
   color: #dcb160;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::before {
-  background: #c4a167;
+  background: var(--mainColor, "#c4a167");
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::after {
-  border-color: transparent transparent #c4a167 transparent;
+  border-color: transparent transparent var(--mainColor, "#c4a167") transparent;
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
@@ -363,7 +370,7 @@ main .eventWrap .eventTitle p {
 }
 
 main .eventWrap .eventBody .sideNav ul {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -373,14 +380,14 @@ main .eventWrap .eventBody .sideNav ul li {
   border-bottom: 1px solid #cccccc;
 }
 main .eventWrap .eventBody .sideNav ul li:hover, main .eventWrap .eventBody .sideNav ul li:active, main .eventWrap .eventBody .sideNav ul li.active {
-  background: #fae8c1;
+  background: var(--accentColor_2, "#fae8c1");
 }
 main .eventWrap .eventBody .sideNav ul li:hover::before, main .eventWrap .eventBody .sideNav ul li:active::before, main .eventWrap .eventBody .sideNav ul li.active::before {
-  background: #c4a167;
+  background: var(--mainColor, "#c4a167");
 }
 
 main .eventWrap .eventBody .sideNav ul li i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 20px;
 }
 
@@ -391,7 +398,7 @@ main .eventWrap .eventBody .sideNav ul li p {
 }
 
 main .eventWrap .eventBody .eventList .eventBox {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -422,7 +429,7 @@ main .helpWrap {
 }
 
 main .helpWrap .helpBody .sideNav > ul {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -434,7 +441,7 @@ main .helpWrap .helpBody .sideNav ul li .topic i {
 }
 
 main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
 }
 
 main .helpWrap .helpBody .sideNav ul li .topic p {
@@ -447,7 +454,7 @@ main .helpWrap .helpBody .sideNav ul li ul li {
   background: transparent;
 }
 main .helpWrap .helpBody .sideNav ul li ul li:hover, main .helpWrap .helpBody .sideNav ul li ul li:active, main .helpWrap .helpBody .sideNav ul li ul li.active {
-  background: #fae8c1;
+  background: var(--accentColor_2, "#fae8c1");
 }
 
 main .helpWrap .helpBody .sideNav ul li ul li p {
@@ -457,7 +464,7 @@ main .helpWrap .helpBody .sideNav ul li ul li p {
 }
 
 main .helpWrap .helpBody .container {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -476,7 +483,7 @@ main .helpWrap .helpBody .container > div p {
 }
 
 main .helpWrap .helpBody .container > div a {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
 }
 
 main .helpWrap .helpBody .container > div p.remind {
@@ -496,7 +503,7 @@ main.innerPage {
 
 main.innerPage .center > div > div:not(.listTitle),
 main.innerPage .center > div > nav {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -536,7 +543,7 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
 main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
 main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
 main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
-  background: #c4a167;
+  background: var(--mainColor, "#c4a167");
   border-radius: 50px;
 }
 
@@ -574,7 +581,7 @@ main.innerPage .center .leftSide .innerNav li a p {
 }
 
 main.innerPage .center .leftSide .innerNav li a i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
@@ -590,7 +597,7 @@ main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-bu
 main.innerPage .center .leftSide .content .innerNav li:hover a,
 main.innerPage .center .leftSide .content .innerNav li:active a,
 main.innerPage .center .leftSide .content .innerNav li.active a {
-  background: #fae8c1;
+  background: var(--accentColor_2, "#fae8c1");
 }
 main.innerPage .center .leftSide .content .innerNav li:hover a::before,
 main.innerPage .center .leftSide .content .innerNav li:active a::before,
@@ -617,7 +624,7 @@ main.innerPage .center .leftSide .innerNav li.active a::before {
 }
 
 main.innerPage .center .rightSide .listTitle {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #cccccc;
 }
@@ -636,7 +643,7 @@ main.innerPage .center .rightSide .listTitle a.more {
 }
 
 main.innerPage .center .rightSide .listTitle a.more i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -672,7 +679,7 @@ main.innerPage .center .rightSide .recordList li .detail {
 }
 
 main.innerPage .center .rightSide .recordList li .detail i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
@@ -703,7 +710,7 @@ main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
 
 main.innerPage .center .midSide .midTop,
 main.innerPage .center .midSide .midBottom {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -722,7 +729,7 @@ main.innerPage .center .innerPageTitle > p {
 }
 
 main.innerPage .center .midSide .midTop .objectList > i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 16px;
   cursor: pointer;
 }
@@ -793,7 +800,7 @@ main.innerPage .center .midSide .midBottom form label p.remind {
 
 main.innerPage .center .midSide .midTop form .half label i,
 main.innerPage .center .midSide .midBottom form label i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
@@ -813,7 +820,7 @@ main.innerPage .center .midSide .midPageList li {
   letter-spacing: 2px;
 }
 main.innerPage .center .midSide .midPageList li:hover, main.innerPage .center .midSide .midPageList li:active, main.innerPage .center .midSide .midPageList li.active {
-  background: linear-gradient(135deg, #fae8c1 0%, #008599 100%);
+  background: linear-gradient(135deg, var(--accentColor_2, "#fae8c1") 0%, var(--accentColor_1, "#008599") 100%);
 }
 
 main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap span.hint {
@@ -827,7 +834,7 @@ main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button 
   font-size: 14px;
 }
 main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button:hover, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button:active, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button.active {
-  background: #c4a167;
+  background: var(--mainColor, "#c4a167");
   border-color: #c7a16e;
   color: #ffffff;
 }
@@ -864,7 +871,7 @@ main.innerPage .center .midSide .midBottom table tr td p {
 }
 
 main.innerPage .center .midSide .midBottom table tr td i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
   text-align: center;
 }
@@ -934,7 +941,7 @@ main.innerPage .center .midSide.memberCenter .midBottom form .half > .remind {
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom form .half > .remind span {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
   font-weight: bold;
 }
@@ -948,7 +955,7 @@ main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-ch
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(3) p {
-  color: #008599;
+  color: var(--accentColor_1, "#008599");
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {
@@ -980,8 +987,8 @@ main.innerPage .center .midSide.vip .midBottom .bar {
 }
 
 main.innerPage .center .midSide.vip .midBottom .bar span {
-  background: -webkit-gradient(linear, left top, right top, from(#fae8c1), to(#008599));
-  background: linear-gradient(to right, #fae8c1 0%, #008599 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--accentColor_2, "#fae8c1")), to(var(--accentColor_1, "#008599")));
+  background: linear-gradient(to right, var(--accentColor_2, "#fae8c1") 0%, var(--accentColor_1, "#008599") 100%);
   border-radius: 50px;
 }
 
@@ -1017,12 +1024,12 @@ main.innerPage .center .midSide.vip .midBottom .levelWelfare button.more {
 }
 
 main.innerPage .center .midSide.vip .midBottom .titleM i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
 main.innerPage .center .midSide.vip .midBottom .vipCardList i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
@@ -1119,7 +1126,7 @@ main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap p {
 }
 
 main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
@@ -1148,7 +1155,7 @@ main.innerPage .center .midSide.dealRecord .midBottom table tr th:not(:last-chil
 }
 
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(3) p {
-  color: #008599;
+  color: var(--accentColor_1, "#008599");
 }
 
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
@@ -1156,7 +1163,7 @@ main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-t
 }
 
 main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-type(1) p {
-  color: #008599;
+  color: var(--accentColor_1, "#008599");
   text-decoration: underline;
   cursor: pointer;
 }
@@ -1187,7 +1194,7 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .de
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
@@ -1280,11 +1287,11 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .even
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
-  border-color: #008599;
-  color: #008599;
+  border-color: var(--accentColor_1, "#008599");
+  color: var(--accentColor_1, "#008599");
 }
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:hover, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:active, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply.active {
-  background: #008599;
+  background: var(--accentColor_1, "#008599");
   color: #ffffff;
 }
 
@@ -1344,14 +1351,14 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
   border-bottom: 1px solid #cccccc;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.active {
-  background: #fae8c1;
+  background: var(--accentColor_2, "#fae8c1");
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen {
   background: #f3f3f3;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen.active {
-  background: #fae8c1;
+  background: var(--accentColor_2, "#fae8c1");
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {
@@ -1370,7 +1377,7 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .titleM i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
@@ -1457,7 +1464,7 @@ main.innerPage .center .midSide .midTop .platformWallet .stateWrap p {
 }
 
 main.innerPage .center .midSide .midTop .platformWallet .stateWrap i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
 }
 
@@ -1466,7 +1473,7 @@ main.innerPage .center .midSide.transfer .midTop .platformWallet {
 }
 
 main.innerPage .center .midSide.transfer .midTop .platTransfer form i.fa-right-long {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 30px;
 }
 
@@ -1523,7 +1530,7 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
 }
 
 footer .top {
-  background: #c4a167;
+  background: var(--mainColor, "#c4a167");
 }
 
 footer .top .center li p {
@@ -1545,7 +1552,7 @@ footer .top .center .copyright {
 }
 
 footer .bottom {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
 }
 
 footer .bottom p {
@@ -1569,14 +1576,14 @@ aside.app:hover p, aside.app:active p, aside.app.active p {
 }
 
 aside.app p {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 5px;
 }
 
 aside.cs {
-  background: #c4a167;
+  background: var(--mainColor, "#c4a167");
   border: solid 2px #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
@@ -1588,7 +1595,7 @@ aside.cs {
 }
 
 .filter .jumpWindow {
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 10px;
 }
 
@@ -1687,7 +1694,7 @@ aside.cs {
 }
 
 .filter .jumpWindow .content table tr th p {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 14px;
   font-weight: bold;
 }
@@ -1716,7 +1723,7 @@ aside.cs {
 .filter .jumpWindow .content table.pointJump tr {
   width: 99.8%;
   height: 40px;
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   display: inline-table;
 }
 
@@ -1760,7 +1767,7 @@ aside.cs {
 }
 
 .filter .jumpWindow.quickTransfer .content form label i {
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
   font-size: 24px;
 }
 
@@ -2597,7 +2604,7 @@ html body .mainWrap .center {
 html body .mainWrap .center .marqueeWrap {
   width: 100%;
   height: 50px;
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 50px;
   -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
           box-shadow: 0 0 13px 3px #e1e1e1;
@@ -2716,7 +2723,7 @@ html body .mainWrap .center .typeList .gameBlock .maintainBox p.title {
 html body .innerPage .marqueeWrap {
   width: 1400px;
   height: 50px;
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 50px;
   -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
           box-shadow: 0 0 13px 3px #e1e1e1;
@@ -4727,7 +4734,7 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .card
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 0 0 5px 5px;
 }
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li .state p {
@@ -5155,7 +5162,7 @@ html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox b
 html body .gamePage_Wrap .center .marqueeWrap {
   width: 100%;
   height: 50px;
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   border-radius: 50px;
   -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
           box-shadow: 0 0 13px 3px #e1e1e1;
@@ -5673,10 +5680,14 @@ html body aside.colorSelector {
   width: auto;
   height: auto;
   background: rgb(240, 240, 240);
-  padding: 15px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
   top: unset;
   bottom: 100px;
-  right: 10px;
+  right: 8px;
+}
+html body aside.colorSelector.active .hint {
+  padding: 15px 15px 0 15px;
 }
 html body aside.colorSelector.active .hint i {
   margin-right: 10px;
@@ -5696,10 +5707,11 @@ html body aside.colorSelector .hint {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px 15px 15px 15px;
 }
 html body aside.colorSelector .hint i {
   font-size: 25px;
-  color: #c4a167;
+  color: var(--mainColor, "#c4a167");
 }
 html body aside.colorSelector .hint p {
   display: none;
@@ -5712,6 +5724,7 @@ html body aside.colorSelector form {
   height: auto;
   display: none;
   margin-top: 10px;
+  padding: 0 15px 15px 15px;
 }
 html body aside.colorSelector form label {
   width: 100%;
@@ -5744,7 +5757,7 @@ html body aside.colorSelector form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #ffffff;
+  background: var(--subColor_BG, "#ffffff");
   padding: 5px 10px;
   margin: 15px auto 0;
 }
