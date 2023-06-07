@@ -25,7 +25,6 @@
             }
 
             .textBox {
-                max-width: 637px;
                 height: auto;
                 padding-top: 148px;
 
@@ -55,6 +54,7 @@
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     gap: 15px;
+                    align-items: center;
 
                     li {
                         width: auto;

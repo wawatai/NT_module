@@ -54,14 +54,15 @@ header .UnLoginBox label i {
     font-size: 14px;
 }
 header .UnLoginBox .loginBtn { //個別調整
-    background: #ffe1a8;
-    border: solid 1px #000000;
+    background: $linear_1;
     border-radius: 3px;
+    border: 1px solid $Border_color_0;
     color: #000000;
     font-size: 14px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);;
         border-color: #ffffff;
     }
 }

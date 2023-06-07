@@ -27,14 +27,17 @@ header .UnLoginBox label i {
 }
 
 header .UnLoginBox .loginBtn {
-  background: #ffe1a8;
-  border: solid 1px #000000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
+  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
   border-radius: 3px;
+  border: 1px solid #ffffff;
   color: #000000;
   font-size: 14px;
   font-weight: bold;
 }
 header .UnLoginBox .loginBtn:hover, header .UnLoginBox .loginBtn:active, header .UnLoginBox .loginBtn.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
+  background: linear-gradient(to bottom, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
   border-color: #ffffff;
 }
 
@@ -1889,9 +1892,8 @@ header .downList img {
 .swiper .banner {
   width: 100%;
   height: 500px;
-  background: #000000;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home .gameBlock img {
@@ -1902,8 +1904,8 @@ header .downList img {
 }
 
 main .eventWrap .eventTitle {
-  background: url("../img/eventTitle_bg.png") no-repeat;
-  background-size: 100%;
+  background: url("../img/eventTitle_bg.png") no-repeat center;
+  background-size: cover;
 }
 
 .innerPage .center > div.midSide.vip .midBottom .content .currentLevel {
@@ -2985,8 +2987,10 @@ html body .innerPage .center > div.rightSide .containerBox .recordList .contain 
 }
 html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock img {
   width: 100%;
-  height: 80px;
+  height: 60px;
   background: #000000;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock .eventInfo {
   margin-top: 10px;
@@ -4892,7 +4896,6 @@ html body .gamePage_Wrap .center .containerWrap .mainImg {
   background: #000000;
 }
 html body .gamePage_Wrap .center .containerWrap .textBox {
-  max-width: 637px;
   height: auto;
   padding-top: 148px;
 }
@@ -4925,6 +4928,9 @@ html body .gamePage_Wrap .center .containerWrap .textBox .btnBox {
   -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li {
   width: auto;
@@ -5279,7 +5285,7 @@ html body .eventWrap .eventBody .sideNav ul li i {
   margin-right: 30px;
 }
 html body .eventWrap .eventBody .eventList {
-  width: 1040px;
+  width: 1025px;
   height: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;

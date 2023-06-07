@@ -622,6 +622,20 @@ $(function(){
         $(".jumpWindow.quickTransfer .content form label:nth-of-type(1)")
         .find("p.platformName").text(n);
     })
+    $(".mainWrap .typeList .gameBlock").click(function(){
+        var n = $(this).find("p").text();
+
+        if($(this).closest("body").find("header .top .center ul").hasClass("loginBox")) {
+            
+            $(".filter, .jumpWindow.quickTransfer")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+    
+            $(".jumpWindow.quickTransfer .content form label:nth-of-type(1)")
+            .find("p.platformName").text(n);
+        }
+    })
 
     //更換聯電
     $(".midSide.memberCenter .midBottom button.callChangeNum").click(function(){
