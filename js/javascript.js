@@ -739,11 +739,15 @@ $(function(){
         var subColor = $("aside.colorSelector form input.subColor_BG").val();
         var accentColor_1 = $("aside.colorSelector form input.accentColor_1").val();
         var accentColor_2 = $("aside.colorSelector form input.accentColor_2").val();
+        var positiveColor = $("aside.colorSelector form input.positiveColor").val();
+        var negativeColor = $("aside.colorSelector form input.negativeColor").val();
+
 
         $(':root').css('--mainColor', mainColor);
         $(':root').css('--subColor_BG', subColor);
         $(':root').css('--accentColor_1', accentColor_1);
         $(':root').css('--accentColor_2', accentColor_2);
-        
+        $(':root').css('--positiveColor', positiveColor);
+        $(':root').css('--negativeColor', negativeColor);
     })
 })
