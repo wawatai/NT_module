@@ -4,6 +4,8 @@
   --subColor_BG: #ffffff;
   --accentColor_1: #008599;
   --accentColor_2: #fae8c1;
+  --positiveColor: #32b411;
+  --negativeColor: #ff0000;
 }
 
 header .top {
@@ -111,7 +113,7 @@ header .loginBox > li:nth-of-type(8).active {
 }
 
 header .loginBox .userName {
-  color: #777777;
+  color: #686868;
   font-size: 16px;
   font-weight: bold;
 }
@@ -689,11 +691,11 @@ main.innerPage .center .rightSide .recordList li .winLose .half {
 }
 
 main.innerPage .center .rightSide .recordList li .winLose .half.win {
-  color: #32b411;
+  color: var(--positiveColor, #32b411);
 }
 
 main.innerPage .center .rightSide .recordList li .winLose .half.lose {
-  color: #ff0000;
+  color: var(--negativeColor, #ff0000);
 }
 
 main.innerPage .center .rightSide .recordList li .winLose .half span {
@@ -917,7 +919,7 @@ main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_stat
 }
 
 main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li.active i {
-  background: #32b411;
+  background: var(--positiveColor, #32b411);
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom form .half label .itemName {
@@ -959,7 +961,7 @@ main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {
-  color: #32b411;
+  color: var(--positiveColor, #32b411);
 }
 
 main.innerPage .center .midSide.invite .midBottom .infoBlock p {
@@ -1159,7 +1161,7 @@ main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-t
 }
 
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
-  color: #32b411;
+  color: var(--positiveColor, #32b411);
 }
 
 main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-type(1) p {
@@ -1186,11 +1188,11 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .de
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).lose {
-  color: #ff0000;
+  color: var(--negativeColor, #ff0000);
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).win {
-  color: #32b411;
+  color: var(--positiveColor, #32b411);
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap i {
@@ -1252,11 +1254,11 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li tab
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.lose {
-  color: #ff0000;
+  color: var(--negativeColor, #ff0000);
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.win {
-  color: #32b411;
+  color: var(--positiveColor, #32b411);
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock {
@@ -1283,7 +1285,7 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .even
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount .times {
-  color: #32b411;
+  color: var(--positiveColor, #32b411);
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
@@ -1311,28 +1313,28 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functio
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll {
-  color: #32b411;
-  border-color: #32b411;
+  color: var(--positiveColor, #32b411);
+  border-color: var(--positiveColor, #32b411);
   margin-right: 10px;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read.active,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll:hover,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll:active,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll.active {
-  background: #32b411;
+  background: var(--positiveColor, #32b411);
   color: #ffffff;
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete {
-  color: #ff0000;
-  border-color: #ff0000;
+  color: var(--negativeColor, #ff0000);
+  border-color: var(--negativeColor, #ff0000);
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn.active,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete:hover,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete:active,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete.active {
-  background: #ff0000;
+  background: var(--negativeColor, #ff0000);
   color: #ffffff;
 }
 
@@ -1713,7 +1715,7 @@ aside.cs {
 }
 
 .filter .jumpWindow.dealDetail .content table tr td:nth-of-type(3) p {
-  color: #32b411;
+  color: var(--positiveColor, #32b411);
 }
 
 .filter .jumpWindow .content table.pointJump {
@@ -5757,7 +5759,7 @@ html body aside.colorSelector form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: var(--subColor_BG, "#ffffff");
+  background: #ffffff;
   padding: 5px 10px;
   margin: 15px auto 0;
 }
