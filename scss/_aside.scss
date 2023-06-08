@@ -30,4 +30,98 @@ aside {
         justify-content: center;
         right: 10px;
     }
+
+    &.colorPicker {
+        width: auto;
+        height: auto;
+        background: #d8d8d8d2;
+        box-shadow: 0 5px 10px -5px #00000066;
+        top: unset;
+        bottom: 50px;    
+        right: 0px;
+        cursor: unset; 
+
+        &.display {
+
+            .hint {
+                width: 125px;
+
+                p {
+                    display: block;
+                }
+            }
+
+            .color {
+                display: grid;
+            }
+        }
+
+        .hint {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+
+            i {
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            p {
+                display: none;
+                color: #494949;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+
+        .color {
+            display: none;
+            width: 100%;
+            height: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 0 15px 15px;
+
+            .colorBlock {
+                width: 25px;
+                height: 25px;
+                border-radius: 50px;
+                border: 2px solid transparent;
+                position: relative;
+                cursor: pointer;
+
+                &.active {
+                    border-color: #383838;
+
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 98%;
+                    height: 98%;
+                    border: 1px solid #ffffff;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+
+                &.gold {
+                    background: #c4a167;
+                }
+
+                &.darkBlue {
+                    background: #0c4058;
+                }
+            }
+        }
+    }
 }

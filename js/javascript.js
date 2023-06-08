@@ -725,3 +725,42 @@ $(function(){
         .siblings().removeClass("display");
     })
 })
+
+//選色器
+$(function(){
+    $("aside.colorPicker .hint").click(function(){
+        $(this)
+        .closest(".colorPicker")
+        .toggleClass("display");
+    })
+    $("aside.colorPicker .color .colorBlock").click(function(){
+        
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if($(this).hasClass("gold")){
+            $(".colorSystem")
+            .attr("href", "./css_gold/colorStyle.css");
+        } else if($(this).hasClass("darkBlue")) {
+            $(".colorSystem")
+            .attr("href", "./css_darkBlue/colorStyle.css");
+        }
+    })
+    $("aside.innerPage.colorPicker .color .colorBlock").click(function(){
+        
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if($(this).hasClass("gold")){
+            $(".colorSystem")
+            .attr("href", "../css_gold/colorStyle.css");
+        } else if($(this).hasClass("darkBlue")) {
+            $(".colorSystem")
+            .attr("href", "../css_darkBlue/colorStyle.css");
+        }
+    })
+})
