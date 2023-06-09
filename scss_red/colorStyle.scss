@@ -16,7 +16,7 @@ $Font_negative: $Font_remind;
 $Font_positive: #32b411;
 
 $Font_accent01: #540032;
-$Font_accent02: #260F25;
+$Font_accent02: #F5BFB8;
 $Font_accent03: mix($Font_Title_1_Active,$Font_accent02, 90%);
 
 $Border_color_0: #ffffff;
@@ -122,7 +122,7 @@ header .loginBox .userName { //個別調整
     font-weight: bold;
 
     span {
-        color: $Font_accent01;
+        color: $Font_accent03;
     }
 }
 header .loginBox li a {
@@ -353,7 +353,7 @@ main .eventWrap .eventBody .sideNav ul li {
     border-bottom: 1px solid $Border_color_1;
 
     &:hover,&:active,&.active {
-        background: $Font_accent01;
+        background: $Font_accent02;
 
         &::before {
             background: $Font_Title_1_Active;
@@ -498,7 +498,7 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
     }
 }
 main.innerPage .center .leftSide .quickSelect li .quickBtn p {
-    color: $Font_accent01;
+    color: $Font_color_1;
     font-size: 18px;
     font-weight: bold;
 }
@@ -538,26 +538,26 @@ main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-bu
 main.innerPage .center .leftSide .content .innerNav li:hover a,
 main.innerPage .center .leftSide .content .innerNav li:active a,
 main.innerPage .center .leftSide .content .innerNav li.active a { //個別調整
-    background: $Font_accent01;
-
+    background: $Font_accent02;
+    
     &::before {
-        background: $Font_Title_1_Active;
+        background: $Font_color_4;
     }
 }
 main.innerPage .center .leftSide .innerNav li:hover a i,
 main.innerPage .center .leftSide .innerNav li:active a i,
 main.innerPage .center .leftSide .innerNav li.active a i {
-    color: $Font_Title_1;
+    color: $Font_color_4;
 }
 main.innerPage .center .leftSide .innerNav li:hover a p,
 main.innerPage .center .leftSide .innerNav li:active a p,
 main.innerPage .center .leftSide .innerNav li.active a p {
-    color: $Font_Title_1;
+    color: $Font_color_4;
 }
 main.innerPage .center .leftSide .innerNav li:hover a::before,
 main.innerPage .center .leftSide .innerNav li:active a::before,
 main.innerPage .center .leftSide .innerNav li.active a::before {
-    background: $Font_Title_1;
+    background: $Font_Title_1_Active;
 }
 
 //innerPage 右欄

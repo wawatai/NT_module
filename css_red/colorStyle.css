@@ -102,12 +102,12 @@ header .loginBox > li:nth-of-type(8).active {
 }
 
 header .loginBox .userName {
-  color: #260F25;
+  color: #F5BFB8;
   font-size: 16px;
   font-weight: bold;
 }
 header .loginBox .userName span {
-  color: #540032;
+  color: #f14f47;
 }
 
 header .loginBox li a {
@@ -121,16 +121,16 @@ header .loginBox li:not(:first-child) p {
 }
 
 header .loginBox > li.total p {
-  color: #dc3e38;
+  color: #f14f47;
 }
 
 header .loginBox > li.total i {
-  color: #dc3e38;
+  color: #f14f47;
   font-size: 12px;
 }
 
 header .loginBox .transferInfo {
-  background: #260F25;
+  background: #F5BFB8;
   border: 1px solid #F0433A;
 }
 
@@ -371,7 +371,7 @@ main .eventWrap .eventBody .sideNav ul li {
   border-bottom: 1px solid #cccccc;
 }
 main .eventWrap .eventBody .sideNav ul li:hover, main .eventWrap .eventBody .sideNav ul li:active, main .eventWrap .eventBody .sideNav ul li.active {
-  background: #540032;
+  background: #F5BFB8;
 }
 main .eventWrap .eventBody .sideNav ul li:hover::before, main .eventWrap .eventBody .sideNav ul li:active::before, main .eventWrap .eventBody .sideNav ul li.active::before {
   background: #F0433A;
@@ -445,7 +445,7 @@ main .helpWrap .helpBody .sideNav ul li ul li {
   background: transparent;
 }
 main .helpWrap .helpBody .sideNav ul li ul li:hover, main .helpWrap .helpBody .sideNav ul li ul li:active, main .helpWrap .helpBody .sideNav ul li ul li.active {
-  background: #260F25;
+  background: #F5BFB8;
 }
 
 main .helpWrap .helpBody .sideNav ul li ul li p {
@@ -539,7 +539,7 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
 }
 
 main.innerPage .center .leftSide .quickSelect li .quickBtn p {
-  color: #540032;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
 }
@@ -588,12 +588,12 @@ main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-bu
 main.innerPage .center .leftSide .content .innerNav li:hover a,
 main.innerPage .center .leftSide .content .innerNav li:active a,
 main.innerPage .center .leftSide .content .innerNav li.active a {
-  background: #540032;
+  background: #F5BFB8;
 }
 main.innerPage .center .leftSide .content .innerNav li:hover a::before,
 main.innerPage .center .leftSide .content .innerNav li:active a::before,
 main.innerPage .center .leftSide .content .innerNav li.active a::before {
-  background: #F0433A;
+  background: #820333;
 }
 
 main.innerPage .center .leftSide .innerNav li:hover a i,
@@ -611,7 +611,7 @@ main.innerPage .center .leftSide .innerNav li.active a p {
 main.innerPage .center .leftSide .innerNav li:hover a::before,
 main.innerPage .center .leftSide .innerNav li:active a::before,
 main.innerPage .center .leftSide .innerNav li.active a::before {
-  background: #820333;
+  background: #F0433A;
 }
 
 main.innerPage .center .rightSide .listTitle {
@@ -1350,14 +1350,14 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
   border-bottom: 1px solid #cccccc;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.active {
-  background: #260F25;
+  background: #F5BFB8;
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen {
   background: #f3f3f3;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen.active {
-  background: #260F25;
+  background: #F5BFB8;
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {

@@ -1635,6 +1635,10 @@ aside.cs {
           box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
 }
 
+aside.colorPicker .hint i {
+  color: #c4a167;
+}
+
 .filter {
   background: rgba(0, 0, 0, 0.6431372549);
 }

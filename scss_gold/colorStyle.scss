@@ -1447,6 +1447,9 @@ aside.cs {
     border-radius: 50%;
     box-shadow: 0 0 7px 0 $boxShadow_2;
 }
+aside.colorPicker .hint i{
+    color: $BG_color_1;
+}
 
 //filter
 .filter {
