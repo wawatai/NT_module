@@ -746,6 +746,9 @@ $(function(){
         } else if($(this).hasClass("darkBlue")) {
             $(".colorSystem")
             .attr("href", "./css_darkBlue/colorStyle.css");
+        } else if($(this).hasClass("red")) {
+            $(".colorSystem")
+            .attr("href", "./css_red/colorStyle.css");
         }
     })
     $("aside.innerPage.colorPicker .color .colorBlock").click(function(){
@@ -761,6 +764,9 @@ $(function(){
         } else if($(this).hasClass("darkBlue")) {
             $(".colorSystem")
             .attr("href", "../css_darkBlue/colorStyle.css");
+        } else if($(this).hasClass("red")) {
+            $(".colorSystem")
+            .attr("href", "../css_red/colorStyle.css");
         }
     })
 })

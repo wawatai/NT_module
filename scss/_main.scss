@@ -4,6 +4,7 @@ html {
     body {
         position: relative;
 
+        @import "./_register.scss";
         @import "./_header.scss";
         @import "./_mainWrap.scss";
         @import "./_innerPage.scss";

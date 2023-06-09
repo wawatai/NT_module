@@ -38,7 +38,7 @@ aside {
         box-shadow: 0 5px 10px -5px #00000066;
         top: unset;
         bottom: 50px;    
-        right: 0px;
+        right: 8px;
         cursor: unset; 
 
         &.display {
@@ -120,6 +120,10 @@ aside {
 
                 &.darkBlue {
                     background: #0c4058;
+                }
+
+                &.red {
+                    background: #820333;
                 }
             }
         }

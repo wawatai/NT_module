@@ -1,0 +1,108 @@
+.registerWrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .signUpBlock {
+        width: 865px;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+
+        .decPic {
+            width: 50%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signBlock {
+            width: 50%;
+            height: auto;
+            padding: 40px;
+
+            .title {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                i {
+                    margin-right: 20px;
+                }
+            }
+
+            form {
+                width: 100%;
+                height: auto;
+
+                label {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    margin-bottom: 20px;
+
+                    &:nth-of-type(4) {
+
+                        .outer {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0 5px 0 0;
+
+                            input {
+                                width: 100%;
+                            }
+
+                            button {
+                                white-space: nowrap;
+                                flex-shrink: 0;
+                            }
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        padding: 0 15px;
+                    }
+
+                    .remind {
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            .policy {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px auto;
+            }
+
+            button {
+
+                &.check,
+                &.enter {
+                    width: 100%;
+                    height: 40px;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                &.check {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
