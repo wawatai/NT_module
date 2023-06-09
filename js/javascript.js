@@ -711,6 +711,26 @@ $(function(){
     })
 })
 
+//註冊
+$(function(){
+    $(".registerWrap form label:nth-of-type(2) i").click(function(){
+        
+        if ($(this).hasClass("fa-eye-slash")) {
+            $(this)
+            .attr("class","fa-solid fa-eye")
+            .closest("label")
+            .find("input")
+            .attr("type", "text");
+        } else if ($(this).hasClass("fa-eye")) {
+            $(this)
+            .attr("class","fa-solid fa-eye-slash")
+            .closest("label")
+            .find("input")
+            .attr("type", "password");
+        }
+    })
+})
+
 //news
 $(function(){
     $(".jumpWindow.news .typeList button").click(function(){

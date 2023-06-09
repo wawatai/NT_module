@@ -1528,6 +1528,56 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
   letter-spacing: unset;
 }
 
+.registerWrap .signUpBlock {
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.registerWrap .signUpBlock .title i {
+  color: #820333;
+  font-size: 40px;
+}
+
+.registerWrap .signUpBlock .title p {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.registerWrap .signUpBlock form label .outer button {
+  color: #820333;
+  border-color: #820333;
+}
+.registerWrap .signUpBlock form label .outer button:hover, .registerWrap .signUpBlock form label .outer button:active, .registerWrap .signUpBlock form label .outer button.active {
+  background: #820333;
+  color: #ffffff;
+}
+
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+  color: #686868;
+}
+
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+  color: #686868;
+}
+
+.registerWrap .signUpBlock form label p.remind {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.registerWrap .signUpBlock form .policy p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.registerWrap .signUpBlock form .policy p span {
+  color: #F0433A;
+}
+
 footer .top {
   background: #820333;
 }

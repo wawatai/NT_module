@@ -1355,6 +1355,49 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
     letter-spacing: unset;
 }
 
+//register
+.registerWrap .signUpBlock {
+    background: $BG_color_2; 
+    box-shadow: 0 5px 10px -5px #00000066;
+    border-radius: 20px;
+}
+.registerWrap .signUpBlock .title i {
+    color: $Font_color_4;
+    font-size: 40px;
+}
+.registerWrap .signUpBlock .title p {
+    color: $Font_color_2;
+    font-size: 25px;
+    font-weight: bold;
+}
+.registerWrap .signUpBlock form label .outer button {
+    color: $Font_color_4;
+    border-color: $Font_color_4;
+
+    &:hover,&:active,&.active {
+        background: $BG_color_1;
+        color: $Font_color_1;
+    }
+}
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+    color: $Font_color_3;
+}
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+    color: $Font_color_3;
+}
+.registerWrap .signUpBlock form label p.remind {
+    color: $Font_remind;
+    font-size: 12px;
+}
+.registerWrap .signUpBlock form .policy p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.registerWrap .signUpBlock form .policy p span {
+    color: $Font_Title_1_Active;
+}
+
 //footer
 footer .top {
     background: $BG_color_1;

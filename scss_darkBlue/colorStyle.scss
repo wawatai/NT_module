@@ -1371,9 +1371,27 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
     font-size: 25px;
     font-weight: bold;
 }
+.registerWrap .signUpBlock form label .outer button {
+    color: $Font_Title_1_Active;
+
+    &:hover,&:active,&.active {
+        color: $Font_color_1;
+    }
+}
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+    color: $Font_color_3;
+}
 .registerWrap .signUpBlock form label p.remind {
     color: $Font_remind;
     font-size: 12px;
+}
+.registerWrap .signUpBlock form .policy p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.registerWrap .signUpBlock form .policy p span {
+    color: $Font_Title_1_Active;
 }
 
 //footer
