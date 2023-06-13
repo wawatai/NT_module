@@ -1347,6 +1347,47 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
     letter-spacing: unset;
 }
 
+//register
+.registerWrap .signUpBlock {
+    background: $BG_color_2; 
+    box-shadow: 0 5px 10px -5px #00000066;
+    border-radius: 20px;
+}
+.registerWrap .signUpBlock .title i {
+    color: $Font_color_4;
+    font-size: 40px;
+}
+.registerWrap .signUpBlock .title p {
+    color: $Font_color_2;
+    font-size: 25px;
+    font-weight: bold;
+}
+.registerWrap .signUpBlock form label .outer button {
+    color: $Font_Title_1_Active;
+
+    &:hover,&:active,&.active {
+        color: $Font_color_1;
+    }
+}
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+    color: $Font_color_3;
+}
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+    color: $Font_color_3;
+}
+.registerWrap .signUpBlock form label p.remind {
+    color: $Font_remind;
+    font-size: 12px;
+}
+.registerWrap .signUpBlock form .policy p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.registerWrap .signUpBlock form .policy p span {
+    color: $Font_Title_1_Active;
+}
+
 //footer
 footer .top {
     background: $BG_color_1;
@@ -1390,6 +1431,10 @@ aside.app { //個別調整
         }
     }
 }
+aside.app i.fa-download {
+    color: $Font_Title_1_Active;
+    font-size: 25px;
+}
 aside.app p { //個別調整
     color: $Font_color_4;
     font-size: 20px;
@@ -1401,6 +1446,9 @@ aside.cs {
     border: solid 2px $Border_color_0;
     border-radius: 50%;
     box-shadow: 0 0 7px 0 $boxShadow_2;
+}
+aside.colorPicker .hint i{
+    color: $BG_color_1;
 }
 
 //filter
@@ -1754,6 +1802,16 @@ aside.cs {
     &:disabled { //個別調整
         background: none;
     }
+}
+
+.mainWrap .center .marqueeWrap,
+.innerPage .marqueeWrap,
+.gamePage_Wrap .center .marqueeWrap {
+    @include marqueeStyle;
+}
+
+.innerPage .center>div.midSide.bankCard .midTop .objectList ul .cardSet li {
+    @include cardStyle;
 }
 
 * {

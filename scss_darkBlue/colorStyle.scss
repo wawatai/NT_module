@@ -1,0 +1,1837 @@
+$BG_color_1: #0c4058;
+$BG_color_2: #ffffff;
+$BG_color_3: #f4f4f4;
+
+$Font_color_1: #ffffff;
+$Font_color_2: #000000;
+$Font_color_3: #686868;
+
+$Font_color_4: $BG_color_1;
+$Font_Title_1: $BG_color_1;
+$Font_Title_1_Active: #159A9C;
+
+
+$Font_remind: #ff0000;
+$Font_negative: $Font_remind;
+$Font_positive: #32b411;
+
+$Font_accent01: #DEEFE7;
+$Font_accent02: #B4BEC9;
+$Font_accent03: mix($Font_Title_1_Active,$Font_accent02, 70%);
+
+$Border_color_0: #ffffff;
+$Border_color_1: #cccccc;
+$Border_color_2: #DEEFE7;
+$Border_color_3: #159A9C;
+
+$boxShadow_1: #e1e1e1;
+$boxShadow_2: #00000066;
+
+$filter_1: #000000a4;
+
+$linear_1: linear-gradient(to top, $Font_Title_1_Active 0%, $BG_color_1 50%, $Font_Title_1_Active 100%);
+$linear_1_Active: linear-gradient(to top, $Font_Title_1_Active 0%, $Border_color_3 50%, $Font_Title_1_Active 100%);
+$linear_2: linear-gradient(to right, $Font_Title_1_Active 0%, $Font_accent01 100%);
+$BankCard_BG: linear-gradient(120deg, $Font_Title_1_Active 0%, $BG_color_1 50%, $Font_Title_1_Active 100%);
+
+//header
+header .top {
+    background: $BG_color_1;
+}
+header .top li { //個別調整
+    border-right: solid 1px $Border_color_1;
+    box-shadow: 1px 1px 0.5px #ffffff;
+}
+header .UnLoginBox label { //個別調整
+    background: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+header .UnLoginBox label input {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .UnLoginBox label i {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+header .UnLoginBox .loginBtn { //個別調整
+    background: $linear_1;
+    border-radius: 3px;
+    border: 1px solid $Border_color_0;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, $Font_accent01 0%, $Font_Title_1_Active 50%, $Font_accent01 100%);;
+        color: $BG_color_1;
+    }
+}
+header .UnLoginBox .registerBtn { //個別調整
+    background: $Font_Title_1_Active;
+    border: solid 1px $Border_color_0;
+    border-radius: 3px;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        border-color: $BG_color_1;
+    }
+}
+header .UnLoginBox .registerBtn i { //個別調整
+    color: $Font_color_1;
+    font-size: 14px;
+}
+header .UnLoginBox .forgetBtn i {
+    color: $Font_color_1;
+    font-size: 16px;
+}
+header .UnLoginBox .forgetBtn p {
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+header ul li label.lang select {
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+header ul li label.lang select option { //個別調整
+    color: $Font_color_2;
+}
+header ul li label.lang i {
+    color: $Font_color_1;
+    font-size: 12px;
+}
+header .loginBox>li:nth-of-type(3), 
+header .loginBox>li:nth-of-type(4), 
+header .loginBox>li:nth-of-type(5), 
+header .loginBox>li:nth-of-type(6), 
+header .loginBox>li:nth-of-type(7), 
+header .loginBox>li:nth-of-type(8) { //個別調整
+    
+    &:hover,&:active,&.active {
+        background: $Font_Title_1_Active;
+    }
+}
+header .loginBox .userName { //個別調整
+    color: $Font_accent02;
+    font-size: 16px;
+    font-weight: bold;
+
+    span {
+        color: $Font_accent01;
+    }
+}
+header .loginBox li a {
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .loginBox li:not(:first-child) p {
+    color: $Font_color_1;
+}
+header .loginBox>li.total p { //個別調整
+    color: $Font_accent03;
+}
+header .loginBox>li.total i { //個別調整
+    color: $Font_accent03;
+    font-size: 12px;
+}
+header .loginBox .transferInfo  { //個別調整
+    background: $Font_accent02;
+    border: 1px solid $Border_color_3;
+}
+header .loginBox .transferInfo li:not(:last-of-type) { //個別調整
+    border-bottom: 1px solid $Border_color_3;
+}
+header .loginBox .transferInfo li p { //個別調整
+    color: $Font_color_2;
+    font-size: 14px;
+}
+header .loginBox .transferInfo li p.money {
+    color: $Font_remind;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .bottom {
+    background: $BG_color_2;
+}
+header nav li::before {
+    background: $Border_color_3;
+}
+header nav li a p {
+    color: $Font_Title_1;
+    font-size: 18px;
+    font-weight: bold;
+}
+header nav li:hover a p,
+header nav li:active a p,
+header nav li.active a p {
+    color: $Font_Title_1_Active;
+}
+header .downList {
+    background: $BG_color_2;
+    border-top: solid 1px $Border_color_1;
+}
+header .downList p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .downList .maintainBox {
+    background: $filter_1;
+}
+header .downList .maintainBox p { //個別調整 //常駐
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .downList .maintainBox .title { //個別調整 //常駐
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+header .downList .fa-solid.fa-chevron-left,
+header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
+    color: #000000;
+    font-size: 26px;
+}
+
+//swiper
+.swiper .swiper-button-prev i,
+.swiper .swiper-button-next i { //個別調整 //常駐
+    color: #ffffff;
+    font-size: 44px;
+}
+
+//home
+.home .typeList .gameBlock p {
+    color: $Font_Title_1;
+    font-size: 26px;
+    font-weight: bold;
+}
+.home .typeList .maintainBox {
+    background: $filter_1;
+}
+.home .typeList .maintainBox p { //個別調整 //常駐
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.home .typeList .maintainBox .title { //個別調整 //常駐
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+//gamePage 遊戲頁
+main .gamePage_Wrap .center .containerWrap .textBox .title {
+    background: linear-gradient(to bottom, $Font_color_4 0%, $Font_Title_1_Active 100%);
+    font-weight: bold;
+}
+main .gamePage_Wrap .center .containerWrap .textBox .title p.big {
+    color: transparent;
+    font-size: 62px;
+    letter-spacing: 6px;
+}
+main .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+    color: transparent;
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+main .gamePage_Wrap .center .containerWrap .textBox p.mainCnt {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+//gameInnerPage 遊戲內頁 (slot/fish/board)
+main .gamePage_Wrap .center .gameInnerPage_Wrap {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px $boxShadow_2;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav {
+    border-bottom: 1px solid $Border_color_1;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li  {
+    color: $Font_color_2;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1_Active;
+
+        &::before {
+            background: $Font_color_4;
+        }
+
+        &::after{
+            border-color: transparent transparent $Font_color_4 transparent; 
+        }
+    }
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
+    color: $Font_color_3;
+    font-size: 18px;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search input {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
+    color: $Font_color_3;
+    font-size: 18px;
+    font-weight: bold;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
+    font-size: 20px;
+    color: $Border_color_1;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i.fa-solid.fa-heart {  //自行調整
+    color: #ff30b2;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
+    background: $filter_1;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter {  //自行調整
+    background: linear-gradient(to top, #801c1c 0%, #f13945 100%);
+    border-radius: 3px;
+    border: 1px solid #f56d5c;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #5a0c0c;
+    }
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try {  //自行調整
+    background: linear-gradient(to top, #324ab9 0%, #6a91f3 100%);
+    border-radius: 3px;
+    border: 1px solid #5c8df5;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #0e1c5e;
+    }
+}
+
+//event 
+main .eventWrap {
+    background: $BG_color_3;
+}
+main .eventWrap .eventTitle p {
+    color: $Font_Title_1;
+    font-size: 60px;
+    font-weight: bold;
+}
+main .eventWrap .eventBody .sideNav ul { 
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main .eventWrap .eventBody .sideNav ul li {
+    border-bottom: 1px solid $Border_color_1;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent01;
+
+        &::before {
+            background: $Font_Title_1_Active;
+        }
+    }
+}
+main .eventWrap .eventBody .sideNav ul li i {
+    color: $Font_Title_1_Active;
+    font-size: 20px;
+}
+main .eventWrap .eventBody .sideNav ul li p {
+    color: $Font_color_2;
+    font-size: 22px;
+    font-weight: bold;
+}
+main .eventWrap .eventBody .eventList .eventBox {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main .eventWrap .eventBody .eventList .eventBox ul li.title {
+    color: $Font_color_2;
+    font-size: 24px;
+    font-weight: bold;
+}
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button {
+    width: 115px;
+    height: 35px;
+}
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //個別調整
+    background: linear-gradient(to bottom, $Font_accent01 0%, $Font_Title_1_Active 50%, $Font_accent01 100%); 
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, $Font_accent01 0%, $Font_Title_1_Active 50%, $Font_accent01 100%)
+    }
+}
+
+//help
+main .helpWrap {
+    background: $BG_color_3;
+}
+main .helpWrap .helpBody .sideNav>ul {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main .helpWrap .helpBody .sideNav ul li .topic i {
+    color: $Font_Title_1;
+    font-size: 18px;
+}
+main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
+    color: $Font_color_4;
+}
+main .helpWrap .helpBody .sideNav ul li .topic p {
+    color: $Font_Title_1;
+    font-size: 20px;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .sideNav ul li ul li {
+    background: transparent;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent02;
+    }
+}
+main .helpWrap .helpBody .sideNav ul li ul li p {
+    color: $Font_color_3;
+    font-size: 18px;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .container {
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+main .helpWrap .helpBody .container>div h2 {
+    color: $Font_color_2;
+    font-size: 22px;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .container>div p {
+    color: $Font_color_2;
+    font-size: 16px;
+    line-height: 24px;
+}
+main .helpWrap .helpBody .container>div a {
+    color: $Font_color_4;
+}
+main .helpWrap .helpBody .container>div p.remind {
+    color: $Font_remind;
+    font-weight: bold;
+}
+main .helpWrap .helpBody .container>div p.haveBtn {
+    color: $Font_color_3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+//innerPage
+main.innerPage { //個別調整
+    background: #f4f4f4;
+}
+
+//3欄背景
+main.innerPage .center>div>div:not(.listTitle),
+main.innerPage .center>div>nav { 
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+
+//左欄
+main.innerPage .center .leftSide p.userAccount {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide p.userAccount .level { //個別調整
+    background: $Font_Title_1_Active;
+    border-radius: 5px;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide p.joinDay {
+    font-size: 14px;
+    color: $Font_color_3;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
+    background: $linear_1;
+    border-radius: 50px;
+    border: 1px solid $Border_color_2;
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn,
+main.innerPage .center .leftSide .quickSelect li .quickBtn,
+main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
+
+    &:hover,&:active,&.active {
+        background: $BG_color_1;
+        border-radius: 50px;
+    }
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn p {
+    color: $Font_accent01;
+    font-size: 18px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
+    color: $Font_color_1;
+}
+main.innerPage .center .leftSide .quickSelect li .btnName {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide .innerNav {
+    border-top: 1px solid $Border_color_1;
+}
+main.innerPage .center .leftSide .innerNav li:nth-of-type(4), 
+main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
+    border-top: 1px solid $Border_color_1;
+}
+main.innerPage .center .leftSide .innerNav li a p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .leftSide .innerNav li a i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-credit-card {
+    font-size: 13px;
+}
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-file-lines,
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-button {
+    font-size: 15px;
+}
+main.innerPage .center .leftSide .content .innerNav li:hover a,
+main.innerPage .center .leftSide .content .innerNav li:active a,
+main.innerPage .center .leftSide .content .innerNav li.active a { //個別調整
+    background: $Font_accent01;
+
+    &::before {
+        background: $Font_Title_1_Active;
+    }
+}
+main.innerPage .center .leftSide .innerNav li:hover a i,
+main.innerPage .center .leftSide .innerNav li:active a i,
+main.innerPage .center .leftSide .innerNav li.active a i {
+    color: $Font_Title_1;
+}
+main.innerPage .center .leftSide .innerNav li:hover a p,
+main.innerPage .center .leftSide .innerNav li:active a p,
+main.innerPage .center .leftSide .innerNav li.active a p {
+    color: $Font_Title_1;
+}
+main.innerPage .center .leftSide .innerNav li:hover a::before,
+main.innerPage .center .leftSide .innerNav li:active a::before,
+main.innerPage .center .leftSide .innerNav li.active a::before {
+    background: $Font_Title_1;
+}
+
+//innerPage 右欄
+main.innerPage .center .rightSide .listTitle {
+    background: $BG_color_2;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .rightSide .listTitle> p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .listTitle a.more {
+    color: $Font_color_2;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .listTitle a.more i {
+    color: $Font_color_4;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .recordList .noData {
+    color: $Font_color_3;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .rightSide .recordList li {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .rightSide .recordList li .state {
+    color: $Font_Title_1;
+    font-size: 14px;
+}
+main.innerPage .center .rightSide .recordList li .state span {
+    color: $Font_color_2;
+    font-size: 15px;
+}
+main.innerPage .center .rightSide .recordList li .state.gameName {
+    font-size: 15px;
+    font-weight: bold;
+}
+main.innerPage .center .rightSide .recordList li .detail {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .rightSide .recordList li .detail i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half {
+    color: $Font_color_2;
+    font-size: 15px;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half.win {
+    color: $Font_positive;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half.lose {
+    color: $Font_negative;
+}
+main.innerPage .center .rightSide .recordList li .winLose .half span {
+    color: $Font_color_3;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
+    color: $Font_color_2;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+//innerPage 中欄
+main.innerPage .center .midSide .midTop,
+main.innerPage .center .midSide .midBottom { 
+    background: $BG_color_2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+}
+
+//內頁標題字
+main.innerPage .center .innerPageTitle {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .innerPageTitle>p {
+    color: $Font_color_2;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+//上部 第二項目欄通用
+main.innerPage .center .midSide .midTop .objectList>i {
+    color: $Font_color_4;
+    font-size: 16px;
+    cursor: pointer;
+}
+main.innerPage .center .midSide .midTop .objectList ul li.payWay {
+    background: transparent;
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midTop .objectList ul li.payWay {
+    
+    &:hover,&:active,&.active {
+        background: $linear_2;
+        color: $Font_color_1;
+    }
+}
+
+//下部 注意事項欄
+main.innerPage .center .midSide .midBottom .remindBox {
+    border: 1px solid $Border_color_2;
+}
+main.innerPage .center .midSide .midBottom .remindBox p {
+    color: $Font_color_2;
+}
+main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
+    color: $Font_Title_1;
+    font-size: 13px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midBottom .remindBox p span {
+    color: $Font_Title_1_Active;
+}
+
+//中小標 上下通用
+main.innerPage .center .midSide .titleM {
+    color: $Font_color_2;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+main.innerPage .center .midSide .titleS {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+//form 表單通用
+main.innerPage .center .midSide .midTop form .half label p.itemName,
+main.innerPage .center .midSide .midBottom form label p.itemName,
+main.innerPage .center .midSide .midBottom p.itemName {
+    width: 81px;
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide .midTop form .half label p.itemName span,
+main.innerPage .center .midSide .midBottom form label p.itemName span,
+main.innerPage .center .midSide .midBottom p.itemName span {
+    color: $Font_remind;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midTop form .half label p.remind,
+main.innerPage .center .midSide .midBottom form label p.remind {
+    color: $Font_remind;
+    font-size: 12px;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide .midTop form .half label i,
+main.innerPage .center .midSide .midBottom form label i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .midSide .midTop form .half button.submitBtn,
+main.innerPage .center .midSide .midBottom form button.submitBtn {
+    width: 305px;
+    height: 40px;
+    font-size: 15px;
+}
+
+//中分頁
+main.innerPage .center .midSide .midPageList li {
+    background: $Font_color_3;
+    border-radius: 5px 5px 0 0;
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &:hover,&:active,&.active { 
+        background: linear-gradient(135deg, $Font_Title_1_Active 0%, $Font_accent01 100%); 
+    }
+}
+
+//表格搜尋欄
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap span.hint {
+    color: $Font_remind;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button {
+    font-size: 14px;
+
+    &:hover,&:active,&.active {
+        background: $Font_color_4;
+        border-color: $Border_color_2;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide .midBottom .content form.searchBlock::before {
+    background: $Border_color_1;
+}
+
+//表格通用
+main.innerPage .center .midSide .midBottom table tr th {
+    border-bottom: 2px solid $Border_color_2;
+}
+main.innerPage .center .midSide .midBottom table tr th p {
+    color: $Font_Title_1;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+main.innerPage .center .midSide .midBottom table tr td {
+    border-bottom: 1px solid $Border_color_1;
+    text-align: center;
+}
+main.innerPage .center .midSide .midBottom table tr td:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide .midBottom table tr td p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+main.innerPage .center .midSide .midBottom table tr td i {
+    color: $Font_color_4;
+    font-size: 14px;
+    text-align: center;
+}
+main.innerPage .center .midSide .midBottom table tr td button {
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+}
+
+//memberCenter會員中心
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info:nth-of-type(1) {
+    color: $Font_color_2;
+    font-weight: bold;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info {
+    color: $Font_color_3;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info span {
+    color: $Font_remind;
+    margin: 0 0 0 5px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li i {
+    background: $Border_color_1;
+    border-radius: 50px;
+    color: $Font_color_1;
+    font-size: 16px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li:nth-of-type(4) i {
+    font-size: 20px;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+} 
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li.active i {
+    background: $Font_positive;
+} 
+main.innerPage .center .midSide.memberCenter .midBottom form .half label .itemName {
+    text-align: end;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form .half label button {
+    white-space: nowrap;
+}
+main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form .half>.remind  {
+    color: $Font_remind;
+    font-size: 12px;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form .half>.remind span {
+    color: $Font_color_4;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.memberCenter .midBottom form::before {
+    background: $Border_color_1;
+}
+main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(3) p {
+    color: $Font_accent01;
+}
+main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {
+    color: $Font_positive;
+}
+
+//invite
+main.innerPage .center .midSide.invite .midBottom .infoBlock p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+//vip
+main.innerPage .center .midSide.vip .midBottom .innerPageTitle p span {
+    display: block;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+main.innerPage .center .midSide.vip .midBottom ul.level li p {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .bar {
+    background: $Border_color_1;
+    border-radius: 50px;
+}
+main.innerPage .center .midSide.vip .midBottom .bar span {
+    background: linear-gradient(to right, $Font_Title_1_Active 0%, $Font_accent01 100%);
+    border-radius: 50px;
+}
+main.innerPage .center .midSide.vip .midBottom ul.toNext li p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare::before {
+    background: $Border_color_1;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li:not(:last-child) {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p {
+    color: $Font_color_3;
+    font-size: 14px;
+    text-align: center;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p.validNum {
+    color: $Font_Title_1;
+    font-size: 30px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.vip .midBottom .levelWelfare button.more {
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .titleM i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .vipCardList i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p {
+    color: $Font_color_1;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px $boxShadow_2;
+    text-align: center;
+}
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p span {
+    font-size: 14px;
+}
+main.innerPage .center .midSide.vip .midBottom table tr th:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.em {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.title {
+    color: $Font_Title_1;
+    font-size: 24px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.vip .midBottom .vipNotice ul li p {
+    color: $Font_color_2;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+//wallet
+main.innerPage .center .midSide.wallet .midTop .typeBox:not(:last-child) {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox .typeName p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox .typeName span {
+    font-size: 12px;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox:nth-of-type(1) .typeName p {
+    color: $Font_Title_1;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox p.numTotal {
+    color: $Font_color_2;
+    font-size: 43px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox p.withdrawLimit {
+    color: $Font_color_3;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.wallet .midTop .typeBox p.withdrawLimit span {
+    color: $Font_color_2;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox p.platName {
+    color: $Font_color_3;
+    font-size: 16px;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox .num {
+    color: $Font_color_2;
+    font-size: 25px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap p {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+
+//bankCard
+main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
+    color: $Font_color_2;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
+    color: $Font_color_3;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+main.innerPage .center .midSide .midTop .objectList li p.hint {
+    width: 100%;
+    text-align: center;
+}
+
+//dealRecord
+main.innerPage .center .midSide.dealRecord .midBottom table tr th:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(3) p {
+    color: $Font_accent01;
+}
+main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
+    color: $Font_positive;
+}
+
+//pointRecord
+main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-type(1) p {
+    color: $Font_accent01;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+//betRecord
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap {
+    border-bottom: 1px solid $Border_color_2;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap p {
+    color: $Font_Title_1;
+    font-size: 14px;
+    font-weight: bold;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: 1px solid $Border_color_1;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).lose {
+    color: $Font_negative;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).win {
+    color: $Font_positive;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap i {
+    color: $Font_color_4;
+    font-size: 14px;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li {
+    border-bottom: 1px solid $Border_color_1;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table {
+    box-shadow: 0 5px 10px -5px $boxShadow_2;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:first-child {
+    background: $linear_2;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th {
+    height: 40px;
+    vertical-align: middle;
+    border-bottom: none;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th:first-child {
+    border-radius: 5px 0 0 0;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th:last-child {
+    border-radius: 0 5px 0 0;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:first-child {
+    border-radius: 0 0 0 5px;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child {
+    border-radius: 0 0 5px 0;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:last-child td {
+    border-bottom: none;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th p {
+    color: $Font_color_1;
+    border-right: none;
+} 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:nth-last-child(1) p {
+    border-bottom: none;
+}
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td p {
+    border-right: none;
+}
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.lose {
+    color: $Font_negative;
+}
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.win {
+    color: $Font_positive;
+}
+
+//eventApply
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock {
+    border: 1px solid $Border_color_2;
+    border-radius: 3px;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type {
+    color: $Font_Title_1;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.term {
+    color: $Font_color_3;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount .times {
+    color: $Font_positive;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
+    border-color: $Font_accent01;
+    color: $Font_accent01;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent01;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(7) p.value {
+    color: $Font_remind;
+}
+
+//mail 
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll {
+    color: $Font_positive;
+    border-color: $Font_positive;
+    margin-right: 10px;
+
+    &:hover,&:active,&.active {
+        background: $Font_positive;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete {
+    color: $Font_negative;
+    border-color: $Font_negative;
+
+    &:hover,&:active,&.active {
+        background: $Font_negative;
+        color: $Font_color_1;
+    }
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all {
+    border: 1px solid $Border_color_1;
+    border-radius: 50px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all::before,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all::before {
+   background: $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li {
+    border-bottom: 1px solid $Border_color_1;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent02;
+    }
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen { //個別調整
+    background: #f3f3f3;
+
+    &:hover,&:active,&.active {
+        background: $Font_accent02;
+    }
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date {
+    color: $Font_color_3;
+    font-size: 14px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date::before {
+    background: $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .titleM i {
+    color: $Font_color_4;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
+    color: $Border_color_1;
+    font-size: 22px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap p {
+    color: $Font_color_3;
+    font-size: 15px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+//transfer + withdraw 公用
+main.innerPage .center .midSide .midTop .accountWrap {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide .midTop .titleS {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide .midTop .titleS span.hint {
+    color: $Font_remind;
+    font-size: 12px;
+}
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName p {
+    color: $Font_Title_1;
+}
+main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
+    color: $Font_color_3;
+}
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName span.btnStyle_1 {
+    font-size: 12px;
+}
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .numTotal {
+    color: $Font_color_2;
+    font-size: 30px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midTop .platformWallet .platformBox {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main.innerPage .center .midSide .midTop .platformWallet .platformBox p.platName {
+    color: $Font_color_3;
+    font-size: 16px;
+}
+main.innerPage .center .midSide .midTop .platformWallet .platformBox .num {
+    color: $Font_color_2;
+    font-size: 25px;
+    font-weight: bold;
+}
+main.innerPage .center .midSide .midTop .platformWallet .stateWrap p {
+    color: $Font_color_2;
+    font-size: 14px;
+}
+main.innerPage .center .midSide .midTop .platformWallet .stateWrap i {
+    color: $Font_color_4;
+    font-size: 14px;
+}
+
+//transfer
+main.innerPage .center .midSide.transfer .midTop .platformWallet {
+    border-bottom: 1px solid $Border_color_1;
+}
+main.innerPage .center .midSide.transfer .midTop .platTransfer form i.fa-right-long {
+    color: $Font_color_4;
+    font-size: 30px;
+}
+main.innerPage .center .midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+//withdraw
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName p {
+    color: $Font_remind;
+}
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+    font-size: 12px;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li {
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li p {
+    color: $Font_color_3;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li p.rule {
+    color: $Font_Title_1;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+main.innerPage .center .midSide.withdraw .midBottom .limited li span {
+    width: 100%;
+    display: block;
+    color: $Font_color_3;
+    font-size: 14px;
+    font-weight: unset;
+    text-align: center;
+    letter-spacing: 2px;
+}
+main.innerPage .center .midSide.withdraw  .midBottom form button.submitBtn {
+    width: 72%;
+}
+
+//deposit
+main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_State {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: unset;
+}
+
+//register
+.registerWrap .signUpBlock {
+    background: $BG_color_2; 
+    box-shadow: 0 5px 10px -5px #00000066;
+    border-radius: 20px;
+}
+.registerWrap .signUpBlock .title i {
+    color: $Font_color_4;
+    font-size: 40px;
+}
+.registerWrap .signUpBlock .title p {
+    color: $Font_color_2;
+    font-size: 25px;
+    font-weight: bold;
+}
+.registerWrap .signUpBlock form label .outer button {
+    color: $Font_Title_1_Active;
+
+    &:hover,&:active,&.active {
+        color: $Font_color_1;
+    }
+}
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+    color: $Font_color_3;
+}
+.registerWrap .signUpBlock form label p.remind {
+    color: $Font_remind;
+    font-size: 12px;
+}
+.registerWrap .signUpBlock form .policy p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.registerWrap .signUpBlock form .policy p span {
+    color: $Font_Title_1_Active;
+}
+
+//footer
+footer .top {
+    background: $BG_color_1;
+}
+footer .top .center li p {
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer .top .center li:hover a,
+footer .top .center li:active a,
+footer .top .center li.active a { //個別調整
+    background: radial-gradient(circle,  $Font_Title_1_Active -5px , $BG_color_1 40px);
+}
+footer .top .center .copyright {
+    color: $Font_color_1;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer .bottom {
+    background: $BG_color_2;
+}
+footer .bottom p {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+//aside
+aside.app { //個別調整
+    background: #ffffffd8;
+    border: solid 2px $BG_color_1;
+    border-radius: 50px;
+    box-shadow: 0 0 7px 0 $boxShadow_2;
+
+    &:hover,&:active,&.active {
+        background: #ffffff;
+
+        p {
+            color: $Font_color_2;
+        }
+    }
+}
+aside.app i.fa-download {
+    color: $Font_Title_1_Active;
+    font-size: 25px;
+}
+aside.app p { //個別調整
+    color: $Font_color_4;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+aside.cs { 
+    background: $BG_color_1;
+    border: solid 2px $Border_color_0;
+    border-radius: 50%;
+    box-shadow: 0 0 7px 0 $boxShadow_2;
+}
+aside.colorPicker .hint i{
+    color: $BG_color_1;
+}
+
+//filter
+.filter {
+    background: $filter_1;
+}
+.filter .jumpWindow {
+    background: $BG_color_2;
+    border-radius: 10px;
+}
+.filter .jumpWindow .title {
+    background: $linear_2;
+    color: $Font_color_1;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.filter .jumpWindow .title i {
+    color: $Font_color_1;
+    font-size: 25px;
+}
+.filter .jumpWindow .btnBox .remind {
+    color: $Font_remind;
+    font-size: 14px;
+    font-weight: bold;
+}
+.filter .jumpWindow.plsLogin .content p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow.news .content li {
+    border-bottom: solid 1px $Border_color_1;
+}
+.filter .jumpWindow.news li button {
+    background: none;
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1_Active;
+    }
+}
+.filter .jumpWindow.news li button::before {
+    background: $Border_color_1;
+}
+.filter .jumpWindow.news li button::after {
+    background: $Border_color_2;
+}
+.filter .jumpWindow.news li .text {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow.news li .date {
+    color: $Font_color_3;
+    font-size: 12px;
+    font-weight: bold;
+}
+.filter .jumpWindow .content p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow .content p.serialNum {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow .content p.text {
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+//表格通用
+.filter .jumpWindow .content table {
+    border: 1px solid $Border_color_1;
+}
+.filter .jumpWindow .content table tr {
+    height: 40px;
+    vertical-align: middle;
+}
+.filter .jumpWindow .content table tr th {
+    border-bottom: 2px solid $Border_color_2;
+    text-align: center;
+    vertical-align: middle;
+}
+.filter .jumpWindow .content table tr th p {
+    color: $Font_color_4;
+    font-size: 14px;
+    font-weight: bold;
+}
+.filter .jumpWindow .content table tr td {
+    vertical-align: middle;
+}
+.filter .jumpWindow .content table tr:not(:last-child) td {
+    border-bottom: 1px solid $Border_color_1;
+}
+.filter .jumpWindow .content table tr td p {
+    text-align: center;
+    font-size: 14px;
+}
+.filter .jumpWindow.dealDetail .content table tr td:nth-of-type(3) p {
+    color: $Font_positive;
+}
+//查詢紅利 x代會員
+.filter .jumpWindow .content table.pointJump {
+    border: 1px solid $Border_color_2;
+}
+.filter .jumpWindow .content table.pointJump tr {
+    width: 99.8%;
+    height: 40px;
+    background: $BG_color_2;
+    display: inline-table;
+}
+.filter .jumpWindow .content table tr th {
+    border-bottom: 1px solid $Border_color_2;
+}
+.filter .jumpWindow .content table tr th p {
+    color: $Font_color_2;
+}
+.filter .jumpWindow .content table tr th:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+.filter .jumpWindow .content table tr:not(:last-child) td {
+    border-color: $Border_color_2;
+}
+.filter .jumpWindow .content table tr td:not(:last-child) p {
+    border-right: 1px solid $Border_color_1;
+}
+//快速轉帳
+.filter .jumpWindow.quickTransfer .content p {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow.quickTransfer .content p.platformName {
+    color: $Font_Title_1;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.filter .jumpWindow.quickTransfer .content p.itemName {
+    color: $Font_color_2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter .jumpWindow.quickTransfer .content form label i {
+    color: $Font_color_4;
+    font-size: 24px;
+}
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p {
+    font-size: 14px;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1;
+    }
+}
+.filter .jumpWindow.quickTransfer .btnBox {
+    border-top: 1px solid $Border_color_1;
+}
+
+
+//marquee 跑馬燈
+@mixin marqueeStyle {
+    background: $BG_color_2;
+    border-radius: 50px;
+    box-shadow: 0 0 13px 3px $boxShadow_1;
+    display: flex;
+    padding: 5px;
+    margin: 20px auto;
+
+    .title {
+        width: 160px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: $linear_1;
+        border-radius: 50px;
+        color: $Font_color_1;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .marquee {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        p {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+            white-space: nowrap;
+            color: $Font_color_2;
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 100%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate(0%);
+            }
+
+            100% {
+                transform: translate(-100%);
+            }
+        }
+    }
+}
+
+//銀行卡樣式
+@mixin cardStyle { //個別調整
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: unset;
+    background: $BankCard_BG;
+    border-radius: 5px;
+    border: 1px solid $Border_color_0;
+    box-shadow: 0 2px 5px 2px $boxShadow_1;
+    position: relative;
+
+    &.addCard {
+        justify-content: center;
+        filter: grayscale(1);
+        cursor: pointer;
+
+        .addBtn {
+            margin: 0 auto 20px;
+        }
+    }
+
+    p {
+        color: $Font_color_1;
+        font-size: 14px;
+        font-weight: bold;
+
+        &.bankName {
+            font-size: 22px;
+            letter-spacing: 1px;
+
+            span {
+                display: block;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+
+        &.acNum {
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin: 30px 0 5px;
+        }
+    }
+
+    .state {
+        width: 98%;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $BG_color_2;
+        border-radius:  0 0 5px 5px;
+
+        p {
+            background: $BankCard_BG;
+            background-clip: text;
+            color: transparent;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    }
+}
+
+//按鈕
+.btnStyle_1 { //按鈕樣式_1
+    background: $linear_1;
+    border: 1px solid $Border_color_1;
+    border-radius: 5px;
+    color: $Font_color_1;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: $linear_1_Active;
+    }
+
+    &:disabled { //個別調整
+        background: #c0c0c0;
+        cursor: default;
+    }
+}
+.btnStyle_2 { //按鈕樣式_2 主色邊線按鈕
+    background: transparent;
+    border: 1px solid $Border_color_3;
+    border-radius: 3px;
+    color: $Font_Title_1;
+
+    &:hover,&:active,&.active {
+        background: $Border_color_3;
+        color: $Font_color_1;
+    }
+
+    &:disabled { //個別調整
+        background: #c0c0c0 !important;
+        color: $Font_color_1 !important;
+        border-color: transparent !important;
+        cursor: default;
+    }
+}
+.btnStyle_3 { //按鈕樣式_3 灰色邊線變色按鈕
+    background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+    border: 1px solid $Border_color_1;
+    border-radius: 3px;
+    color: $Font_color_2;
+
+    &:hover,&:active,&.active {
+        color: $Font_Title_1;
+        border-color: $Font_Title_1;
+    }
+}
+
+//input select
+.inputStyle_1 { //input樣式_1 
+    background: none;
+    border-radius: 5px;
+    border: solid 1px $Border_color_1;
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:disabled { //個別調整
+        background: #efefef;
+        color: #686868;
+    }
+}
+.inputStyle_2 { //input樣式_2 
+    background: none;
+    border-radius: 5px;
+    border: none;
+    color: $Font_color_2;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:disabled { //個別調整
+        background: none;
+    }
+}
+
+.mainWrap .center .marqueeWrap,
+.innerPage .marqueeWrap,
+.gamePage_Wrap .center .marqueeWrap {
+    @include marqueeStyle;
+}
+
+.innerPage .center>div.midSide.bankCard .midTop .objectList ul .cardSet li {
+    @include cardStyle;
+}
+
+* {
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #848484;
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #cccccc;
+    }
+}

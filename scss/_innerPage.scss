@@ -3,7 +3,7 @@
     .marqueeWrap {
         width: 1400px;
         height: 50px;
-        @include marqueeStyle;
+        // @include marqueeStyle;
     }
     
     .center {
@@ -194,7 +194,6 @@
                                     img {
                                         width: 100%;
                                         height: 60px;
-                                        background: $Font_color_2;
                                         object-fit: cover;
                                     }
 
@@ -626,17 +625,12 @@
                         transform: translateX(-50%);
 
                         p {
-                            color: $Font_color_2;
                             font-size: 13px;
                             line-height: 25px;
 
                             &.remindTitle {
                                 line-height: unset;
                                 margin-bottom: 10px;
-                            }
-
-                            span {
-                                color: $Font_remind;
                             }
                         }
                         
@@ -808,7 +802,6 @@
                                     img {
                                         width: 90px;
                                         height: 90px;
-                                        background: $Font_color_2; //待移除
                                         margin-left: 100px;
                                     }
                                 }
@@ -2050,7 +2043,7 @@
                                         height: 150px;
                                         padding: 15px;
                                         margin-right: 15px;
-                                        @include cardStyle;
+                                        // @include cardStyle;
                                     }
                                 }
                             }

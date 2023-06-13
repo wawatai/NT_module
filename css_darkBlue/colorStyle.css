@@ -1,0 +1,2073 @@
+header .top {
+  background: #0c4058;
+}
+
+header .top li {
+  border-right: solid 1px #cccccc;
+  -webkit-box-shadow: 1px 1px 0.5px #ffffff;
+          box-shadow: 1px 1px 0.5px #ffffff;
+}
+
+header .UnLoginBox label {
+  background: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+header .UnLoginBox label input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .UnLoginBox label i {
+  color: #000000;
+  font-size: 14px;
+}
+
+header .UnLoginBox .loginBtn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#159A9C), color-stop(50%, #0c4058), to(#159A9C));
+  background: linear-gradient(to top, #159A9C 0%, #0c4058 50%, #159A9C 100%);
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+header .UnLoginBox .loginBtn:hover, header .UnLoginBox .loginBtn:active, header .UnLoginBox .loginBtn.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#DEEFE7), color-stop(50%, #159A9C), to(#DEEFE7));
+  background: linear-gradient(to bottom, #DEEFE7 0%, #159A9C 50%, #DEEFE7 100%);
+  color: #0c4058;
+}
+
+header .UnLoginBox .registerBtn {
+  background: #159A9C;
+  border: solid 1px #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+header .UnLoginBox .registerBtn:hover, header .UnLoginBox .registerBtn:active, header .UnLoginBox .registerBtn.active {
+  border-color: #0c4058;
+}
+
+header .UnLoginBox .registerBtn i {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+header .UnLoginBox .forgetBtn i {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+header .UnLoginBox .forgetBtn p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header ul li label.lang select {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header ul li label.lang select option {
+  color: #000000;
+}
+
+header ul li label.lang i {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+header .loginBox > li:nth-of-type(3):hover, header .loginBox > li:nth-of-type(3):active, header .loginBox > li:nth-of-type(3).active,
+header .loginBox > li:nth-of-type(4):hover,
+header .loginBox > li:nth-of-type(4):active,
+header .loginBox > li:nth-of-type(4).active,
+header .loginBox > li:nth-of-type(5):hover,
+header .loginBox > li:nth-of-type(5):active,
+header .loginBox > li:nth-of-type(5).active,
+header .loginBox > li:nth-of-type(6):hover,
+header .loginBox > li:nth-of-type(6):active,
+header .loginBox > li:nth-of-type(6).active,
+header .loginBox > li:nth-of-type(7):hover,
+header .loginBox > li:nth-of-type(7):active,
+header .loginBox > li:nth-of-type(7).active,
+header .loginBox > li:nth-of-type(8):hover,
+header .loginBox > li:nth-of-type(8):active,
+header .loginBox > li:nth-of-type(8).active {
+  background: #159A9C;
+}
+
+header .loginBox .userName {
+  color: #B4BEC9;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .loginBox .userName span {
+  color: #DEEFE7;
+}
+
+header .loginBox li a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .loginBox li:not(:first-child) p {
+  color: #ffffff;
+}
+
+header .loginBox > li.total p {
+  color: #45a5aa;
+}
+
+header .loginBox > li.total i {
+  color: #45a5aa;
+  font-size: 12px;
+}
+
+header .loginBox .transferInfo {
+  background: #B4BEC9;
+  border: 1px solid #159A9C;
+}
+
+header .loginBox .transferInfo li:not(:last-of-type) {
+  border-bottom: 1px solid #159A9C;
+}
+
+header .loginBox .transferInfo li p {
+  color: #000000;
+  font-size: 14px;
+}
+
+header .loginBox .transferInfo li p.money {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .bottom {
+  background: #ffffff;
+}
+
+header nav li::before {
+  background: #159A9C;
+}
+
+header nav li a p {
+  color: #0c4058;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header nav li:hover a p,
+header nav li:active a p,
+header nav li.active a p {
+  color: #159A9C;
+}
+
+header .downList {
+  background: #ffffff;
+  border-top: solid 1px #cccccc;
+}
+
+header .downList p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .downList .maintainBox {
+  background: rgba(0, 0, 0, 0.6431372549);
+}
+
+header .downList .maintainBox p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .downList .maintainBox .title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header .downList .fa-solid.fa-chevron-left,
+header .downList .fa-solid.fa-chevron-right {
+  color: #000000;
+  font-size: 26px;
+}
+
+.swiper .swiper-button-prev i,
+.swiper .swiper-button-next i {
+  color: #ffffff;
+  font-size: 44px;
+}
+
+.home .typeList .gameBlock p {
+  color: #0c4058;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.home .typeList .maintainBox {
+  background: rgba(0, 0, 0, 0.6431372549);
+}
+
+.home .typeList .maintainBox p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home .typeList .maintainBox .title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox .title {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c4058), to(#159A9C));
+  background: linear-gradient(to bottom, #0c4058 0%, #159A9C 100%);
+  font-weight: bold;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox .title p.big {
+  color: transparent;
+  font-size: 62px;
+  letter-spacing: 6px;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+  color: transparent;
+  font-size: 42px;
+  letter-spacing: 5px;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox p.mainCnt {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav {
+  border-bottom: 1px solid #cccccc;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active {
+  color: #159A9C;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::before {
+  background: #0c4058;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::after {
+  border-color: transparent transparent #0c4058 transparent;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
+  color: #686868;
+  font-size: 18px;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
+  color: #686868;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
+  font-size: 20px;
+  color: #cccccc;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i.fa-solid.fa-heart {
+  color: #ff30b2;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
+  background: rgba(0, 0, 0, 0.6431372549);
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter {
+  background: -webkit-gradient(linear, left bottom, left top, from(#801c1c), to(#f13945));
+  background: linear-gradient(to top, #801c1c 0%, #f13945 100%);
+  border-radius: 3px;
+  border: 1px solid #f56d5c;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter:hover, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter:active, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter.active {
+  background: #5a0c0c;
+}
+
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try {
+  background: -webkit-gradient(linear, left bottom, left top, from(#324ab9), to(#6a91f3));
+  background: linear-gradient(to top, #324ab9 0%, #6a91f3 100%);
+  border-radius: 3px;
+  border: 1px solid #5c8df5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try:hover, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try:active, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try.active {
+  background: #0e1c5e;
+}
+
+main .eventWrap {
+  background: #f4f4f4;
+}
+
+main .eventWrap .eventTitle p {
+  color: #0c4058;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+main .eventWrap .eventBody .sideNav ul {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main .eventWrap .eventBody .sideNav ul li {
+  border-bottom: 1px solid #cccccc;
+}
+main .eventWrap .eventBody .sideNav ul li:hover, main .eventWrap .eventBody .sideNav ul li:active, main .eventWrap .eventBody .sideNav ul li.active {
+  background: #DEEFE7;
+}
+main .eventWrap .eventBody .sideNav ul li:hover::before, main .eventWrap .eventBody .sideNav ul li:active::before, main .eventWrap .eventBody .sideNav ul li.active::before {
+  background: #159A9C;
+}
+
+main .eventWrap .eventBody .sideNav ul li i {
+  color: #159A9C;
+  font-size: 20px;
+}
+
+main .eventWrap .eventBody .sideNav ul li p {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .eventWrap .eventBody .eventList .eventBox {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main .eventWrap .eventBody .eventList .eventBox ul li.title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button {
+  width: 115px;
+  height: 35px;
+}
+
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply {
+  background: -webkit-gradient(linear, left top, left bottom, from(#DEEFE7), color-stop(50%, #159A9C), to(#DEEFE7));
+  background: linear-gradient(to bottom, #DEEFE7 0%, #159A9C 50%, #DEEFE7 100%);
+}
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:hover, main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:active, main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#DEEFE7), color-stop(50%, #159A9C), to(#DEEFE7));
+  background: linear-gradient(to bottom, #DEEFE7 0%, #159A9C 50%, #DEEFE7 100%);
+}
+
+main .helpWrap {
+  background: #f4f4f4;
+}
+
+main .helpWrap .helpBody .sideNav > ul {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main .helpWrap .helpBody .sideNav ul li .topic i {
+  color: #0c4058;
+  font-size: 18px;
+}
+
+main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
+  color: #0c4058;
+}
+
+main .helpWrap .helpBody .sideNav ul li .topic p {
+  color: #0c4058;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .sideNav ul li ul li {
+  background: transparent;
+}
+main .helpWrap .helpBody .sideNav ul li ul li:hover, main .helpWrap .helpBody .sideNav ul li ul li:active, main .helpWrap .helpBody .sideNav ul li ul li.active {
+  background: #B4BEC9;
+}
+
+main .helpWrap .helpBody .sideNav ul li ul li p {
+  color: #686868;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .container {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main .helpWrap .helpBody .container > div h2 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .container > div p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main .helpWrap .helpBody .container > div a {
+  color: #0c4058;
+}
+
+main .helpWrap .helpBody .container > div p.remind {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+main .helpWrap .helpBody .container > div p.haveBtn {
+  color: #686868;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main.innerPage {
+  background: #f4f4f4;
+}
+
+main.innerPage .center > div > div:not(.listTitle),
+main.innerPage .center > div > nav {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main.innerPage .center .leftSide p.userAccount {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide p.userAccount .level {
+  background: #159A9C;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide p.joinDay {
+  font-size: 14px;
+  color: #686868;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#159A9C), color-stop(50%, #0c4058), to(#159A9C));
+  background: linear-gradient(to top, #159A9C 0%, #0c4058 50%, #159A9C 100%);
+  border-radius: 50px;
+  border: 1px solid #DEEFE7;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
+  background: #0c4058;
+  border-radius: 50px;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn p {
+  color: #DEEFE7;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
+  color: #ffffff;
+}
+
+main.innerPage .center .leftSide .quickSelect li .btnName {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide .innerNav {
+  border-top: 1px solid #cccccc;
+}
+
+main.innerPage .center .leftSide .innerNav li:nth-of-type(4),
+main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
+  border-top: 1px solid #cccccc;
+}
+
+main.innerPage .center .leftSide .innerNav li a p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .leftSide .innerNav li a i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-credit-card {
+  font-size: 13px;
+}
+
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-file-lines,
+main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-button {
+  font-size: 15px;
+}
+
+main.innerPage .center .leftSide .content .innerNav li:hover a,
+main.innerPage .center .leftSide .content .innerNav li:active a,
+main.innerPage .center .leftSide .content .innerNav li.active a {
+  background: #DEEFE7;
+}
+main.innerPage .center .leftSide .content .innerNav li:hover a::before,
+main.innerPage .center .leftSide .content .innerNav li:active a::before,
+main.innerPage .center .leftSide .content .innerNav li.active a::before {
+  background: #159A9C;
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a i,
+main.innerPage .center .leftSide .innerNav li:active a i,
+main.innerPage .center .leftSide .innerNav li.active a i {
+  color: #0c4058;
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a p,
+main.innerPage .center .leftSide .innerNav li:active a p,
+main.innerPage .center .leftSide .innerNav li.active a p {
+  color: #0c4058;
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a::before,
+main.innerPage .center .leftSide .innerNav li:active a::before,
+main.innerPage .center .leftSide .innerNav li.active a::before {
+  background: #0c4058;
+}
+
+main.innerPage .center .rightSide .listTitle {
+  background: #ffffff;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .rightSide .listTitle > p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .listTitle a.more {
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .listTitle a.more i {
+  color: #0c4058;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .recordList .noData {
+  color: #686868;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .rightSide .recordList li {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .rightSide .recordList li .state {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .rightSide .recordList li .state span {
+  color: #000000;
+  font-size: 15px;
+}
+
+main.innerPage .center .rightSide .recordList li .state.gameName {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+main.innerPage .center .rightSide .recordList li .detail {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .rightSide .recordList li .detail i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half {
+  color: #000000;
+  font-size: 15px;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half.win {
+  color: #32b411;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half.lose {
+  color: #ff0000;
+}
+
+main.innerPage .center .rightSide .recordList li .winLose .half span {
+  color: #686868;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+main.innerPage .center .midSide .midTop,
+main.innerPage .center .midSide .midBottom {
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main.innerPage .center .innerPageTitle {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .innerPageTitle > p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide .midTop .objectList > i {
+  color: #0c4058;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main.innerPage .center .midSide .midTop .objectList ul li.payWay {
+  background: transparent;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midTop .objectList ul li.payWay:hover, main.innerPage .center .midSide .midTop .objectList ul li.payWay:active, main.innerPage .center .midSide .midTop .objectList ul li.payWay.active {
+  background: -webkit-gradient(linear, left top, right top, from(#159A9C), to(#DEEFE7));
+  background: linear-gradient(to right, #159A9C 0%, #DEEFE7 100%);
+  color: #ffffff;
+}
+
+main.innerPage .center .midSide .midBottom .remindBox {
+  border: 1px solid #DEEFE7;
+}
+
+main.innerPage .center .midSide .midBottom .remindBox p {
+  color: #000000;
+}
+
+main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
+  color: #0c4058;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midBottom .remindBox p span {
+  color: #159A9C;
+}
+
+main.innerPage .center .midSide .titleM {
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+main.innerPage .center .midSide .titleS {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide .midTop form .half label p.itemName,
+main.innerPage .center .midSide .midBottom form label p.itemName,
+main.innerPage .center .midSide .midBottom p.itemName {
+  width: 81px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide .midTop form .half label p.itemName span,
+main.innerPage .center .midSide .midBottom form label p.itemName span,
+main.innerPage .center .midSide .midBottom p.itemName span {
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midTop form .half label p.remind,
+main.innerPage .center .midSide .midBottom form label p.remind {
+  color: #ff0000;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide .midTop form .half label i,
+main.innerPage .center .midSide .midBottom form label i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide .midTop form .half button.submitBtn,
+main.innerPage .center .midSide .midBottom form button.submitBtn {
+  width: 305px;
+  height: 40px;
+  font-size: 15px;
+}
+
+main.innerPage .center .midSide .midPageList li {
+  background: #686868;
+  border-radius: 5px 5px 0 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+main.innerPage .center .midSide .midPageList li:hover, main.innerPage .center .midSide .midPageList li:active, main.innerPage .center .midSide .midPageList li.active {
+  background: linear-gradient(135deg, #159A9C 0%, #DEEFE7 100%);
+}
+
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap span.hint {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button {
+  font-size: 14px;
+}
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button:hover, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button:active, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button.active {
+  background: #0c4058;
+  border-color: #DEEFE7;
+  color: #ffffff;
+}
+
+main.innerPage .center .midSide .midBottom .content form.searchBlock::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide .midBottom table tr th {
+  border-bottom: 2px solid #DEEFE7;
+}
+
+main.innerPage .center .midSide .midBottom table tr th p {
+  color: #0c4058;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main.innerPage .center .midSide .midBottom table tr td {
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+
+main.innerPage .center .midSide .midBottom table tr td:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide .midBottom table tr td p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main.innerPage .center .midSide .midBottom table tr td i {
+  color: #0c4058;
+  font-size: 14px;
+  text-align: center;
+}
+
+main.innerPage .center .midSide .midBottom table tr td button {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info:nth-of-type(1) {
+  color: #000000;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info {
+  color: #686868;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state p.info span {
+  color: #ff0000;
+  margin: 0 0 0 5px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li i {
+  background: #cccccc;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li:nth-of-type(4) i {
+  font-size: 20px;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li.active i {
+  background: #32b411;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half label .itemName {
+  text-align: end;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half label button {
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half > .remind {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form .half > .remind span {
+  color: #0c4058;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom form::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(3) p {
+  color: #DEEFE7;
+}
+
+main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.invite .midBottom .infoBlock p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .innerPageTitle p span {
+  display: block;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+main.innerPage .center .midSide.vip .midBottom ul.level li p {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .bar {
+  background: #cccccc;
+  border-radius: 50px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .bar span {
+  background: -webkit-gradient(linear, left top, right top, from(#159A9C), to(#DEEFE7));
+  background: linear-gradient(to right, #159A9C 0%, #DEEFE7 100%);
+  border-radius: 50px;
+}
+
+main.innerPage .center .midSide.vip .midBottom ul.toNext li p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li:not(:last-child) {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p {
+  color: #686868;
+  font-size: 14px;
+  text-align: center;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p.validNum {
+  color: #0c4058;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.vip .midBottom .levelWelfare button.more {
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .titleM i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipCardList i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p span {
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.vip .midBottom table tr th:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.em {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipNotice p.title {
+  color: #0c4058;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.vip .midBottom .vipNotice ul li p {
+  color: #000000;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+main.innerPage .center .midSide.wallet .midTop .typeBox:not(:last-child) {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.wallet .midTop .typeBox .typeName p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide.wallet .midTop .typeBox .typeName span {
+  font-size: 12px;
+}
+
+main.innerPage .center .midSide.wallet .midTop .typeBox:nth-of-type(1) .typeName p {
+  color: #0c4058;
+}
+
+main.innerPage .center .midSide.wallet .midTop .typeBox p.numTotal {
+  color: #000000;
+  font-size: 43px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+main.innerPage .center .midSide.wallet .midTop .typeBox p.withdrawLimit {
+  color: #686868;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.wallet .midTop .typeBox p.withdrawLimit span {
+  color: #000000;
+}
+
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox p.platName {
+  color: #686868;
+  font-size: 16px;
+}
+
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .platformBox .num {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap p {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide .midTop .objectList .cardWrap p.title {
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+main.innerPage .center .midSide .midTop .objectList .cardWrap .cardNum {
+  color: #686868;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+main.innerPage .center .midSide .midTop .objectList li p.hint {
+  width: 100%;
+  text-align: center;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom table tr th:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(3) p {
+  color: #DEEFE7;
+}
+
+main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-type(1) p {
+  color: #DEEFE7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap {
+  border-bottom: 1px solid #DEEFE7;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap p {
+  color: #0c4058;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).lose {
+  color: #ff0000;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).win {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table {
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:first-child {
+  background: -webkit-gradient(linear, left top, right top, from(#159A9C), to(#DEEFE7));
+  background: linear-gradient(to right, #159A9C 0%, #DEEFE7 100%);
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th {
+  height: 40px;
+  vertical-align: middle;
+  border-bottom: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th:last-child {
+  border-radius: 0 5px 0 0;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:last-child td {
+  border-bottom: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th p {
+  color: #ffffff;
+  border-right: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:nth-last-child(1) p {
+  border-bottom: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td p {
+  border-right: none;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.lose {
+  color: #ff0000;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.win {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock {
+  border: 1px solid #DEEFE7;
+  border-radius: 3px;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type {
+  color: #0c4058;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.term {
+  color: #686868;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount .times {
+  color: #32b411;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
+  border-color: #DEEFE7;
+  color: #DEEFE7;
+}
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:hover, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:active, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply.active {
+  background: #DEEFE7;
+  color: #ffffff;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(7) p.value {
+  color: #ff0000;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll {
+  color: #32b411;
+  border-color: #32b411;
+  margin-right: 10px;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read.active,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll:hover,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll:active,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll.active {
+  background: #32b411;
+  color: #ffffff;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .outerMode .functionWrap button.editBtn.active,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete:hover,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete:active,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.delete.active {
+  background: #ff0000;
+  color: #ffffff;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all {
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all::before,
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li {
+  border-bottom: 1px solid #cccccc;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.active {
+  background: #B4BEC9;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen {
+  background: #f3f3f3;
+}
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen.active {
+  background: #B4BEC9;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date {
+  color: #686868;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date::before {
+  background: #cccccc;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .titleM i {
+  color: #0c4058;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
+  color: #cccccc;
+  font-size: 22px;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .dateWrap p {
+  color: #686868;
+  font-size: 15px;
+}
+
+main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide .midTop .titleS {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide .midTop .titleS span.hint {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName p {
+  color: #0c4058;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
+  color: #686868;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName span.btnStyle_1 {
+  font-size: 12px;
+}
+
+main.innerPage .center .midSide .midTop .accountWrap .typeBox .numTotal {
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .platformBox {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .platformBox p.platName {
+  color: #686868;
+  font-size: 16px;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .platformBox .num {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .stateWrap p {
+  color: #000000;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide .midTop .platformWallet .stateWrap i {
+  color: #0c4058;
+  font-size: 14px;
+}
+
+main.innerPage .center .midSide.transfer .midTop .platformWallet {
+  border-bottom: 1px solid #cccccc;
+}
+
+main.innerPage .center .midSide.transfer .midTop .platTransfer form i.fa-right-long {
+  color: #0c4058;
+  font-size: 30px;
+}
+
+main.innerPage .center .midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName p {
+  color: #ff0000;
+}
+
+main.innerPage .center .midSide.withdraw .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+  font-size: 12px;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li p {
+  color: #686868;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li p.rule {
+  color: #0c4058;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom .limited li span {
+  width: 100%;
+  display: block;
+  color: #686868;
+  font-size: 14px;
+  font-weight: unset;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+main.innerPage .center .midSide.withdraw .midBottom form button.submitBtn {
+  width: 72%;
+}
+
+main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_State {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: unset;
+}
+
+.registerWrap .signUpBlock {
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.registerWrap .signUpBlock .title i {
+  color: #0c4058;
+  font-size: 40px;
+}
+
+.registerWrap .signUpBlock .title p {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.registerWrap .signUpBlock form label .outer button {
+  color: #159A9C;
+}
+.registerWrap .signUpBlock form label .outer button:hover, .registerWrap .signUpBlock form label .outer button:active, .registerWrap .signUpBlock form label .outer button.active {
+  color: #ffffff;
+}
+
+.registerWrap .signUpBlock form label:nth-of-type(2) i {
+  color: #686868;
+}
+
+.registerWrap .signUpBlock form label p.remind {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.registerWrap .signUpBlock form .policy p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.registerWrap .signUpBlock form .policy p span {
+  color: #159A9C;
+}
+
+footer .top {
+  background: #0c4058;
+}
+
+footer .top .center li p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .top .center li:hover a,
+footer .top .center li:active a,
+footer .top .center li.active a {
+  background: radial-gradient(circle, #159A9C -5px, #0c4058 40px);
+}
+
+footer .top .center .copyright {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .bottom {
+  background: #ffffff;
+}
+
+footer .bottom p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+aside.app {
+  background: rgba(255, 255, 255, 0.8470588235);
+  border: solid 2px #0c4058;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+}
+aside.app:hover, aside.app:active, aside.app.active {
+  background: #ffffff;
+}
+aside.app:hover p, aside.app:active p, aside.app.active p {
+  color: #000000;
+}
+
+aside.app i.fa-download {
+  color: #159A9C;
+  font-size: 25px;
+}
+
+aside.app p {
+  color: #0c4058;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+aside.cs {
+  background: #0c4058;
+  border: solid 2px #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+}
+
+aside.colorPicker .hint i {
+  color: #0c4058;
+}
+
+.filter {
+  background: rgba(0, 0, 0, 0.6431372549);
+}
+
+.filter .jumpWindow {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.filter .jumpWindow .title {
+  background: -webkit-gradient(linear, left top, right top, from(#159A9C), to(#DEEFE7));
+  background: linear-gradient(to right, #159A9C 0%, #DEEFE7 100%);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.filter .jumpWindow .title i {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.filter .jumpWindow .btnBox .remind {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.plsLogin .content p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.news .content li {
+  border-bottom: solid 1px #cccccc;
+}
+
+.filter .jumpWindow.news li button {
+  background: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.filter .jumpWindow.news li button:hover, .filter .jumpWindow.news li button:active, .filter .jumpWindow.news li button.active {
+  color: #159A9C;
+}
+
+.filter .jumpWindow.news li button::before {
+  background: #cccccc;
+}
+
+.filter .jumpWindow.news li button::after {
+  background: #DEEFE7;
+}
+
+.filter .jumpWindow.news li .text {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.news li .date {
+  color: #686868;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow .content p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow .content p.serialNum {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow .content p.text {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.filter .jumpWindow .content table {
+  border: 1px solid #cccccc;
+}
+
+.filter .jumpWindow .content table tr {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.filter .jumpWindow .content table tr th {
+  border-bottom: 2px solid #DEEFE7;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.filter .jumpWindow .content table tr th p {
+  color: #0c4058;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow .content table tr td {
+  vertical-align: middle;
+}
+
+.filter .jumpWindow .content table tr:not(:last-child) td {
+  border-bottom: 1px solid #cccccc;
+}
+
+.filter .jumpWindow .content table tr td p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.filter .jumpWindow.dealDetail .content table tr td:nth-of-type(3) p {
+  color: #32b411;
+}
+
+.filter .jumpWindow .content table.pointJump {
+  border: 1px solid #DEEFE7;
+}
+
+.filter .jumpWindow .content table.pointJump tr {
+  width: 99.8%;
+  height: 40px;
+  background: #ffffff;
+  display: inline-table;
+}
+
+.filter .jumpWindow .content table tr th {
+  border-bottom: 1px solid #DEEFE7;
+}
+
+.filter .jumpWindow .content table tr th p {
+  color: #000000;
+}
+
+.filter .jumpWindow .content table tr th:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+.filter .jumpWindow .content table tr:not(:last-child) td {
+  border-color: #DEEFE7;
+}
+
+.filter .jumpWindow .content table tr td:not(:last-child) p {
+  border-right: 1px solid #cccccc;
+}
+
+.filter .jumpWindow.quickTransfer .content p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.quickTransfer .content p.platformName {
+  color: #0c4058;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter .jumpWindow.quickTransfer .content p.itemName {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter .jumpWindow.quickTransfer .content form label i {
+  color: #0c4058;
+  font-size: 24px;
+}
+
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p {
+  font-size: 14px;
+}
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:hover, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:active, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p.active {
+  color: #0c4058;
+}
+
+.filter .jumpWindow.quickTransfer .btnBox {
+  border-top: 1px solid #cccccc;
+}
+
+.btnStyle_1 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#159A9C), color-stop(50%, #0c4058), to(#159A9C));
+  background: linear-gradient(to top, #159A9C 0%, #0c4058 50%, #159A9C 100%);
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btnStyle_1:hover, .btnStyle_1:active, .btnStyle_1.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#159A9C), color-stop(50%, #159A9C), to(#159A9C));
+  background: linear-gradient(to top, #159A9C 0%, #159A9C 50%, #159A9C 100%);
+}
+.btnStyle_1:disabled {
+  background: #c0c0c0;
+  cursor: default;
+}
+
+.btnStyle_2 {
+  background: transparent;
+  border: 1px solid #159A9C;
+  border-radius: 3px;
+  color: #0c4058;
+}
+.btnStyle_2:hover, .btnStyle_2:active, .btnStyle_2.active {
+  background: #159A9C;
+  color: #ffffff;
+}
+.btnStyle_2:disabled {
+  background: #c0c0c0 !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  cursor: default;
+}
+
+.btnStyle_3 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
+  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  color: #000000;
+}
+.btnStyle_3:hover, .btnStyle_3:active, .btnStyle_3.active {
+  color: #0c4058;
+  border-color: #0c4058;
+}
+
+.inputStyle_1 {
+  background: none;
+  border-radius: 5px;
+  border: solid 1px #cccccc;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.inputStyle_1:disabled {
+  background: #efefef;
+  color: #686868;
+}
+
+.inputStyle_2 {
+  background: none;
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.inputStyle_2:disabled {
+  background: none;
+}
+
+.mainWrap .center .marqueeWrap,
+.innerPage .marqueeWrap,
+.gamePage_Wrap .center .marqueeWrap {
+  background: #ffffff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
+          box-shadow: 0 0 13px 3px #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin: 20px auto;
+}
+.mainWrap .center .marqueeWrap .title,
+.innerPage .marqueeWrap .title,
+.gamePage_Wrap .center .marqueeWrap .title {
+  width: 160px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#159A9C), color-stop(50%, #0c4058), to(#159A9C));
+  background: linear-gradient(to top, #159A9C 0%, #0c4058 50%, #159A9C 100%);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.mainWrap .center .marqueeWrap .marquee,
+.innerPage .marqueeWrap .marquee,
+.gamePage_Wrap .center .marqueeWrap .marquee {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.mainWrap .center .marqueeWrap .marquee p,
+.innerPage .marqueeWrap .marquee p,
+.gamePage_Wrap .center .marqueeWrap .marquee p {
+  display: inline-block;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+  white-space: nowrap;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 100%;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  background: linear-gradient(120deg, #159A9C 0%, #0c4058 50%, #159A9C 100%);
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 2px #e1e1e1;
+          box-shadow: 0 2px 5px 2px #e1e1e1;
+  position: relative;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li.addCard {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  cursor: pointer;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li.addCard .addBtn {
+  margin: 0 auto 20px;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p.bankName {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p.bankName span {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li p.acNum {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 30px 0 5px;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li .state {
+  width: 98%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+.innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li .state p {
+  background: linear-gradient(120deg, #159A9C 0%, #0c4058 50%, #159A9C 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #848484;
+  border-radius: 50px;
+}
+*::-webkit-scrollbar-track {
+  background: #cccccc;
+}

@@ -711,6 +711,26 @@ $(function(){
     })
 })
 
+//註冊
+$(function(){
+    $(".registerWrap form label:nth-of-type(2) i").click(function(){
+        
+        if ($(this).hasClass("fa-eye-slash")) {
+            $(this)
+            .attr("class","fa-solid fa-eye")
+            .closest("label")
+            .find("input")
+            .attr("type", "text");
+        } else if ($(this).hasClass("fa-eye")) {
+            $(this)
+            .attr("class","fa-solid fa-eye-slash")
+            .closest("label")
+            .find("input")
+            .attr("type", "password");
+        }
+    })
+})
+
 //news
 $(function(){
     $(".jumpWindow.news .typeList button").click(function(){
@@ -723,5 +743,56 @@ $(function(){
         $(".jumpWindow.news ol:eq("+ n +")")
         .addClass("display")
         .siblings().removeClass("display");
+    })
+})
+
+//選色器
+$(function(){
+    $("aside.colorPicker .hint").click(function(){
+        $(this)
+        .closest(".colorPicker")
+        .toggleClass("display");
+    })
+    $("aside.colorPicker .color .colorBlock").click(function(){
+        
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if($(this).hasClass("gold")){
+            $(".colorSystem")
+            .attr("href", "./css_gold/colorStyle.css");
+        } else if($(this).hasClass("darkBlue")) {
+            $(".colorSystem")
+            .attr("href", "./css_darkBlue/colorStyle.css");
+        } else if($(this).hasClass("red")) {
+            $(".colorSystem")
+            .attr("href", "./css_red/colorStyle.css");
+        } else if($(this).hasClass("green")) {
+            $(".colorSystem")
+            .attr("href", "./css_green/colorStyle.css");
+        }
+    })
+    $("aside.innerPage.colorPicker .color .colorBlock").click(function(){
+        
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if($(this).hasClass("gold")){
+            $(".colorSystem")
+            .attr("href", "../css_gold/colorStyle.css");
+        } else if($(this).hasClass("darkBlue")) {
+            $(".colorSystem")
+            .attr("href", "../css_darkBlue/colorStyle.css");
+        } else if($(this).hasClass("red")) {
+            $(".colorSystem")
+            .attr("href", "../css_red/colorStyle.css");
+        }else if($(this).hasClass("green")) {
+            $(".colorSystem")
+            .attr("href", "../css_green/colorStyle.css");
+        }
     })
 })
