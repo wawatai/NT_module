@@ -3801,6 +3801,9 @@ html body aside.colorPicker .color .colorBlock.darkBlue {
 html body aside.colorPicker .color .colorBlock.red {
   background: #820333;
 }
+html body aside.colorPicker .color .colorBlock.green {
+  background: #235945;
+}
 html body .filter {
   display: none;
   width: 100%;
