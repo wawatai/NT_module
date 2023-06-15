@@ -734,20 +734,59 @@ $(function(){
         .toggleClass("active");
     })
 
-    $("aside.colorSelector form button.submitSetting").click(function(){
-        var mainColor = $("aside.colorSelector form input.mainColor").val();
-        var subColor = $("aside.colorSelector form input.subColor_BG").val();
-        var accentColor_1 = $("aside.colorSelector form input.accentColor_1").val();
-        var accentColor_2 = $("aside.colorSelector form input.accentColor_2").val();
-        var positiveColor = $("aside.colorSelector form input.positiveColor").val();
-        var negativeColor = $("aside.colorSelector form input.negativeColor").val();
+    $("aside.colorSelector form input").on("change",function(){
+        var mainColor;
+        var subColor_BG;
+        var subColor_BG2;
+        var subColor_BG2;
+        var accentColor_1;
+        var accentColor_2;
+        var font_Remind;
 
+        $("aside.colorSelector form input").each(function(){
+            if($(this).hasClass("mainColor")){
+                mainColor = $(this).val();
+            }
+            else if($(this).hasClass("subColor_BG"))
+            {
+                subColor_BG = $(this).val();
+            }
+            else if($(this).hasClass("subColor_BG2")) //大區塊背景色
+            {
+                subColor_BG2 = $(this).val();
+            }
+            else if($(this).hasClass("accentColor_1"))
+            {
+                accentColor_1 = $(this).val();
+            }
+            else if($(this).hasClass("accentColor_2"))
+            {
+                accentColor_2 = $(this).val();
+            }
+            else if($(this).hasClass("remindColor"))
+            {
+                font_Remind = $(this).val();
+            }
+        });
 
         $(':root').css('--mainColor', mainColor);
-        $(':root').css('--subColor_BG', subColor);
+        $(':root').css('--subColor_BG', subColor_BG);
+        $(':root').css('--subColor_BG-2', subColor_BG2);
         $(':root').css('--accentColor_1', accentColor_1);
         $(':root').css('--accentColor_2', accentColor_2);
-        $(':root').css('--positiveColor', positiveColor);
-        $(':root').css('--negativeColor', negativeColor);
+        $(':root').css('--remindColor', font_Remind);
+    })
+
+    $("aside.colorSelector form div.custom p.bigTitle").click(function(){
+        $(this)
+        .closest("div")
+        .toggleClass("active");
+    })
+
+    $("aside.colorSelector form div.custom p.type").click(function(){
+        $(this)
+        .closest("div")
+        .addClass("active")
+        .siblings().removeClass("active");
     })
 })

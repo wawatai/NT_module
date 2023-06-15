@@ -37,7 +37,7 @@ aside {
         background: rgb(240, 240, 240);
         box-shadow:  0 5px 10px -5px rgba(0, 0, 0, 0.4);
         top: unset;
-        bottom: 100px;
+        bottom: 10px;
         right: 8px; 
 
         &.active {
@@ -58,7 +58,7 @@ aside {
                 display: block;
             }
         }
-        
+
         .hint {
             width: 100%;
             height: auto;
@@ -68,7 +68,7 @@ aside {
 
             i {
                 font-size: 25px;
-                color: $Font_color_4;
+                color: --mainColor;
             }
 
             p {
@@ -76,6 +76,17 @@ aside {
                 color: $Font_color_3;
                 font-size: 15px;
                 font-weight: bold;
+            }
+        }
+
+        .bigTitle {
+            color: rgb(15, 11, 59);
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            i {
+                font-size: 14px;
             }
         }
         
@@ -86,35 +97,115 @@ aside {
             margin-top: 10px;
             padding: 0 15px 15px 15px;
 
+            div {
+                width: 100%;
+                height: 30px;
+                overflow: hidden;
+
+                &.active {
+                    height: auto;
+
+                    &>p {
+
+                        &.type {
+                            background: #000000;
+                            color: #ffffff;
+                        }
+
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                &.preset {
+                    margin-bottom: 10px;
+                }
+
+                &.custom {
+                    padding-bottom: 10px;
+
+                    div {
+                        cursor: pointer;
+                    }
+                }
+
+                p {
+                    color: rgb(116, 116, 116);
+                    font-size: 14px;
+                    font-weight: bold;
+
+                    &.type {
+                        width: 100%;
+                        height: auto;
+                        background: #ffffff;
+                        text-align: center;
+                        padding: 5px 0;
+                        margin: 5px 0;
+
+                        i {
+                            font-size: 13px;
+                        }
+                    }
+
+                    span {
+                        color: blue;
+                    }
+                }
+            }
+
             label {
                 width: 100%;
                 height: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin-bottom: 5px;
 
                 p {
+                    width: 97px;
                     color: $Font_color_2;
                     font-size: 14px;
                     font-weight: bold;
+                    flex-shrink: 0;
                     margin-right: 10px;
+                    white-space: nowrap;
                 }
 
-                input {
-                    width: 30px;
+                .colorBlock {
+                    width: 100%;
                     height: 30px;
-                    border-radius: 50px;
-                    border: none;
+                    background: #ffffff;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        width: 30px;
+                        height: 100%;
+                        background: none;
+                        border: none;
+                    }
+
+                    .changeHex {
+                        width: auto;
+                        color: #000000;
+                        margin-left: 5px;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    height: 25px;
                 }
             }
 
-            button {
+            .submitSetting {
                 width: auto;
                 height: auto;
                 display: flex;
                 background: #ffffff;
                 padding: 5px 10px;
-                margin: 15px auto 0;
+                margin: 0 auto;
             }
         }
     }
