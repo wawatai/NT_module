@@ -1880,12 +1880,20 @@ aside.cs {
 }
 
 :root {
+  --newHeaderTOP_BG: #c4a167;
   --accentColor_1: #008599;
   --total_P: #dbdb11;
+  --platformUl_BG: #ecdabc;
+  --platform_P: #000000;
+  --platformMoney_P: #ff0000;
+  --newHeaderTDown_BG: #ffffff;
+  --newHeaderTDown_Before: #c4a167;
+  --newHeaderTDown_P: #7c5f30;
+  --newHeaderTDownHOV_P: #d2b88c;
 }
 
 header .top {
-  background: var(--mainColor);
+  background: var(--newHeaderTOP_BG);
 }
 
 header .UnLoginBox label i {
@@ -1939,13 +1947,43 @@ header .loginBox > li.total i {
   color: var(--total_P);
 }
 
+header .loginBox .transferInfo {
+  background: var(--platformUl_BG);
+  border-color: #bb9645;
+}
+
+header .loginBox .transferInfo li:not(:last-of-type) {
+  border-bottom: 1px solid #bb9645;
+}
+
+header .loginBox .transferInfo li.platform p {
+  color: var(--platform_P);
+}
+
+header .loginBox .transferInfo li p.money {
+  color: var(--platformMoney_P);
+}
+
 header .loginBox li:not(:first-child) a p {
   color: #ffffff;
 }
 
-header .loginBox .transferInfo {
-  background: #ecdabc;
-  border-color: #bb9645;
+header .bottom {
+  background: var(--newHeaderTDown_BG);
+}
+
+header nav li::before {
+  background: var(--newHeaderTDown_Before);
+}
+
+header nav li a p {
+  color: var(--newHeaderTDown_P);
+}
+
+header nav li:hover a p,
+header nav li:active a p,
+header nav li.active a p {
+  color: var(--newHeaderTDownHOV_P);
 }
 
 bg {
@@ -5854,6 +5892,9 @@ html body aside.colorSelector form div p.type {
   text-align: center;
   padding: 5px 0;
   margin: 5px 0;
+}
+html body aside.colorSelector form div p.type.child {
+  background: #646464;
 }
 html body aside.colorSelector form div p.type i {
   font-size: 13px;

@@ -171,36 +171,36 @@ header .loginBox .transferInfo  { //個別調整 //可自定義
 header .loginBox .transferInfo li:not(:last-of-type) { //個別調整  //可自定義
     border-bottom: 1px solid #bb9645;
 }
-header .loginBox .transferInfo li.platform p { //個別調整 //可自定義
-    color: #000000;
+header .loginBox .transferInfo li.platform p { //可自定義
+    color: $Font_color_2;
     font-size: 14px;
 }
-header .loginBox .transferInfo li p.money {
+header .loginBox .transferInfo li p.money { //可自定義
     color: var(--remindColor);
     font-size: 14px;
     font-weight: bold;
 }
-header .bottom {
+header .bottom { //可自定義
     background: var(--subColor_BG);
 }
-header nav li::before {
+header nav li::before { //可自定義
     background: $Border_color_4;
 }
-header nav li a p {
+header nav li a p { //可自定義
     color: $mainColor_subD;
     font-size: 18px;
     font-weight: bold;
 }
-header nav li:hover a p,
+header nav li:hover a p,  //可自定義
 header nav li:active a p,
 header nav li.active a p {
     color: $mainColor_subL;
 }
-header .downList {
+header .downList {  //可自定義
     background: var(--subColor_BG);
     border-top: solid 1px $Border_color_3;
 }
-header .downList p {
+header .downList p { //可自定義
     color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;

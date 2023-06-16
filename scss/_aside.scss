@@ -143,6 +143,10 @@ aside {
                         padding: 5px 0;
                         margin: 5px 0;
 
+                        &.child {
+                            background: #646464;
+                        }
+
                         i {
                             font-size: 13px;
                         }

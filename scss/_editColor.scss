@@ -1,6 +1,14 @@
 :root {
+    --newHeaderTOP_BG: #c4a167;
     --accentColor_1: #008599;
     --total_P: #dbdb11;
+    --platformUl_BG: #ecdabc;
+    --platform_P: #000000;
+    --platformMoney_P: #ff0000;
+    --newHeaderTDown_BG: #ffffff;
+    --newHeaderTDown_Before: #c4a167;
+    --newHeaderTDown_P: #7c5f30;
+    --newHeaderTDownHOV_P: #d2b88c;
 }
 
 //方法說明 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
@@ -20,7 +28,7 @@
 
 //header 上部背景色
 header .top {
-    background: var(--mainColor);
+    background: var(--newHeaderTOP_BG);
 }
 
 //未登入ICON
@@ -74,13 +82,42 @@ header .loginBox>li.total i {
     color: var(--total_P);
 }
 
+//平台點數 UL
+header .loginBox .transferInfo  {
+    background: var(--platformUl_BG);
+    border-color: #bb9645;
+}
+header .loginBox .transferInfo li:not(:last-of-type) {
+    border-bottom: 1px solid #bb9645;
+}
+header .loginBox .transferInfo li.platform p {
+    color: var(--platform_P);
+}
+header .loginBox .transferInfo li p.money {
+    color: var(--platformMoney_P);
+}
+
 //頁面li字色
 header .loginBox li:not(:first-child) a p {
     color: $Font_color_1;
 }
 
-//平台點數UL
-header .loginBox .transferInfo  {
-    background: #ecdabc;
-    border-color: #bb9645;
+
+//header 下部背景色
+header .bottom {
+    background: var(--newHeaderTDown_BG);
+}
+//header 下部nav 滑入槓槓
+header nav li::before {
+    background: var(--newHeaderTDown_Before);
+}
+//header 下部 字色
+header nav li a p {
+    color: var(--newHeaderTDown_P);
+}
+//header 下部滑入 字色
+header nav li:hover a p,
+header nav li:active a p,
+header nav li.active a p {
+    color: var(--newHeaderTDownHOV_P);
 }

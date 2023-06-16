@@ -913,7 +913,7 @@
             <i class="fa-solid fa-gear"></i>
             <p>請選色</p>
         </div>
-        <form action="/action_page.php">
+        <form>
             <div class="preset active">
                 <p class="bigTitle">主規則</p>
                 <label for="mainColor">
@@ -969,114 +969,126 @@
                         header
                         <i class="fa-solid fa-chevron-up"></i>
                     </p>
-                    <label for="headerColor">
-                        <p>上部背景</p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#c4a167">
-                            <p class="changeHex">#c4a167</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>vipLevel</p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#008599">
-                            <p class="changeHex">#008599</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>userName</p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#686868">
-                            <p class="changeHex">#686868</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>
-                            平台點數
-                            <span>背景</span>
+                    <div class="partBlock active">
+                        <p class="type child">
+                            上部
+                            <i class="fa-solid fa-chevron-up"></i>
                         </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#686868">
-                            <p class="changeHex">#686868</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>
-                            平台點數
-                            <span>線色</span>
-                        </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#686868">
-                            <p class="changeHex">#c4a167</p>
-                        </div>
+                        <label for="headerColor">
+                            <p>上部背景</p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#c4a167">
+                                <p class="changeHex">#c4a167</p>
+                            </div>
                         </label>
-                    <label for="headerColor">
-                        <p>
-                            平台名稱
-                            <span>字色</span>
-                        </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="fffffff">
-                            <p class="changeHex">#ffffff</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>
-                            頁面滑入
-                            <span>字色</span>
-                        </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="fffffff">
-                            <p class="changeHex">#ffffff</p>
-                        </div>
+                        <label for="headerColor">
+                            <p>vipLevel</p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#008599">
+                                <p class="changeHex">#008599</p>
+                            </div>
                         </label>
-                    <label for="headerColor">
-                        <p>
-                            頁面滑入
-                            <span>背景色</span>
-                        </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="fffffff">
-                            <p class="changeHex">#ffffff</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>下部背景</p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerBottomColor" name="headerBottomColor" value="#ffffff">
-                            <p class="changeHex">#ffffff</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>
+                        <label for="headerColor">
+                            <p>userName</p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#686868">
+                                <p class="changeHex">#686868</p>
+                            </div>
+                        </label>
+                        <label for="headerColor">
+                            <p>
+                                平台點數
+                                <span>背景</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#686868">
+                                <p class="changeHex">#686868</p>
+                            </div>
+                        </label>
+                        <label for="headerColor">
+                            <p>
+                                平台點數
+                                <span>線色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#686868">
+                                <p class="changeHex">#c4a167</p>
+                            </div>
+                            </label>
+                        <label for="headerColor">
+                            <p>
+                                平台名稱
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#ffffff">
+                                <p class="changeHex">#ffffff</p>
+                            </div>
+                        </label>
+                        <label for="headerColor">
+                            <p>
+                                頁面滑入
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#ffffff">
+                                <p class="changeHex">#ffffff</p>
+                            </div>
+                            </label>
+                        <label for="headerColor">
+                            <p>
+                                頁面滑入
+                                <span>背景色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerTopColor" name="headerTopColor" value="#ffffff">
+                                <p class="changeHex">#ffffff</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="partBlock">
+                        <p class="type child">
                             下部
-                            <span>字色</span>
+                            <i class="fa-solid fa-chevron-up"></i>
                         </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
-                            <p class="changeHex">#996c33</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>
-                            下部滑入
-                            <span>字色</span>
-                        </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
-                            <p class="changeHex">#c4a167</p>
-                        </div>
-                    </label>
-                    <label for="headerColor">
-                        <p>
-                            下部滑入
-                            <span>底線</span>
-                        </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
-                            <p class="changeHex">#996c33</p>
-                        </div>
-                    </label>
+                        <label for="headerColor">
+                            <p>下部背景</p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#ffffff">
+                                <p class="changeHex">#ffffff</p>
+                            </div>
+                        </label>
+                        <label for="headerColor">
+                            <p>
+                                下部
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
+                                <p class="changeHex">#996c33</p>
+                            </div>
+                        </label>
+                        <label for="headerColor">
+                            <p>
+                                下部滑入
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
+                                <p class="changeHex">#c4a167</p>
+                            </div>
+                        </label>
+                        <label for="headerColor">
+                            <p>
+                                下部滑入
+                                <span>底線</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
+                                <p class="changeHex">#996c33</p>
+                            </div>
+                        </label>
+                    </div>
                 </div>
                 <div class="innerLeftNav">
                     <p class="type">
