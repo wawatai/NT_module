@@ -1,11 +1,86 @@
 :root {
     --accentColor_1: #008599;
+    --total_P: #dbdb11;
 }
 
+//方法說明 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+//(1)在上方root區新增 變數: 
+//   ↪ (程式抓取) => 原規則色碼
+//   ↪ (客戶確認好要交檔) => 新規色碼
+
+//(2)下方欲修改處引用新變數
+
+//客戶後天改ㄉ顏色，不會影響原本的規則；只針對改的地方
+//↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+
 //客戶可自訂的顏色
+
+//header ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+//header 上部背景色
+header .top {
+    background: var(--mainColor);
+}
+
+//未登入ICON
+header .UnLoginBox label i {
+    color: $Font_color_2;
+}
+
+//登入按鈕
+header .UnLoginBox .loginBtn {
+    background: $linear_1;
+    border-color: $Border_color_3;
+    color: $Font_color_2;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, $mainColor_subL 0%, var(--mainColor) 50%, $mainColor_subL 100%);
+        border-color: $Border_color_1;
+    }
+}
+
+//註冊ICON
+header .UnLoginBox .registerBtn i {
+    color: $Font_color_1;
+}
+
+//已登入頁面列
+header .loginBox>li:nth-of-type(3), 
+header .loginBox>li:nth-of-type(4), 
+header .loginBox>li:nth-of-type(5), 
+header .loginBox>li:nth-of-type(6), 
+header .loginBox>li:nth-of-type(7), 
+header .loginBox>li:nth-of-type(8) {
+    
+    &:hover,&:active,&.active {
+        background: $mainColor_subD;
+    }
+}
+
+//用戶名
 header .loginBox .userName {
 
     span {
         color: var(--accentColor_1);
     }
+}
+
+//平台點數
+header .loginBox>li.total p {
+    color: var(--total_P);
+}
+header .loginBox>li.total i {
+    color: var(--total_P);
+}
+
+//頁面li字色
+header .loginBox li:not(:first-child) a p {
+    color: $Font_color_1;
+}
+
+//平台點數UL
+header .loginBox .transferInfo  {
+    background: #ecdabc;
+    border-color: #bb9645;
 }

@@ -13,7 +13,7 @@ header .top {
 }
 
 header .top li {
-  border-right: solid 1px #7a746a;
+  border-right: solid 1px #686868;
   -webkit-box-shadow: 1px 1px 0.5px #ffffff;
           box-shadow: 1px 1px 0.5px #ffffff;
 }
@@ -45,8 +45,8 @@ header .UnLoginBox .loginBtn {
   font-weight: bold;
 }
 header .UnLoginBox .loginBtn:hover, header .UnLoginBox .loginBtn:active, header .UnLoginBox .loginBtn.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
-  background: linear-gradient(to bottom, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2b88c), color-stop(50%, var(--mainColor)), to(#d2b88c));
+  background: linear-gradient(to bottom, #d2b88c 0%, var(--mainColor) 50%, #d2b88c 100%);
   border-color: #ffffff;
 }
 
@@ -122,21 +122,21 @@ header .loginBox .userName span {
 }
 
 header .loginBox li a {
+  background: transparent;
+}
+
+header .loginBox li:not(:first-child) a p {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 
-header .loginBox li:not(:first-child) p {
-  color: #ffffff;
-}
-
 header .loginBox > li.total p {
-  color: var(--remindColor);
+  color: #dbdb11;
 }
 
 header .loginBox > li.total i {
-  color: var(--remindColor);
+  color: #dbdb11;
   font-size: 12px;
 }
 
@@ -149,7 +149,7 @@ header .loginBox .transferInfo li:not(:last-of-type) {
   border-bottom: 1px solid #bb9645;
 }
 
-header .loginBox .transferInfo li p {
+header .loginBox .transferInfo li.platform p {
   color: #000000;
   font-size: 14px;
 }
@@ -500,7 +500,7 @@ main .helpWrap .helpBody .container > div p.haveBtn {
 }
 
 main.innerPage {
-  background: --subColor_BG-2;
+  background: var(--subColor_BG-2);
 }
 
 main.innerPage .center > div > div:not(.listTitle),
@@ -583,7 +583,7 @@ main.innerPage .center .leftSide .innerNav li a p {
 }
 
 main.innerPage .center .leftSide .innerNav li a i {
-  color: --mainColor;
+  color: var(--mainColor);
   font-size: 14px;
 }
 
@@ -1804,12 +1804,12 @@ aside.cs {
 
 .btnStyle_2 {
   background: transparent;
-  border: 1px solid #996c33;
+  border: 1px solid #7c5f30;
   border-radius: 3px;
   color: #7c5f30;
 }
 .btnStyle_2:hover, .btnStyle_2:active, .btnStyle_2.active {
-  background: #996c33;
+  background: #7c5f30;
   color: #ffffff;
 }
 .btnStyle_2:disabled {
@@ -1881,10 +1881,71 @@ aside.cs {
 
 :root {
   --accentColor_1: #008599;
+  --total_P: #dbdb11;
+}
+
+header .top {
+  background: var(--mainColor);
+}
+
+header .UnLoginBox label i {
+  color: #000000;
+}
+
+header .UnLoginBox .loginBtn {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
+  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+  border-color: #cccccc;
+  color: #000000;
+}
+header .UnLoginBox .loginBtn:hover, header .UnLoginBox .loginBtn:active, header .UnLoginBox .loginBtn.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2b88c), color-stop(50%, var(--mainColor)), to(#d2b88c));
+  background: linear-gradient(to bottom, #d2b88c 0%, var(--mainColor) 50%, #d2b88c 100%);
+  border-color: #ffffff;
+}
+
+header .UnLoginBox .registerBtn i {
+  color: #ffffff;
+}
+
+header .loginBox > li:nth-of-type(3):hover, header .loginBox > li:nth-of-type(3):active, header .loginBox > li:nth-of-type(3).active,
+header .loginBox > li:nth-of-type(4):hover,
+header .loginBox > li:nth-of-type(4):active,
+header .loginBox > li:nth-of-type(4).active,
+header .loginBox > li:nth-of-type(5):hover,
+header .loginBox > li:nth-of-type(5):active,
+header .loginBox > li:nth-of-type(5).active,
+header .loginBox > li:nth-of-type(6):hover,
+header .loginBox > li:nth-of-type(6):active,
+header .loginBox > li:nth-of-type(6).active,
+header .loginBox > li:nth-of-type(7):hover,
+header .loginBox > li:nth-of-type(7):active,
+header .loginBox > li:nth-of-type(7).active,
+header .loginBox > li:nth-of-type(8):hover,
+header .loginBox > li:nth-of-type(8):active,
+header .loginBox > li:nth-of-type(8).active {
+  background: #7c5f30;
 }
 
 header .loginBox .userName span {
   color: var(--accentColor_1);
+}
+
+header .loginBox > li.total p {
+  color: var(--total_P);
+}
+
+header .loginBox > li.total i {
+  color: var(--total_P);
+}
+
+header .loginBox li:not(:first-child) a p {
+  color: #ffffff;
+}
+
+header .loginBox .transferInfo {
+  background: #ecdabc;
+  border-color: #bb9645;
 }
 
 bg {
