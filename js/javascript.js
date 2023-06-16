@@ -770,8 +770,8 @@ $(function(){
         });
 
         $(':root').css('--mainColor', mainColor);
-        $(':root').css('--subColor_BG', subColor_BG);
-        $(':root').css('--subColor_BG-2', subColor_BG2);
+        $(':root').css('var(--subColor_BG)', subColor_BG);
+        $(':root').css('var(--subColor_BG)-2', subColor_BG2);
         $(':root').css('--accentColor_1', accentColor_1);
         $(':root').css('--accentColor_2', accentColor_2);
         $(':root').css('--remindColor', font_Remind);

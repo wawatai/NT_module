@@ -39,7 +39,7 @@ header .UnLoginBox .loginBtn {
   background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
   background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
   border-radius: 3px;
-  border: 1px solid #ffffff;
+  border: 1px solid #cccccc;
   color: #000000;
   font-size: 14px;
   font-weight: bold;
@@ -109,7 +109,7 @@ header .loginBox > li:nth-of-type(7).active,
 header .loginBox > li:nth-of-type(8):hover,
 header .loginBox > li:nth-of-type(8):active,
 header .loginBox > li:nth-of-type(8).active {
-  background: #5d4614;
+  background: #7c5f30;
 }
 
 header .loginBox .userName {
@@ -118,7 +118,7 @@ header .loginBox .userName {
   font-weight: bold;
 }
 header .loginBox .userName span {
-  color: --accentColor_1;
+  color: var(--accentColor_1);
 }
 
 header .loginBox li a {
@@ -161,7 +161,7 @@ header .loginBox .transferInfo li p.money {
 }
 
 header .bottom {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
 }
 
 header nav li::before {
@@ -169,7 +169,7 @@ header nav li::before {
 }
 
 header nav li a p {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 18px;
   font-weight: bold;
 }
@@ -177,11 +177,11 @@ header nav li a p {
 header nav li:hover a p,
 header nav li:active a p,
 header nav li.active a p {
-  color: #dcb160;
+  color: #d2b88c;
 }
 
 header .downList {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-top: solid 1px #cccccc;
 }
 
@@ -220,7 +220,7 @@ header .downList .fa-solid.fa-chevron-right {
 }
 
 .home .typeList .gameBlock p {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 26px;
   font-weight: bold;
 }
@@ -242,8 +242,8 @@ header .downList .fa-solid.fa-chevron-right {
 }
 
 main .gamePage_Wrap .center .containerWrap .textBox .title {
-  background: -webkit-gradient(linear, left top, left bottom, from(--mainColor), to(#996c33));
-  background: linear-gradient(to bottom, --mainColor 0%, #996c33 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor)), to(#7c5f30));
+  background: linear-gradient(to bottom, var(--mainColor) 0%, #7c5f30 100%);
   font-weight: bold;
 }
 
@@ -275,7 +275,7 @@ main .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
@@ -291,7 +291,7 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li {
   font-weight: bold;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active {
-  color: #dcb160;
+  color: #d2b88c;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::before {
   background: --mainColor;
@@ -366,13 +366,13 @@ main .eventWrap {
 }
 
 main .eventWrap .eventTitle p {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 60px;
   font-weight: bold;
 }
 
 main .eventWrap .eventBody .sideNav ul {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -400,7 +400,7 @@ main .eventWrap .eventBody .sideNav ul li p {
 }
 
 main .eventWrap .eventBody .eventList .eventBox {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -431,14 +431,14 @@ main .helpWrap {
 }
 
 main .helpWrap .helpBody .sideNav > ul {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
 }
 
 main .helpWrap .helpBody .sideNav ul li .topic i {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 18px;
 }
 
@@ -447,7 +447,7 @@ main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
 }
 
 main .helpWrap .helpBody .sideNav ul li .topic p {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 20px;
   font-weight: bold;
 }
@@ -466,7 +466,7 @@ main .helpWrap .helpBody .sideNav ul li ul li p {
 }
 
 main .helpWrap .helpBody .container {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -505,7 +505,7 @@ main.innerPage {
 
 main.innerPage .center > div > div:not(.listTitle),
 main.innerPage .center > div > nav {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -550,7 +550,7 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
 }
 
 main.innerPage .center .leftSide .quickSelect li .quickBtn p {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 18px;
   font-weight: bold;
 }
@@ -610,23 +610,23 @@ main.innerPage .center .leftSide .content .innerNav li.active a::before {
 main.innerPage .center .leftSide .innerNav li:hover a i,
 main.innerPage .center .leftSide .innerNav li:active a i,
 main.innerPage .center .leftSide .innerNav li.active a i {
-  color: #996c33;
+  color: #7c5f30;
 }
 
 main.innerPage .center .leftSide .innerNav li:hover a p,
 main.innerPage .center .leftSide .innerNav li:active a p,
 main.innerPage .center .leftSide .innerNav li.active a p {
-  color: #996c33;
+  color: #7c5f30;
 }
 
 main.innerPage .center .leftSide .innerNav li:hover a::before,
 main.innerPage .center .leftSide .innerNav li:active a::before,
 main.innerPage .center .leftSide .innerNav li.active a::before {
-  background: #996c33;
+  background: #7c5f30;
 }
 
 main.innerPage .center .rightSide .listTitle {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #cccccc;
 }
@@ -661,7 +661,7 @@ main.innerPage .center .rightSide .recordList li {
 }
 
 main.innerPage .center .rightSide .recordList li .state {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 14px;
 }
 
@@ -712,7 +712,7 @@ main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
 
 main.innerPage .center .midSide .midTop,
 main.innerPage .center .midSide .midBottom {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
@@ -746,8 +746,8 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay {
 }
 
 main.innerPage .center .midSide .midTop .objectList ul li.payWay:hover, main.innerPage .center .midSide .midTop .objectList ul li.payWay:active, main.innerPage .center .midSide .midTop .objectList ul li.payWay.active {
-  background: -webkit-gradient(linear, left top, right top, from(#996c33), to(var(--remindColor)));
-  background: linear-gradient(to right, #996c33 0%, var(--remindColor) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--mainColor)), to(#7c5f30));
+  background: linear-gradient(to right, var(--mainColor) 0%, #7c5f30 100%);
   color: #ffffff;
 }
 
@@ -756,7 +756,7 @@ main.innerPage .center .midSide .midBottom .remindBox {
 }
 
 main.innerPage .center .midSide .midBottom .remindBox p.remindTitle {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 13px;
   font-weight: bold;
 }
@@ -850,7 +850,7 @@ main.innerPage .center .midSide .midBottom table tr th {
 }
 
 main.innerPage .center .midSide .midBottom table tr th p {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -1016,7 +1016,7 @@ main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p {
 }
 
 main.innerPage .center .midSide.vip .midBottom .levelWelfare ul li p.validNum {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 30px;
   font-weight: bold;
 }
@@ -1058,7 +1058,7 @@ main.innerPage .center .midSide.vip .midBottom .vipNotice p.em {
 }
 
 main.innerPage .center .midSide.vip .midBottom .vipNotice p.title {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 24px;
   font-weight: bold;
 }
@@ -1085,7 +1085,7 @@ main.innerPage .center .midSide.wallet .midTop .typeBox .typeName span {
 }
 
 main.innerPage .center .midSide.wallet .midTop .typeBox:nth-of-type(1) .typeName p {
-  color: #996c33;
+  color: #7c5f30;
 }
 
 main.innerPage .center .midSide.wallet .midTop .typeBox p.numTotal {
@@ -1175,7 +1175,7 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList .title
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap p {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 14px;
   font-weight: bold;
 }
@@ -1210,8 +1210,8 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li tab
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:first-child {
-  background: -webkit-gradient(linear, left top, right top, from(#996c33), to(var(--remindColor)));
-  background: linear-gradient(to right, #996c33 0%, var(--remindColor) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--mainColor)), to(#7c5f30));
+  background: linear-gradient(to right, var(--mainColor) 0%, #7c5f30 100%);
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th {
@@ -1277,7 +1277,7 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .even
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type {
-  color: #996c33;
+  color: #7c5f30;
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.term {
@@ -1427,7 +1427,7 @@ main.innerPage .center .midSide .midTop .accountWrap .typeBox .typeName p {
 }
 
 main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName p {
-  color: #996c33;
+  color: #7c5f30;
 }
 
 main.innerPage .center .midSide .midTop .accountWrap .typeBox:nth-of-type(1) .typeName i {
@@ -1505,7 +1505,7 @@ main.innerPage .center .midSide.withdraw .midBottom .limited li p {
 }
 
 main.innerPage .center .midSide.withdraw .midBottom .limited li p.rule {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 35px;
   font-family: sans-serif;
 }
@@ -1554,7 +1554,7 @@ footer .top .center .copyright {
 }
 
 footer .bottom {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
 }
 
 footer .bottom p {
@@ -1586,7 +1586,7 @@ aside.app p {
 
 aside.cs {
   background: var(--mainColor);
-  border: solid 2px #ffffff;
+  border: solid 2px #cccccc;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
@@ -1597,13 +1597,13 @@ aside.cs {
 }
 
 .filter .jumpWindow {
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 10px;
 }
 
 .filter .jumpWindow .title {
-  background: -webkit-gradient(linear, left top, right top, from(#996c33), to(var(--remindColor)));
-  background: linear-gradient(to right, #996c33 0%, var(--remindColor) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--mainColor)), to(#7c5f30));
+  background: linear-gradient(to right, var(--mainColor) 0%, #7c5f30 100%);
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
@@ -1638,7 +1638,7 @@ aside.cs {
   font-weight: bold;
 }
 .filter .jumpWindow.news li button:hover, .filter .jumpWindow.news li button:active, .filter .jumpWindow.news li button.active {
-  color: #dcb160;
+  color: #d2b88c;
 }
 
 .filter .jumpWindow.news li button::before {
@@ -1725,7 +1725,7 @@ aside.cs {
 .filter .jumpWindow .content table.pointJump tr {
   width: 99.8%;
   height: 40px;
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   display: inline-table;
 }
 
@@ -1756,7 +1756,7 @@ aside.cs {
 }
 
 .filter .jumpWindow.quickTransfer .content p.platformName {
-  color: #996c33;
+  color: #7c5f30;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -1777,7 +1777,7 @@ aside.cs {
   font-size: 14px;
 }
 .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:hover, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:active, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p.active {
-  color: #996c33;
+  color: #7c5f30;
 }
 
 .filter .jumpWindow.quickTransfer .btnBox {
@@ -1806,7 +1806,7 @@ aside.cs {
   background: transparent;
   border: 1px solid #996c33;
   border-radius: 3px;
-  color: #996c33;
+  color: #7c5f30;
 }
 .btnStyle_2:hover, .btnStyle_2:active, .btnStyle_2.active {
   background: #996c33;
@@ -1827,8 +1827,8 @@ aside.cs {
   color: #000000;
 }
 .btnStyle_3:hover, .btnStyle_3:active, .btnStyle_3.active {
-  color: #996c33;
-  border-color: #996c33;
+  color: #7c5f30;
+  border-color: #7c5f30;
 }
 
 .btnStyle_4 {
@@ -1877,6 +1877,14 @@ aside.cs {
 }
 *::-webkit-scrollbar-track {
   background: #cccccc;
+}
+
+:root {
+  --accentColor_1: #008599;
+}
+
+header .loginBox .userName span {
+  color: var(--accentColor_1);
 }
 
 bg {
@@ -2618,7 +2626,7 @@ html body .mainWrap .center {
 html body .mainWrap .center .marqueeWrap {
   width: 100%;
   height: 50px;
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 50px;
   -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
           box-shadow: 0 0 13px 3px #e1e1e1;
@@ -2708,7 +2716,6 @@ html body .mainWrap .center .typeList .gameBlock {
 }
 html body .mainWrap .center .typeList .gameBlock p {
   text-align: center;
-  margin-top: 15px;
 }
 html body .mainWrap .center .typeList .gameBlock .maintainBox {
   width: 100%;
@@ -2737,7 +2744,7 @@ html body .mainWrap .center .typeList .gameBlock .maintainBox p.title {
 html body .innerPage .marqueeWrap {
   width: 1400px;
   height: 50px;
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 50px;
   -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
           box-shadow: 0 0 13px 3px #e1e1e1;
@@ -4701,7 +4708,7 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .card
           justify-content: unset;
   background: linear-gradient(120deg, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
   border-radius: 5px;
-  border: 1px solid #ffffff;
+  border: 1px solid #cccccc;
   -webkit-box-shadow: 0 2px 5px 2px #e1e1e1;
           box-shadow: 0 2px 5px 2px #e1e1e1;
   position: relative;
@@ -4748,7 +4755,7 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .card
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 0 0 5px 5px;
 }
 html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li .state p {
@@ -5176,7 +5183,7 @@ html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox b
 html body .gamePage_Wrap .center .marqueeWrap {
   width: 100%;
   height: 50px;
-  background: --subColor_BG;
+  background: var(--subColor_BG);
   border-radius: 50px;
   -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
           box-shadow: 0 0 13px 3px #e1e1e1;

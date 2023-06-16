@@ -1,3 +1,11 @@
 :root {
-    
+    --accentColor_1: #008599;
+}
+
+//客戶可自訂的顏色
+header .loginBox .userName {
+
+    span {
+        color: var(--accentColor_1);
+    }
 }
