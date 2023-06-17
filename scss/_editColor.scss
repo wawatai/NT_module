@@ -9,6 +9,16 @@
     --newHeaderTDown_Before: #c4a167;
     --newHeaderTDown_P: #7c5f30;
     --newHeaderTDownHOV_P: #d2b88c;
+    --downList_BG: #ffffff;
+    --downList_Border: #cccccc;
+    --downList_P: #000000;
+    --downList_iBtn: #686868;
+    --downList_maintainBox_BG: rgb(0 0 0 / 64%);
+    --downList_maintainBox_P: #ffffff;
+    --downList_maintainBox_titleP: #ffffff;
+    --innerPageLeftSide_userAccountP: #000000;
+    --innerPageLeftSide_userLevelBG: #cfb53d;
+    --innerPageLeftSide_userLevelP: #ffffff;
 }
 
 //方法說明 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
@@ -27,17 +37,17 @@
 //header ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 //header 上部背景色
-header .top {
+header .top.edited {
     background: var(--newHeaderTOP_BG);
 }
 
 //未登入ICON
-header .UnLoginBox label i {
+header .UnLoginBox label i.edited {
     color: $Font_color_2;
 }
 
 //登入按鈕
-header .UnLoginBox .loginBtn {
+header .UnLoginBox .loginBtn.edited {
     background: $linear_1;
     border-color: $Border_color_3;
     color: $Font_color_2;
@@ -49,17 +59,17 @@ header .UnLoginBox .loginBtn {
 }
 
 //註冊ICON
-header .UnLoginBox .registerBtn i {
+header .UnLoginBox .registerBtn i.edited {
     color: $Font_color_1;
 }
 
 //已登入頁面列
-header .loginBox>li:nth-of-type(3), 
-header .loginBox>li:nth-of-type(4), 
-header .loginBox>li:nth-of-type(5), 
-header .loginBox>li:nth-of-type(6), 
-header .loginBox>li:nth-of-type(7), 
-header .loginBox>li:nth-of-type(8) {
+header .loginBox>li:nth-of-type(3).edited, 
+header .loginBox>li:nth-of-type(4).edited, 
+header .loginBox>li:nth-of-type(5).edited, 
+header .loginBox>li:nth-of-type(6).edited, 
+header .loginBox>li:nth-of-type(7).edited, 
+header .loginBox>li:nth-of-type(8).edited {
     
     &:hover,&:active,&.active {
         background: $mainColor_subD;
@@ -67,7 +77,7 @@ header .loginBox>li:nth-of-type(8) {
 }
 
 //用戶名
-header .loginBox .userName {
+header .loginBox .userName.edited {
 
     span {
         color: var(--accentColor_1);
@@ -75,49 +85,94 @@ header .loginBox .userName {
 }
 
 //平台點數
-header .loginBox>li.total p {
+header .loginBox>li.total p.edited {
     color: var(--total_P);
 }
-header .loginBox>li.total i {
+header .loginBox>li.total i.edited {
     color: var(--total_P);
 }
 
 //平台點數 UL
-header .loginBox .transferInfo  {
+header .loginBox .transferInfo.edited  {
     background: var(--platformUl_BG);
     border-color: #bb9645;
 }
-header .loginBox .transferInfo li:not(:last-of-type) {
+header .loginBox .transferInfo li:not(:last-of-type).edited {
     border-bottom: 1px solid #bb9645;
 }
-header .loginBox .transferInfo li.platform p {
+header .loginBox .transferInfo li.platform p.edited {
     color: var(--platform_P);
 }
-header .loginBox .transferInfo li p.money {
+header .loginBox .transferInfo li p.money.edited {
     color: var(--platformMoney_P);
 }
 
 //頁面li字色
-header .loginBox li:not(:first-child) a p {
+header .loginBox li:not(:first-child) a p.edited {
     color: $Font_color_1;
 }
 
 
 //header 下部背景色
-header .bottom {
+header .bottom.edited {
     background: var(--newHeaderTDown_BG);
 }
 //header 下部nav 滑入槓槓
-header nav li::before {
+header nav li.edited::before {
     background: var(--newHeaderTDown_Before);
 }
 //header 下部 字色
-header nav li a p {
+header nav li a p.edited {
     color: var(--newHeaderTDown_P);
 }
 //header 下部滑入 字色
-header nav li:hover a p,
-header nav li:active a p,
-header nav li.active a p {
+header nav li:hover a p.edited,
+header nav li:active a p.edited,
+header nav li.active a p.edited {
     color: var(--newHeaderTDownHOV_P);
+}
+
+
+//header下拉式選單
+header .downList.edited {
+    background: var(--downList_BG);
+    border-top: solid 1px var(--downList_Border);
+}
+header .downList.edited p {
+    color: var(--downList_P);
+}
+//左右按鈕
+header .downList i.edited.fa-solid.fa-chevron-left,
+header .downList i.edited.fa-solid.fa-chevron-right {
+    color: var(--downList_iBtn);
+}
+//遊戲維護狀態
+header .downList .maintainBox.edited {
+    background: var(--downList_maintainBox_BG);
+}
+header .downList .maintainBox.edited p {
+    color: var(--downList_maintainBox_P);
+}
+header .downList .maintainBox.edited p.title {
+    color: var(--downList_maintainBox_titleP);
+}
+
+//innerPage ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+//leftSide
+main.innerPage .center .leftSide p.userAccount.edited {
+    color: var(--innerPageLeftSide_userAccountP);
+}
+main.innerPage .center .leftSide p.userAccount .level.edited {
+    background: var(--innerPageLeftSide_userLevelBG);
+    color: var(--innerPageLeftSide_userLevelP);
+}
+main.innerPage .center .leftSide p.joinDay.edited {
+    color: $Font_color_3;
+}
+
+
+//help
+main .helpWrap .helpBody .sideNav>ul.edited {
+    background: var(--subColor_BG);
 }

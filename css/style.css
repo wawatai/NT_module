@@ -191,6 +191,12 @@ header .downList p {
   font-weight: bold;
 }
 
+header .downList .fa-solid.fa-chevron-left,
+header .downList .fa-solid.fa-chevron-right {
+  color: #686868;
+  font-size: 26px;
+}
+
 header .downList .maintainBox {
   background: rgba(0, 0, 0, 0.6431372549);
 }
@@ -205,12 +211,6 @@ header .downList .maintainBox .title {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
-}
-
-header .downList .fa-solid.fa-chevron-left,
-header .downList .fa-solid.fa-chevron-right {
-  color: #000000;
-  font-size: 26px;
 }
 
 .swiper .swiper-button-prev i,
@@ -294,10 +294,10 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover, main .gamePage
   color: #d2b88c;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::before {
-  background: --mainColor;
+  background: var(--mainColor);
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::after {
-  border-color: transparent transparent --mainColor transparent;
+  border-color: transparent transparent var(--mainColor) transparent;
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
@@ -323,8 +323,8 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
-  font-size: 20px;
   color: #cccccc;
+  font-size: 20px;
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i.fa-solid.fa-heart {
@@ -362,7 +362,7 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button
 }
 
 main .eventWrap {
-  background: --subColor_BG-2;
+  background: var(--subColor_BG-2);
 }
 
 main .eventWrap .eventTitle p {
@@ -385,11 +385,11 @@ main .eventWrap .eventBody .sideNav ul li:hover, main .eventWrap .eventBody .sid
   background: var(--accentColor_2);
 }
 main .eventWrap .eventBody .sideNav ul li:hover::before, main .eventWrap .eventBody .sideNav ul li:active::before, main .eventWrap .eventBody .sideNav ul li.active::before {
-  background: --mainColor;
+  background: var(--mainColor);
 }
 
 main .eventWrap .eventBody .sideNav ul li i {
-  color: --mainColor;
+  color: var(--mainColor);
   font-size: 20px;
 }
 
@@ -427,7 +427,7 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:hover,
 }
 
 main .helpWrap {
-  background: --subColor_BG-2;
+  background: var(--subColor_BG-2);
 }
 
 main .helpWrap .helpBody .sideNav > ul {
@@ -526,8 +526,8 @@ main.innerPage .center .leftSide p.userAccount .level {
 }
 
 main.innerPage .center .leftSide p.joinDay {
-  font-size: 14px;
   color: #686868;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -1890,100 +1890,153 @@ aside.cs {
   --newHeaderTDown_Before: #c4a167;
   --newHeaderTDown_P: #7c5f30;
   --newHeaderTDownHOV_P: #d2b88c;
+  --downList_BG: #ffffff;
+  --downList_Border: #cccccc;
+  --downList_P: #000000;
+  --downList_iBtn: #686868;
+  --downList_maintainBox_BG: rgb(0 0 0 / 64%);
+  --downList_maintainBox_P: #ffffff;
+  --downList_maintainBox_titleP: #ffffff;
+  --innerPageLeftSide_userAccountP: #000000;
+  --innerPageLeftSide_userLevelBG: #cfb53d;
+  --innerPageLeftSide_userLevelP: #ffffff;
 }
 
-header .top {
+header .top.edited {
   background: var(--newHeaderTOP_BG);
 }
 
-header .UnLoginBox label i {
+header .UnLoginBox label i.edited {
   color: #000000;
 }
 
-header .UnLoginBox .loginBtn {
+header .UnLoginBox .loginBtn.edited {
   background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
   background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
   border-color: #cccccc;
   color: #000000;
 }
-header .UnLoginBox .loginBtn:hover, header .UnLoginBox .loginBtn:active, header .UnLoginBox .loginBtn.active {
+header .UnLoginBox .loginBtn.edited:hover, header .UnLoginBox .loginBtn.edited:active, header .UnLoginBox .loginBtn.edited.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#d2b88c), color-stop(50%, var(--mainColor)), to(#d2b88c));
   background: linear-gradient(to bottom, #d2b88c 0%, var(--mainColor) 50%, #d2b88c 100%);
   border-color: #ffffff;
 }
 
-header .UnLoginBox .registerBtn i {
+header .UnLoginBox .registerBtn i.edited {
   color: #ffffff;
 }
 
-header .loginBox > li:nth-of-type(3):hover, header .loginBox > li:nth-of-type(3):active, header .loginBox > li:nth-of-type(3).active,
-header .loginBox > li:nth-of-type(4):hover,
-header .loginBox > li:nth-of-type(4):active,
-header .loginBox > li:nth-of-type(4).active,
-header .loginBox > li:nth-of-type(5):hover,
-header .loginBox > li:nth-of-type(5):active,
-header .loginBox > li:nth-of-type(5).active,
-header .loginBox > li:nth-of-type(6):hover,
-header .loginBox > li:nth-of-type(6):active,
-header .loginBox > li:nth-of-type(6).active,
-header .loginBox > li:nth-of-type(7):hover,
-header .loginBox > li:nth-of-type(7):active,
-header .loginBox > li:nth-of-type(7).active,
-header .loginBox > li:nth-of-type(8):hover,
-header .loginBox > li:nth-of-type(8):active,
-header .loginBox > li:nth-of-type(8).active {
+header .loginBox > li:nth-of-type(3).edited:hover, header .loginBox > li:nth-of-type(3).edited:active, header .loginBox > li:nth-of-type(3).edited.active,
+header .loginBox > li:nth-of-type(4).edited:hover,
+header .loginBox > li:nth-of-type(4).edited:active,
+header .loginBox > li:nth-of-type(4).edited.active,
+header .loginBox > li:nth-of-type(5).edited:hover,
+header .loginBox > li:nth-of-type(5).edited:active,
+header .loginBox > li:nth-of-type(5).edited.active,
+header .loginBox > li:nth-of-type(6).edited:hover,
+header .loginBox > li:nth-of-type(6).edited:active,
+header .loginBox > li:nth-of-type(6).edited.active,
+header .loginBox > li:nth-of-type(7).edited:hover,
+header .loginBox > li:nth-of-type(7).edited:active,
+header .loginBox > li:nth-of-type(7).edited.active,
+header .loginBox > li:nth-of-type(8).edited:hover,
+header .loginBox > li:nth-of-type(8).edited:active,
+header .loginBox > li:nth-of-type(8).edited.active {
   background: #7c5f30;
 }
 
-header .loginBox .userName span {
+header .loginBox .userName.edited span {
   color: var(--accentColor_1);
 }
 
-header .loginBox > li.total p {
+header .loginBox > li.total p.edited {
   color: var(--total_P);
 }
 
-header .loginBox > li.total i {
+header .loginBox > li.total i.edited {
   color: var(--total_P);
 }
 
-header .loginBox .transferInfo {
+header .loginBox .transferInfo.edited {
   background: var(--platformUl_BG);
   border-color: #bb9645;
 }
 
-header .loginBox .transferInfo li:not(:last-of-type) {
+header .loginBox .transferInfo li:not(:last-of-type).edited {
   border-bottom: 1px solid #bb9645;
 }
 
-header .loginBox .transferInfo li.platform p {
+header .loginBox .transferInfo li.platform p.edited {
   color: var(--platform_P);
 }
 
-header .loginBox .transferInfo li p.money {
+header .loginBox .transferInfo li p.money.edited {
   color: var(--platformMoney_P);
 }
 
-header .loginBox li:not(:first-child) a p {
+header .loginBox li:not(:first-child) a p.edited {
   color: #ffffff;
 }
 
-header .bottom {
+header .bottom.edited {
   background: var(--newHeaderTDown_BG);
 }
 
-header nav li::before {
+header nav li.edited::before {
   background: var(--newHeaderTDown_Before);
 }
 
-header nav li a p {
+header nav li a p.edited {
   color: var(--newHeaderTDown_P);
 }
 
-header nav li:hover a p,
-header nav li:active a p,
-header nav li.active a p {
+header nav li:hover a p.edited,
+header nav li:active a p.edited,
+header nav li.active a p.edited {
   color: var(--newHeaderTDownHOV_P);
+}
+
+header .downList.edited {
+  background: var(--downList_BG);
+  border-top: solid 1px var(--downList_Border);
+}
+
+header .downList.edited p {
+  color: var(--downList_P);
+}
+
+header .downList i.edited.fa-solid.fa-chevron-left,
+header .downList i.edited.fa-solid.fa-chevron-right {
+  color: var(--downList_iBtn);
+}
+
+header .downList .maintainBox.edited {
+  background: var(--downList_maintainBox_BG);
+}
+
+header .downList .maintainBox.edited p {
+  color: var(--downList_maintainBox_P);
+}
+
+header .downList .maintainBox.edited p.title {
+  color: var(--downList_maintainBox_titleP);
+}
+
+main.innerPage .center .leftSide p.userAccount.edited {
+  color: var(--innerPageLeftSide_userAccountP);
+}
+
+main.innerPage .center .leftSide p.userAccount .level.edited {
+  background: var(--innerPageLeftSide_userLevelBG);
+  color: var(--innerPageLeftSide_userLevelP);
+}
+
+main.innerPage .center .leftSide p.joinDay.edited {
+  color: #686868;
+}
+
+main .helpWrap .helpBody .sideNav > ul.edited {
+  background: var(--subColor_BG);
 }
 
 bg {
@@ -5895,6 +5948,7 @@ html body aside.colorSelector form div p.type {
 }
 html body aside.colorSelector form div p.type.child {
   background: #646464;
+  color: #ffffff;
 }
 html body aside.colorSelector form div p.type i {
   font-size: 13px;

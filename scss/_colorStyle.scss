@@ -1,7 +1,7 @@
 :root {
     --mainColor: #c4a167;
-    --subColor_BG: #ffffff;
-    --subColor_BG-2: #f4f4f4;
+    --subColor_BG: #ffffff;   //內頁區塊背景
+    --subColor_BG-2: #f4f4f4; //內頁大背景
     --accentColor_1: #008599;
     --accentColor_2: #fae8c1;
     --remindColor: #ff0000;
@@ -58,7 +58,7 @@ $BankCard_BG: linear-gradient(120deg, var(--accentColor_2) 0%, var(--mainColor) 
 
 
 //header
-header .top {
+header .top { //可自定義
     background: var(--mainColor);
 }
 header .top li {
@@ -205,29 +205,30 @@ header .downList p { //可自定義
     font-size: 14px;
     font-weight: bold;
 }
-header .downList .maintainBox {
+header .downList .fa-solid.fa-chevron-left,
+header .downList .fa-solid.fa-chevron-right {  //可自定義
+    color: $Font_color_3;
+    font-size: 26px;
+}
+header .downList .maintainBox {  //個別調整 //可自定義
     background: $filter_1;
 }
-header .downList .maintainBox p { //個別調整 //常駐
-    color: #ffffff;
+header .downList .maintainBox p { //個別調整 //可自定義
+    color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 }
-header .downList .maintainBox .title { //個別調整 //常駐
+header .downList .maintainBox .title { //個別調整 //可自定義
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
-header .downList .fa-solid.fa-chevron-left,
-header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
-    color: #000000;
-    font-size: 26px;
-}
+
 
 //swiper
 .swiper .swiper-button-prev i,
-.swiper .swiper-button-next i { //個別調整 //常駐
-    color: #ffffff;
+.swiper .swiper-button-next i {
+    color: $Font_color_1;
     font-size: 44px;
 }
 
@@ -240,13 +241,13 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 .home .typeList .maintainBox {
     background: $filter_1;
 }
-.home .typeList .maintainBox p { //個別調整 //常駐
-    color: #ffffff;
+.home .typeList .maintainBox p {
+    color: $Font_color_1;
     font-size: 18px;
     font-weight: bold;
 }
-.home .typeList .maintainBox .title { //個別調整 //常駐
-    color: #ffffff;
+.home .typeList .maintainBox .title {
+    color: $Font_color_1;
     font-size: 24px;
     font-weight: bold;
 }
@@ -298,11 +299,11 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li  {
         color: $mainColor_subL;
 
         &::before {
-            background: --mainColor;
+            background: var(--mainColor);
         }
 
         &::after{
-            border-color: transparent transparent --mainColor transparent; 
+            border-color: transparent transparent var(--mainColor) transparent; 
         }
     }
 }
@@ -325,8 +326,8 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
     font-weight: bold;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
-    font-size: 20px;
     color: $Border_color_3;
+    font-size: 20px;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i.fa-solid.fa-heart {  //自行調整
     color: #ff30b2;
@@ -361,7 +362,7 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button
 
 //event 
 main .eventWrap {
-    background: --subColor_BG-2;
+    background: var(--subColor_BG-2);
 }
 main .eventWrap .eventTitle p {
     color: $mainColor_subD;
@@ -380,12 +381,12 @@ main .eventWrap .eventBody .sideNav ul li {
         background: var(--accentColor_2);
 
         &::before {
-            background: --mainColor;
+            background: var(--mainColor);
         }
     }
 }
 main .eventWrap .eventBody .sideNav ul li i {
-    color: --mainColor;
+    color: var(--mainColor);
     font-size: 20px;
 }
 main .eventWrap .eventBody .sideNav ul li p {
@@ -417,9 +418,9 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //�
 
 //help
 main .helpWrap {
-    background: --subColor_BG-2;
+    background: var(--subColor_BG-2);
 }
-main .helpWrap .helpBody .sideNav>ul {
+main .helpWrap .helpBody .sideNav>ul {  //可自定義
     background: var(--subColor_BG);
     border-radius: 5px;
     box-shadow: 0 5px 10px -5px $boxShadow_2;
@@ -477,7 +478,7 @@ main .helpWrap .helpBody .container>div p.haveBtn {
 }
 
 //innerPage
-main.innerPage { //個別調整
+main.innerPage {
     background: var(--subColor_BG-2);
 }
 
@@ -490,21 +491,21 @@ main.innerPage .center>div>nav {
 }
 
 //左欄
-main.innerPage .center .leftSide p.userAccount {
+main.innerPage .center .leftSide p.userAccount {  //可自定義
     color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide p.userAccount .level { //個別調整
-    background: #cfb53d; //TODO
+main.innerPage .center .leftSide p.userAccount .level { //個別調整 //可自定義
+    background: #cfb53d;
     border-radius: 5px;
     color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide p.joinDay {
-    font-size: 14px;
+main.innerPage .center .leftSide p.joinDay {  //可自定義
     color: $Font_color_3;
+    font-size: 14px;
     font-weight: bold;
 }
 main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
