@@ -734,55 +734,108 @@ $(function(){
         .toggleClass("active");
     })
 
-    $("aside.colorSelector form input").on("change",function(){
+    //主規則
+    $("aside.colorSelector form .preset input").on("change",function(){
         var mainColor;
         var subColor_BG;
-        var subColor_BG2;
         var subColor_BG2;
         var accentColor_1;
         var accentColor_2;
         var font_Remind;
 
-        $("aside.colorSelector form input").each(function(){
+        $("aside.colorSelector form .preset input").each(function(){
             if($(this).hasClass("mainColor")){
                 mainColor = $(this).val();
+                $(this).closest(".colorBlock").find("p").text(mainColor);
             }
             else if($(this).hasClass("subColor_BG"))
             {
                 subColor_BG = $(this).val();
+                $(this).closest(".colorBlock").find("p").text(subColor_BG);
             }
             else if($(this).hasClass("subColor_BG2")) //大區塊背景色
             {
                 subColor_BG2 = $(this).val();
+                $(this).closest(".colorBlock").find("p").text(subColor_BG2);
             }
             else if($(this).hasClass("accentColor_1"))
             {
                 accentColor_1 = $(this).val();
+                $(this).closest(".colorBlock").find("p").text(accentColor_1);
             }
             else if($(this).hasClass("accentColor_2"))
             {
                 accentColor_2 = $(this).val();
+                $(this).closest(".colorBlock").find("p").text(accentColor_2);
             }
             else if($(this).hasClass("remindColor"))
             {
                 font_Remind = $(this).val();
+                $(this).closest(".colorBlock").find("p").text(font_Remind);
             }
         });
 
         $(':root').css('--mainColor', mainColor);
-        $(':root').css('var(--subColor_BG)', subColor_BG);
-        $(':root').css('var(--subColor_BG)-2', subColor_BG2);
+        $(':root').css('--subColor_BG', subColor_BG);
+        $(':root').css('--subColor_BG-2', subColor_BG2);
         $(':root').css('--accentColor_1', accentColor_1);
         $(':root').css('--accentColor_2', accentColor_2);
         $(':root').css('--remindColor', font_Remind);
     })
 
+     //個別客製區塊
+     //header 上部背景色
+     $("aside.colorSelector form .custom input").on("change",function(){
+        var newColor = $(this).closest(".colorBlock").find("p");
+        var newHeaderTOP_BG;
+        var vip_P;
+        var user_P;
+        var total_P;
+
+        $("aside.colorSelector form .custom input").each(function(){
+            if($(this).hasClass("headerTopColorBG")){
+                newHeaderTOP_BG = $(this).val();
+                $("header .top").addClass("edited");
+                newColor.text(newHeaderTOP_BG);
+            }  else if($(this).hasClass("vip_P")){
+                vip_P= $(this).val();
+                $("header .loginBox .userName").addClass("edited");
+                newColor.text(vip_P);
+            }  else if($(this).hasClass("userName")){
+                user_P= $(this).val();
+                $("header .loginBox .userName").addClass("edited");
+                newColor.text(user_P);
+            }  else if($(this).hasClass("total_P")){
+                total_P= $(this).val();
+                $("header .loginBox li.total p.moneyTotal, header .loginBox li.total i").addClass("edited");
+                newColor.text(total_P);
+            }
+        })
+        
+
+        $(':root').css('--newHeaderTOP_BG', newHeaderTOP_BG);
+        $(':root').css('--vip_P', vip_P);
+        $(':root').css('--user_P', user_P);
+        $(':root').css('--total_P', total_P);
+    })
+     //header 上部背景色
+     $("aside.colorSelector form .custom input.vip_P").on("change",function(){
+        var vip_P;
+
+        $("header .top").addClass("edited");
+        
+        newHeaderTOP_BG = $(this).val();
+        $(this).closest(".colorBlock").find("p").text(newHeaderTOP_BG);
+
+        $(':root').css('--vip_P', vip_P);
+    })
+
+    //修改部位展開切換
     $("aside.colorSelector form div.custom p.bigTitle").click(function(){
         $(this)
         .closest("div")
         .toggleClass("active");
     })
-
     $("aside.colorSelector form div.custom p.type").click(function(){
         $(this)
         .closest("div")

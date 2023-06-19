@@ -1,6 +1,8 @@
 @charset "UTF-8";
 :root {
   --mainColor: #c4a167;
+  --mainColor_subL: hsla(var(--mainColor),100%, 10%);
+  --mainColor_subD: darken(var(--mainColor), 25%);
   --subColor_BG: #ffffff;
   --subColor_BG-2: #f4f4f4;
   --accentColor_1: #008599;
@@ -31,7 +33,7 @@ header .UnLoginBox label input {
 }
 
 header .UnLoginBox label i {
-  color: #000000;
+  color: #7c5f30;
   font-size: 14px;
 }
 
@@ -443,7 +445,7 @@ main .helpWrap .helpBody .sideNav ul li .topic i {
 }
 
 main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
-  color: --mainColor;
+  color: var(--mainColor);
 }
 
 main .helpWrap .helpBody .sideNav ul li .topic p {
@@ -537,16 +539,8 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn {
   border-radius: 50px;
   border: 1px solid var(--mainColor);
 }
-
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
   background: var(--mainColor);
-  border-radius: 50px;
 }
 
 main.innerPage .center .leftSide .quickSelect li .quickBtn p {
@@ -561,7 +555,7 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
   color: #ffffff;
 }
 
-main.innerPage .center .leftSide .quickSelect li .btnName {
+main.innerPage .center .leftSide .quickSelect li p.btnName {
   color: #000000;
   font-size: 14px;
   font-weight: bold;
@@ -604,7 +598,7 @@ main.innerPage .center .leftSide .content .innerNav li.active a {
 main.innerPage .center .leftSide .content .innerNav li:hover a::before,
 main.innerPage .center .leftSide .content .innerNav li:active a::before,
 main.innerPage .center .leftSide .content .innerNav li.active a::before {
-  background: #a28653;
+  background: #7c5f30;
 }
 
 main.innerPage .center .leftSide .innerNav li:hover a i,
@@ -617,12 +611,6 @@ main.innerPage .center .leftSide .innerNav li:hover a p,
 main.innerPage .center .leftSide .innerNav li:active a p,
 main.innerPage .center .leftSide .innerNav li.active a p {
   color: #7c5f30;
-}
-
-main.innerPage .center .leftSide .innerNav li:hover a::before,
-main.innerPage .center .leftSide .innerNav li:active a::before,
-main.innerPage .center .leftSide .innerNav li.active a::before {
-  background: #7c5f30;
 }
 
 main.innerPage .center .rightSide .listTitle {
@@ -1544,7 +1532,7 @@ footer .top .center li p {
 footer .top .center li:hover a,
 footer .top .center li:active a,
 footer .top .center li.active a {
-  background: radial-gradient(circle, rgba(253, 238, 173, 0.6901960784) -5px, #6d502b 40px);
+  background: radial-gradient(circle, var(--mainColor_subL) -5px, var(--mainColor_subD) 40px);
 }
 
 footer .top .center .copyright {
@@ -1881,11 +1869,13 @@ aside.cs {
 
 :root {
   --newHeaderTOP_BG: #c4a167;
-  --accentColor_1: #008599;
+  --vip_P: #008599;
+  --user_P: #686868;
   --total_P: #dbdb11;
   --platformUl_BG: #ecdabc;
   --platform_P: #000000;
   --platformMoney_P: #ff0000;
+  --newHeaderTOP_liHOV:
   --newHeaderTDown_BG: #ffffff;
   --newHeaderTDown_Before: #c4a167;
   --newHeaderTDown_P: #7c5f30;
@@ -1900,6 +1890,19 @@ aside.cs {
   --innerPageLeftSide_userAccountP: #000000;
   --innerPageLeftSide_userLevelBG: #cfb53d;
   --innerPageLeftSide_userLevelP: #ffffff;
+  --innerPageLeftSide_quickBtnBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
+  --innerPageLeftSide_quickBtnBG_HOV: #c4a167;
+  --innerPageLeftSide_quickBtnBorder: #c4a167;
+  --innerPageLeftSide_quickBtnP: #7c5f30;
+  --innerPageLeftSide_quickBtnP_HOV: #ffffff;
+  --innerPageLeftSide_quickBtnName: #000000;
+  --innerPageLeftSide_innerNavBorder: #cccccc;
+  --innerPageLeftSide_innerNavP: #000000;
+  --innerPageLeftSide_innerNavP_HOV: #7c5f30;
+  --innerPageLeftSide_innerNavI: #c4a167;
+  --innerPageLeftSide_innerNavI_HOV: #7c5f30;
+  --innerPageLeftSide_innerNavBG_HOV: #fae8c1;
+  --innerPageLeftSide_innerNavBG_HOVbefore: #7c5f30;
 }
 
 header .top.edited {
@@ -1945,8 +1948,11 @@ header .loginBox > li:nth-of-type(8).edited.active {
   background: #7c5f30;
 }
 
+header .loginBox .userName.edited {
+  color: var(--user_P);
+}
 header .loginBox .userName.edited span {
-  color: var(--accentColor_1);
+  color: var(--vip_P);
 }
 
 header .loginBox > li.total p.edited {
@@ -2035,8 +2041,125 @@ main.innerPage .center .leftSide p.joinDay.edited {
   color: #686868;
 }
 
-main .helpWrap .helpBody .sideNav > ul.edited {
-  background: var(--subColor_BG);
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited {
+  background: var(--innerPageLeftSide_quickBtnBG);
+  border-color: var(--innerPageLeftSide_quickBtnBorder);
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active {
+  background: var(--innerPageLeftSide_quickBtnBG_HOV);
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited p {
+  color: var(--innerPageLeftSide_quickBtnP);
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active p {
+  color: var(--innerPageLeftSide_quickBtnP_HOV);
+}
+
+main.innerPage .center .leftSide .quickSelect li p.btnName.edited {
+  color: var(--innerPageLeftSide_quickBtnName);
+}
+
+main.innerPage .center .leftSide .innerNav.edited {
+  border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
+}
+
+main.innerPage .center .leftSide .innerNav.edited li:nth-of-type(4),
+main.innerPage .center .leftSide .innerNav.edited li:nth-of-type(9) {
+  border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
+}
+
+main.innerPage .center .leftSide .innerNav.edited li.edited a p {
+  color: var(--innerPageLeftSide_innerNavP);
+}
+
+main.innerPage .center .leftSide .innerNav.edited li.edited a i {
+  color: var(--innerPageLeftSide_innerNavI);
+}
+
+main.innerPage .center .leftSide .content .innerNav.edited li.edited:hover a,
+main.innerPage .center .leftSide .content .innerNav.edited li.edited:active a,
+main.innerPage .center .leftSide .content .innerNav.edited li.edited.active a {
+  background: var(--innerPageLeftSide_innerNavBG_HOV);
+}
+main.innerPage .center .leftSide .content .innerNav.edited li.edited:hover a::before,
+main.innerPage .center .leftSide .content .innerNav.edited li.edited:active a::before,
+main.innerPage .center .leftSide .content .innerNav.edited li.edited.active a::before {
+  background: var(--innerPageLeftSide_innerNavBG_HOVbefore);
+}
+
+main.innerPage .center .leftSide .innerNav.edited li.edited:hover a i,
+main.innerPage .center .leftSide .innerNav.edited li.edited:active a i,
+main.innerPage .center .leftSide .innerNav.edited li.edited.active a i {
+  color: var(--innerPageLeftSide_innerNavI_HOV);
+}
+
+main.innerPage .center .leftSide .innerNav li:hover a p,
+main.innerPage .center .leftSide .innerNav li:active a p,
+main.innerPage .center .leftSide .innerNav li.active a p {
+  color: var(--innerPageLeftSide_innerNavP_HOV);
+}
+
+.btnStyle_1.edited {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
+  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btnStyle_1.edited:hover, .btnStyle_1.edited:active, .btnStyle_1.edited.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
+  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+}
+.btnStyle_1.edited:disabled {
+  background: #c0c0c0;
+  cursor: default;
+}
+
+.btnStyle_2.edited {
+  background: transparent;
+  border: 1px solid #7c5f30;
+  border-radius: 3px;
+  color: #7c5f30;
+}
+.btnStyle_2.edited:hover, .btnStyle_2.edited:active, .btnStyle_2.edited.active {
+  background: #7c5f30;
+  color: #ffffff;
+}
+.btnStyle_2.edited:disabled {
+  background: #c0c0c0 !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  cursor: default;
+}
+
+.btnStyle_3.edited {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
+  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  color: #000000;
+}
+.btnStyle_3.edited:hover, .btnStyle_3.edited:active, .btnStyle_3.edited.active {
+  color: #7c5f30;
+  border-color: #7c5f30;
+}
+
+.btnStyle_4.edited {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
+  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  color: #000000;
+}
+.btnStyle_4.edited:hover, .btnStyle_4.edited:active, .btnStyle_4.edited.active {
+  color: #ffffff;
+  background: var(--mainColor);
 }
 
 bg {
@@ -5884,7 +6007,7 @@ html body aside.colorSelector .hint {
 }
 html body aside.colorSelector .hint i {
   font-size: 25px;
-  color: --mainColor;
+  color: var(--mainColor);
 }
 html body aside.colorSelector .hint p {
   display: none;

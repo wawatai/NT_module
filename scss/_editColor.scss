@@ -1,10 +1,12 @@
 :root {
     --newHeaderTOP_BG: #c4a167;
-    --accentColor_1: #008599;
+    --vip_P: #008599;
+    --user_P: #686868;
     --total_P: #dbdb11;
     --platformUl_BG: #ecdabc;
     --platform_P: #000000;
     --platformMoney_P: #ff0000;
+    --newHeaderTOP_liHOV: 
     --newHeaderTDown_BG: #ffffff;
     --newHeaderTDown_Before: #c4a167;
     --newHeaderTDown_P: #7c5f30;
@@ -19,6 +21,19 @@
     --innerPageLeftSide_userAccountP: #000000;
     --innerPageLeftSide_userLevelBG: #cfb53d;
     --innerPageLeftSide_userLevelP: #ffffff;
+    --innerPageLeftSide_quickBtnBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
+    --innerPageLeftSide_quickBtnBG_HOV: #c4a167;
+    --innerPageLeftSide_quickBtnBorder: #c4a167;
+    --innerPageLeftSide_quickBtnP: #7c5f30;
+    --innerPageLeftSide_quickBtnP_HOV: #ffffff;
+    --innerPageLeftSide_quickBtnName: #000000;
+    --innerPageLeftSide_innerNavBorder: #cccccc;
+    --innerPageLeftSide_innerNavP: #000000;
+    --innerPageLeftSide_innerNavP_HOV: #7c5f30;
+    --innerPageLeftSide_innerNavI: #c4a167;
+    --innerPageLeftSide_innerNavI_HOV: #7c5f30;
+    --innerPageLeftSide_innerNavBG_HOV: #fae8c1;
+    --innerPageLeftSide_innerNavBG_HOVbefore: #7c5f30;
 }
 
 //方法說明 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
@@ -78,9 +93,10 @@ header .loginBox>li:nth-of-type(8).edited {
 
 //用戶名
 header .loginBox .userName.edited {
-
+    color: var(--user_P);
+    
     span {
-        color: var(--accentColor_1);
+        color: var(--vip_P);
     }
 }
 
@@ -170,9 +186,121 @@ main.innerPage .center .leftSide p.userAccount .level.edited {
 main.innerPage .center .leftSide p.joinDay.edited {
     color: $Font_color_3;
 }
+//存轉提按鈕
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited {
+    background: var(--innerPageLeftSide_quickBtnBG);
+    border-color: var(--innerPageLeftSide_quickBtnBorder);
 
+    &:hover,&:active,&.active {
+        background: var(--innerPageLeftSide_quickBtnBG_HOV);
+    }
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited p {
+    color: var(--innerPageLeftSide_quickBtnP);
+}
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active p {
+    color: var(--innerPageLeftSide_quickBtnP_HOV);
+}
+main.innerPage .center .leftSide .quickSelect li p.btnName.edited {
+    color: var(--innerPageLeftSide_quickBtnName);
+}
+//nav
+main.innerPage .center .leftSide .innerNav.edited {
+    border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
+}
+main.innerPage .center .leftSide .innerNav.edited li:nth-of-type(4), 
+main.innerPage .center .leftSide .innerNav.edited li:nth-of-type(9) {
+    border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
+}
+main.innerPage .center .leftSide .innerNav.edited li.edited a p {
+    color: var(--innerPageLeftSide_innerNavP);
+}
+main.innerPage .center .leftSide .innerNav.edited li.edited a i {
+    color: var(--innerPageLeftSide_innerNavI);
+}
+main.innerPage .center .leftSide .content .innerNav.edited li.edited:hover a,
+main.innerPage .center .leftSide .content .innerNav.edited li.edited:active a,
+main.innerPage .center .leftSide .content .innerNav.edited li.edited.active a {
+    background: var(--innerPageLeftSide_innerNavBG_HOV);
+
+    &::before {
+        background: var(--innerPageLeftSide_innerNavBG_HOVbefore);
+    }
+}
+main.innerPage .center .leftSide .innerNav.edited li.edited:hover a i,
+main.innerPage .center .leftSide .innerNav.edited li.edited:active a i,
+main.innerPage .center .leftSide .innerNav.edited li.edited.active a i {
+    color: var(--innerPageLeftSide_innerNavI_HOV);
+}
+main.innerPage .center .leftSide .innerNav li:hover a p,
+main.innerPage .center .leftSide .innerNav li:active a p,
+main.innerPage .center .leftSide .innerNav li.active a p {
+    color: var(--innerPageLeftSide_innerNavP_HOV);
+}
 
 //help
-main .helpWrap .helpBody .sideNav>ul.edited {
-    background: var(--subColor_BG);
+
+
+//event
+
+
+//按鈕樣式 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+.btnStyle_1.edited { //按鈕樣式_1
+    background: $linear_1;
+    border: 1px solid $Border_color_3;
+    border-radius: 5px;
+    color: $Font_color_1;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: $linear_1_Active;
+    }
+
+    &:disabled { //個別調整
+        background: #c0c0c0;
+        cursor: default;
+    }
+}
+.btnStyle_2.edited { //按鈕樣式_2 主色邊線按鈕
+    background: transparent;
+    border: 1px solid $Border_color_5;
+    border-radius: 3px;
+    color: $mainColor_subD;
+
+    &:hover,&:active,&.active {
+        background: $Border_color_5;
+        color: $Font_color_1;
+    }
+
+    &:disabled { //個別調整
+        background: #c0c0c0 !important;
+        color: $Font_color_1 !important;
+        border-color: transparent !important;
+        cursor: default;
+    }
+}
+.btnStyle_3.edited { //按鈕樣式_3 灰色邊線變色按鈕
+    background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+    border: 1px solid $Border_color_3;
+    border-radius: 3px;
+    color: $Font_color_2;
+
+    &:hover,&:active,&.active {
+        color: $mainColor_subD;
+        border-color: $mainColor_subD;
+    }
+}
+.btnStyle_4.edited { //按鈕樣式_4 灰色邊線變色按鈕
+    background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+    border: 1px solid $Border_color_3;
+    border-radius: 3px;
+    color: $Font_color_2;
+
+    &:hover,&:active,&.active {
+        color: $Font_color_1;
+        background: var(--mainColor);;
+    }
 }

@@ -1,5 +1,7 @@
 :root {
     --mainColor: #c4a167;
+    --mainColor_subL: hsla(var(--mainColor),100%, 10%);
+    --mainColor_subD: darken(var(--mainColor), 25%);
     --subColor_BG: #ffffff;   //內頁區塊背景
     --subColor_BG-2: #f4f4f4; //內頁大背景
     --accentColor_1: #008599;
@@ -76,7 +78,7 @@ header .UnLoginBox label input {
     font-weight: bold;
 }
 header .UnLoginBox label i { //個別調整 //可自定義
-    color: $Font_color_2;
+    color: $mainColor_subD;
     font-size: 14px;
 }
 header .UnLoginBox .loginBtn {  //個別調整 //可自定義
@@ -408,7 +410,7 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button {
     width: 115px;
     height: 35px;
 }
-main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //個別調整
+main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //個別調整  //可自定義
     background: linear-gradient(to bottom, #9ddbec 0%, #0282cc 50%, #82aeeb 100%); 
 
     &:hover,&:active,&.active {
@@ -420,31 +422,31 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //�
 main .helpWrap {
     background: var(--subColor_BG-2);
 }
-main .helpWrap .helpBody .sideNav>ul {  //可自定義
+main .helpWrap .helpBody .sideNav>ul {
     background: var(--subColor_BG);
     border-radius: 5px;
     box-shadow: 0 5px 10px -5px $boxShadow_2;
 }
-main .helpWrap .helpBody .sideNav ul li .topic i {
+main .helpWrap .helpBody .sideNav ul li .topic i {  //可自定義
     color: $mainColor_subD;
     font-size: 18px;
 }
-main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
-    color: --mainColor;
+main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right { //可自定義
+    color: var(--mainColor);
 }
-main .helpWrap .helpBody .sideNav ul li .topic p {
+main .helpWrap .helpBody .sideNav ul li .topic p { //可自定義
     color: $mainColor_subD;
     font-size: 20px;
     font-weight: bold;
 }
-main .helpWrap .helpBody .sideNav ul li ul li {
+main .helpWrap .helpBody .sideNav ul li ul li { //可自定義
     background: transparent;
 
     &:hover,&:active,&.active {
         background: var(--accentColor_2);
     }
 }
-main .helpWrap .helpBody .sideNav ul li ul li p {
+main .helpWrap .helpBody .sideNav ul li ul li p { //可自定義
     color: $Font_color_3;
     font-size: 18px;
     font-weight: bold;
@@ -508,51 +510,47 @@ main.innerPage .center .leftSide p.joinDay {  //可自定義
     font-size: 14px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
+main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整 //可自定義
     background: $linear_1;
     border-radius: 50px;
     border: 1px solid $Border_color_4;
-}
-main.innerPage .center .leftSide .quickSelect li .quickBtn,
-main.innerPage .center .leftSide .quickSelect li .quickBtn,
-main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
 
     &:hover,&:active,&.active {
         background: var(--mainColor);
-        border-radius: 50px;
     }
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn p {
+main.innerPage .center .leftSide .quickSelect li .quickBtn p { //可自定義
     color: $mainColor_subD;
     font-size: 18px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p, //可自定義
 main.innerPage .center .leftSide .quickSelect li .quickBtn:active p,
 main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
     color: $Font_color_1;
 }
-main.innerPage .center .leftSide .quickSelect li .btnName {
+main.innerPage .center .leftSide .quickSelect li p.btnName { //可自定義
     color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide .innerNav {
+main.innerPage .center .leftSide .innerNav { //可自定義
     border-top: 1px solid $Border_color_3;
 }
 main.innerPage .center .leftSide .innerNav li:nth-of-type(4), 
-main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
+main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {  //可自定義
     border-top: 1px solid $Border_color_3;
 }
-main.innerPage .center .leftSide .innerNav li a p {
+main.innerPage .center .leftSide .innerNav li a p { //可自定義
     color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide .innerNav li a i {
+main.innerPage .center .leftSide .innerNav li a i { //可自定義
     color: var(--mainColor);
     font-size: 14px;
 }
+//icon 個別調整
 main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-credit-card {
     font-size: 13px;
 }
@@ -562,27 +560,22 @@ main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-bu
 }
 main.innerPage .center .leftSide .content .innerNav li:hover a,
 main.innerPage .center .leftSide .content .innerNav li:active a,
-main.innerPage .center .leftSide .content .innerNav li.active a { //個別調整
+main.innerPage .center .leftSide .content .innerNav li.active a { //可自定義
     background: var(--accentColor_2);
 
     &::before {
-        background: #a28653;
+        background: $mainColor_subD;
     }
 }
 main.innerPage .center .leftSide .innerNav li:hover a i,
 main.innerPage .center .leftSide .innerNav li:active a i,
-main.innerPage .center .leftSide .innerNav li.active a i {
+main.innerPage .center .leftSide .innerNav li.active a i { //可自定義
     color: $mainColor_subD;
 }
 main.innerPage .center .leftSide .innerNav li:hover a p,
 main.innerPage .center .leftSide .innerNav li:active a p,
-main.innerPage .center .leftSide .innerNav li.active a p {
+main.innerPage .center .leftSide .innerNav li.active a p { //可自定義
     color: $mainColor_subD;
-}
-main.innerPage .center .leftSide .innerNav li:hover a::before,
-main.innerPage .center .leftSide .innerNav li:active a::before,
-main.innerPage .center .leftSide .innerNav li.active a::before {
-    background: $mainColor_subD;
 }
 
 //innerPage 右欄
@@ -1385,8 +1378,8 @@ footer .top .center li p {
 }
 footer .top .center li:hover a,
 footer .top .center li:active a,
-footer .top .center li.active a { //個別調整
-    background: radial-gradient(circle,  #fdeeadb0 -5px , #6d502b 40px);
+footer .top .center li.active a {
+    background: radial-gradient(circle,  var(--mainColor_subL) -5px , var(--mainColor_subD) 40px);
 }
 footer .top .center .copyright {
     color: $Font_color_1;
@@ -1646,7 +1639,7 @@ aside.cs {
 }
 
 //銀行卡樣式
-@mixin cardStyle { //個別調整
+@mixin cardStyle {
     flex-direction: column;
     align-items: flex-start;
     justify-content: unset;
@@ -1755,7 +1748,6 @@ aside.cs {
         border-color: $mainColor_subD;
     }
 }
-
 .btnStyle_4 { //按鈕樣式_4 灰色邊線變色按鈕
     background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
     border: 1px solid $Border_color_3;
