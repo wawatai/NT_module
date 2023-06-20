@@ -364,6 +364,40 @@
                 }
             }
         }
+
+        //編輯按鈕
+        &.buttonEdit {
+
+            .content {
+                width: 100%;
+                padding: 20px;
+
+                label {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin-right: 10px;
+                    }
+
+                    button {
+                        width: 100px;
+                        height: 35px;
+                    }
+                }
+
+                .colorList {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+
+                    .colorBlock {
+                        width: 33%;
+                    }
+                }
+            }
+        }
         
         .title {
             width: 100%;

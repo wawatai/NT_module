@@ -1428,7 +1428,7 @@ aside.cs {
     background: $filter_1;
 }
 .filter .jumpWindow {
-    background: var(--subColor_BG);
+    
     border-radius: 10px;
 }
 .filter .jumpWindow .title {
@@ -1446,6 +1446,12 @@ aside.cs {
     color: var(--remindColor);
     font-size: 14px;
     font-weight: bold;
+}
+.filter .jumpWindow .content {
+    background: var(--subColor_BG);
+}
+.filter .jumpWindow .btnBox {
+    background: var(--subColor_BG);
 }
 .filter .jumpWindow.plsLogin .content p {
     color: $Font_color_2;

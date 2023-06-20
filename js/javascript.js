@@ -965,6 +965,21 @@ $(function(){
         $(':root').css('--innerPageLeftSide_innerNavBG_HOVbefore', innerPageLeftSide_innerNavBG_HOVbefore);
     })
 
+    //按鈕客製
+    $("aside.colorSelector form .custom .editbtn button").click(function(){
+        var titleName = $(this).text();
+        var n = $(this).closest("label").index();
+      
+        $(".filter, .jumpWindow.buttonEdit")
+        .addClass("display")
+        .siblings().removeClass("display");
+
+        $(".filter .jumpWindow.buttonEdit .title p").text("編輯"+ titleName +"");
+        $(".filter .jumpWindow.buttonEdit .content button")
+        .text(titleName)
+        .attr("class","btnStyle_"+ n +"");
+    })
+
     //修改部位展開切換
     $("aside.colorSelector form div.custom p.bigTitle").click(function(){
         $(this)

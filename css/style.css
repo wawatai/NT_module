@@ -1585,7 +1585,6 @@ aside.cs {
 }
 
 .filter .jumpWindow {
-  background: var(--subColor_BG);
   border-radius: 10px;
 }
 
@@ -1607,6 +1606,14 @@ aside.cs {
   color: var(--remindColor);
   font-size: 14px;
   font-weight: bold;
+}
+
+.filter .jumpWindow .content {
+  background: var(--subColor_BG);
+}
+
+.filter .jumpWindow .btnBox {
+  background: var(--subColor_BG);
 }
 
 .filter .jumpWindow.plsLogin .content p {
@@ -6447,6 +6454,38 @@ html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
 }
 html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
   margin-bottom: 0;
+}
+html body .filter .jumpWindow.buttonEdit .content {
+  width: 100%;
+  padding: 20px;
+}
+html body .filter .jumpWindow.buttonEdit .content label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.buttonEdit .content label p {
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.buttonEdit .content label button {
+  width: 100px;
+  height: 35px;
+}
+html body .filter .jumpWindow.buttonEdit .content .colorList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.buttonEdit .content .colorList .colorBlock {
+  width: 33%;
 }
 html body .filter .jumpWindow .title {
   width: 100%;
