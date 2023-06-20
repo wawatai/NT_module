@@ -65,7 +65,7 @@ header .top { //可自定義
 }
 header .top li {
     border-right: solid 1px $Font_color_3;
-    box-shadow: 1px 1px 0.5px $Font_color_1;
+    box-shadow: 1px 0px 0.5px $Font_color_1;
 }
 header .UnLoginBox label {
     background: $commonBG_1;
@@ -221,7 +221,7 @@ header .downList .maintainBox p { //個別調整 //可自定義
     font-weight: bold;
 }
 header .downList .maintainBox .title { //個別調整 //可自定義
-    color: #ffffff;
+    color: $Font_color_1;
     font-size: 18px;
     font-weight: bold;
 }

@@ -7,11 +7,13 @@
     --platformUl_Border: #bb9645;
     --platform_P: #000000;
     --platformMoney_P: #ff0000;
-    --newHeaderTOP_liHOV: 
+    --newHeaderTOP_liP: #ffffff;
+    --newHeaderTOP_liP_HOV: #ffffff;
+    --newHeaderTOP_li_HOV: #ffffff;
     --newHeaderTDown_BG: #ffffff;
-    --newHeaderTDown_Before: #c4a167;
     --newHeaderTDown_P: #7c5f30;
     --newHeaderTDownHOV_P: #d2b88c;
+    --newHeaderTDown_Before: #c4a167;
     --downList_BG: #ffffff;
     --downList_Border: #cccccc;
     --downList_P: #000000;
@@ -22,6 +24,7 @@
     --innerPageLeftSide_userAccountP: #000000;
     --innerPageLeftSide_userLevelBG: #cfb53d;
     --innerPageLeftSide_userLevelP: #ffffff;
+    --innerPageLeftSide_joinedDays: #686868;
     --innerPageLeftSide_quickBtnBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
     --innerPageLeftSide_quickBtnBG_HOV: #c4a167;
     --innerPageLeftSide_quickBtnBorder: #c4a167;
@@ -112,10 +115,10 @@ header .loginBox>li.total i.edited {
 //平台點數 UL
 header .loginBox .transferInfo.edited  {
     background: var(--platformUl_BG);
-    border-color: #bb9645;
+    border-color: var(--platformUl_Border);
 }
 header .loginBox .transferInfo li:not(:last-of-type).edited {
-    border-bottom: 1px solid #bb9645;
+    border-bottom: 1px solid var(--platformUl_Border);
 }
 header .loginBox .transferInfo li.platform p.edited {
     color: var(--platform_P);
@@ -125,8 +128,21 @@ header .loginBox .transferInfo li p.money.edited {
 }
 
 //頁面li字色
-header .loginBox li:not(:first-child) a p.edited {
-    color: $Font_color_1;
+header .loginBox li.edited:not(:first-child) a p {
+    color: var(--newHeaderTOP_liP);
+}
+header .loginBox li.edited:not(:first-child) {
+
+    &:hover,&:active,&.active {
+
+        a {
+            background: var(--newHeaderTOP_li_HOV);
+
+            p {
+                color: var(--newHeaderTOP_liP_HOV);
+            }
+        }
+    }
 }
 
 
@@ -134,19 +150,21 @@ header .loginBox li:not(:first-child) a p.edited {
 header .bottom.edited {
     background: var(--newHeaderTDown_BG);
 }
-//header 下部nav 滑入槓槓
-header nav li.edited::before {
-    background: var(--newHeaderTDown_Before);
-}
 //header 下部 字色
-header nav li a p.edited {
+header .bottom nav li a p.edited {
     color: var(--newHeaderTDown_P);
 }
 //header 下部滑入 字色
-header nav li:hover a p.edited,
-header nav li:active a p.edited,
-header nav li.active a p.edited {
+header .bottom nav li:hover a p.edited,
+header .bottom nav li:active a p.edited,
+header .bottom nav li.active a p.edited {
     color: var(--newHeaderTDownHOV_P);
+}
+//header 下部nav 滑入槓槓
+header nav li.edited:hover::before,
+header nav li.edited:active::before,
+header nav li.edited.active::before {
+    background: var(--newHeaderTDown_Before);
 }
 
 
@@ -185,7 +203,7 @@ main.innerPage .center .leftSide p.userAccount .level.edited {
     color: var(--innerPageLeftSide_userLevelP);
 }
 main.innerPage .center .leftSide p.joinDay.edited {
-    color: $Font_color_3;
+    color: var(--innerPageLeftSide_joinedDays);
 }
 //存轉提按鈕
 main.innerPage .center .leftSide .quickSelect li .quickBtn.edited {
@@ -202,43 +220,43 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn.edited p {
 main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover p,
 main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active p,
 main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active p {
-    color: var(--innerPageLeftSide_quickBtnP_HOV);
+    color: var(--innerPageLeftSide_innerNavI_HOV);
 }
 main.innerPage .center .leftSide .quickSelect li p.btnName.edited {
     color: var(--innerPageLeftSide_quickBtnName);
 }
 //nav
-main.innerPage .center .leftSide .innerNav.edited {
+main.innerPage .center .leftSide .innerNav {
     border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
 }
-main.innerPage .center .leftSide .innerNav.edited li:nth-of-type(4), 
-main.innerPage .center .leftSide .innerNav.edited li:nth-of-type(9) {
+main.innerPage .center .leftSide .innerNav li:nth-of-type(4), 
+main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
     border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
 }
-main.innerPage .center .leftSide .innerNav.edited li.edited a p {
+main.innerPage .center .leftSide .innerNav li.edited a p {
     color: var(--innerPageLeftSide_innerNavP);
 }
-main.innerPage .center .leftSide .innerNav.edited li.edited a i {
+main.innerPage .center .leftSide .innerNav li.edited a i {
     color: var(--innerPageLeftSide_innerNavI);
 }
-main.innerPage .center .leftSide .content .innerNav.edited li.edited:hover a,
-main.innerPage .center .leftSide .content .innerNav.edited li.edited:active a,
-main.innerPage .center .leftSide .content .innerNav.edited li.edited.active a {
+main.innerPage .center .leftSide .content .innerNav li.edited:hover a,
+main.innerPage .center .leftSide .content .innerNav li.edited:active a,
+main.innerPage .center .leftSide .content .innerNav li.edited.active a {
     background: var(--innerPageLeftSide_innerNavBG_HOV);
 
     &::before {
         background: var(--innerPageLeftSide_innerNavBG_HOVbefore);
     }
 }
-main.innerPage .center .leftSide .innerNav.edited li.edited:hover a i,
-main.innerPage .center .leftSide .innerNav.edited li.edited:active a i,
-main.innerPage .center .leftSide .innerNav.edited li.edited.active a i {
+main.innerPage .center .leftSide .innerNav li.edited:hover a i,
+main.innerPage .center .leftSide .innerNav li.edited:active a i,
+main.innerPage .center .leftSide .innerNav li.edited.active a i {
     color: var(--innerPageLeftSide_innerNavI_HOV);
 }
-main.innerPage .center .leftSide .innerNav li:hover a p,
-main.innerPage .center .leftSide .innerNav li:active a p,
-main.innerPage .center .leftSide .innerNav li.active a p {
-    color: var(--innerPageLeftSide_innerNavP_HOV);
+main.innerPage .center .leftSide .innerNav li.edited:hover a p,
+main.innerPage .center .leftSide .innerNav li.edited:active a p,
+main.innerPage .center .leftSide .innerNav li.edited.active a p {
+    color: var(--innerPageLeftSide_innerNavI_HOV);
 }
 
 //help

@@ -915,43 +915,46 @@
         </div>
         <form>
             <div class="preset active">
-                <p class="bigTitle">主規則</p>
-                <label for="mainColor">
+                <p class="bigTitle">
+                    主規則
+                    <i class="fa-solid fa-chevron-up"></i>
+                </p>
+                <label>
                     <p>主色:</p>
                     <div class="colorBlock">
                         <input type="color" class="mainColor" name="mainColor" value="#c4a167">
                         <p class="changeHex">#c4a167</p>
                     </div>
                 </label>
-                <label for="mainColor">
+                <label>
                     <p>背景色:</p>
                     <div class="colorBlock">
                         <input type="color" class="subColor_BG2" name="subColor_BG2" value="#f4f4f4">
                         <p class="changeHex">#f4f4f4</p>
                     </div>
                 </label>
-                <label for="mainColor">
+                <label>
                     <p>區塊底色:</p>
                     <div class="colorBlock">
                         <input type="color" class="subColor_BG" name="subColor_BG" value="#ffffff">
                         <p class="changeHex">#ffffff</p>
                     </div>
                 </label>
-                <label for="otherColor">
+                <label>
                     <p>強調色-1:</p>
                     <div class="colorBlock">
                         <input type="color" class="accentColor_1" name="accentColor_1" value="#008599">
                         <p class="changeHex">#008599</p>
                     </div>
                 </label>
-                <label for="otherColor">
+                <label>
                     <p>強調色-2:</p>
                     <div class="colorBlock">
                         <input type="color" class="accentColor_2" name="accentColor_2" value="#fae8c1">
                         <p class="changeHex">#fae8c1</p>
                     </div>
                 </label>
-                <label for="otherColor">
+                <label>
                     <p>提示文字色:</p>
                     <div class="colorBlock">
                         <input type="color" class="remindColor" name="remindColor" value="#ff0000">
@@ -972,130 +975,185 @@
                     <div class="partBlock active">
                         <p class="type child">
                             上部
-                            <i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-angles-up"></i>
                         </p>
-                        <label for="headerColor">
+                        <label>
                             <p>上部背景</p>
                             <div class="colorBlock">
                                 <input type="color" class="headerTopColorBG" name="headerTopColorBG" value="#c4a167">
                                 <p class="changeHex">#c4a167</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>vipLevel</p>
                             <div class="colorBlock">
                                 <input type="color" class="vip_P" name="vip_P" value="#008599">
                                 <p class="changeHex">#008599</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>userName</p>
                             <div class="colorBlock">
                                 <input type="color" class="userName" name="userName" value="#686868">
                                 <p class="changeHex">#686868</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>
                                 平台
                                 <span>點數字色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="total_P" name="total_P" value="#bb9645">
-                                <p class="changeHex">#bb9645</p>
+                                <input type="color" class="total_P" name="total_P" value="#dbdb11">
+                                <p class="changeHex">#dbdb11</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>
                                 平台點數
                                 <span>背景色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="total_P" name="total_P" value="#bb9645">
-                                <p class="changeHex">#bb9645</p>
+                                <input type="color" class="platformUl_BG" name="platformUl_BG" value="#ecdabc">
+                                <p class="changeHex">#ecdabc</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>
                                 平台點數
                                 <span>線色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="platform" name="headerTopColor" value="#686868">
-                                <p class="changeHex">#c4a167</p>
+                                <input type="color" class="platformUl_Border" name="platformUl_Border" value="#bb9645">
+                                <p class="changeHex">#bb9645</p>
                             </div>
-                            </label>
-                        <label for="headerColor">
+                        </label>
+                        <label>
                             <p>
                                 平台名稱
                                 <span>字色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="headerTopColor" name="headerTopColor" value="#ffffff">
+                                <input type="color" class="platform_P" name="platform_P" value="#000000">
+                                <p class="changeHex">#000000</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                平台點數
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="platformMoney_P" name="platformMoney_P" value="#ff0000">
+                                <p class="changeHex">#ff0000</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                頁面 字色
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="newHeaderTOP_liP" name="newHeaderTOP_liP" value="#ffffff">
                                 <p class="changeHex">#ffffff</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>
                                 頁面滑入
                                 <span>字色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="headerTopColor" name="headerTopColor" value="#ffffff">
+                                <input type="color" class="newHeaderTOP_liP_HOV" name="newHeaderTOP_liP_HOV" value="#ffffff">
                                 <p class="changeHex">#ffffff</p>
                             </div>
-                            </label>
-                        <label for="headerColor">
+                        </label>
+                        <label>
                             <p>
                                 頁面滑入
                                 <span>背景色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="headerTopColor" name="headerTopColor" value="#ffffff">
-                                <p class="changeHex">#ffffff</p>
+                                <input type="color" class="newHeaderTOP_li_HOV" name="newHeaderTOP_li_HOV" value="#7c5f30">
+                                <p class="changeHex">#7c5f30</p>
                             </div>
                         </label>
                     </div>
                     <div class="partBlock">
                         <p class="type child">
                             下部
-                            <i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-angles-up"></i>
                         </p>
-                        <label for="headerColor">
+                        <label>
                             <p>下部背景</p>
                             <div class="colorBlock">
-                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#ffffff">
+                                <input type="color" class="newHeaderTDown_BG" name="newHeaderTDown_BG" value="#ffffff">
                                 <p class="changeHex">#ffffff</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>
-                                下部
+                                頁面
                                 <span>字色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
-                                <p class="changeHex">#996c33</p>
+                                <input type="color" class="newHeaderTDown_P" name="newHeaderTDown_P" value="#7c5f30">
+                                <p class="changeHex">#7c5f30</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>
-                                下部滑入
+                                頁面滑入
                                 <span>字色</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
-                                <p class="changeHex">#c4a167</p>
+                                <input type="color" class="newHeaderTDownHOV_P" name="newHeaderTDownHOV_P" value="#d2b88c">
+                                <p class="changeHex">#d2b88c</p>
                             </div>
                         </label>
-                        <label for="headerColor">
+                        <label>
                             <p>
-                                下部滑入
+                                頁面滑入
                                 <span>底線</span>
                             </p>
                             <div class="colorBlock">
-                                <input type="color" class="headerBottomColor" name="headerBottomColor" value="#996c33">
-                                <p class="changeHex">#996c33</p>
+                                <input type="color" class="newHeaderTDown_Before" name="newHeaderTDown_Before" value="#c4a167">
+                                <p class="changeHex">#c4a167</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="partBlock">
+                        <p class="type child">
+                            遊戲下拉
+                            <i class="fa-solid fa-angles-up"></i>
+                        </p>
+                        <label>
+                            <p>背景</p>
+                            <div class="colorBlock">
+                                <input type="color" class="downList_BG" name="downList_BG" value="#ffffff">
+                                <p class="changeHex">#ffffff</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>上邊線</p>
+                            <div class="colorBlock">
+                                <input type="color" class="downList_Border" name="downList_Border" value="#cccccc">
+                                <p class="changeHex">#cccccc</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>遊戲名稱
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="downList_P" name="downList_P" value="#000000">
+                                <p class="changeHex">#000000</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>左右按鈕</p>
+                            <div class="colorBlock">
+                                <input type="color" class="downList_iBtn" name="downList_iBtn" value="#686868">
+                                <p class="changeHex">#686868</p>
                             </div>
                         </label>
                     </div>
@@ -1105,63 +1163,135 @@
                         左側清單
                         <i class="fa-solid fa-chevron-up"></i>
                     </p>
-                    <label for="leftNavColor">
-                        <p>level 色</p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#c4a167">
-                            <p class="changeHex">#c4a167</p>
-                        </div>
-                    </label>
-                    <label for="leftNavColor">
-                        <p>按鈕字色</p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#996c33">
-                            <p class="changeHex">#996c33</p>
-                        </div>
-                    </label>
-                    <label for="leftNavColor">
-                        <p>字色</p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#000000">
-                            <p class="changeHex">#000000</p>
-                        </div>
-                    </label>
-                    <label for="leftNavColor">
-                        <p>
-                            滑入
-                            <span>背景色</span>
+                    <div class="partBlock">
+                        <p class="type child">
+                            上部
+                            <i class="fa-solid fa-angles-up"></i>
                         </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#fae8c1">
-                            <p class="changeHex">#fae8c1</p>
-                        </div>
-                    </label>
-                    <label for="leftNavColor">
-                        <p>
-                            滑入
-                            <span>icon/字色</span>
+                        <label>
+                            <p>帳號色</p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_userAccountP" name="innerPageLeftSide_userAccountP" value="#000000">
+                                <p class="changeHex">#000000</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                level
+                                <span>背景色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_userLevelBG" name="innerPageLeftSide_userLevelBG" value="#cfb53d">
+                                <p class="changeHex">#cfb53d</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                level
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_userLevelP" name="innerPageLeftSide_userLevelBG" value="#ffffff">
+                                <p class="changeHex">#ffffff</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                加入第x天
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_joinedDays" name="innerPageLeftSide_joinedDays" value="#686868">
+                                <p class="changeHex">#686868</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>按鈕字色</p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_quickBtnP" name="innerPageLeftSide_quickBtnP" value="#996c33">
+                                <p class="changeHex">#996c33</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>按鈕名 字色</p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_quickBtnName" name="innerPageLeftSide_quickBtnName" value="#000000">
+                                <p class="changeHex">#000000</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="partBlock">
+                        <p class="type child">
+                            下部
+                            <i class="fa-solid fa-angles-up"></i>
                         </p>
-                        <div class="colorBlock">
-                            <input type="color" class="headerTopColor" name="headerTopColor" value="#996c33">
-                            <p class="changeHex">#996c33</p>
-                        </div>
-                    </label>
+                        <label>
+                            <p>
+                                頁面名
+                                <span>字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_innerNavP" name="innerPageLeftSide_innerNavP" value="#000000">
+                                <p class="changeHex">#000000</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                頁面名
+                                <span>icon色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_innerNavI" name="innerPageLeftSide_innerNavI" value="#c4a167">
+                                <p class="changeHex">#c4a167</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                滑入
+                                <span>背景色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_innerNavBG_HOV" name="innerPageLeftSide_innerNavBG_HOV" value="#fae8c1">
+                                <p class="changeHex">#fae8c1</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                滑入
+                                <span>icon/字色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_innerNavI_HOV" name="innerPageLeftSide_innerNavI_HOV" value="#996c33">
+                                <p class="changeHex">#996c33</p>
+                            </div>
+                        </label>
+                        <label>
+                            <p>
+                                滑入
+                                <span>標籤色</span>
+                            </p>
+                            <div class="colorBlock">
+                                <input type="color" class="innerPageLeftSide_innerNavBG_HOVbefore" name="innerPageLeftSide_innerNavBG_HOVbefore" value="#996c33">
+                                <p class="changeHex">#996c33</p>
+                            </div>
+                        </label>
+                    </div>
                 </div>
                 <div class="editbtn">
                     <p class="type">
                         按鈕樣式
                         <i class="fa-solid fa-chevron-up"></i>
                     </p>
-                    <label for="leftNavColor">
+                    <label>
                         <button type="button" class="btnStyle_1">按鈕-1</button>
                     </label>
-                    <label for="leftNavColor">
+                    <label>
                         <button type="button" class="btnStyle_2">按鈕-2</button>
                     </label>
-                    <label for="leftNavColor">
+                    <label>
                         <button type="button" class="btnStyle_3">按鈕-3</button>
                     </label>
-                    <label for="leftNavColor">
+                    <label>
                         <button type="button" class="btnStyle_4">按鈕-4</button>
                     </label>
                 </div>

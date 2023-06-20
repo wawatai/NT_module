@@ -784,56 +784,194 @@ $(function(){
     })
 
      //個別客製區塊
-     //header 上部背景色
      $("aside.colorSelector form .custom input").on("change",function(){
-        var newColor = $(this).closest(".colorBlock").find("p");
         var newHeaderTOP_BG;
         var vip_P;
         var user_P;
         var total_P;
+        var platformUl_BG;
+        var platformUl_Border;
+        var platform_P;
+        var platformMoney_P;
+        var newHeaderTOP_liP;
+        var newHeaderTOP_liP_HOV;
+        var newHeaderTOP_li_HOV;
+        var newHeaderTDown_BG;
+        var newHeaderTDown_P;
+        var newHeaderTDownHOV_P;
+        var newHeaderTDown_Before;
+        var downList_BG;
+        var downList_Border;
+        var downList_P;
+        var downList_iBtn;
+        var innerPageLeftSide_userAccountP;
+        var innerPageLeftSide_userLevelBG;
+        var innerPageLeftSide_userLevelP;
+        var innerPageLeftSide_joinedDays;
+        var innerPageLeftSide_quickBtnP;
+        var innerPageLeftSide_innerNavBG_HOV;
+        var innerPageLeftSide_innerNavP;
+        var innerPageLeftSide_innerNavI;
+        var innerPageLeftSide_innerNavI_HOV;
+        var innerPageLeftSide_innerNavBG_HOVbefore;
 
         $("aside.colorSelector form .custom input").each(function(){
             if($(this).hasClass("headerTopColorBG")){
                 newHeaderTOP_BG = $(this).val();
                 $("header .top").addClass("edited");
-                newColor.text(newHeaderTOP_BG);
+                $(this).closest(".colorBlock").find("p").text(newHeaderTOP_BG);
             }  else if($(this).hasClass("vip_P")){
                 vip_P= $(this).val();
                 $("header .loginBox .userName").addClass("edited");
-                newColor.text(vip_P);
+                $(this).closest(".colorBlock").find("p").text(vip_P);
             }  else if($(this).hasClass("userName")){
                 user_P= $(this).val();
                 $("header .loginBox .userName").addClass("edited");
-                newColor.text(user_P);
+                $(this).closest(".colorBlock").find("p").text(user_P);
             }  else if($(this).hasClass("total_P")){
                 total_P= $(this).val();
                 $("header .loginBox li.total p.moneyTotal, header .loginBox li.total i").addClass("edited");
-                newColor.text(total_P);
+                $(this).closest(".colorBlock").find("p").text(total_P);
+            }   else if($(this).hasClass("platformUl_BG")){
+                platformUl_BG= $(this).val();
+                $("header .loginBox .transferInfo").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(platformUl_BG);
+            }   else if($(this).hasClass("platformUl_Border")){
+                platformUl_Border= $(this).val();
+                $("header .loginBox .transferInfo, header .loginBox .transferInfo li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(platformUl_Border);
+            }   else if($(this).hasClass("platform_P")){
+                platform_P= $(this).val();
+                $("header .loginBox .transferInfo li p").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(platform_P);
+            }   else if($(this).hasClass("newHeaderTOP_liP")){
+                newHeaderTOP_liP= $(this).val();
+                $("header .loginBox li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(newHeaderTOP_liP);
+            }   else if($(this).hasClass("newHeaderTOP_liP_HOV")){
+                newHeaderTOP_liP_HOV= $(this).val();
+                $("header .loginBox li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(newHeaderTOP_liP_HOV);
+            }   else if($(this).hasClass("newHeaderTOP_li_HOV")){
+                newHeaderTOP_li_HOV= $(this).val();
+                $("header .loginBox li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(newHeaderTOP_li_HOV);
+            }   else if($(this).hasClass("newHeaderTDown_BG")){
+                newHeaderTDown_BG= $(this).val();
+                $("header .bottom").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(newHeaderTDown_BG);
+            }   else if($(this).hasClass("newHeaderTDown_P")){
+                newHeaderTDown_P= $(this).val();
+                $("header .bottom nav li a p").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(newHeaderTDown_P);
+            }   else if($(this).hasClass("newHeaderTDownHOV_P")){
+                newHeaderTDownHOV_P= $(this).val();
+                $("header .bottom nav li a p").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(newHeaderTDownHOV_P);
+            }   else if($(this).hasClass("newHeaderTDown_Before")){
+                newHeaderTDown_Before= $(this).val();
+                $("header .bottom nav li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(newHeaderTDown_Before);
+            }   else if($(this).hasClass("downList_BG")){
+                downList_BG= $(this).val();
+                $("header .downList").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(downList_BG);
+            }   else if($(this).hasClass("downList_Border")){
+                downList_Border= $(this).val();
+                $("header .downList").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(downList_Border);
+            }   else if($(this).hasClass("downList_P")){
+                downList_P= $(this).val();
+                $("header .downList").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(downList_P);
+            }   else if($(this).hasClass("downList_iBtn")){
+                downList_iBtn= $(this).val();
+                $("header .downList i").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(downList_iBtn);
+            }   else if($(this).hasClass("innerPageLeftSide_userAccountP")){
+                innerPageLeftSide_userAccountP= $(this).val();
+                $("main.innerPage .center .leftSide p.userAccount").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_userAccountP);
+            }   else if($(this).hasClass("innerPageLeftSide_userLevelBG")){
+                innerPageLeftSide_userLevelBG= $(this).val();
+                $("main.innerPage .center .leftSide p.userAccount .level").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_userLevelBG);
+            }   else if($(this).hasClass("innerPageLeftSide_userLevelP")){
+                innerPageLeftSide_userLevelP= $(this).val();
+                $("main.innerPage .center .leftSide p.userAccount .level").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_userLevelP);
+            }   else if($(this).hasClass("innerPageLeftSide_joinedDays")){
+                innerPageLeftSide_joinedDays= $(this).val();
+                $("main.innerPage .center .leftSide p.joinDay").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_userLevelP);
+            }   else if($(this).hasClass("innerPageLeftSide_quickBtnP")){
+                innerPageLeftSide_quickBtnP= $(this).val();
+                $("main.innerPage .center .leftSide .quickSelect li .quickBtn").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnP);
+            }   else if($(this).hasClass("innerPageLeftSide_innerNavBG_HOV")){
+                innerPageLeftSide_innerNavBG_HOV= $(this).val();
+                $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_innerNavBG_HOV);
+            }   else if($(this).hasClass("innerPageLeftSide_innerNavP")){
+                innerPageLeftSide_innerNavP= $(this).val();
+                $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_innerNavP);
+            }   else if($(this).hasClass("innerPageLeftSide_innerNavP")){
+                innerPageLeftSide_innerNavP= $(this).val();
+                $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_innerNavP);
+            }   else if($(this).hasClass("innerPageLeftSide_innerNavI")){
+                innerPageLeftSide_innerNavI= $(this).val();
+                $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_innerNavI);
+            }   else if($(this).hasClass("innerPageLeftSide_innerNavI_HOV")){
+                innerPageLeftSide_innerNavI_HOV= $(this).val();
+                $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_innerNavI_HOV);
+            }   else if($(this).hasClass("innerPageLeftSide_innerNavBG_HOVbefore")){
+                innerPageLeftSide_innerNavBG_HOVbefore= $(this).val();
+                $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_innerNavBG_HOVbefore);
             }
         })
         
-
         $(':root').css('--newHeaderTOP_BG', newHeaderTOP_BG);
         $(':root').css('--vip_P', vip_P);
         $(':root').css('--user_P', user_P);
         $(':root').css('--total_P', total_P);
-    })
-     //header 上部背景色
-     $("aside.colorSelector form .custom input.vip_P").on("change",function(){
-        var vip_P;
-
-        $("header .top").addClass("edited");
-        
-        newHeaderTOP_BG = $(this).val();
-        $(this).closest(".colorBlock").find("p").text(newHeaderTOP_BG);
-
-        $(':root').css('--vip_P', vip_P);
+        $(':root').css('--platformUl_BG', platformUl_BG);
+        $(':root').css('--platformUl_Border', platformUl_Border);
+        $(':root').css('--platform_P', platform_P);
+        $(':root').css('--platformMoney_P', platformMoney_P);
+        $(':root').css('--newHeaderTOP_liP', newHeaderTOP_liP);
+        $(':root').css('--newHeaderTOP_liP_HOV', newHeaderTOP_liP_HOV);
+        $(':root').css('--newHeaderTOP_li_HOV', newHeaderTOP_li_HOV);
+        $(':root').css('--newHeaderTDown_BG', newHeaderTDown_BG);
+        $(':root').css('--newHeaderTDown_P', newHeaderTDown_P);
+        $(':root').css('--newHeaderTDownHOV_P', newHeaderTDownHOV_P);
+        $(':root').css('--newHeaderTDown_Before', newHeaderTDown_Before);
+        $(':root').css('--downList_BG', downList_BG);
+        $(':root').css('--downList_Border', downList_Border);
+        $(':root').css('--downList_P', downList_P);
+        $(':root').css('--innerPageLeftSide_userAccountP', innerPageLeftSide_userAccountP);
+        $(':root').css('--innerPageLeftSide_userLevelBG', innerPageLeftSide_userLevelBG);
+        $(':root').css('--innerPageLeftSide_userLevelP', innerPageLeftSide_userLevelP);
+        $(':root').css('--innerPageLeftSide_joinedDays', innerPageLeftSide_joinedDays);
+        $(':root').css('--innerPageLeftSide_quickBtnP', innerPageLeftSide_quickBtnP);
+        $(':root').css('--innerPageLeftSide_innerNavBG_HOV', innerPageLeftSide_innerNavBG_HOV);
+        $(':root').css('--innerPageLeftSide_innerNavP', innerPageLeftSide_innerNavP);
+        $(':root').css('--innerPageLeftSide_innerNavI', innerPageLeftSide_innerNavI);
+        $(':root').css('--innerPageLeftSide_innerNavI_HOV', innerPageLeftSide_innerNavI_HOV);
+        $(':root').css('--innerPageLeftSide_innerNavBG_HOVbefore', innerPageLeftSide_innerNavBG_HOVbefore);
     })
 
     //修改部位展開切換
     $("aside.colorSelector form div.custom p.bigTitle").click(function(){
         $(this)
         .closest("div")
+        .toggleClass("active");
+
+        $("aside.colorSelector form div.preset")
         .toggleClass("active");
     })
     $("aside.colorSelector form div.custom p.type").click(function(){
