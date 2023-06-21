@@ -365,8 +365,9 @@
             }
         }
 
-        //編輯按鈕
+        //客製化按鈕彈窗
         &.buttonEdit {
+            width: auto;
 
             .content {
                 width: 100%;
@@ -375,6 +376,7 @@
                 label {
                     display: flex;
                     align-items: center;
+                    margin-bottom: 20px;
 
                     p {
                         margin-right: 10px;
@@ -383,17 +385,54 @@
                     button {
                         width: 100px;
                         height: 35px;
+                        cursor: default; 
                     }
                 }
 
-                .colorList {
+                .changeBlock {
                     width: 100%;
                     height: auto;
-                    display: flex;
-                    align-items: center;
+                    display: none;
 
-                    .colorBlock {
-                        width: 33%;
+                    &.display {
+                        display: block;
+                    }
+
+                    .typeTitle {
+                        width: 100%;
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                    }
+    
+                    .colorList {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+    
+                        .itemName {
+                            width: 80px;
+                            color: rgb(109, 109, 109);
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+    
+                        .colorBlock {
+                            width: 150px;
+                            height: auto;
+                            background: #eeeeee;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-right: 5px;
+                            padding: 0 5px;
+    
+                            input {
+                                width: 39px;
+                                height: 39px;
+                            }
+                        }
                     }
                 }
             }

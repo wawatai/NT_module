@@ -183,7 +183,7 @@ $(function(){
     })
 })
 
-
+//卡片功能
 $(function(){
     var clickTimes = 0;
 
@@ -974,10 +974,55 @@ $(function(){
         .addClass("display")
         .siblings().removeClass("display");
 
+        //抓取彈窗標題
         $(".filter .jumpWindow.buttonEdit .title p").text("編輯"+ titleName +"");
         $(".filter .jumpWindow.buttonEdit .content button")
         .text(titleName)
         .attr("class","btnStyle_"+ n +"");
+
+        var btnStyle_1_BG1;
+        var btnStyle_1_BG2;
+        var btnStyle_1_BG3;
+        var btnStyle_1_BG1_HOV;
+        var btnStyle_1_BG2_HOV;
+        var btnStyle_1_BG3_HOV;
+        var btnStyle_1_Border;
+        var btnStyle_1_Border_HOV;
+        var btnStyle_1_P;
+        var btnStyle_1_P_HOV;
+
+        //顏色客製
+        $(".filter .jumpWindow.buttonEdit .content input").each(function(){
+            if($(this).hasClass("headerTopColorBG")){
+
+            }
+        })
+        
+        //關閉彈窗送出修改資訊
+        $(".jumpWindow.buttonEdit button.closeCheck").click(function() {
+            $(".filter")
+            .removeClass("display");
+
+            $("aside.colorSelector form .custom .editbtn button").each(function(){
+                
+                if($(this).hasClass("btnStyle_"+ n +"")) {
+                    $(this).addClass("edited");
+                }
+            });
+        })
+
+        $(':root').css({
+            "--btnStyle_1_BG1": ""+ btnStyle_1_BG1 +"",
+            "--btnStyle_1_BG2": ""+ btnStyle_1_BG2 +"",
+            "--btnStyle_1_BG3": ""+ btnStyle_1_BG3 +"",
+            "--btnStyle_1_BG1_HOV": ""+ btnStyle_1_BG1_HOV +"",
+            "--btnStyle_1_BG2_HOV": ""+ btnStyle_1_BG2_HOV +"",
+            "--btnStyle_1_BG3_HOV": ""+ btnStyle_1_BG3_HOV +"",
+            "--btnStyle_1_Border": ""+ btnStyle_1_Border +"",
+            "--btnStyle_1_Border_HOV": ""+ btnStyle_1_Border_HOV +"",
+            "--btnStyle_1_P": ""+ btnStyle_1_P +"",
+            "--btnStyle_1_P_HOV": ""+ btnStyle_1_P_HOV +"",
+        });
     })
 
     //修改部位展開切換

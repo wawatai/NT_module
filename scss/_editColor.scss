@@ -38,6 +38,16 @@
     --innerPageLeftSide_innerNavI_HOV: #7c5f30;
     --innerPageLeftSide_innerNavBG_HOV: #fae8c1;
     --innerPageLeftSide_innerNavBG_HOVbefore: #7c5f30;
+    --btnStyle_1_BG1: #fae8c1;
+    --btnStyle_1_BG2: #c4a167;
+    --btnStyle_1_BG3: #fae8c1;
+    --btnStyle_1_BG1_HOV: #c4a167;
+    --btnStyle_1_BG2_HOV: #fae8c1;
+    --btnStyle_1_BG3_HOV: #c4a167;
+    --btnStyle_1_Border: #ffffff;
+    --btnStyle_1_Border_HOV: #ffffff;
+    --btnStyle_1_P: #ffffff;
+    --btnStyle_1_P_HOV: #ffffff;
 }
 
 //方法說明 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
@@ -267,21 +277,19 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
 
 //按鈕樣式 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 .btnStyle_1.edited { //按鈕樣式_1
-    background: $linear_1;
-    border: 1px solid $Border_color_3;
-    border-radius: 5px;
-    color: $Font_color_1;
-    font-size: 16px;
-    font-weight: bold;
+    background: linear-gradient(to top, var(--btnStyle_1_BG1) 0%, var(--btnStyle_1_BG2) 50%, var(--btnStyle_1_BG1) 100%);
+    border: 1px solid var(--btnStyle_1_Border);
+    color: var(--btnStyle_1_P);
 
     &:hover,&:active,&.active {
-        background: $linear_1_Active;
+        background: linear-gradient(to top, var(--btnStyle_1_BG1_HOV) 0%, var(--btnStyle_1_BG2_HOV) 50%, var(--btnStyle_1_BG3_HOV) 100%);
+        border-color: var(--btnStyle_1_Border_HOV);
+        color: var(--btnStyle_1_P_HOV);
     }
 
-    &:disabled { //個別調整
-        background: #c0c0c0;
-        cursor: default;
-    }
+    // &:disabled {
+    //     background: #c0c0c0;
+    // }
 }
 .btnStyle_2.edited { //按鈕樣式_2 主色邊線按鈕
     background: transparent;

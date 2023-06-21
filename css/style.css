@@ -1914,6 +1914,16 @@ aside.cs {
   --innerPageLeftSide_innerNavI_HOV: #7c5f30;
   --innerPageLeftSide_innerNavBG_HOV: #fae8c1;
   --innerPageLeftSide_innerNavBG_HOVbefore: #7c5f30;
+  --btnStyle_1_BG1: #fae8c1;
+  --btnStyle_1_BG2: #c4a167;
+  --btnStyle_1_BG3: #fae8c1;
+  --btnStyle_1_BG1_HOV: #c4a167;
+  --btnStyle_1_BG2_HOV: #fae8c1;
+  --btnStyle_1_BG3_HOV: #c4a167;
+  --btnStyle_1_Border: #ffffff;
+  --btnStyle_1_Border_HOV: #ffffff;
+  --btnStyle_1_P: #ffffff;
+  --btnStyle_1_P_HOV: #ffffff;
 }
 
 header .top.edited {
@@ -2124,21 +2134,16 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
 }
 
 .btnStyle_1.edited {
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
-  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--btnStyle_1_BG1)), color-stop(50%, var(--btnStyle_1_BG2)), to(var(--btnStyle_1_BG1)));
+  background: linear-gradient(to top, var(--btnStyle_1_BG1) 0%, var(--btnStyle_1_BG2) 50%, var(--btnStyle_1_BG1) 100%);
+  border: 1px solid var(--btnStyle_1_Border);
+  color: var(--btnStyle_1_P);
 }
 .btnStyle_1.edited:hover, .btnStyle_1.edited:active, .btnStyle_1.edited.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
-  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
-}
-.btnStyle_1.edited:disabled {
-  background: #c0c0c0;
-  cursor: default;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--btnStyle_1_BG1_HOV)), color-stop(50%, var(--btnStyle_1_BG2_HOV)), to(var(--btnStyle_1_BG3_HOV)));
+  background: linear-gradient(to top, var(--btnStyle_1_BG1_HOV) 0%, var(--btnStyle_1_BG2_HOV) 50%, var(--btnStyle_1_BG3_HOV) 100%);
+  border-color: var(--btnStyle_1_Border_HOV);
+  color: var(--btnStyle_1_P_HOV);
 }
 
 .btnStyle_2.edited {
@@ -6455,6 +6460,9 @@ html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
 html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
   margin-bottom: 0;
 }
+html body .filter .jumpWindow.buttonEdit {
+  width: auto;
+}
 html body .filter .jumpWindow.buttonEdit .content {
   width: 100%;
   padding: 20px;
@@ -6466,6 +6474,7 @@ html body .filter .jumpWindow.buttonEdit .content label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 html body .filter .jumpWindow.buttonEdit .content label p {
   margin-right: 10px;
@@ -6473,8 +6482,22 @@ html body .filter .jumpWindow.buttonEdit .content label p {
 html body .filter .jumpWindow.buttonEdit .content label button {
   width: 100px;
   height: 35px;
+  cursor: default;
 }
-html body .filter .jumpWindow.buttonEdit .content .colorList {
+html body .filter .jumpWindow.buttonEdit .content .changeBlock {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .filter .jumpWindow.buttonEdit .content .changeBlock.display {
+  display: block;
+}
+html body .filter .jumpWindow.buttonEdit .content .changeBlock .typeTitle {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.buttonEdit .content .changeBlock .colorList {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -6483,9 +6506,33 @@ html body .filter .jumpWindow.buttonEdit .content .colorList {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
-html body .filter .jumpWindow.buttonEdit .content .colorList .colorBlock {
-  width: 33%;
+html body .filter .jumpWindow.buttonEdit .content .changeBlock .colorList .itemName {
+  width: 80px;
+  color: rgb(109, 109, 109);
+  font-size: 15px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.buttonEdit .content .changeBlock .colorList .colorBlock {
+  width: 150px;
+  height: auto;
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+html body .filter .jumpWindow.buttonEdit .content .changeBlock .colorList .colorBlock input {
+  width: 39px;
+  height: 39px;
 }
 html body .filter .jumpWindow .title {
   width: 100%;
