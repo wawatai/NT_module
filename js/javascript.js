@@ -934,7 +934,7 @@ $(function(){
                 $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_innerNavBG_HOVbefore);
             }
         })
-        
+
         $(':root').css('--newHeaderTOP_BG', newHeaderTOP_BG);
         $(':root').css('--vip_P', vip_P);
         $(':root').css('--user_P', user_P);
@@ -970,59 +970,217 @@ $(function(){
         var titleName = $(this).text();
         var n = $(this).closest("label").index();
       
-        $(".filter, .jumpWindow.buttonEdit")
+        $(".filter, .jumpWindow.buttonEdit, .jumpWindow.buttonEdit .content .changeBlock:nth-of-type("+ n +")")
         .addClass("display")
         .siblings().removeClass("display");
-
+      
         //抓取彈窗標題
         $(".filter .jumpWindow.buttonEdit .title p").text("編輯"+ titleName +"");
         $(".filter .jumpWindow.buttonEdit .content button")
         .text(titleName)
         .attr("class","btnStyle_"+ n +"");
-
-        var btnStyle_1_BG1;
-        var btnStyle_1_BG2;
-        var btnStyle_1_BG3;
-        var btnStyle_1_BG1_HOV;
-        var btnStyle_1_BG2_HOV;
-        var btnStyle_1_BG3_HOV;
-        var btnStyle_1_Border;
-        var btnStyle_1_Border_HOV;
-        var btnStyle_1_P;
-        var btnStyle_1_P_HOV;
-
-        //顏色客製
-        $(".filter .jumpWindow.buttonEdit .content input").each(function(){
-            if($(this).hasClass("headerTopColorBG")){
-
-            }
-        })
-        
+         
         //關閉彈窗送出修改資訊
         $(".jumpWindow.buttonEdit button.closeCheck").click(function() {
             $(".filter")
             .removeClass("display");
 
-            $("aside.colorSelector form .custom .editbtn button").each(function(){
+            $("button").each(function(){
                 
                 if($(this).hasClass("btnStyle_"+ n +"")) {
                     $(this).addClass("edited");
                 }
             });
         })
+    })
 
-        $(':root').css({
-            "--btnStyle_1_BG1": ""+ btnStyle_1_BG1 +"",
-            "--btnStyle_1_BG2": ""+ btnStyle_1_BG2 +"",
-            "--btnStyle_1_BG3": ""+ btnStyle_1_BG3 +"",
-            "--btnStyle_1_BG1_HOV": ""+ btnStyle_1_BG1_HOV +"",
-            "--btnStyle_1_BG2_HOV": ""+ btnStyle_1_BG2_HOV +"",
-            "--btnStyle_1_BG3_HOV": ""+ btnStyle_1_BG3_HOV +"",
-            "--btnStyle_1_Border": ""+ btnStyle_1_Border +"",
-            "--btnStyle_1_Border_HOV": ""+ btnStyle_1_Border_HOV +"",
-            "--btnStyle_1_P": ""+ btnStyle_1_P +"",
-            "--btnStyle_1_P_HOV": ""+ btnStyle_1_P_HOV +"",
-        });
+     //顏色客製
+    $(".filter .jumpWindow.buttonEdit .content input").on("change",function(){
+    var btnStyle_1_BG1;
+    var btnStyle_1_BG2;
+    var btnStyle_1_BG3;
+    var btnStyle_1_BG1_HOV;
+    var btnStyle_1_BG2_HOV;
+    var btnStyle_1_BG3_HOV;
+    var btnStyle_1_Border;
+    var btnStyle_1_Border_HOV;
+    var btnStyle_1_P;
+    var btnStyle_1_P_HOV;
+    var btnStyle_2_BG1;
+    var btnStyle_2_BG2;
+    var btnStyle_2_BG3;
+    var btnStyle_2_BG1_HOV;
+    var btnStyle_2_BG2_HOV;
+    var btnStyle_2_BG3_HOV;
+    var btnStyle_2_Border;
+    var btnStyle_2_Border_HOV;
+    var btnStyle_2_P;
+    var btnStyle_2_P_HOV;
+    var btnStyle_3_BG1;
+    var btnStyle_3_BG2;
+    var btnStyle_3_BG3;
+    var btnStyle_3_BG1_HOV;
+    var btnStyle_3_BG2_HOV;
+    var btnStyle_3_BG3_HOV;
+    var btnStyle_3_Border;
+    var btnStyle_3_Border_HOV;
+    var btnStyle_3_P;
+    var btnStyle_3_P_HOV;
+    
+    $(".filter .jumpWindow.buttonEdit .content input").each(function(){
+        if($(this).hasClass("btnStyle_1_BG1")){
+            btnStyle_1_BG1 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_BG1);
+        } else if($(this).hasClass("btnStyle_1_BG2")){
+            btnStyle_1_BG2 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_BG2);
+        } else if($(this).hasClass("btnStyle_1_BG3")){
+            btnStyle_1_BG3 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_BG3);
+        } else if($(this).hasClass("btnStyle_1_BG1_HOV")){
+            btnStyle_1_BG1_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_BG1_HOV);
+        } else if($(this).hasClass("btnStyle_1_BG2_HOV")){
+            btnStyle_1_BG2_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_BG2_HOV);
+        } else if($(this).hasClass("btnStyle_1_BG3_HOV")){
+            btnStyle_1_BG3_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_BG3_HOV);
+        } else if($(this).hasClass("btnStyle_1_Border")){
+            btnStyle_1_Border = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_Border);
+        } else if($(this).hasClass("btnStyle_1_Border_HOV")){
+            btnStyle_1_Border_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_Border_HOV);
+        } else if($(this).hasClass("btnStyle_1_P")){
+            btnStyle_1_P = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_P);
+        } else if($(this).hasClass("btnStyle_1_P_HOV")){
+            btnStyle_1_P_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_1_P_HOV);
+        } else if($(this).hasClass("btnStyle_2_BG1")){
+            btnStyle_2_BG1 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_BG1);
+        } else if($(this).hasClass("btnStyle_2_BG2")){
+            btnStyle_2_BG2 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_BG2);
+        } else if($(this).hasClass("btnStyle_2_BG3")){
+            btnStyle_2_BG3 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_BG3);
+        } else if($(this).hasClass("btnStyle_2_BG1_HOV")){
+            btnStyle_2_BG1_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_BG1_HOV);
+        } else if($(this).hasClass("btnStyle_2_BG2_HOV")){
+            btnStyle_2_BG2_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_BG2_HOV);
+        } else if($(this).hasClass("btnStyle_2_BG3_HOV")){
+            btnStyle_2_BG3_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_BG3_HOV);
+        } else if($(this).hasClass("btnStyle_2_Border")){
+            btnStyle_2_Border = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_Border);
+        } else if($(this).hasClass("btnStyle_2_Border_HOV")){
+            btnStyle_2_Border_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_Border_HOV);
+        } else if($(this).hasClass("btnStyle_2_P")){
+            btnStyle_2_P = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_P);
+        } else if($(this).hasClass("btnStyle_2_P_HOV")){
+            btnStyle_2_P_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_2_P_HOV);
+        } else if($(this).hasClass("btnStyle_3_BG1")){
+            btnStyle_3_BG1 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_BG1);
+        } else if($(this).hasClass("btnStyle_3_BG2")){
+            btnStyle_3_BG2 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_BG2);
+        } else if($(this).hasClass("btnStyle_3_BG3")){
+            btnStyle_3_BG3 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_BG3);
+        } else if($(this).hasClass("btnStyle_3_BG1_HOV")){
+            btnStyle_3_BG1_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_BG1_HOV);
+        } else if($(this).hasClass("btnStyle_3_BG2_HOV")){
+            btnStyle_3_BG2_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_BG2_HOV);
+        } else if($(this).hasClass("btnStyle_3_BG3_HOV")){
+            btnStyle_3_BG3_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_BG3_HOV);
+        } else if($(this).hasClass("btnStyle_3_Border")){
+            btnStyle_3_Border = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_Border);
+        } else if($(this).hasClass("btnStyle_3_Border_HOV")){
+            btnStyle_3_Border_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_Border_HOV);
+        } else if($(this).hasClass("btnStyle_3_P")){
+            btnStyle_3_P = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_P);
+        } else if($(this).hasClass("btnStyle_3_P_HOV")){
+            btnStyle_3_P_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_3_P_HOV);
+        }
+
+        $(':root').css('--btnStyle_1_BG1', btnStyle_1_BG1);
+        $(':root').css('--btnStyle_1_BG2', btnStyle_1_BG2);
+        $(':root').css('--btnStyle_1_BG3', btnStyle_1_BG3);
+        $(':root').css('--btnStyle_1_BG1_HOV', btnStyle_1_BG1_HOV);
+        $(':root').css('--btnStyle_1_BG2_HOV', btnStyle_1_BG2_HOV);
+        $(':root').css('--btnStyle_1_BG3_HOV', btnStyle_1_BG3_HOV);
+        $(':root').css('--btnStyle_1_Border', btnStyle_1_Border);
+        $(':root').css('--btnStyle_1_Border_HOV', btnStyle_1_Border_HOV);
+        $(':root').css('--btnStyle_1_P', btnStyle_1_P);
+        $(':root').css('--btnStyle_1_P_HOV', btnStyle_1_P_HOV);
+        $(':root').css('--btnStyle_2_BG1', btnStyle_2_BG1);
+        $(':root').css('--btnStyle_2_BG2', btnStyle_2_BG2);
+        $(':root').css('--btnStyle_2_BG3', btnStyle_2_BG3);
+        $(':root').css('--btnStyle_2_BG1_HOV', btnStyle_2_BG1_HOV);
+        $(':root').css('--btnStyle_2_BG2_HOV', btnStyle_2_BG2_HOV);
+        $(':root').css('--btnStyle_2_BG3_HOV', btnStyle_2_BG3_HOV);
+        $(':root').css('--btnStyle_2_Border', btnStyle_2_Border);
+        $(':root').css('--btnStyle_2_Border_HOV', btnStyle_2_Border_HOV);
+        $(':root').css('--btnStyle_2_P', btnStyle_2_P);
+        $(':root').css('--btnStyle_2_P_HOV', btnStyle_2_P_HOV);
+        $(':root').css('--btnStyle_3_BG1', btnStyle_3_BG1);
+        $(':root').css('--btnStyle_3_BG2', btnStyle_3_BG2);
+        $(':root').css('--btnStyle_3_BG3', btnStyle_3_BG3);
+        $(':root').css('--btnStyle_3_BG1_HOV', btnStyle_3_BG1_HOV);
+        $(':root').css('--btnStyle_3_BG2_HOV', btnStyle_3_BG2_HOV);
+        $(':root').css('--btnStyle_3_BG3_HOV', btnStyle_3_BG3_HOV);
+        $(':root').css('--btnStyle_3_Border', btnStyle_3_Border);
+        $(':root').css('--btnStyle_3_Border_HOV', btnStyle_3_Border_HOV);
+        $(':root').css('--btnStyle_3_P', btnStyle_3_P);
+        $(':root').css('--btnStyle_3_P_HOV', btnStyle_3_P_HOV);
+    })
     })
 
     //修改部位展開切換

@@ -1924,6 +1924,32 @@ aside.cs {
   --btnStyle_1_Border_HOV: #ffffff;
   --btnStyle_1_P: #ffffff;
   --btnStyle_1_P_HOV: #ffffff;
+  --btnStyle_2_BG1: #ffffff;
+  --btnStyle_2_BG2: #ffffff;
+  --btnStyle_2_BG3: #ffffff;
+  --btnStyle_2_BG1_HOV: #7c5f30;
+  --btnStyle_2_BG2_HOV: #7c5f30;
+  --btnStyle_2_BG3_HOV: #7c5f30;
+  --btnStyle_2_Border: #7c5f30;
+  --btnStyle_2_Border_HOV: #7c5f30;
+  --btnStyle_2_P: #7c5f30;
+  --btnStyle_2_P_HOV: #ffffff;
+  --btnStyle_3_BG1: #ffffff;
+  --btnStyle_3_BG2: #f4f4f4;
+  --btnStyle_3_BG1_HOV: #ffffff;
+  --btnStyle_3_BG2_HOV: #f4f4f4;
+  --btnStyle_3_Border: #cccccc;
+  --btnStyle_3_Border_HOV: #7c5f30;
+  --btnStyle_3_P: #000000;
+  --btnStyle_3_P_HOV: #7c5f30;
+  --btnStyle_4_BG1: #ffffff;
+  --btnStyle_4_BG2: #f4f4f4;
+  --btnStyle_4_BG1_HOV: #c4a167;
+  --btnStyle_4_BG2_HOV: #c4a167;
+  --btnStyle_4_Border: #cccccc;
+  --btnStyle_4_Border_HOV: #c4a167;
+  --btnStyle_4_P: #000000;
+  --btnStyle_4_P_HOV: #ffffff;
 }
 
 header .top.edited {
@@ -2134,45 +2160,40 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
 }
 
 .btnStyle_1.edited {
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--btnStyle_1_BG1)), color-stop(50%, var(--btnStyle_1_BG2)), to(var(--btnStyle_1_BG1)));
-  background: linear-gradient(to top, var(--btnStyle_1_BG1) 0%, var(--btnStyle_1_BG2) 50%, var(--btnStyle_1_BG1) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--btnStyle_1_BG1)), color-stop(50%, var(--btnStyle_1_BG2)), to(var(--btnStyle_1_BG3)));
+  background: linear-gradient(to top, var(--btnStyle_1_BG1) 0%, var(--btnStyle_1_BG2) 50%, var(--btnStyle_1_BG3) 100%);
   border: 1px solid var(--btnStyle_1_Border);
   color: var(--btnStyle_1_P);
 }
 .btnStyle_1.edited:hover, .btnStyle_1.edited:active, .btnStyle_1.edited.active {
   background: -webkit-gradient(linear, left bottom, left top, from(var(--btnStyle_1_BG1_HOV)), color-stop(50%, var(--btnStyle_1_BG2_HOV)), to(var(--btnStyle_1_BG3_HOV)));
   background: linear-gradient(to top, var(--btnStyle_1_BG1_HOV) 0%, var(--btnStyle_1_BG2_HOV) 50%, var(--btnStyle_1_BG3_HOV) 100%);
-  border-color: var(--btnStyle_1_Border_HOV);
+  border: 1px solid var(--btnStyle_1_Border_HOV);
   color: var(--btnStyle_1_P_HOV);
 }
 
 .btnStyle_2.edited {
-  background: transparent;
-  border: 1px solid #7c5f30;
-  border-radius: 3px;
-  color: #7c5f30;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--btnStyle_2_BG1)), color-stop(50%, var(--btnStyle_2_BG2)), to(var(--btnStyle_2_BG3)));
+  background: linear-gradient(to top, var(--btnStyle_2_BG1) 0%, var(--btnStyle_2_BG2) 50%, var(--btnStyle_2_BG3) 100%);
+  border: 1px solid var(--btnStyle_2_Border);
+  color: var(--btnStyle_2_P);
 }
 .btnStyle_2.edited:hover, .btnStyle_2.edited:active, .btnStyle_2.edited.active {
-  background: #7c5f30;
-  color: #ffffff;
-}
-.btnStyle_2.edited:disabled {
-  background: #c0c0c0 !important;
-  color: #ffffff !important;
-  border-color: transparent !important;
-  cursor: default;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--btnStyle_2_BG1_HOV)), color-stop(50%, var(--btnStyle_2_BG2_HOV)), to(var(--btnStyle_2_BG3_HOV)));
+  background: linear-gradient(to top, var(--btnStyle_2_BG1_HOV) 0%, var(--btnStyle_2_BG2_HOV) 50%, var(--btnStyle_2_BG3_HOV) 100%);
+  border: 1px solid var(--btnStyle_2_Border_HOV);
+  color: var(--btnStyle_2_P_HOV);
 }
 
 .btnStyle_3.edited {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-  color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--btnStyle_3_BG1)), to(var(--btnStyle_3_BG2)));
+  background: linear-gradient(to bottom, var(--btnStyle_3_BG1) 40%, var(--btnStyle_3_BG2) 100%);
+  border: 1px solid var(--btnStyle_3_Border);
+  color: var(--btnStyle_3_P);
 }
 .btnStyle_3.edited:hover, .btnStyle_3.edited:active, .btnStyle_3.edited.active {
-  color: #7c5f30;
-  border-color: #7c5f30;
+  color: var(--btnStyle_3_P_HOV);
+  border-color: var(--btnStyle_3_Border_HOV);
 }
 
 .btnStyle_4.edited {

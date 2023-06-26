@@ -48,6 +48,32 @@
     --btnStyle_1_Border_HOV: #ffffff;
     --btnStyle_1_P: #ffffff;
     --btnStyle_1_P_HOV: #ffffff;
+    --btnStyle_2_BG1: #ffffff;
+    --btnStyle_2_BG2: #ffffff;
+    --btnStyle_2_BG3: #ffffff;
+    --btnStyle_2_BG1_HOV: #7c5f30;
+    --btnStyle_2_BG2_HOV: #7c5f30;
+    --btnStyle_2_BG3_HOV: #7c5f30;
+    --btnStyle_2_Border: #7c5f30;
+    --btnStyle_2_Border_HOV: #7c5f30;
+    --btnStyle_2_P: #7c5f30;
+    --btnStyle_2_P_HOV: #ffffff;
+    --btnStyle_3_BG1: #ffffff;
+    --btnStyle_3_BG2: #f4f4f4;
+    --btnStyle_3_BG1_HOV: #ffffff;
+    --btnStyle_3_BG2_HOV: #f4f4f4;
+    --btnStyle_3_Border: #cccccc;
+    --btnStyle_3_Border_HOV: #7c5f30;
+    --btnStyle_3_P: #000000;
+    --btnStyle_3_P_HOV: #7c5f30;
+    --btnStyle_4_BG1: #ffffff;
+    --btnStyle_4_BG2: #f4f4f4;
+    --btnStyle_4_BG1_HOV: #c4a167;
+    --btnStyle_4_BG2_HOV: #c4a167;
+    --btnStyle_4_Border: #cccccc;
+    --btnStyle_4_Border_HOV: #c4a167;
+    --btnStyle_4_P: #000000;
+    --btnStyle_4_P_HOV: #ffffff;
 }
 
 //方法說明 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
@@ -277,13 +303,13 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
 
 //按鈕樣式 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 .btnStyle_1.edited { //按鈕樣式_1
-    background: linear-gradient(to top, var(--btnStyle_1_BG1) 0%, var(--btnStyle_1_BG2) 50%, var(--btnStyle_1_BG1) 100%);
+    background: linear-gradient(to top, var(--btnStyle_1_BG1) 0%, var(--btnStyle_1_BG2) 50%, var(--btnStyle_1_BG3) 100%);
     border: 1px solid var(--btnStyle_1_Border);
     color: var(--btnStyle_1_P);
 
     &:hover,&:active,&.active {
         background: linear-gradient(to top, var(--btnStyle_1_BG1_HOV) 0%, var(--btnStyle_1_BG2_HOV) 50%, var(--btnStyle_1_BG3_HOV) 100%);
-        border-color: var(--btnStyle_1_Border_HOV);
+        border: 1px solid var(--btnStyle_1_Border_HOV);
         color: var(--btnStyle_1_P_HOV);
     }
 
@@ -292,32 +318,31 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
     // }
 }
 .btnStyle_2.edited { //按鈕樣式_2 主色邊線按鈕
-    background: transparent;
-    border: 1px solid $Border_color_5;
-    border-radius: 3px;
-    color: $mainColor_subD;
+    background:  linear-gradient(to top, var(--btnStyle_2_BG1) 0%, var(--btnStyle_2_BG2) 50%, var(--btnStyle_2_BG3) 100%);
+    border: 1px solid var(--btnStyle_2_Border);
+    color: var(--btnStyle_2_P);
 
     &:hover,&:active,&.active {
-        background: $Border_color_5;
-        color: $Font_color_1;
+        background:  linear-gradient(to top, var(--btnStyle_2_BG1_HOV) 0%, var(--btnStyle_2_BG2_HOV) 50%, var(--btnStyle_2_BG3_HOV) 100%);
+        border: 1px solid var(--btnStyle_2_Border_HOV);
+        color: var(--btnStyle_2_P_HOV);
     }
 
-    &:disabled { //個別調整
-        background: #c0c0c0 !important;
-        color: $Font_color_1 !important;
-        border-color: transparent !important;
-        cursor: default;
-    }
+    // &:disabled { 
+    //     background: #c0c0c0 !important;
+    //     color: $Font_color_1 !important;
+    //     border-color: transparent !important;
+    //     cursor: default;
+    // }
 }
 .btnStyle_3.edited { //按鈕樣式_3 灰色邊線變色按鈕
-    background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-    border: 1px solid $Border_color_3;
-    border-radius: 3px;
-    color: $Font_color_2;
+    background: linear-gradient(to bottom, var(--btnStyle_3_BG1) 40%, var(--btnStyle_3_BG2) 100%);
+    border: 1px solid var(--btnStyle_3_Border);
+    color: var(--btnStyle_3_P);
 
     &:hover,&:active,&.active {
-        color: $mainColor_subD;
-        border-color: $mainColor_subD;
+        color: var(--btnStyle_3_P_HOV);
+        border-color: var(--btnStyle_3_Border_HOV);
     }
 }
 .btnStyle_4.edited { //按鈕樣式_4 灰色邊線變色按鈕
