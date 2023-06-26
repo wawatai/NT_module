@@ -2097,11 +2097,11 @@ main.innerPage .center .leftSide p.joinDay.edited {
   color: var(--innerPageLeftSide_joinedDays);
 }
 
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited {
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited a {
   background: var(--innerPageLeftSide_quickBtnBG);
   border-color: var(--innerPageLeftSide_quickBtnBorder);
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active {
+main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover a, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active a, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active a {
   background: var(--innerPageLeftSide_quickBtnBG_HOV);
 }
 
@@ -2197,15 +2197,16 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
 }
 
 .btnStyle_4.edited {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-  color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--btnStyle_4_BG1)), to(var(--btnStyle_4_BG2)));
+  background: linear-gradient(to bottom, var(--btnStyle_4_BG1) 40%, var(--btnStyle_4_BG2) 100%);
+  border: 1px solid var(--btnStyle_4_Border);
+  color: var(--btnStyle_4_P);
 }
 .btnStyle_4.edited:hover, .btnStyle_4.edited:active, .btnStyle_4.edited.active {
-  color: #ffffff;
-  background: var(--mainColor);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--btnStyle_4_BG1_HOV)), to(var(--btnStyle_4_BG2_HOV)));
+  background: linear-gradient(to bottom, var(--btnStyle_4_BG1_HOV) 40%, var(--btnStyle_4_BG2_HOV) 100%);
+  border: 1px solid var(--btnStyle_4_Border_HOV);
+  color: var(--btnStyle_4_P_HOV);
 }
 
 bg {
@@ -6139,6 +6140,9 @@ html body aside.colorSelector form label {
           justify-content: space-between;
   margin-bottom: 5px;
 }
+html body aside.colorSelector form label.forQ {
+  height: auto;
+}
 html body aside.colorSelector form label p {
   width: 97px;
   color: #000000;
@@ -6159,6 +6163,74 @@ html body aside.colorSelector form label .colorBlock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+html body aside.colorSelector form label .colorBlock.quick {
+  height: auto;
+  background: transparent;
+  margin: 10px 0;
+}
+html body aside.colorSelector form label .colorBlock.quick ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body aside.colorSelector form label .colorBlock.quick ul li {
+  width: 35px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn {
+  width: 100%;
+  height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
+  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+  border-radius: 50px;
+  border: 1px solid var(--mainColor);
+}
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:hover, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:active, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn.active {
+  background: var(--mainColor);
+}
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn a p {
+  color: #7c5f30;
+  text-align: center;
+  margin: 0;
+}
+html body aside.colorSelector form label .colorBlock.quick ul li .btnName {
+  text-align: center;
+  margin: 5px 0 0 0;
 }
 html body aside.colorSelector form label .colorBlock input {
   width: 30px;

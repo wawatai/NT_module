@@ -243,11 +243,18 @@ main.innerPage .center .leftSide p.joinDay.edited {
 }
 //存轉提按鈕
 main.innerPage .center .leftSide .quickSelect li .quickBtn.edited {
-    background: var(--innerPageLeftSide_quickBtnBG);
-    border-color: var(--innerPageLeftSide_quickBtnBorder);
+    
+    a {
+        background: var(--innerPageLeftSide_quickBtnBG);
+        border-color: var(--innerPageLeftSide_quickBtnBorder);
+    }
 
     &:hover,&:active,&.active {
-        background: var(--innerPageLeftSide_quickBtnBG_HOV);
+
+        a {
+            background: var(--innerPageLeftSide_quickBtnBG_HOV);
+        }
+        
     }
 }
 main.innerPage .center .leftSide .quickSelect li .quickBtn.edited p {
@@ -346,13 +353,13 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
     }
 }
 .btnStyle_4.edited { //按鈕樣式_4 灰色邊線變色按鈕
-    background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-    border: 1px solid $Border_color_3;
-    border-radius: 3px;
-    color: $Font_color_2;
+    background: linear-gradient(to bottom, var(--btnStyle_4_BG1) 40%, var(--btnStyle_4_BG2) 100%);
+    border: 1px solid var(--btnStyle_4_Border);
+    color: var(--btnStyle_4_P);
 
     &:hover,&:active,&.active {
-        color: $Font_color_1;
-        background: var(--mainColor);;
+        background: linear-gradient(to bottom, var(--btnStyle_4_BG1_HOV) 40%, var(--btnStyle_4_BG2_HOV) 100%);
+        border: 1px solid var(--btnStyle_4_Border_HOV);
+        color: var(--btnStyle_4_P_HOV);
     }
 }

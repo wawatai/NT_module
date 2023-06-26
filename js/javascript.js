@@ -1026,8 +1026,18 @@ $(function(){
     var btnStyle_3_Border_HOV;
     var btnStyle_3_P;
     var btnStyle_3_P_HOV;
+    var btnStyle_4_BG1;
+    var btnStyle_4_BG2;
+    var btnStyle_4_BG3;
+    var btnStyle_4_BG1_HOV;
+    var btnStyle_4_BG2_HOV;
+    var btnStyle_4_BG3_HOV;
+    var btnStyle_4_Border;
+    var btnStyle_4_Border_HOV;
+    var btnStyle_4_P;
+    var btnStyle_4_P_HOV;
     
-    $(".filter .jumpWindow.buttonEdit .content input").each(function(){
+        $(".filter .jumpWindow.buttonEdit .content input").each(function(){
         if($(this).hasClass("btnStyle_1_BG1")){
             btnStyle_1_BG1 = $(this).val();
             $(".jumpWindow.buttonEdit .content button").addClass("edited");
@@ -1148,6 +1158,46 @@ $(function(){
             btnStyle_3_P_HOV = $(this).val();
             $(".jumpWindow.buttonEdit .content button").addClass("edited");
             $(this).closest(".colorBlock").find("p").text(btnStyle_3_P_HOV);
+        } else if($(this).hasClass("btnStyle_4_BG1")){
+            btnStyle_4_BG1 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_BG1);
+        } else if($(this).hasClass("btnStyle_4_BG2")){
+            btnStyle_4_BG2 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_BG2);
+        } else if($(this).hasClass("btnStyle_4_BG3")){
+            btnStyle_4_BG3 = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_BG3);
+        } else if($(this).hasClass("btnStyle_4_BG1_HOV")){
+            btnStyle_4_BG1_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_BG1_HOV);
+        } else if($(this).hasClass("btnStyle_4_BG2_HOV")){
+            btnStyle_4_BG2_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_BG2_HOV);
+        } else if($(this).hasClass("btnStyle_4_BG3_HOV")){
+            btnStyle_4_BG3_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_BG3_HOV);
+        } else if($(this).hasClass("btnStyle_4_Border")){
+            btnStyle_4_Border = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_Border);
+        } else if($(this).hasClass("btnStyle_4_Border_HOV")){
+            btnStyle_4_Border_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_Border_HOV);
+        } else if($(this).hasClass("btnStyle_4_P")){
+            btnStyle_4_P = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_P);
+        } else if($(this).hasClass("btnStyle_4_P_HOV")){
+            btnStyle_4_P_HOV = $(this).val();
+            $(".jumpWindow.buttonEdit .content button").addClass("edited");
+            $(this).closest(".colorBlock").find("p").text(btnStyle_4_P_HOV);
         }
 
         $(':root').css('--btnStyle_1_BG1', btnStyle_1_BG1);
@@ -1180,7 +1230,17 @@ $(function(){
         $(':root').css('--btnStyle_3_Border_HOV', btnStyle_3_Border_HOV);
         $(':root').css('--btnStyle_3_P', btnStyle_3_P);
         $(':root').css('--btnStyle_3_P_HOV', btnStyle_3_P_HOV);
-    })
+        $(':root').css('--btnStyle_4_BG1', btnStyle_4_BG1);
+        $(':root').css('--btnStyle_4_BG2', btnStyle_4_BG2);
+        $(':root').css('--btnStyle_4_BG3', btnStyle_4_BG3);
+        $(':root').css('--btnStyle_4_BG1_HOV', btnStyle_4_BG1_HOV);
+        $(':root').css('--btnStyle_4_BG2_HOV', btnStyle_4_BG2_HOV);
+        $(':root').css('--btnStyle_4_BG3_HOV', btnStyle_4_BG3_HOV);
+        $(':root').css('--btnStyle_4_Border', btnStyle_4_Border);
+        $(':root').css('--btnStyle_4_Border_HOV', btnStyle_4_Border_HOV);
+        $(':root').css('--btnStyle_4_P', btnStyle_4_P);
+        $(':root').css('--btnStyle_4_P_HOV', btnStyle_4_P_HOV);
+        })
     })
 
     //修改部位展開切換
