@@ -784,7 +784,7 @@ $(function(){
     })
 
      //個別客製區塊
-     $("aside.colorSelector form .custom input").on("change",function(){
+    $("aside.colorSelector form .custom input").on("change",function(){
         var newHeaderTOP_BG;
         var vip_P;
         var user_P;
@@ -963,6 +963,12 @@ $(function(){
         $(':root').css('--innerPageLeftSide_innerNavI', innerPageLeftSide_innerNavI);
         $(':root').css('--innerPageLeftSide_innerNavI_HOV', innerPageLeftSide_innerNavI_HOV);
         $(':root').css('--innerPageLeftSide_innerNavBG_HOVbefore', innerPageLeftSide_innerNavBG_HOVbefore);
+    })
+
+    $("aside.colorSelector form .custom li .quickBtn").click(function(){
+        $(".filter, .jumpWindow.quickBtnEdit")
+        .addClass("display")
+        .siblings().removeClass("display");
     })
 
     //按鈕客製

@@ -6210,6 +6210,9 @@ html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn {
 html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:hover, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:active, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn.active {
   background: var(--mainColor);
 }
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:hover a p, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:active a p, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn.active a p {
+  color: #ffffff;
+}
 html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn a {
   width: 100%;
   height: 100%;

@@ -217,6 +217,13 @@ aside {
 
                                     &:hover,&:active,&.active {
                                         background: var(--mainColor);
+
+                                        a {
+
+                                            p {
+                                                color: #ffffff;
+                                            }
+                                        }
                                     }
 
                                     a {
